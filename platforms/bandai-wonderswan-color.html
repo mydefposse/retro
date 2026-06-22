@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Bandai WonderSwan Color</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/bandai-wonderswan-color.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/bandai-wonderswan-color.png"
+onerror="this.style.display='none';">
+
+<h1>Bandai WonderSwan Color</h1>
+
+
+<p class="platform-release">
+Released: 2000
+</p>
+
+
+<p>3 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Bandai WonderSwan Color, usually just referred to as WonderSwan Color, is a fifth generation (1993-2005) handheld video game console developed and distributed by Bandai Co., Ltd. It was released on December 9, 2000 in Japan at a retail price of ¥6,900. The console was not released outside of Japan. The WonderSwan Color was backwards compatible to the Wonderswan and still held a long lasting battery life. The console was discontinued in mid to late 2003.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="final-fantasy"><td>
+<img
+class="thumb"
+src="../thumbs/bandai-wonderswan-color/final fantasy.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Final Fantasy"
+data-year="2000"
+data-genre="Role-Playing"
+data-publisher="Square"
+data-developer="Square"
+data-ra="15580"
+data-notes="An evil shroud covers the world in darkness. You must restore the powers of earth, wind, fire and water to the Four Orbs. Create your own band of 4 Light Warriors from fighters, thieves, martial artists, and magicians. You'll need all their skills to triumph in this massive role-playing adventure. Your treaterous journey takes you to all parts of a strange new world. Explore dangerous castles and dark caverns where dadly perils and great rewards, await at every turn. Hundreds of ferocious monsters block your path. With patience, skill, and cunning, you can defeat them."
+data-thumb="../thumbs/bandai-wonderswan-color/final fantasy.jpg"
+data-media="../media/bandai-wonderswan-color/final fantasy.jpg"
+data-screenshot="../screenshots/bandai-wonderswan-color/final fantasy.jpg"
+data-logo="../logos/bandai-wonderswan-color/final fantasy.png"
+data-fanart="../fanart/bandai-wonderswan-color/final fantasy.jpg">
+Final Fantasy
+</a>
+</td>
+
+<td>2000</td>
+<td>Role-Playing</td>
+<td>Square</td>
+<td>Square</td>
+
+</tr>
+
+<tr id="final-fantasy-ii"><td>
+<img
+class="thumb"
+src="../thumbs/bandai-wonderswan-color/final fantasy ii.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Final Fantasy II"
+data-year="2001"
+data-genre="Role-Playing"
+data-publisher="Square"
+data-developer="Square"
+data-ra="15581"
+data-notes="FINAL FANTASY II is highly anticipated follow-up to the original FINAL FANTASY, released in Japan in 1988. The game features the bitter and beautiful tale of four war-orphaned heroes who become embroiled in a conflict between the hostile Empire of Palamecia and the rebel resistance. By eschewing conventional leveling for a proficiency system that allows players to tailor their characters' growth and incorporating a key term memory system that makes dialogue integral to gameplay, this game sparked the spirit of innovation for which the series has become known. This release also contains the bonus dungeons added to later editions of the game--the Soul of Rebirth and the Arcane Labyrinth."
+data-thumb="../thumbs/bandai-wonderswan-color/final fantasy ii.jpg"
+data-media="../media/bandai-wonderswan-color/final fantasy ii.jpg"
+data-screenshot="../screenshots/bandai-wonderswan-color/final fantasy ii.jpg"
+data-logo="../logos/bandai-wonderswan-color/final fantasy ii.png"
+data-fanart="../fanart/bandai-wonderswan-color/final fantasy ii.jpg">
+Final Fantasy II
+</a>
+</td>
+
+<td>2001</td>
+<td>Role-Playing</td>
+<td>Square</td>
+<td>Square</td>
+
+</tr>
+
+<tr id="final-fantasy-iv"><td>
+<img
+class="thumb"
+src="../thumbs/bandai-wonderswan-color/final fantasy iv.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Final Fantasy IV"
+data-year="2002"
+data-genre="Role-Playing"
+data-publisher="Square"
+data-developer="Sting"
+data-ra="15582"
+data-notes="The military country of Baron is one of the strongest in the land, with a proud army and a majestic air force known as the Red Wings. However, the recent actions of the king make even the most loyal of his subordinates doubt his judgment. The captain of the Red Wings, Cecil, is ordered to attack the city of Mysidia and take the Water Crystal from innocent magicians who protect it. When Cecil questions the king's orders, he is immediately thrown out of the country and sent off to deliver a package to the village of Mist, accompanied by his best friend Kain, the captain of the dragoons. Little does he realize that the king's inexplicable behavior is but a part of a much larger picture, which he is yet to reveal.\n\nThe fourth entry in the Final Fantasy series was released as Final Fantasy II in the West, because the second and the third games were not released there at the time. The game is a Japanese-style RPG with top-down world map navigation, automatic leveling up, and random enemy encounters.\n\nThe game introduces a system called ATB (active-time battle). While combat is turn-based in its core, the game does not pause when the player accesses the battle menu. Enemies continue to act in real time regardless of the actions of the player-controlled party. The turns of the participants are calculated depending on their agility rating. Each player-controlled character has a special bar that gradually refills itself; said character may act when the bar is full.\n\nUnlike all the previous Final Fantasy games, the fourth installment does not allow the player to customize the characters' abilities and classes. Each character belongs to a specific, clearly defined class: dragoon, white mage, black mage, summoner, ninja, etc. Each of these classes has distinct special abilities or magic spells. New abilities are learned automatically when a character reaches a pre-determined level. Characters join and leave the party as dictated by the game's plot events. The active party includes up to five combatants."
+data-thumb="../thumbs/bandai-wonderswan-color/final fantasy iv.jpg"
+data-media="../media/bandai-wonderswan-color/final fantasy iv.jpg"
+data-screenshot="../screenshots/bandai-wonderswan-color/final fantasy iv.jpg"
+data-logo="../logos/bandai-wonderswan-color/final fantasy iv.png"
+data-fanart="../fanart/bandai-wonderswan-color/final fantasy iv.jpg">
+Final Fantasy IV
+</a>
+</td>
+
+<td>2002</td>
+<td>Role-Playing</td>
+<td>Square</td>
+<td>Sting</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

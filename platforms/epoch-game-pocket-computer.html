@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Epoch Game Pocket Computer</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/epoch-game-pocket-computer.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/epoch-game-pocket-computer.png"
+onerror="this.style.display='none';">
+
+<h1>Epoch Game Pocket Computer</h1>
+
+
+<p class="platform-release">
+Released: 1984
+</p>
+
+
+<p>5 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Epoch Game Pocket Computer, usually just referred to as Game Pocket Computer, and also known as the Pokekon is a second generation (1976–1992) handheld video game console developed and distributed by Epoch Co. It was released on November 1984 in Japan at a retail price of ¥12,000. The console was not released outside of Japan. The Game Pocket Computer was the first handheld with interchangeable cartridges. The console was discontinued sometime 1985.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="asutorobonbā"><td>
+<img
+class="thumb"
+src="../thumbs/epoch-game-pocket-computer/asutorobonb.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Asutorobonb\u0101"
+data-year="1984"
+data-genre="Shooter"
+data-publisher="Epoch"
+data-developer="Epoch"
+data-ra=""
+data-notes="Astro Bomber (\u30a2\u30b9\u30c8\u30ed\u30dc\u30f3\u30d0\u30fc, Asutorobonb\u0101) is a vertically scrolling shooter where players pilot a spacecraft and drop bombs on enemy bases while dodging incoming fire. Timing and precision are key, as players must eliminate targets from above before they are overwhelmed. With simple controls and arcade-style action, Astro Bomber delivers a compact but challenging shooting experience on the go."
+data-thumb="../thumbs/epoch-game-pocket-computer/asutorobonb.jpg"
+data-media="../media/epoch-game-pocket-computer/asutorobonb.jpg"
+data-screenshot="../screenshots/epoch-game-pocket-computer/asutorobonb.jpg"
+data-logo="../logos/epoch-game-pocket-computer/asutorobonb.png"
+data-fanart="../fanart/epoch-game-pocket-computer/asutorobonb.jpg">
+Asutorobonbā
+</a>
+</td>
+
+<td>1984</td>
+<td>Shooter</td>
+<td>Epoch</td>
+<td>Epoch</td>
+
+</tr>
+
+<tr id="burokkumeizu"><td>
+<img
+class="thumb"
+src="../thumbs/epoch-game-pocket-computer/burokkumeizu.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Burokkumeizu"
+data-year="1984"
+data-genre="Action •  Puzzle"
+data-publisher="Epoch"
+data-developer="Epoch"
+data-ra=""
+data-notes="Block Maze (\u30d6\u30ed\u30c3\u30af\u30e1\u30a4\u30ba, Burokkumeizu) is a puzzle game that tasks players with navigating a maze filled with movable blocks. Players must figure out the correct path by pushing blocks to clear obstacles and create new routes. As levels increase in complexity, strategic thinking and planning ahead become essential. Block Maze offers cerebral fun with a focus on spatial reasoning and problem-solving."
+data-thumb="../thumbs/epoch-game-pocket-computer/burokkumeizu.jpg"
+data-media="../media/epoch-game-pocket-computer/burokkumeizu.jpg"
+data-screenshot="../screenshots/epoch-game-pocket-computer/burokkumeizu.jpg"
+data-logo="../logos/epoch-game-pocket-computer/burokkumeizu.png"
+data-fanart="../fanart/epoch-game-pocket-computer/burokkumeizu.jpg">
+Burokkumeizu
+</a>
+</td>
+
+<td>1984</td>
+<td>Action •  Puzzle</td>
+<td>Epoch</td>
+<td>Epoch</td>
+
+</tr>
+
+<tr id="pocket-computer-mahjong"><td>
+<img
+class="thumb"
+src="../thumbs/epoch-game-pocket-computer/pocket computer mahjong.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pocket Computer Mahjong"
+data-year="1984"
+data-genre="Board Game •  Casino"
+data-publisher="Epoch"
+data-developer="Epoch"
+data-ra=""
+data-notes="Mahjongg (\u30de\u30fc\u30b8\u30e3\u30f3, M\u0101jan) brings the traditional Chinese tile-based game to the Epoch Game Pocket Computer, offering a strategic and engaging experience. Players aim to complete winning hands by forming sets and pairs while drawing and discarding tiles. This version faithfully captures the core mechanics of Mahjong, allowing both seasoned players and newcomers to enjoy the depth of the classic game in a portable format."
+data-thumb="../thumbs/epoch-game-pocket-computer/pocket computer mahjong.jpg"
+data-media="../media/epoch-game-pocket-computer/pocket computer mahjong.jpg"
+data-screenshot="../screenshots/epoch-game-pocket-computer/pocket computer mahjong.jpg"
+data-logo="../logos/epoch-game-pocket-computer/pocket computer mahjong.png"
+data-fanart="../fanart/epoch-game-pocket-computer/pocket computer mahjong.jpg">
+Pocket Computer Mahjong
+</a>
+</td>
+
+<td>1984</td>
+<td>Board Game •  Casino</td>
+<td>Epoch</td>
+<td>Epoch</td>
+
+</tr>
+
+<tr id="pocket-computer-reversi"><td>
+<img
+class="thumb"
+src="../thumbs/epoch-game-pocket-computer/pocket computer reversi.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pocket Computer Reversi"
+data-year="1984"
+data-genre="Board Game •  Strategy"
+data-publisher="Epoch"
+data-developer="Epoch"
+data-ra=""
+data-notes="Reversi (\u30ea\u30d0\u30fc\u30b7, Rib\u0101shi) is a digital adaptation of the classic board game also known as Othello. Players take turns placing black or white discs on the board, flipping their opponent\u2019s pieces by trapping them between their own. Victory goes to the player with the most discs of their color when the board is full. Reversi on the Game Pocket Computer preserves the strategic gameplay of the original, offering a competitive and cerebral experience for portable play."
+data-thumb="../thumbs/epoch-game-pocket-computer/pocket computer reversi.jpg"
+data-media="../media/epoch-game-pocket-computer/pocket computer reversi.jpg"
+data-screenshot="../screenshots/epoch-game-pocket-computer/pocket computer reversi.jpg"
+data-logo="../logos/epoch-game-pocket-computer/pocket computer reversi.png"
+data-fanart="../fanart/epoch-game-pocket-computer/pocket computer reversi.jpg">
+Pocket Computer Reversi
+</a>
+</td>
+
+<td>1984</td>
+<td>Board Game •  Strategy</td>
+<td>Epoch</td>
+<td>Epoch</td>
+
+</tr>
+
+<tr id="soukoban"><td>
+<img
+class="thumb"
+src="../thumbs/epoch-game-pocket-computer/soukoban.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Soukoban"
+data-year="1984"
+data-genre="Puzzle"
+data-publisher="Epoch"
+data-developer="Thinking Rabbit"
+data-ra=""
+data-notes="Soko-Ban (\u5009\u5eab\u756a, S\u014dko-ban \u2013 \u201cWarehouse Keeper\u201d) is a warehouse-themed puzzle game where players control a worker tasked with pushing crates onto designated storage spots. The challenge lies in carefully planning moves, as crates can only be pushed\u2014not pulled\u2014and getting one stuck means starting over. Known for its clever design and deceptively simple rules, S\u014dko-ban delivers a mentally stimulating experience that rewards foresight and precision."
+data-thumb="../thumbs/epoch-game-pocket-computer/soukoban.jpg"
+data-media="../media/epoch-game-pocket-computer/soukoban.jpg"
+data-screenshot="../screenshots/epoch-game-pocket-computer/soukoban.jpg"
+data-logo="../logos/epoch-game-pocket-computer/soukoban.png"
+data-fanart="../fanart/epoch-game-pocket-computer/soukoban.jpg">
+Soukoban
+</a>
+</td>
+
+<td>1984</td>
+<td>Puzzle</td>
+<td>Epoch</td>
+<td>Thinking Rabbit</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

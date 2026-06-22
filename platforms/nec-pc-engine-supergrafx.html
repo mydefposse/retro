@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>NEC PC Engine SuperGrafx</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/nec-pc-engine-supergrafx.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/nec-pc-engine-supergrafx.png"
+onerror="this.style.display='none';">
+
+<h1>NEC PC Engine SuperGrafx</h1>
+
+
+<p class="platform-release">
+Released: 1989
+</p>
+
+
+<p>5 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The PC Engine SuperGrafx, also shortened as the SuperGrafx or PC Engine SG, is a video game console by NEC Home Electronics, released exclusively in Japan. It is an upgraded version of the PC Engine, released two years prior. Like the PC Engine, the SuperGrafx was also imported and sold in France.  Originally announced as the PC Engine 2, the machine was purported to be a true 16-bit system with improved graphics and audio capabilities over the original PC Engine. Expected to be released in 1990, the SuperGrafx was rushed to market, debuting several months earlier in late 1989 with only modest improvements over the original PC Engine.  Only seven games were produced which took advantage of the improved SuperGrafx hardware, and two of those could be played on a regular PC Engine. However, the SuperGrafx is backwards compatible with all PC Engine software in both, HuCard and CD-ROM format, bringing the compatible software total up to nearly 700. The system was not widely adopted and is largely seen as a commercial failure.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="1941-counter-attack"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-engine-supergrafx/1941 counter attack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="1941: Counter Attack"
+data-year="1991"
+data-genre="Shooter"
+data-publisher="Capcom"
+data-developer="Hudson Soft"
+data-ra=""
+data-notes="1941 Counter Attack is a vertical shooter by Capcom and conversion of the arcade game of the same name originally released in 1990. The action takes place during World War II and depicts Capcom's own fantastic vision of the historic battle between the American and Japanese air forces in the Pacific. The player's mission is rather straightforward - on board a Lockheed P-38 airplane, he must fight his way through six varied stages, take down enemy installations, battleships and other huge rockets on their narrow launching pads. Unlike its predecessors in the series, 1941 Counter Attack traded the trademark and arguably monotonous level design for a more structured and diverse formula. Stages vary from an enemy infested canyon to city landscapes and fortified strongholds. Several powerups can be collected along the way, such as tiny wingmen widening the plane's fire power, or destructive special weapons such as laser beams and side rockets. The main weapon can also be charged up by holding the fire button to discharge a powerful attack. Finally, the plane comes with a small life bar and can be hit three time before being blasted into oblivion - this bar however increases as the game progresses, and is used to release devastating special attacks as well. 1941 Counter Attack also features a two simultaneous player mode."
+data-thumb="../thumbs/nec-pc-engine-supergrafx/1941 counter attack.jpg"
+data-media="../media/nec-pc-engine-supergrafx/1941 counter attack.jpg"
+data-screenshot="../screenshots/nec-pc-engine-supergrafx/1941 counter attack.jpg"
+data-logo="../logos/nec-pc-engine-supergrafx/1941 counter attack.png"
+data-fanart="../fanart/nec-pc-engine-supergrafx/1941 counter attack.jpg">
+1941: Counter Attack
+</a>
+</td>
+
+<td>1991</td>
+<td>Shooter</td>
+<td>Capcom</td>
+<td>Hudson Soft</td>
+
+</tr>
+
+<tr id="aldynes-the-misson-code-for-rage-crisis"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-engine-supergrafx/aldynes the misson code for rage crisis.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Aldynes: The Misson Code for Rage Crisis"
+data-year="1991"
+data-genre="Shooter"
+data-publisher="Hudson Soft"
+data-developer="Produce!"
+data-ra=""
+data-notes="The year is 2020, and global depression has descended upon the societies of the Earth. When humans least expect it, aliens from a mechanical planetoid attack seemingly without any reason. The League of Nations collaborates with NASA to produce a powerful space fighter under project name Aldynes. When a pilot known as Fox-A is killed, his girlfriend Hiroko heads to the air base where works on Project Aldynes took place. As the aliens launch their attack, Hiroko hijacks one of the fighters and enters the battle.\n\nAldynes is a horizontally-scrolling sci-fi shoot-em-up. Player-controlled spaceship can acquire power-ups that either change its default vulcan gun to lasers that shoot either straight ahead or in different directions, or enhance the shot of an already equipped weapon. A special power-up adds a small ship that fights alongside the player-controlled one; collecting more power-ups of the same kind adds more ships. These ships can be ordered to stay behind and repeat the shooting patterns of the player-controlled craft, or shoot at enemies following their own AI. \n\nThe player-controlled fighter does not have hit points and loses a life every time it is hit. There are seven stages altogether, each ending with a massive boss battle."
+data-thumb="../thumbs/nec-pc-engine-supergrafx/aldynes the misson code for rage crisis.jpg"
+data-media="../media/nec-pc-engine-supergrafx/aldynes the misson code for rage crisis.jpg"
+data-screenshot="../screenshots/nec-pc-engine-supergrafx/aldynes the misson code for rage crisis.jpg"
+data-logo="../logos/nec-pc-engine-supergrafx/aldynes the misson code for rage crisis.png"
+data-fanart="../fanart/nec-pc-engine-supergrafx/aldynes the misson code for rage crisis.jpg">
+Aldynes: The Misson Code for Rage Crisis
+</a>
+</td>
+
+<td>1991</td>
+<td>Shooter</td>
+<td>Hudson Soft</td>
+<td>Produce!</td>
+
+</tr>
+
+<tr id="battle-ace"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-engine-supergrafx/battle ace.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Battle Ace"
+data-year="1989"
+data-genre="Shooter"
+data-publisher="Hudson Soft"
+data-developer="Hudson Soft"
+data-ra=""
+data-notes="Battle Ace is an action-oriented flight game in a first-person perspective. The player mans a space ship, including a radar which shows enemies, and the goal is to reach the end of each level where an end boss waits. As usually, the main occupation is to blast a lot of aliens which approach the player. The available weapons are bombs and a machine gun, both unlimited. Getting hit is a bad idea because it results in death. The player has three lives which can be raised by scoring 20.000 points."
+data-thumb="../thumbs/nec-pc-engine-supergrafx/battle ace.jpg"
+data-media="../media/nec-pc-engine-supergrafx/battle ace.jpg"
+data-screenshot="../screenshots/nec-pc-engine-supergrafx/battle ace.jpg"
+data-logo="../logos/nec-pc-engine-supergrafx/battle ace.png"
+data-fanart="../fanart/nec-pc-engine-supergrafx/battle ace.jpg">
+Battle Ace
+</a>
+</td>
+
+<td>1989</td>
+<td>Shooter</td>
+<td>Hudson Soft</td>
+<td>Hudson Soft</td>
+
+</tr>
+
+<tr id="daimakaimura"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-engine-supergrafx/daimakaimura.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Daimakaimura"
+data-year="1990"
+data-genre="Action •  Horror •  Platform"
+data-publisher="NEC Avenue"
+data-developer="AlfaSystem"
+data-ra=""
+data-notes="Daimakaimura is a platform game by Capcom and is the SuperGrafx port of the classic arcade game known outside of Japan as Ghouls'n Ghosts. The brave Arthur, infamous for wearing red hearted boxers under his piece of armor, is back. His beloved princess Prin-Prin has been captured by the great demon king Loki and he has now, once again, the daunting task of rescuing her. His journey gets him through six long stages from a creepy cemetery infested with Grim Reapers and Vultures, to a abandoned windmills full of deadly stone turtles. Arthur starts the game equipped with a short joust spear that he can throw at his enemies. Treasure chests appear from time to time (usually triggered by jumping over specific spots of the scenery) and Arthur can crack them open to reveal new weapons, brand new piece of armors or, if already equipped with one, the almighty Golden Armor. But treasure chests can also reveal mean sorcerers who won't hesitate to turn our hero into an elderly man with a walking stick, or a cute but particularly vulnerable duck. Finally, the Golden Armor can be charged up and unleash powerful attacks from the equipped weapon. For instance, the spear can trigger a lighting spell and daggers a mirror-image of Arthur. The game is vast and mean guardians keep the gates leading to Loki's lair."
+data-thumb="../thumbs/nec-pc-engine-supergrafx/daimakaimura.jpg"
+data-media="../media/nec-pc-engine-supergrafx/daimakaimura.jpg"
+data-screenshot="../screenshots/nec-pc-engine-supergrafx/daimakaimura.jpg"
+data-logo="../logos/nec-pc-engine-supergrafx/daimakaimura.png"
+data-fanart="../fanart/nec-pc-engine-supergrafx/daimakaimura.jpg">
+Daimakaimura
+</a>
+</td>
+
+<td>1990</td>
+<td>Action •  Horror •  Platform</td>
+<td>NEC Avenue</td>
+<td>AlfaSystem</td>
+
+</tr>
+
+<tr id="madou-ou-granzort"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-engine-supergrafx/madou ou granzort.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Madou Ou Granzort"
+data-year="1990"
+data-genre="Platform •  Shooter"
+data-publisher="Hudson Soft"
+data-developer="Mutech"
+data-ra=""
+data-notes="Madou King Granzort is based on the anime of the same name. The story takes place in science-fiction scenario in which a few kids get special powers to save the world from the evil Jadou Clan. To be more exact, they can summon three powerful creatures: The Madou kings of earth, water and wind. The player takes the role of those kings to defeat the Jadou Clan.\n\nThe player needs to find the way through the levels while solving basic platforming challenges and a lot of fighting, either with a sword or by shooting. The player can switch between the Madou kings which have different abilities. It is important to look after the energy bar and the time limit: both result in the loss of a life when running out."
+data-thumb="../thumbs/nec-pc-engine-supergrafx/madou ou granzort.jpg"
+data-media="../media/nec-pc-engine-supergrafx/madou ou granzort.jpg"
+data-screenshot="../screenshots/nec-pc-engine-supergrafx/madou ou granzort.jpg"
+data-logo="../logos/nec-pc-engine-supergrafx/madou ou granzort.png"
+data-fanart="../fanart/nec-pc-engine-supergrafx/madou ou granzort.jpg">
+Madou Ou Granzort
+</a>
+</td>
+
+<td>1990</td>
+<td>Platform •  Shooter</td>
+<td>Hudson Soft</td>
+<td>Mutech</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

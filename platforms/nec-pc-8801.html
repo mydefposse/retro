@@ -1,0 +1,1510 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>NEC PC-8801</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/nec-pc-8801.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/nec-pc-8801.png"
+onerror="this.style.display='none';">
+
+<h1>NEC PC-8801</h1>
+
+
+<p class="platform-release">
+Released: 1981
+</p>
+
+
+<p>26 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>Featuring a 4MHz Z80A-compatible processor and a 640x200-pixel, 8-color display, the PC-8801 was twice as fast as the PC-8001, with eight times as many pixels and up to four times as much RAM. However, the biggest selling point was its backwards compatibility with PC-8001 software, providing a smooth upgrade path for customers who had already bought into the NEC ecosystem. Games were not the primary focus, as NEC intended to sell its high-end 8-bit machine to a whole spectrum of customers ranging from computer enthusiasts to small businesses and educational institutions.   Major models: - PC-8801 (November 1981). Original model. - PC-8801mkII (November 1983). Minor upgrade over original model. Built-in floppy disk drives. - PC-8801mkIISR (January 1985). Graphics significantly upgraded with the introduction of a new V2 mode, and built-in FM synthesis using a YM2203 (OPN) chip. This model marks the repositioning of the PC-8801 as a system for hobbyists and gamers. - PC-8801FH (November 1986). CPU upgraded to 8MHz, but switchable to 4MHz for compatibility. A sleek jet-black model was also available. - PC-88VA (March 1987). Featuring a 16-bit CPU, up to 65536 colors, a video processor providing hardware-based scrolling and spriting, and a custom OS, the PC-88VA was a powerhouse of a system that was unfortunately plagued by compatibility problems, and ultimately overshadowed by the Sharp X68000. Although technically part of the PC-8801 series, it's best to think of the PC-88VA as a completely separate system. - PC-8801FA (October 1987). Audio upgraded to the Yamaha YM2608 (OPNA) FM synthesis chip. Older models could also be upgraded to OPNA by purchasing the Sound Board II expansion board. - PC-98DO (June 1989). A hybrid computer that could switch between PC-8801 and PC-9801 modes. - PC-8801MC (November 1989). Included a built-in CD-ROM drive, but very few games took advantage of it.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="balloon-fight"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/balloon fight.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Balloon Fight"
+data-year="1985"
+data-genre="Action •  Platform"
+data-publisher="Hudson Soft"
+data-developer="Nintendo"
+data-ra="14193"
+data-notes="In Balloon Fight you need to fly around with the aid of two balloons and try to pop your opponent's balloons before they pop yours. Landing on top of your opponents will cause their balloons to pop and they will use a parachute to fall to safety. You then have to destroy the fallen opponents by running into them before they can blow a new balloon and rejoin the battle. Should both of your balloons get popped, you will fall into the water below and lose a life. There is also a second game variation called \"balloon trip\" where you need to collect as many balloons as possible while avoiding the ocean floor and lightnings that form maze-like walls."
+data-thumb="../thumbs/nec-pc-8801/balloon fight.jpg"
+data-media="../media/nec-pc-8801/balloon fight.jpg"
+data-screenshot="../screenshots/nec-pc-8801/balloon fight.jpg"
+data-logo="../logos/nec-pc-8801/balloon fight.png"
+data-fanart="../fanart/nec-pc-8801/balloon fight.jpg">
+Balloon Fight
+</a>
+</td>
+
+<td>1985</td>
+<td>Action •  Platform</td>
+<td>Hudson Soft</td>
+<td>Nintendo</td>
+
+</tr>
+
+<tr id="battle-skin-panic"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/battle skin panic.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Battle Skin Panic"
+data-year="1990"
+data-genre="Adventure •  Strategy"
+data-publisher="TAKERU"
+data-developer="Gainax"
+data-ra="17483"
+data-notes="Arigawa is just an ordinary Japanese teenager, who attends an ordinary Japanese high school. At least he was ordinary until he met Mimi, the charming new exchange student. One day, being a perfect gentleman, Arigawa walked her home after the school, but was attacked by angry female martial artists. Mimi reveals to him that she has studied esoteric martial skills by a man known simply as \"The Teacher\". Unfortunately, not every one who knows these secret techniques uses them for the good. The young hero gets involved in a conflict from which there is no escape..."
+data-thumb="../thumbs/nec-pc-8801/battle skin panic.jpg"
+data-media="../media/nec-pc-8801/battle skin panic.jpg"
+data-screenshot="../screenshots/nec-pc-8801/battle skin panic.jpg"
+data-logo="../logos/nec-pc-8801/battle skin panic.png"
+data-fanart="../fanart/nec-pc-8801/battle skin panic.jpg">
+Battle Skin Panic
+</a>
+</td>
+
+<td>1990</td>
+<td>Adventure •  Strategy</td>
+<td>TAKERU</td>
+<td>Gainax</td>
+
+</tr>
+
+<tr id="donkey-kong-3-the-great-counterattack"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/donkey kong 3 the great counterattack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Donkey Kong 3: The Great Counterattack"
+data-year="1984"
+data-genre="Shooter"
+data-publisher="Hudson Soft"
+data-developer="Hudson Soft"
+data-ra="6812"
+data-notes="In 1984, Hudson Soft developed a semi-sequel of Donkey Kong 3 for the Japanese-only NEC PC-8801, NEC PC-6601, and Sharp X1 personal computers titled Donkey Kong 3: Dai Gyakushuu. A version for the FM-7 was also planned, but was never released.\n\nThis game is significantly different from the original. While the object to shoot Donkey Kong up in the air remains, it has 20 outdoor backgrounds such as a bridge, Planet Saturn, a desert, a pyramid, and a highway. Stanley can only move from left to right and is no longer able to jump."
+data-thumb="../thumbs/nec-pc-8801/donkey kong 3 the great counterattack.jpg"
+data-media="../media/nec-pc-8801/donkey kong 3 the great counterattack.jpg"
+data-screenshot="../screenshots/nec-pc-8801/donkey kong 3 the great counterattack.jpg"
+data-logo="../logos/nec-pc-8801/donkey kong 3 the great counterattack.png"
+data-fanart="../fanart/nec-pc-8801/donkey kong 3 the great counterattack.jpg">
+Donkey Kong 3: The Great Counterattack
+</a>
+</td>
+
+<td>1984</td>
+<td>Shooter</td>
+<td>Hudson Soft</td>
+<td>Hudson Soft</td>
+
+</tr>
+
+<tr id="dragon-slayer"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/dragon slayer.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dragon Slayer"
+data-year="1984"
+data-genre="Role-Playing"
+data-publisher="Nihon Falcom"
+data-developer="Nihon Falcom"
+data-ra="13705"
+data-notes="Dragon Slayer is commonly considered one of the progenitors of the action RPG genre. The premise is similar to Roguelikes: the player takes control of a knight who must fight his way through large overhead maze-like dungeons. Unlike roguelikes, the combat in the game is fully action-oriented: the player must approach the monster and \"bump\" into it in order to inflict damage, at the same time trying to avoid its blows. Combat takes place on the same screen as the exploration; monsters will also sometimes pursue the knight if he attempts to escape. Also contrary to roguelikes, none of the locations or items in the game is randomized.\n\nThe player can collect power stones and coins during the journey; the power stones increase the hero's strength, while the coins increase his hit points (health). Defeating enemies also yields experience points, which determine the amount of maximum HP the hero is able to receive. The knight is able to cast magic spells, though they are mostly used outside of combat, for example breaking walls, teleporting, or creating a map of the area."
+data-thumb="../thumbs/nec-pc-8801/dragon slayer.jpg"
+data-media="../media/nec-pc-8801/dragon slayer.jpg"
+data-screenshot="../screenshots/nec-pc-8801/dragon slayer.jpg"
+data-logo="../logos/nec-pc-8801/dragon slayer.png"
+data-fanart="../fanart/nec-pc-8801/dragon slayer.jpg">
+Dragon Slayer
+</a>
+</td>
+
+<td>1984</td>
+<td>Role-Playing</td>
+<td>Nihon Falcom</td>
+<td>Nihon Falcom</td>
+
+</tr>
+
+<tr id="dynamite-bowl"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/dynamite bowl.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dynamite Bowl"
+data-year="1987"
+data-genre="Sports"
+data-publisher="Toshiba-EMI"
+data-developer="Softvision"
+data-ra="22559"
+data-notes="Dynamite Bowl is a bowling game simulation based on the real bowling sport and can be played up to five players at one of the thirty lanes. The game has two difficulty levels. Game variables that can be controlled are: your position at the lane, set the strength of the throw and control the loft and curve of the bowling ball."
+data-thumb="../thumbs/nec-pc-8801/dynamite bowl.jpg"
+data-media="../media/nec-pc-8801/dynamite bowl.jpg"
+data-screenshot="../screenshots/nec-pc-8801/dynamite bowl.jpg"
+data-logo="../logos/nec-pc-8801/dynamite bowl.png"
+data-fanart="../fanart/nec-pc-8801/dynamite bowl.jpg">
+Dynamite Bowl
+</a>
+</td>
+
+<td>1987</td>
+<td>Sports</td>
+<td>Toshiba-EMI</td>
+<td>Softvision</td>
+
+</tr>
+
+<tr id="emmy"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/emmy.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Emmy"
+data-year="1984"
+data-genre="Life Simulation"
+data-publisher="ASCII"
+data-developer="Kogado Studio"
+data-ra="14107"
+data-notes="Emmy is a curious artificial software girl. Have an intelligent conversation with her to improve its quality."
+data-thumb="../thumbs/nec-pc-8801/emmy.jpg"
+data-media="../media/nec-pc-8801/emmy.jpg"
+data-screenshot="../screenshots/nec-pc-8801/emmy.jpg"
+data-logo="../logos/nec-pc-8801/emmy.png"
+data-fanart="../fanart/nec-pc-8801/emmy.jpg">
+Emmy
+</a>
+</td>
+
+<td>1984</td>
+<td>Life Simulation</td>
+<td>ASCII</td>
+<td>Kogado Studio</td>
+
+</tr>
+
+<tr id="fan-fun"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/fan fun.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fan Fun"
+data-year="1983"
+data-genre="Action"
+data-publisher="Enix"
+data-developer="-"
+data-ra="14665"
+data-notes="Fan Fun is an action game where you control a fan that has to get four of the balls into the warehouse from the left and right each. As the game progresses, you will be introduced to a bonus stage where you have to shoot the escaping balls that will give you a bonus. Walls, signs and other obstacles will appear to mess you up along with a mystery ball that will give you extra points. If you drop the ball, you'll lose a fan. The game has 47 different rounds with 128 different faces of balls and the game ends once all your fans are gone."
+data-thumb="../thumbs/nec-pc-8801/fan fun.jpg"
+data-media="../media/nec-pc-8801/fan fun.jpg"
+data-screenshot="../screenshots/nec-pc-8801/fan fun.jpg"
+data-logo="../logos/nec-pc-8801/fan fun.png"
+data-fanart="../fanart/nec-pc-8801/fan fun.jpg">
+Fan Fun
+</a>
+</td>
+
+<td>1983</td>
+<td>Action</td>
+<td>Enix</td>
+<td>-</td>
+
+</tr>
+
+<tr id="fangs-the-saga-of-wolf-blood"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/fangs the saga of wolf blood.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fangs: The Saga of Wolf Blood"
+data-year="1991"
+data-genre="Role-Playing"
+data-publisher="Enix"
+data-developer="Enix"
+data-ra="17516"
+data-notes="Fangs: The Saga of Wolf Blood is an RPG developed for the NEC PC-8800, exclusively in Japan."
+data-thumb="../thumbs/nec-pc-8801/fangs the saga of wolf blood.jpg"
+data-media="../media/nec-pc-8801/fangs the saga of wolf blood.jpg"
+data-screenshot="../screenshots/nec-pc-8801/fangs the saga of wolf blood.jpg"
+data-logo="../logos/nec-pc-8801/fangs the saga of wolf blood.png"
+data-fanart="../fanart/nec-pc-8801/fangs the saga of wolf blood.jpg">
+Fangs: The Saga of Wolf Blood
+</a>
+</td>
+
+<td>1991</td>
+<td>Role-Playing</td>
+<td>Enix</td>
+<td>Enix</td>
+
+</tr>
+
+<tr id="final-crisis"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/final crisis.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Final Crisis"
+data-year="1991"
+data-genre="Action •  Shooter"
+data-publisher="Techno Grard"
+data-developer="Techno Grard"
+data-ra="13990"
+data-notes="Final Crisis - Terrestrial Defense Police is a horizontal shoot 'em up developed and published by Techno Grard in 1991 for the PC 8801.\n\nDespite different team names, this is the work of Group R204, the same doujin circle that did MeltDown (1989) and ReFight (1991), and this is probably one of the most successful products they made. This game is also the only one with a retail release.\n\nFinal crisis will remain as one of the best PC-88 exclusive shmups, with impressive graphics, smooth scrolling and fluid animations, it's quite a feat for a PC-8801 game."
+data-thumb="../thumbs/nec-pc-8801/final crisis.jpg"
+data-media="../media/nec-pc-8801/final crisis.jpg"
+data-screenshot="../screenshots/nec-pc-8801/final crisis.jpg"
+data-logo="../logos/nec-pc-8801/final crisis.png"
+data-fanart="../fanart/nec-pc-8801/final crisis.jpg">
+Final Crisis
+</a>
+</td>
+
+<td>1991</td>
+<td>Action •  Shooter</td>
+<td>Techno Grard</td>
+<td>Techno Grard</td>
+
+</tr>
+
+<tr id="galaxian"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/galaxian.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Galaxian"
+data-year="1983"
+data-genre="Shooter"
+data-publisher="Dempa Shimbunsha"
+data-developer="Dempa Shimbunsha"
+data-ra="14196"
+data-notes="Galaxian is a shoot 'em up in which the player is at the bottom of the screen, with an arrangement of aliens at the top. The player moves left and right to aim at an alien, then shoots a bullet up the screen, and the alien it hits is killed. The aliens are classed as Drones, Emissaries, Hornets and Commanders, with those higher up the screen scoring more points when destroyed. At set intervals an enemy will move down the screen towards you, escorting a bomber, which is a moment of high danger. Clear a wave and another is generated."
+data-thumb="../thumbs/nec-pc-8801/galaxian.jpg"
+data-media="../media/nec-pc-8801/galaxian.jpg"
+data-screenshot="../screenshots/nec-pc-8801/galaxian.jpg"
+data-logo="../logos/nec-pc-8801/galaxian.png"
+data-fanart="../fanart/nec-pc-8801/galaxian.jpg">
+Galaxian
+</a>
+</td>
+
+<td>1983</td>
+<td>Shooter</td>
+<td>Dempa Shimbunsha</td>
+<td>Dempa Shimbunsha</td>
+
+</tr>
+
+<tr id="genesis"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/genesis.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Genesis"
+data-year="1988"
+data-genre="Role-Playing"
+data-publisher="Square"
+data-developer="Square"
+data-ra=""
+data-notes="A series of devastating wars and economic disasters influenced the Earth's atmosphere. Various types of energy were released, and as a result the planet's continents began to change shapes. The ensuing cataclysm deformed the Earth's surface, and it changed beyond recognition. Most of the planet turned into a desert. But humanity survived. Humans built new cities in the wilderness, and new organizations emerged. Surviving in this world will be anything but easy...\n\nGenesis is an early RPG by Square, which is still much more heavily influenced by the leading Ultima template of the time than their later famous work, Final Fantasy. With the exception of the original post-apocalyptic theme and a few original gameplay elements, the game looks, feels, and plays very similarly to early Ultimas.\n\nIn the beginning of the game the player has to create and name the protagonist. Four classes are available: Soldier, an all-purpose fighter type; Karateka, specialist in unarmed combat; Esper, who relies on psychic forces; and Doctor, who focuses on healing. The player can freely allocate points into the four available character attributes: Strength, Duration (Endurance), Dexterity, and IQ.\n\nAfterwards, the player is thrown into the game world. Gameplay process is non-linear; rather than following a narrative with scripted events, the player explores the world and travels to its locations in any order. Interaction with the world is performed with menu commands such as \"Attack\", \"Enter\" (a location represented on the map as an icon), \"Transaction\", etc. Enemies are visibly roaming the world map; a contact with any of them leads to a separate small isometric battle screen, on which the playable character can freely move, attack physically, or use psychic powers in turn-based fashion."
+data-thumb="../thumbs/nec-pc-8801/genesis.jpg"
+data-media="../media/nec-pc-8801/genesis.jpg"
+data-screenshot="../screenshots/nec-pc-8801/genesis.jpg"
+data-logo="../logos/nec-pc-8801/genesis.png"
+data-fanart="../fanart/nec-pc-8801/genesis.jpg">
+Genesis
+</a>
+</td>
+
+<td>1988</td>
+<td>Role-Playing</td>
+<td>Square</td>
+<td>Square</td>
+
+</tr>
+
+<tr id="hard-rank"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/hard rank.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hard Rank"
+data-year="1990"
+data-genre="Shooter"
+data-publisher="NOP Software"
+data-developer="-"
+data-ra="13942"
+data-notes=""
+data-thumb="../thumbs/nec-pc-8801/hard rank.jpg"
+data-media="../media/nec-pc-8801/hard rank.jpg"
+data-screenshot="../screenshots/nec-pc-8801/hard rank.jpg"
+data-logo="../logos/nec-pc-8801/hard rank.png"
+data-fanart="../fanart/nec-pc-8801/hard rank.jpg">
+Hard Rank
+</a>
+</td>
+
+<td>1990</td>
+<td>Shooter</td>
+<td>NOP Software</td>
+<td>-</td>
+
+</tr>
+
+<tr id="hydlide"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/hydlide.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hydlide"
+data-year="1984"
+data-genre="Action •  Role-Playing"
+data-publisher="T&E Soft"
+data-developer="T&E Soft"
+data-ra="13684"
+data-notes="An evil demon named Varalys casts a curse upon the princess Ann, turning her into three fairies. You control Sir Jim and set out to find the fairies, and then slay Varalys. Only by vanquishing Varalys can the curse be lifted. Once the princess is restored the kingdom will be saved."
+data-thumb="../thumbs/nec-pc-8801/hydlide.jpg"
+data-media="../media/nec-pc-8801/hydlide.jpg"
+data-screenshot="../screenshots/nec-pc-8801/hydlide.jpg"
+data-logo="../logos/nec-pc-8801/hydlide.png"
+data-fanart="../fanart/nec-pc-8801/hydlide.jpg">
+Hydlide
+</a>
+</td>
+
+<td>1984</td>
+<td>Action •  Role-Playing</td>
+<td>T&E Soft</td>
+<td>T&E Soft</td>
+
+</tr>
+
+<tr id="hydlide-ii-shine-of-darkness"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/hydlide ii shine of darkness.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hydlide II: Shine of Darkness"
+data-year="1985"
+data-genre="Action •  Role-Playing"
+data-publisher="T&E Soft"
+data-developer="T&E Soft"
+data-ra="14243"
+data-notes="Hydlide II: Shine Of Darkness is an action RPG, and the second installment in the Hydlide series.\n\nIn a different space a wonderful world existed, called Fairy Land, which was dominated by swords and magic after the times of domination by monsters and evil had ended. The people of Fairy Land were intoxicated with peace. At that time an incident occurred. A Consciousness filled with evil awoke and it created new monsters, brought the dead back to life, and wanted to dominate Fairy Land again.\n\nThe monks were one of the first who noticed this and warned the people about it but they didn't listen and left the monks disappointed. The monks prayed to God and asked Him if there was a Savior. God, impressed by the monks prayers warped the space-time of Fairy Land with the human world and selected an innocent boy who lived there.\n\nThe player controls the innocent boy, who must roam the lands of Fairy Land and free it from evil. The player has to create a character before beginning the quest, customizing his parameters - life, strength, and magic. As in the previous game, the player slays enemies by \"bumping\" into them or using magical spells. It is possible to change between attacking and defensive stances on the fly. The hero can become stronger and gain additional powers. In the villages there are shops where the protagonist can buy and sell weapons, armor, and items."
+data-thumb="../thumbs/nec-pc-8801/hydlide ii shine of darkness.jpg"
+data-media="../media/nec-pc-8801/hydlide ii shine of darkness.jpg"
+data-screenshot="../screenshots/nec-pc-8801/hydlide ii shine of darkness.jpg"
+data-logo="../logos/nec-pc-8801/hydlide ii shine of darkness.png"
+data-fanart="../fanart/nec-pc-8801/hydlide ii shine of darkness.jpg">
+Hydlide II: Shine of Darkness
+</a>
+</td>
+
+<td>1985</td>
+<td>Action •  Role-Playing</td>
+<td>T&E Soft</td>
+<td>T&E Soft</td>
+
+</tr>
+
+<tr id="joshidaisei-private"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/joshidaisei private.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Joshidaisei Private"
+data-year="1983"
+data-genre="Puzzle"
+data-publisher="Nihon Falcom"
+data-developer="Nihon Falcom"
+data-ra="13743"
+data-notes="Joshi Daisei Private is an erotic sliding tile puzzle game. The player is presented with a 3x3 grid obfuscating an erotic picture of a young female college student. By moving the disarranged tiles one at a time the player eventually completes the image and unveils the larger picture. In the beginning of the game the player selects between the three available young women: Miyuki, Yuko, or Kiyoko. Each one of them offers three stages of tile-sliding, with ten combinations each. The player can also select between \"quadratic\" and \"cubic\" tile types."
+data-thumb="../thumbs/nec-pc-8801/joshidaisei private.jpg"
+data-media="../media/nec-pc-8801/joshidaisei private.jpg"
+data-screenshot="../screenshots/nec-pc-8801/joshidaisei private.jpg"
+data-logo="../logos/nec-pc-8801/joshidaisei private.png"
+data-fanart="../fanart/nec-pc-8801/joshidaisei private.jpg">
+Joshidaisei Private
+</a>
+</td>
+
+<td>1983</td>
+<td>Puzzle</td>
+<td>Nihon Falcom</td>
+<td>Nihon Falcom</td>
+
+</tr>
+
+<tr id="mario-bros.-special"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/mario bros special.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mario Bros. Special"
+data-year="1984"
+data-genre="Platform"
+data-publisher="Westside Soft House"
+data-developer="Hudson Soft"
+data-ra="14121"
+data-notes="Mario and Luigi, the best plumbers in the world, have a real job on their hands. A host of characters have taken over the sewers, and the brothers must clear them out of the pipes.\n\nThe platform puzzle which first introduced Luigi to the world has both single and multiplayer action with two differing game types, but with the same objective. Crabs, turtles and fighter flies must be cleared out by jumping underneath the platform they sit on, then kicking them away. Each level is cleared when a set number of coins is collected.\n\nFor the two player mode, the first to collect the set amount of coins wins."
+data-thumb="../thumbs/nec-pc-8801/mario bros special.jpg"
+data-media="../media/nec-pc-8801/mario bros special.jpg"
+data-screenshot="../screenshots/nec-pc-8801/mario bros special.jpg"
+data-logo="../logos/nec-pc-8801/mario bros special.png"
+data-fanart="../fanart/nec-pc-8801/mario bros special.jpg">
+Mario Bros. Special
+</a>
+</td>
+
+<td>1984</td>
+<td>Platform</td>
+<td>Westside Soft House</td>
+<td>Hudson Soft</td>
+
+</tr>
+
+<tr id="minky-momo-no-panic-ball"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/minky momo no panic ball.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Minky Momo no Panic Ball"
+data-year="1984"
+data-genre="Action"
+data-publisher="Tokuma Shoten Intermedia"
+data-developer="Technopolis Soft"
+data-ra="23554"
+data-notes=""
+data-thumb="../thumbs/nec-pc-8801/minky momo no panic ball.jpg"
+data-media="../media/nec-pc-8801/minky momo no panic ball.jpg"
+data-screenshot="../screenshots/nec-pc-8801/minky momo no panic ball.jpg"
+data-logo="../logos/nec-pc-8801/minky momo no panic ball.png"
+data-fanart="../fanart/nec-pc-8801/minky momo no panic ball.jpg">
+Minky Momo no Panic Ball
+</a>
+</td>
+
+<td>1984</td>
+<td>Action</td>
+<td>Tokuma Shoten Intermedia</td>
+<td>Technopolis Soft</td>
+
+</tr>
+
+<tr id="mobile-suit-z-gundam"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/mobile suit z gundam.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mobile Suit Z Gundam"
+data-year="1986"
+data-genre="Action"
+data-publisher="Bandai"
+data-developer="-"
+data-ra="7314"
+data-notes=""
+data-thumb="../thumbs/nec-pc-8801/mobile suit z gundam.jpg"
+data-media="../media/nec-pc-8801/mobile suit z gundam.jpg"
+data-screenshot="../screenshots/nec-pc-8801/mobile suit z gundam.jpg"
+data-logo="../logos/nec-pc-8801/mobile suit z gundam.png"
+data-fanart="../fanart/nec-pc-8801/mobile suit z gundam.jpg">
+Mobile Suit Z Gundam
+</a>
+</td>
+
+<td>1986</td>
+<td>Action</td>
+<td>Bandai</td>
+<td>-</td>
+
+</tr>
+
+<tr id="pac-man"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/pac man.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pac-Man"
+data-year="1983"
+data-genre="Action"
+data-publisher="Dempa Shimbunsha"
+data-developer="Dempa Shimbunsha"
+data-ra="17772"
+data-notes="One of the most popular and influential games of the 1980's, Pac-Man stars a little, yellow dot-muncher who works his way around to clear a maze of the various dots and fruit which inhabit the board.\n\nPac-Man's goal is continually challenged by four ghosts: The shy blue ghost Bashful (\"Inky\"), the trailing red ghost Shadow (\"Blinky\"), the fast pink ghost Speedy (\"Pinky\"), and the forgetful orange ghost Pokey (\"Clyde\"). One touch from any of these ghosts means loss of a life for Pac-Man.\n\nPac-Man can turn the tables on his pursuers by eating one of the four Power-Pills located around the maze. During this time, the ghosts turn blue, and Pac-Man can eat them for bonus points. This only lasts for a limited amount of time as the ghosts' eyes float back to their center box and regenerate to chase after Pac-Man again.\n\nSurvive a few rounds of gameplay, and be treated to humorous intermissions starring Pac-Man and the ghosts."
+data-thumb="../thumbs/nec-pc-8801/pac man.jpg"
+data-media="../media/nec-pc-8801/pac man.jpg"
+data-screenshot="../screenshots/nec-pc-8801/pac man.jpg"
+data-logo="../logos/nec-pc-8801/pac man.png"
+data-fanart="../fanart/nec-pc-8801/pac man.jpg">
+Pac-Man
+</a>
+</td>
+
+<td>1983</td>
+<td>Action</td>
+<td>Dempa Shimbunsha</td>
+<td>Dempa Shimbunsha</td>
+
+</tr>
+
+<tr id="punch-ball-mario-bros."><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/punch ball mario bros.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Punch Ball Mario Bros."
+data-year="1984"
+data-genre="Platform"
+data-publisher="Hudson Soft"
+data-developer="Hudson Soft"
+data-ra="13777"
+data-notes="Punch Ball Mario Bros. is a single-screen action game adapted from the 1983 arcade game Mario Bros.. Visually and structurally, the game is quite similar: enemies emerge from pipes at the top of the screen, and must be knocked over and kicked off the stage. Enemies that reach the bottom will enter a pipe and return to the top. The last remaining enemy on the stage, as well as any enemy left knocked over for too long, will change color and move faster. However, unlike the original game where Mario must flip enemies by hitting the platform they're on from underneath, in Punch Ball, Mario (and optionally a second player as Luigi) carries a red ball which can be thrown at enemies to knock them over. The ball must be picked back up after being thrown.\n\nEvery few stages, there is a bonus coin round with no enemies. Most stages also feature a POW block in the center, which can be hit a limited number of times to flip every enemy on the screen. There is also a small pit in the center of the screen at the bottom, into which Mario can fall if he isn't careful. One or two players can play the game simultaneously."
+data-thumb="../thumbs/nec-pc-8801/punch ball mario bros.jpg"
+data-media="../media/nec-pc-8801/punch ball mario bros.jpg"
+data-screenshot="../screenshots/nec-pc-8801/punch ball mario bros.jpg"
+data-logo="../logos/nec-pc-8801/punch ball mario bros.png"
+data-fanart="../fanart/nec-pc-8801/punch ball mario bros.jpg">
+Punch Ball Mario Bros.
+</a>
+</td>
+
+<td>1984</td>
+<td>Platform</td>
+<td>Hudson Soft</td>
+<td>Hudson Soft</td>
+
+</tr>
+
+<tr id="red-stack!"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/red stack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Red Stack!"
+data-year="1985"
+data-genre="Shooter"
+data-publisher="Cosmos Computer"
+data-developer="Cosmos Computer"
+data-ra="14020"
+data-notes=""
+data-thumb="../thumbs/nec-pc-8801/red stack.jpg"
+data-media="../media/nec-pc-8801/red stack.jpg"
+data-screenshot="../screenshots/nec-pc-8801/red stack.jpg"
+data-logo="../logos/nec-pc-8801/red stack.png"
+data-fanart="../fanart/nec-pc-8801/red stack.jpg">
+Red Stack!
+</a>
+</td>
+
+<td>1985</td>
+<td>Shooter</td>
+<td>Cosmos Computer</td>
+<td>Cosmos Computer</td>
+
+</tr>
+
+<tr id="rogue"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/rogue.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Rogue"
+data-year="1986"
+data-genre="Role-Playing"
+data-publisher="ASCII"
+data-developer="A.I. Design"
+data-ra="6977"
+data-notes="Rogue is a turn-based dungeon crawler in which the player controls an adventurer who must explore the dangerous Dungeon of Doom in order to retrieve the precious Amulet of Yendor and make it out alive. The player character starts on the upper-most level and slowly makes his way downwards.\n\nThe game uses ASCII characters to represent locations, items, monsters, and the protagonist himself. There are twenty-six different types of monsters, symbolized by their initial letters (e.g. L for Leprechaun). Monsters have different abilities and modes of attack. The dungeon and the items in it are randomly generated each time the player begins a new game. Each dungeon level contains a grid of three by three rooms and dead ends.\n\nLevels get progressively more complex and maze-like, and monsters grow in strength the deeper the hero ventures into the dungeon. The player character can acquire better weapons and armor, gain experience points and level up. Should the protagonist perish in the dungeon, the player must restart the game anew."
+data-thumb="../thumbs/nec-pc-8801/rogue.jpg"
+data-media="../media/nec-pc-8801/rogue.jpg"
+data-screenshot="../screenshots/nec-pc-8801/rogue.jpg"
+data-logo="../logos/nec-pc-8801/rogue.png"
+data-fanart="../fanart/nec-pc-8801/rogue.jpg">
+Rogue
+</a>
+</td>
+
+<td>1986</td>
+<td>Role-Playing</td>
+<td>ASCII</td>
+<td>A.I. Design</td>
+
+</tr>
+
+<tr id="super-jack"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/super jack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Super Jack"
+data-year="1988"
+data-genre="Board Game •  Casino"
+data-publisher="G_Club Software"
+data-developer="-"
+data-ra="13787"
+data-notes="Super Jack is a card game for the PC-8\u00d701."
+data-thumb="../thumbs/nec-pc-8801/super jack.jpg"
+data-media="../media/nec-pc-8801/super jack.jpg"
+data-screenshot="../screenshots/nec-pc-8801/super jack.jpg"
+data-logo="../logos/nec-pc-8801/super jack.png"
+data-fanart="../fanart/nec-pc-8801/super jack.jpg">
+Super Jack
+</a>
+</td>
+
+<td>1988</td>
+<td>Board Game •  Casino</td>
+<td>G_Club Software</td>
+<td>-</td>
+
+</tr>
+
+<tr id="super-mario-brothers-special"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/super mario brothers special.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Super Mario Brothers Special"
+data-year="1986"
+data-genre="Platform"
+data-publisher="Hudson Soft"
+data-developer="Hudson Soft"
+data-ra="13685"
+data-notes="Super Mario Bros. Special (\u30b9\u30fc\u30d1\u30fc\u30de\u30ea\u30aa\u30d6\u30e9\u30b6\u30fc\u30ba \u30b9\u30da\u30b7\u30e3\u30eb) was developed by Hudson Soft and released in 1986 for the NEC PC-8801. Special was the first Nintendo-licensed follow-up to Super Mario Bros., released shortly before Super Mario Bros.: The Lost Levels.\nAlthough it has similar controls and graphics, there are new level layouts and the game scrolls in a different manner than the original game (differing based on the computer). In addition, many new enemies are included, including enemies from Mario Bros. and Donkey Kong."
+data-thumb="../thumbs/nec-pc-8801/super mario brothers special.jpg"
+data-media="../media/nec-pc-8801/super mario brothers special.jpg"
+data-screenshot="../screenshots/nec-pc-8801/super mario brothers special.jpg"
+data-logo="../logos/nec-pc-8801/super mario brothers special.png"
+data-fanart="../fanart/nec-pc-8801/super mario brothers special.jpg">
+Super Mario Brothers Special
+</a>
+</td>
+
+<td>1986</td>
+<td>Platform</td>
+<td>Hudson Soft</td>
+<td>Hudson Soft</td>
+
+</tr>
+
+<tr id="tetris"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/tetris.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tetris"
+data-year="1988"
+data-genre="Puzzle"
+data-publisher="Bullet-Proof Software"
+data-developer="Bullet-Proof Software"
+data-ra="14200"
+data-notes="This version of Tetris is one of many conversions of the famous block-stacking game. The goal is to place pieces made up of four tiles in a ten-by-twenty well, organizing them into complete rows, which then disappear. The goal of each round is to clear 25 lines, after which the player moves on to the next round. If the stack reaches the top of the field, the player loses a life, and if all three lives are lost, the game is over.\n\nThe game lets the player choose the starting stage and round, as well as one of three background tunes. Difficulty is increased throughout the stages by an increase in speed and the addition of garbage blocks in the well."
+data-thumb="../thumbs/nec-pc-8801/tetris.jpg"
+data-media="../media/nec-pc-8801/tetris.jpg"
+data-screenshot="../screenshots/nec-pc-8801/tetris.jpg"
+data-logo="../logos/nec-pc-8801/tetris.png"
+data-fanart="../fanart/nec-pc-8801/tetris.jpg">
+Tetris
+</a>
+</td>
+
+<td>1988</td>
+<td>Puzzle</td>
+<td>Bullet-Proof Software</td>
+<td>Bullet-Proof Software</td>
+
+</tr>
+
+<tr id="wizardry-proving-grounds-of-the-mad-overload!"><td>
+<img
+class="thumb"
+src="../thumbs/nec-pc-8801/wizardry proving grounds of the mad overload.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wizardry: Proving Grounds of the Mad Overload!"
+data-year="1985"
+data-genre="Role-Playing"
+data-publisher="ASCII"
+data-developer="Sir-Tech Software"
+data-ra=""
+data-notes="The Mad Overlord Trebor was once only power-mad, but went off the deep end after he acquired a magical amulet of immense power, only to have it stolen from him by his nemesis, the evil archmage Werdna. Werdna, not quite sure how to use the amulet properly, accidentally causes an earthquake which creates a ten-level dungeon beneath Trebor's castle. To avoid looking silly, Werdna declares the dungeon to be the new lair for him and his monster hordes. Trebor, not to be outdone, declares the labyrinth his new Proving Grounds where adventurers must prove themselves for membership in his elite honor guard, and incidentally retrieve his amulet in the process.\n\nThe first Wizardry was one of the original dungeon-crawling role-playing games, and stands along with Ultima and Might & Magic as one of the defining staples of the genre.\n\nThe player generates and control a party of up to six different adventurers, choosing from four races (humans, elves, dwarves, gnomes and hobbits), three alignments (good, neutral and evil), and four basic classes (fighter, priest, mage and thief). These can later evolve into elite classes (bishop: priest with mage spells; samurai: fighter with mage spells; lord: fighter with priest spells, and ninja: fighter with thief abilities) if they meet the necessary level requirements. After outfitting the party with basic weapons and armor, the player sends it into a 3D vector maze-like dungeon to fight monsters in turn-based combat and find treasure."
+data-thumb="../thumbs/nec-pc-8801/wizardry proving grounds of the mad overload.jpg"
+data-media="../media/nec-pc-8801/wizardry proving grounds of the mad overload.jpg"
+data-screenshot="../screenshots/nec-pc-8801/wizardry proving grounds of the mad overload.jpg"
+data-logo="../logos/nec-pc-8801/wizardry proving grounds of the mad overload.png"
+data-fanart="../fanart/nec-pc-8801/wizardry proving grounds of the mad overload.jpg">
+Wizardry: Proving Grounds of the Mad Overload!
+</a>
+</td>
+
+<td>1985</td>
+<td>Role-Playing</td>
+<td>ASCII</td>
+<td>Sir-Tech Software</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

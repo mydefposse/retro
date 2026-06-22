@@ -1,0 +1,1786 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Sega Mega Drive 32X</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/sega-mega-drive-32x.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/sega-mega-drive-32x.png"
+onerror="this.style.display='none';">
+
+<h1>Sega Mega Drive 32X</h1>
+
+
+<p class="platform-release">
+Released: 1994
+</p>
+
+
+<p>34 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Sega 32X is an add-on for the Sega Genesis video game console. Codenamed "Project Mars", the 32X was designed to expand the power of the Genesis and serve as a transitional console into the 32-bit era until the release of the Sega Saturn. Independent of the Genesis, the 32X uses its own ROM cartridges and has its own library of games. The add-on was distributed under the name Super 32X (????32X?) in Japan, Sega Genesis 32X in North America, Sega Mega Drive 32X in the PAL region, and Sega Mega 32X in Brazil.
+
+Unveiled by Sega at June 1994's Consumer Electronics Show, the 32X was presented as a low-cost option for consumers looking to play 32-bit games. Developed in response to the Atari Jaguar and concerns that the Saturn would not make it to market by the end of 1994, the product was first conceived as an entirely new console. At the suggestion of Sega of America executive Joe Miller and his team, the console was converted into an add-on to the existing Genesis and made more powerful. The final design contained two 32-bit central processing unit chips and a 3D graphics processor. To bring the new add-on to market by its scheduled release date of November 1994, development of the new system and its games were rushed. The console failed to attract third-party video game developers and consumers because of the announcement of the Sega Saturn's simultaneous release in Japan. Sega's efforts to rush the 32X to market cut into available time for game development, resulting in a weak library of forty titles that could not fully utilize the add-on's hardware, including Genesis ports. By the end of 1994, the 32X had sold 665,000 units. After price reductions in 1995, it was discontinued in 1996 as Sega turned its focus to the Saturn.
+
+The 32X is considered a commercial failure. Reception after the add-on's unveiling and launch was positive, highlighting the low price of the system and power expansion to the Genesis. Later reviews, both contemporary and retrospective, for the 32X have been mostly negative because of its shallow game library, poor market timing and the resulting market fragmentation for the Genesis.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="after-burner-complete"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/after burner complete.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="After Burner Complete"
+data-year="1995"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="Rutubo Games"
+data-ra=""
+data-notes="Strap into your lethal F14 Tomcat, kick-in the afterburner and set the skies alight! You fly through multiple day and night missions over land and sea, picking off enemy targets as you lock and launch your deadly Sidewinder missiles."
+data-thumb="../thumbs/sega-mega-drive-32x/after burner complete.jpg"
+data-media="../media/sega-mega-drive-32x/after burner complete.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/after burner complete.jpg"
+data-logo="../logos/sega-mega-drive-32x/after burner complete.png"
+data-fanart="../fanart/sega-mega-drive-32x/after burner complete.jpg">
+After Burner Complete
+</a>
+</td>
+
+<td>1995</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>Rutubo Games</td>
+
+</tr>
+
+<tr id="bc-racers"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/bc racers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="BC Racers"
+data-year="1994"
+data-genre="Racing"
+data-publisher="Front Street Publishing"
+data-developer="Core Design"
+data-ra="15652"
+data-notes="It\u2019s pre-hysterical!  Millionaire playboy caveman Millstone Rockafella arranges a wild n\u2019 wacky BC bike race, the winner of which receives the ultimate boulderdash bike.  Cool n\u2019 crazy Cliff Ace has had his sunglasses set on a boulderdash bike since he was knee-high, so he signs up for the race - taking his cave-babe Roxy along for the ride!  The 32X pushes graphics to the limit with 256 colors for in-game graphics and full 24-bit for static display.  The stone-age never looked better!"
+data-thumb="../thumbs/sega-mega-drive-32x/bc racers.jpg"
+data-media="../media/sega-mega-drive-32x/bc racers.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/bc racers.jpg"
+data-logo="../logos/sega-mega-drive-32x/bc racers.png"
+data-fanart="../fanart/sega-mega-drive-32x/bc racers.jpg">
+BC Racers
+</a>
+</td>
+
+<td>1994</td>
+<td>Racing</td>
+<td>Front Street Publishing</td>
+<td>Core Design</td>
+
+</tr>
+
+<tr id="blackthorne"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/blackthorne.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Blackthorne"
+data-year="1995"
+data-genre="Action •  Platform"
+data-publisher="Interplay"
+data-developer="Paradox Development"
+data-ra="10576"
+data-notes="Through the dark vastness of space, exiled prince Kyle Blackthorne returns to Tuul to avenge his murdered father and restore the shattered Lightstone.  The conqueror Sarlac opposes his vicious troops against the enraged prince.  But the evil lord will soon find out\u2026 an army is not enough against a single fierce fighter with a vengeance!"
+data-thumb="../thumbs/sega-mega-drive-32x/blackthorne.jpg"
+data-media="../media/sega-mega-drive-32x/blackthorne.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/blackthorne.jpg"
+data-logo="../logos/sega-mega-drive-32x/blackthorne.png"
+data-fanart="../fanart/sega-mega-drive-32x/blackthorne.jpg">
+Blackthorne
+</a>
+</td>
+
+<td>1995</td>
+<td>Action •  Platform</td>
+<td>Interplay</td>
+<td>Paradox Development</td>
+
+</tr>
+
+<tr id="brutal-above-the-claw"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/brutal above the claw.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Brutal: Above the Claw"
+data-year="1995"
+data-genre="Fighting"
+data-publisher="GameTek"
+data-developer="Alternative Reality Technologies"
+data-ra="16793"
+data-notes="Under the watchful eye of the great master Dali Llama, the worlds greatest martial artists would return to a place they knew well\u2026 Brutal Island. Each will use their own unique mental and physical martial arts style and training, in a tournament to prove the worlds one true champion.\n\nBrutal: Above the Claw, is a brilliantly rendered game of humorous cartoon style combat, combined with depth, philosophy, and an attention to detail not found in any other fighting game.\n\nGo ahead and Unleash the Animal, it's time to get Brutal."
+data-thumb="../thumbs/sega-mega-drive-32x/brutal above the claw.jpg"
+data-media="../media/sega-mega-drive-32x/brutal above the claw.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/brutal above the claw.jpg"
+data-logo="../logos/sega-mega-drive-32x/brutal above the claw.png"
+data-fanart="../fanart/sega-mega-drive-32x/brutal above the claw.jpg">
+Brutal: Above the Claw
+</a>
+</td>
+
+<td>1995</td>
+<td>Fighting</td>
+<td>GameTek</td>
+<td>Alternative Reality Technologies</td>
+
+</tr>
+
+<tr id="cosmic-carnage"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/cosmic carnage.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Cosmic Carnage"
+data-year="1994"
+data-genre="Fighting"
+data-publisher="Sega"
+data-developer="Almanic"
+data-ra="14306"
+data-notes="Cosmic Carnage is a one-on-one fighting game set in outer space. The story begins as a prison barge is hijacked by it's cargo in an escape attempt. The resulting chaos caused the barge to crash into a military cruiser. The impact caused extensive damage to both ships. There were only 8 survivors, 4 from each ship. What's worse, there's only one escape pod. You control one of the 8 survivors, and have to finish off all the others to escape with your life."
+data-thumb="../thumbs/sega-mega-drive-32x/cosmic carnage.jpg"
+data-media="../media/sega-mega-drive-32x/cosmic carnage.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/cosmic carnage.jpg"
+data-logo="../logos/sega-mega-drive-32x/cosmic carnage.png"
+data-fanart="../fanart/sega-mega-drive-32x/cosmic carnage.jpg">
+Cosmic Carnage
+</a>
+</td>
+
+<td>1994</td>
+<td>Fighting</td>
+<td>Sega</td>
+<td>Almanic</td>
+
+</tr>
+
+<tr id="darxide"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/darxide.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="DarXide"
+data-year="1996"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="Frontier Developments"
+data-ra="16795"
+data-notes="One of the last 32X games released (and exclusively in Europe), DarXide is a 3-D space shooter, inspired in part by the arcade gameplay of Asteroids. It is one of the few 32X games to used texture-mapped polygons.\n\nPlayers control a lone starship rushing to destroy oncoming asteroids and alien vessels before they annihilate defenseless human miners and colonies. Asteroids break apart into smaller rocks, which much also be hunted down and destroyed. Aliens likewise arrive in larger, more dangerous vessels."
+data-thumb="../thumbs/sega-mega-drive-32x/darxide.jpg"
+data-media="../media/sega-mega-drive-32x/darxide.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/darxide.jpg"
+data-logo="../logos/sega-mega-drive-32x/darxide.png"
+data-fanart="../fanart/sega-mega-drive-32x/darxide.jpg">
+DarXide
+</a>
+</td>
+
+<td>1996</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>Frontier Developments</td>
+
+</tr>
+
+<tr id="doom-32x"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/doom 32x.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="DOOM 32X"
+data-year="1994"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="Sega"
+data-ra=""
+data-notes="All Hell has run amok! Monstrous demons from another dimension use their gruesome talents to turn your space station into a blood-splattered slaughterhouse.\n\nThey got black magic. You got firepower. Fireballs and lost souls face shotguns, chainsaws, and rocket launchers!\n\nButcher the hordes of Hell. Or get butchered, if you don\u2019t have the skill and pure guts to save your skin!"
+data-thumb="../thumbs/sega-mega-drive-32x/doom 32x.jpg"
+data-media="../media/sega-mega-drive-32x/doom 32x.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/doom 32x.jpg"
+data-logo="../logos/sega-mega-drive-32x/doom 32x.png"
+data-fanart="../fanart/sega-mega-drive-32x/doom 32x.jpg">
+DOOM 32X
+</a>
+</td>
+
+<td>1994</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="fifa-soccer-96"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/fifa soccer 96.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="FIFA Soccer 96"
+data-year="1995"
+data-genre="Sports"
+data-publisher="Electronic Arts"
+data-developer="Probe Software"
+data-ra=""
+data-notes="The most successful football game of all time has been improved and updated for the 32X. FIFA Soccer 96 is dedicated to bring you all the action from around the globe, featuring over 3500 players from 200 teams and 12 leagues. Combined with stunning graphics, 7 camera views, 4-player mode and the usual host of options, FIFA Soccer 96 delivers the total footballing experience.\n\nThis version of FIFA 96 was only released in Europe, and stands as one of two PAL-exclusive 32X titles (the other being Darxide)."
+data-thumb="../thumbs/sega-mega-drive-32x/fifa soccer 96.jpg"
+data-media="../media/sega-mega-drive-32x/fifa soccer 96.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/fifa soccer 96.jpg"
+data-logo="../logos/sega-mega-drive-32x/fifa soccer 96.png"
+data-fanart="../fanart/sega-mega-drive-32x/fifa soccer 96.jpg">
+FIFA Soccer 96
+</a>
+</td>
+
+<td>1995</td>
+<td>Sports</td>
+<td>Electronic Arts</td>
+<td>Probe Software</td>
+
+</tr>
+
+<tr id="golf-magazine-presents-36-great-holes-starring-fred-couples"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/golf magazine presents 36 great holes starring fred couples.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Golf Magazine Presents: 36 Great Holes Starring Fred Couples"
+data-year="1995"
+data-genre="Sports"
+data-publisher="Sega"
+data-developer="Flashpoint Productions"
+data-ra=""
+data-notes="As the title implies, in 36 Great Holes the player takes control of 24 different digitized golfers \u2013 12 males and 12 females \u2013 playing in 27 historic courses in the U.S. including Disney's Eagle Pines and Tidewater Golf Club, playing 36 authentic holes. \n\nThere are seven different modes (Stroke Play, Tournament, Skins, Shoot-out, Scramble, Practice and Match Play) and three different types of golf club heads including wood, metal and graphite. There is a battery back-up to keep track of 16 different categories of stats and does feature the voice of Fred Couples."
+data-thumb="../thumbs/sega-mega-drive-32x/golf magazine presents 36 great holes starring fred couples.jpg"
+data-media="../media/sega-mega-drive-32x/golf magazine presents 36 great holes starring fred couples.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/golf magazine presents 36 great holes starring fred couples.jpg"
+data-logo="../logos/sega-mega-drive-32x/golf magazine presents 36 great holes starring fred couples.png"
+data-fanart="../fanart/sega-mega-drive-32x/golf magazine presents 36 great holes starring fred couples.jpg">
+Golf Magazine Presents: 36 Great Holes Starring Fred Couples
+</a>
+</td>
+
+<td>1995</td>
+<td>Sports</td>
+<td>Sega</td>
+<td>Flashpoint Productions</td>
+
+</tr>
+
+<tr id="knuckles-chaotix"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/knuckles chaotix.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Knuckles' Chaotix"
+data-year="1995"
+data-genre="Platform"
+data-publisher="Sega"
+data-developer="Sega"
+data-ra=""
+data-notes="A mysterious island rose from the sea shortly after the events of Sonic & Knuckles. Dr. Robotnik discovered the island, and found a mysterious ring inscribed with descriptions of the Chaos Rings, ancient Rings infused with Chaos Emerald energy. In order to find these Rings, Robotnik built his base, the Newtrogic High Zone, on the island. Mighty the Armadillo, Espio the Chameleon, Vector the Crocodile, and Charmy Bee also arrived at the island, and ended up being captured by Robotnik and Metal Sonic, and placed in Robotnik's Combi Catcher machine. Knuckles, curious about the strange island, goes there as well, and manages to rescue Espio. The two then go on to stop Robotnik from getting the Chaos Rings."
+data-thumb="../thumbs/sega-mega-drive-32x/knuckles chaotix.jpg"
+data-media="../media/sega-mega-drive-32x/knuckles chaotix.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/knuckles chaotix.jpg"
+data-logo="../logos/sega-mega-drive-32x/knuckles chaotix.png"
+data-fanart="../fanart/sega-mega-drive-32x/knuckles chaotix.jpg">
+Knuckles' Chaotix
+</a>
+</td>
+
+<td>1995</td>
+<td>Platform</td>
+<td>Sega</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="kolibri"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/kolibri.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Kolibri"
+data-year="1995"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="Novotrade International"
+data-ra="14308"
+data-notes="Deep in the Earth, a powerful ancient crystal hums, fueling the balance of nature. But when its toxic twin plummets to Earth, nature totters on the edge of extinction! Only one hope survives - Kolibri. Though small and alone, the hummingbird must battle the invasive mutation in all its malignant form to restore Earth. But at what cost?\n\n* Feel the rush as Kolibri zips, dives and dodges in intoxicating aerial acrobatics!\n* Soar through the splendors of nature! Kolibri's world has perfect realism, depth and a panoramic menagerie of colors!\n* Combat bizarre, vicious creatures created by the alien crystal to hunt Kolibri!\n* See nature at its most helpless... and most powerful as Kolibri gains strength. Help Kolibri conquer the cosmic threat in a classic battle of good and evil!\n* Abundant weapons and pick-ups, including lasers, rings of fire and smart bombs, pack this game with punch!"
+data-thumb="../thumbs/sega-mega-drive-32x/kolibri.jpg"
+data-media="../media/sega-mega-drive-32x/kolibri.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/kolibri.jpg"
+data-logo="../logos/sega-mega-drive-32x/kolibri.png"
+data-fanart="../fanart/sega-mega-drive-32x/kolibri.jpg">
+Kolibri
+</a>
+</td>
+
+<td>1995</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>Novotrade International</td>
+
+</tr>
+
+<tr id="metal-head"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/metal head.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Metal Head"
+data-year="1995"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="Sega"
+data-ra=""
+data-notes="It has been five years after the formation of the Worldwide Federation. Although war has been averted, terrorist cells around the world threaten the stability of the federation. To combat this menace, the Federation has created a bi-pedal armored tank known as the Metal Head. You are a Metal Head pilot, and you have to use all the weapons at your disposal to take out the terrorists.\n\nMetal Head is a bit of a variation on the usual giant robot combat game. The game's mission areas bear more resemblance to a first-person shooter than a simulation. The graphics are all rendered in texture mapped polygons, which is unusual for a 32X game."
+data-thumb="../thumbs/sega-mega-drive-32x/metal head.jpg"
+data-media="../media/sega-mega-drive-32x/metal head.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/metal head.jpg"
+data-logo="../logos/sega-mega-drive-32x/metal head.png"
+data-fanart="../fanart/sega-mega-drive-32x/metal head.jpg">
+Metal Head
+</a>
+</td>
+
+<td>1995</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="mortal-kombat-ii"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/mortal kombat ii.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mortal Kombat II"
+data-year="1994"
+data-genre="Fighting"
+data-publisher="Acclaim Entertainment"
+data-developer="Probe Software"
+data-ra=""
+data-notes="Following his failure to defeat Liu Kang in the first Mortal Kombat game, the evil sorcerer Shang Tsung begs his master, Shao Kahn, to spare his life. He tells Shao Kahn that the invitation for Mortal Kombat cannot be turned down, and if they hold it in Outworld, the Earthrealm warriors must attend. Kahn agrees to this plan, and even restores Tsung's youth. He then extends the invitation to Raiden, who gathers his warriors and takes them into Outworld. The new tournament is much more dangerous, as Shao Kahn has the home field advantage, and an Outworld victory will allow him to subdue Earthrealm."
+data-thumb="../thumbs/sega-mega-drive-32x/mortal kombat ii.jpg"
+data-media="../media/sega-mega-drive-32x/mortal kombat ii.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/mortal kombat ii.jpg"
+data-logo="../logos/sega-mega-drive-32x/mortal kombat ii.png"
+data-fanart="../fanart/sega-mega-drive-32x/mortal kombat ii.jpg">
+Mortal Kombat II
+</a>
+</td>
+
+<td>1994</td>
+<td>Fighting</td>
+<td>Acclaim Entertainment</td>
+<td>Probe Software</td>
+
+</tr>
+
+<tr id="motocross-championship"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/motocross championship.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Motocross Championship"
+data-year="1995"
+data-genre="Racing"
+data-publisher="Sega"
+data-developer="Artech Digital Entertainment"
+data-ra="16604"
+data-notes="Motocross Championship is the only dirtbike racing game for the 32X. The action takes place from a behind-the-bike perspective, and makes use of the 32X's hardware bitmap scaling to present a 3D graphical effect.\n\nLike the title suggests, the main game mode is a points based championship. You can compete in one of 3 motorcycle classes over 12 indoor and outdoor tracks. There's also two player split screen mode so you can share off-road fun with a friend."
+data-thumb="../thumbs/sega-mega-drive-32x/motocross championship.jpg"
+data-media="../media/sega-mega-drive-32x/motocross championship.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/motocross championship.jpg"
+data-logo="../logos/sega-mega-drive-32x/motocross championship.png"
+data-fanart="../fanart/sega-mega-drive-32x/motocross championship.jpg">
+Motocross Championship
+</a>
+</td>
+
+<td>1995</td>
+<td>Racing</td>
+<td>Sega</td>
+<td>Artech Digital Entertainment</td>
+
+</tr>
+
+<tr id="nba-jam-tournament-edition"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/nba jam tournament edition.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="NBA Jam Tournament Edition"
+data-year="1995"
+data-genre="Sports"
+data-publisher="Acclaim Entertainment"
+data-developer="Iguana Entertainment"
+data-ra="16062"
+data-notes="BOOMSHAKALAKA!\nJam home the #1 arcade phenomenon! From outrageous Tomahawk jams to wild full-court shots, you control the super moves, amazing blocks and awesome slam dunks of the NBA's hottest stars! Ultra-realistic digitized graphics and play-by-play. 4-player adaptable for true arcade competition. NBA JAM puts you on the court and above the rim!"
+data-thumb="../thumbs/sega-mega-drive-32x/nba jam tournament edition.jpg"
+data-media="../media/sega-mega-drive-32x/nba jam tournament edition.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/nba jam tournament edition.jpg"
+data-logo="../logos/sega-mega-drive-32x/nba jam tournament edition.png"
+data-fanart="../fanart/sega-mega-drive-32x/nba jam tournament edition.jpg">
+NBA Jam Tournament Edition
+</a>
+</td>
+
+<td>1995</td>
+<td>Sports</td>
+<td>Acclaim Entertainment</td>
+<td>Iguana Entertainment</td>
+
+</tr>
+
+<tr id="nfl-quarterback-club"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/nfl quarterback club.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="NFL Quarterback Club"
+data-year="1995"
+data-genre="Sports"
+data-publisher="Acclaim Entertainment"
+data-developer="Iguana Entertainment"
+data-ra=""
+data-notes="It's a 32X blitz... NFL Quarterback Club upgrades the action with the most authentic gridiron game play and '94 QB and team attributes! All-new advanced passing gives you 80 yards of viewable field to hit the open man, multi-view perspectives heat up the running game with in-your-face action and the exclusive Smooth-Cam delivers the most advanced instant replay from virtually any angle. NFL Quarterback Club on 32X..."
+data-thumb="../thumbs/sega-mega-drive-32x/nfl quarterback club.jpg"
+data-media="../media/sega-mega-drive-32x/nfl quarterback club.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/nfl quarterback club.jpg"
+data-logo="../logos/sega-mega-drive-32x/nfl quarterback club.png"
+data-fanart="../fanart/sega-mega-drive-32x/nfl quarterback club.jpg">
+NFL Quarterback Club
+</a>
+</td>
+
+<td>1995</td>
+<td>Sports</td>
+<td>Acclaim Entertainment</td>
+<td>Iguana Entertainment</td>
+
+</tr>
+
+<tr id="pitfall-the-mayan-adventure"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/pitfall the mayan adventure.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pitfall: The Mayan Adventure"
+data-year="1995"
+data-genre="Platform"
+data-publisher="Activision"
+data-developer="Zombie"
+data-ra=""
+data-notes="Harry Jr. I've been taken captive by the spirit of an evil Mayan warrior. Need help right away! Continue journey as planned - through the rain forests and mines, past the waterfalls and ruins. But be careful...the Mayan empire is filled with deadly traps and enemies. Think fast and move even faster. Hurry! Time is running out... - Pitfall Harry"
+data-thumb="../thumbs/sega-mega-drive-32x/pitfall the mayan adventure.jpg"
+data-media="../media/sega-mega-drive-32x/pitfall the mayan adventure.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/pitfall the mayan adventure.jpg"
+data-logo="../logos/sega-mega-drive-32x/pitfall the mayan adventure.png"
+data-fanart="../fanart/sega-mega-drive-32x/pitfall the mayan adventure.jpg">
+Pitfall: The Mayan Adventure
+</a>
+</td>
+
+<td>1995</td>
+<td>Platform</td>
+<td>Activision</td>
+<td>Zombie</td>
+
+</tr>
+
+<tr id="primal-rage"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/primal rage.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Primal Rage"
+data-year="1995"
+data-genre="Fighting"
+data-publisher="Sega"
+data-developer="Probe Software"
+data-ra="16802"
+data-notes="A meteor slams to Earth and human authority is shattered in seconds. The planet cracks open and the new world order comes crawling to the surface. Huge dinosaurs now begin their furious battle for domination, as humankind stands on the brink of extinction! Welcome to Urth.\n\nPrimal Rage is a one-on-one fighting game featuring dinosaurs and giant apes as the fighters. The graphics are done with digitized stop-motion animation. Gameplay is similar to Mortal Kombat in that it is viewed from a side perspective, and features deadly finishing moves at the end of the match."
+data-thumb="../thumbs/sega-mega-drive-32x/primal rage.jpg"
+data-media="../media/sega-mega-drive-32x/primal rage.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/primal rage.jpg"
+data-logo="../logos/sega-mega-drive-32x/primal rage.png"
+data-fanart="../fanart/sega-mega-drive-32x/primal rage.jpg">
+Primal Rage
+</a>
+</td>
+
+<td>1995</td>
+<td>Fighting</td>
+<td>Sega</td>
+<td>Probe Software</td>
+
+</tr>
+
+<tr id="rbi-baseball-95"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/rbi baseball 95.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="RBI Baseball '95"
+data-year="1995"
+data-genre="Sports"
+data-publisher="Time Warner Interactive"
+data-developer="Tengen"
+data-ra="16803"
+data-notes="Step up to the plate and drive one into the cheap seats! Crisp color graphics and realistic gameplay make RBI Baseball '95 the latest, greatest installment in the best-selling RBI Baseball videogame series. Improved artificial intelligence enhances computer opponent strategies like base stealing, bunting and runner pick-off attempts. Experience an incredible view of those fastballs, curveballs, and sliders with the large, realistic batter/catcher playing view. State-of-the-art digital video, displayed in 256 colors, provides a fantastic look and feel at the plate. Jumping and diving catches...stolen bases...powerful home runs...you'll find it all and more in RBI Baseball '95."
+data-thumb="../thumbs/sega-mega-drive-32x/rbi baseball 95.jpg"
+data-media="../media/sega-mega-drive-32x/rbi baseball 95.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/rbi baseball 95.jpg"
+data-logo="../logos/sega-mega-drive-32x/rbi baseball 95.png"
+data-fanart="../fanart/sega-mega-drive-32x/rbi baseball 95.jpg">
+RBI Baseball '95
+</a>
+</td>
+
+<td>1995</td>
+<td>Sports</td>
+<td>Time Warner Interactive</td>
+<td>Tengen</td>
+
+</tr>
+
+<tr id="romance-of-the-three-kingdoms-iv-wall-of-fire"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/romance of the three kingdoms iv wall of fire.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Romance of the Three Kingdoms IV: Wall of Fire"
+data-year="1995"
+data-genre="Strategy"
+data-publisher="Koei"
+data-developer="Sega"
+data-ra=""
+data-notes="It's the era of the Second Han Dynasty, and China is being overrun by powerful warlords. A struggle for power among the court families has spawned a time known as the Three Kingdoms, and it's up to you (as the current ruler) to restore peace to your troubled country. Rebuild the land by creating a strong military or try to outwit your opponents using negotiation.\n\nSangokushi IV (Romance of the Three Kingdoms IV: Wall of Fire outside Japan for PS1 and Saturn) is the fourth game in Koei's Romance of the Three Kingdoms series. Sangokushi IV was the first game for the Playstation & Saturn consoles and the last in the series to be released on PC in the U.S. until Romance of the Three Kingdoms XI."
+data-thumb="../thumbs/sega-mega-drive-32x/romance of the three kingdoms iv wall of fire.jpg"
+data-media="../media/sega-mega-drive-32x/romance of the three kingdoms iv wall of fire.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/romance of the three kingdoms iv wall of fire.jpg"
+data-logo="../logos/sega-mega-drive-32x/romance of the three kingdoms iv wall of fire.png"
+data-fanart="../fanart/sega-mega-drive-32x/romance of the three kingdoms iv wall of fire.jpg">
+Romance of the Three Kingdoms IV: Wall of Fire
+</a>
+</td>
+
+<td>1995</td>
+<td>Strategy</td>
+<td>Koei</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="shadow-squadron"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/shadow squadron.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Shadow Squadron"
+data-year="1995"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="Sega"
+data-ra="10109"
+data-notes="Chaos has broken out on the edge of the Galaxy. A diabolical power has begun construction of a powerful sun laser. You are the Shadow Squadron's newest fighter jock and the fate and hope of the federation rests in your hands. Destroy the Sun Laser or face the FIRE!!!\n\nEnter the cockpit of your laser-equipped fighter and prepare to be thrust into the 3D world of deep-space battle. Pilot your craft across galaxies, destroying all enemy fleets in your path, or enter 2-player mode as pilot and gunner in pursuit of your ultimate mission."
+data-thumb="../thumbs/sega-mega-drive-32x/shadow squadron.jpg"
+data-media="../media/sega-mega-drive-32x/shadow squadron.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/shadow squadron.jpg"
+data-logo="../logos/sega-mega-drive-32x/shadow squadron.png"
+data-fanart="../fanart/sega-mega-drive-32x/shadow squadron.jpg">
+Shadow Squadron
+</a>
+</td>
+
+<td>1995</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="space-harrier"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/space harrier.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Harrier"
+data-year="1994"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="Rutubo Games"
+data-ra="10565"
+data-notes="Space Harrier is set in the \"Fantasy Zone\", a surreal world composed of bright colors and a checkerboard-styled ground. The enemies are also unique, featuring prehistoric animals, Chinese dragons, and alien pods. The player is forced along the levels, running or flying around enemy fire, while shooting back with fireballs via the character's under-arm cannon (which doubles as a rocket-esque device allowing the character to fly)."
+data-thumb="../thumbs/sega-mega-drive-32x/space harrier.jpg"
+data-media="../media/sega-mega-drive-32x/space harrier.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/space harrier.jpg"
+data-logo="../logos/sega-mega-drive-32x/space harrier.png"
+data-fanart="../fanart/sega-mega-drive-32x/space harrier.jpg">
+Space Harrier
+</a>
+</td>
+
+<td>1994</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>Rutubo Games</td>
+
+</tr>
+
+<tr id="star-trek-starfleet-academy-starship-bridge-simulator"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/star trek starfleet academy starship bridge simulator.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Star Trek: Starfleet Academy: Starship Bridge Simulator"
+data-year="1995"
+data-genre="Flight Simulator •  Shooter"
+data-publisher="Interplay"
+data-developer="High Voltage Software"
+data-ra=""
+data-notes="Command the Starfleet's finest vessels and pilot your way through the dozens of stunning scenarios. Sneak through the Klingon gauntlet to rescue thousands of colonists... or lose your whole crew in a warp core breach. Can you master the legendary Kobayashi Maru scenario?\n\n- Command five different Federation vessels! Warp through space abroad the bridge of a star cruiser.\n- Serve your initiation as a cadet and work to the ultimate honor of command!\n- Experience the beauty of the final frontier in high-speed 3D polygon graphics."
+data-thumb="../thumbs/sega-mega-drive-32x/star trek starfleet academy starship bridge simulator.jpg"
+data-media="../media/sega-mega-drive-32x/star trek starfleet academy starship bridge simulator.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/star trek starfleet academy starship bridge simulator.jpg"
+data-logo="../logos/sega-mega-drive-32x/star trek starfleet academy starship bridge simulator.png"
+data-fanart="../fanart/sega-mega-drive-32x/star trek starfleet academy starship bridge simulator.jpg">
+Star Trek: Starfleet Academy: Starship Bridge Simulator
+</a>
+</td>
+
+<td>1995</td>
+<td>Flight Simulator •  Shooter</td>
+<td>Interplay</td>
+<td>High Voltage Software</td>
+
+</tr>
+
+<tr id="star-wars-arcade"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/star wars arcade.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Star Wars Arcade"
+data-year="1994"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="Sega"
+data-ra="14206"
+data-notes="Star Wars Arcade is a 3D shoot 'em-up set in Episodes 4, 5, and 6 of the Star Wars saga. You take control of either an X-Wing or Y-Wing, and are put right in the middle of the space combat. In some levels, you have to shoot down a specific number of TIE fighters before time runs out. In other levels, your goal is to simply to make it to the end without getting blasted out of the sky."
+data-thumb="../thumbs/sega-mega-drive-32x/star wars arcade.jpg"
+data-media="../media/sega-mega-drive-32x/star wars arcade.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/star wars arcade.jpg"
+data-logo="../logos/sega-mega-drive-32x/star wars arcade.png"
+data-fanart="../fanart/sega-mega-drive-32x/star wars arcade.jpg">
+Star Wars Arcade
+</a>
+</td>
+
+<td>1994</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="t-mek"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/t mek.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="T-MEK"
+data-year="1995"
+data-genre="Shooter"
+data-publisher="Time Warner Interactive"
+data-developer="B.I.T.S."
+data-ra=""
+data-notes="T-MEK is essentially an updated Battlezone. You are a warrior battling in the T-Mek competition, a hugely popular event in the future. You control a hovercraft and try to blow up everyone else.\n\nThe action is viewed from your perspective as you travel around the arena. You also have an overall view of where your opponents are. Terrain surfaces and characteristics vary in each battle. In most levels you need to reach a certain score to progress, however there are out-and-out one-off Deathmatch duels to deal with periodically."
+data-thumb="../thumbs/sega-mega-drive-32x/t mek.jpg"
+data-media="../media/sega-mega-drive-32x/t mek.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/t mek.jpg"
+data-logo="../logos/sega-mega-drive-32x/t mek.png"
+data-fanart="../fanart/sega-mega-drive-32x/t mek.jpg">
+T-MEK
+</a>
+</td>
+
+<td>1995</td>
+<td>Shooter</td>
+<td>Time Warner Interactive</td>
+<td>B.I.T.S.</td>
+
+</tr>
+
+<tr id="tempo"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/tempo.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tempo"
+data-year="1995"
+data-genre="Action •  Platform"
+data-publisher="Sega"
+data-developer="Red Company"
+data-ra="14307"
+data-notes="Tempo is a grasshopper who lives on Planet Rythmia, the world of music. Unfortunately, the malevolent King Dirge is trying to steal all the rhythm from the planet. It's unclear as to how a creature with no appreciation for music became King, but it's up to Tempo to stop him!\n\nTempo's game is a side scrolling platformer with 7 levels. It's a single player game, although you can collect \"dance\" power-ups that allow you to call your friend, a butterfly, to help you defeat your enemies using killer dance moves."
+data-thumb="../thumbs/sega-mega-drive-32x/tempo.jpg"
+data-media="../media/sega-mega-drive-32x/tempo.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/tempo.jpg"
+data-logo="../logos/sega-mega-drive-32x/tempo.png"
+data-fanart="../fanart/sega-mega-drive-32x/tempo.jpg">
+Tempo
+</a>
+</td>
+
+<td>1995</td>
+<td>Action •  Platform</td>
+<td>Sega</td>
+<td>Red Company</td>
+
+</tr>
+
+<tr id="the-amazing-spider-man-web-of-fire"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/the amazing spider man web of fire.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Amazing Spider-Man: Web of Fire"
+data-year="1996"
+data-genre="Action •  Platform"
+data-publisher="Sega"
+data-developer="BlueSky Software"
+data-ra="14844"
+data-notes="The game features side-scrolling action in which Spider-Man has to take on various enemy types which want to kill him. Besides the usual range of melee kicks and punches, he also sticks to walls and uses special attacks based on his web fluid. Creating spider web \"vines\" are used to swing from building to building; either required to cross gaps or simply to progress faster in the levels. Every use of his fluid decreases a web bar which, just like health, is refilled by picking up items floating in the game world. The first goal of the game is to rescue the superhero Daredevil, who then continues to help Spider-Man out: after activating the associated special attack, Daredevil covers the screen with his attacks."
+data-thumb="../thumbs/sega-mega-drive-32x/the amazing spider man web of fire.jpg"
+data-media="../media/sega-mega-drive-32x/the amazing spider man web of fire.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/the amazing spider man web of fire.jpg"
+data-logo="../logos/sega-mega-drive-32x/the amazing spider man web of fire.png"
+data-fanart="../fanart/sega-mega-drive-32x/the amazing spider man web of fire.jpg">
+The Amazing Spider-Man: Web of Fire
+</a>
+</td>
+
+<td>1996</td>
+<td>Action •  Platform</td>
+<td>Sega</td>
+<td>BlueSky Software</td>
+
+</tr>
+
+<tr id="toughman-contest"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/toughman contest.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Toughman Contest"
+data-year="1995"
+data-genre="Sports"
+data-publisher="Electronic Arts"
+data-developer="High Score Productions"
+data-ra="16807"
+data-notes="Toughman Contest is a game based on the world famous boxing competition of the same name. You pick one of 24 fighters, compete in one of 5 locations from around the world, and re-create the Toughman tournament as seen on TV.\n\nThe boxing action is viewed from behind the back of fighter you control. Your fighter is rendered as an outline, so you can see what your opponent is up to and react accordingly. Toughman matches consist of three one minute rounds. Your goal is to KO your opponent by causing their stamina meter to decrease to the point where they fall down, or beating on them enough that you are scored the winner at end of the third round."
+data-thumb="../thumbs/sega-mega-drive-32x/toughman contest.jpg"
+data-media="../media/sega-mega-drive-32x/toughman contest.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/toughman contest.jpg"
+data-logo="../logos/sega-mega-drive-32x/toughman contest.png"
+data-fanart="../fanart/sega-mega-drive-32x/toughman contest.jpg">
+Toughman Contest
+</a>
+</td>
+
+<td>1995</td>
+<td>Sports</td>
+<td>Electronic Arts</td>
+<td>High Score Productions</td>
+
+</tr>
+
+<tr id="virtua-fighter"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/virtua fighter.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Virtua Fighter"
+data-year="1995"
+data-genre="Fighting"
+data-publisher="Sega"
+data-developer="Sega"
+data-ra="14304"
+data-notes="Virtua Fighter was the first of it's kind: A one-on-one fighting game featuring fully 3D environments and characters. The fighters and arenas are rendered in flat-shaded polygons. Unlike many fighting games, Virtua Fighter focuses on deep gameplay based on actual fighting styles, rather than outrageous special moves and story lines.\n\nThere are 8 fighters to choose from in Virtua Fighter, and an equal number of fighting backdrops in which to compete. Each fighter has a distinctive fighting style, and their own set of signature moves."
+data-thumb="../thumbs/sega-mega-drive-32x/virtua fighter.jpg"
+data-media="../media/sega-mega-drive-32x/virtua fighter.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/virtua fighter.jpg"
+data-logo="../logos/sega-mega-drive-32x/virtua fighter.png"
+data-fanart="../fanart/sega-mega-drive-32x/virtua fighter.jpg">
+Virtua Fighter
+</a>
+</td>
+
+<td>1995</td>
+<td>Fighting</td>
+<td>Sega</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="virtua-racing-deluxe"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/virtua racing deluxe.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Virtua Racing Deluxe"
+data-year="1994"
+data-genre="Racing"
+data-publisher="Sega"
+data-developer="Sega"
+data-ra=""
+data-notes="Virtua Racing Deluxe is an enhanced arcade-to-console conversion of Sega's 3D racing game. This game is primarily an arcade-style affair; Players compete in a 5 lap race with timed checkpoints. It's also possible to play with 2 players in a split-screen mode.\n\nThe 32X version of Virtua Racing adds a couple of new features. There are now 3 different types of cars to drive, including a stock car and a prototype racer. Furthermore, there are two all-new tracks."
+data-thumb="../thumbs/sega-mega-drive-32x/virtua racing deluxe.jpg"
+data-media="../media/sega-mega-drive-32x/virtua racing deluxe.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/virtua racing deluxe.jpg"
+data-logo="../logos/sega-mega-drive-32x/virtua racing deluxe.png"
+data-fanart="../fanart/sega-mega-drive-32x/virtua racing deluxe.jpg">
+Virtua Racing Deluxe
+</a>
+</td>
+
+<td>1994</td>
+<td>Racing</td>
+<td>Sega</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="world-series-baseball-starring-deion-sanders"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/world series baseball starring deion sanders.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="World Series Baseball Starring Deion Sanders"
+data-year="1996"
+data-genre="Sports"
+data-publisher="Sega"
+data-developer="BlueSky Software"
+data-ra=""
+data-notes="World Series Baseball Starring Deion Sanders is an entry in the World Series Baseball video game franchise featuring a full MLBPA license, which allows it to have all 28 teams and 700 real-life players. \n\nThere are three main game modes: Exhibition, Full season, and Playoff. Exhibition is useful for a quick game between any two teams of the player's choice. Full season allows the player to lead a team through an entire Major League Baseball season. Finally, the Playoff mode focuses on the games leading up to the World Series. Also included are two different home run derby modes, and a full draft and trade for creating a custom team."
+data-thumb="../thumbs/sega-mega-drive-32x/world series baseball starring deion sanders.jpg"
+data-media="../media/sega-mega-drive-32x/world series baseball starring deion sanders.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/world series baseball starring deion sanders.jpg"
+data-logo="../logos/sega-mega-drive-32x/world series baseball starring deion sanders.png"
+data-fanart="../fanart/sega-mega-drive-32x/world series baseball starring deion sanders.jpg">
+World Series Baseball Starring Deion Sanders
+</a>
+</td>
+
+<td>1996</td>
+<td>Sports</td>
+<td>Sega</td>
+<td>BlueSky Software</td>
+
+</tr>
+
+<tr id="wwf-raw"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/wwf raw.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="WWF Raw"
+data-year="1995"
+data-genre="Fighting •  Sports"
+data-publisher="Acclaim Entertainment"
+data-developer="Sculptured Software"
+data-ra=""
+data-notes="Get RAW like never before! It's the ultimate 32X ringside slugfest: next-generation graphics, upgraded sound f/x, the hottest WWF superstars, mat-pounding new moves like the high impact powerslam, all new pins like the in-you-face \"showboat\" and more out-of-the ring, anything goes mayhem than any other game! Now more than ever...RAW IS WAR!"
+data-thumb="../thumbs/sega-mega-drive-32x/wwf raw.jpg"
+data-media="../media/sega-mega-drive-32x/wwf raw.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/wwf raw.jpg"
+data-logo="../logos/sega-mega-drive-32x/wwf raw.png"
+data-fanart="../fanart/sega-mega-drive-32x/wwf raw.jpg">
+WWF Raw
+</a>
+</td>
+
+<td>1995</td>
+<td>Fighting •  Sports</td>
+<td>Acclaim Entertainment</td>
+<td>Sculptured Software</td>
+
+</tr>
+
+<tr id="wwf-wrestlemania-the-arcade-game"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/wwf wrestlemania the arcade game.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="WWF WrestleMania: The Arcade Game"
+data-year="1995"
+data-genre="Fighting •  Sports"
+data-publisher="Acclaim Entertainment"
+data-developer="Sculptured Software"
+data-ra="14831"
+data-notes="WWF WrestleMania: The Arcade Game merges the personalities and action of the WWF TV show characters with a Mortal Kombat-style fighting game. This title features digitized graphics of 8 WWF superstars: Doink, Razor Ramon, Bret \"Hit Man\" Hart, Shawn Michaels, The Undertaker, Yokozuna, Bam Bam Bigelow, and Lex Luger.\n\nAlthough presented as a wrestling title, this game is structured like a one-on-one fighter, features over-the-top special moves characteristic of WWF. Each match is divided into a series of rounds, much like a fighting game. Instead of each round ending in a KO, it simply ends when the player forces the other wrestler(s) to fall by reducing their energy meter. Game modes include single player arcade mode, tournament mode, and versus mode for one-on-one multiplayer."
+data-thumb="../thumbs/sega-mega-drive-32x/wwf wrestlemania the arcade game.jpg"
+data-media="../media/sega-mega-drive-32x/wwf wrestlemania the arcade game.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/wwf wrestlemania the arcade game.jpg"
+data-logo="../logos/sega-mega-drive-32x/wwf wrestlemania the arcade game.png"
+data-fanart="../fanart/sega-mega-drive-32x/wwf wrestlemania the arcade game.jpg">
+WWF WrestleMania: The Arcade Game
+</a>
+</td>
+
+<td>1995</td>
+<td>Fighting •  Sports</td>
+<td>Acclaim Entertainment</td>
+<td>Sculptured Software</td>
+
+</tr>
+
+<tr id="zaxxons-motherbase-2000"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-drive-32x/zaxxon s motherbase 2000.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Zaxxon's Motherbase 2000"
+data-year="1995"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="CSK Research Institute"
+data-ra=""
+data-notes="This 32X-exclusive sci-fi shooter is similar gameplay-wise to Sega's arcade game Zaxxon. The graphics consist of a diagonally scrolling playfield which creates a pseudo 3D environment. The backgrounds are drawn using 2D scrolling planes, but the enemy and ship objects are drawn using 3D flat-shaded polygons.\n\nAlthough the basic goal of each of the 9 levels is to shoot everything without getting shot, the game has a strategic element. Your basic spacecraft has very little firepower, and can only sustain one hit. To make matters worse, there are very few power-ups. In order to survive, you have to jump on top of enemies and take control of their weapons systems. This system allows for a large variety of player-controllable ships."
+data-thumb="../thumbs/sega-mega-drive-32x/zaxxon s motherbase 2000.jpg"
+data-media="../media/sega-mega-drive-32x/zaxxon s motherbase 2000.jpg"
+data-screenshot="../screenshots/sega-mega-drive-32x/zaxxon s motherbase 2000.jpg"
+data-logo="../logos/sega-mega-drive-32x/zaxxon s motherbase 2000.png"
+data-fanart="../fanart/sega-mega-drive-32x/zaxxon s motherbase 2000.jpg">
+Zaxxon's Motherbase 2000
+</a>
+</td>
+
+<td>1995</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>CSK Research Institute</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

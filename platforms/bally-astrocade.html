@@ -1,0 +1,1986 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Bally Astrocade</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/bally-astrocade.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/bally-astrocade.png"
+onerror="this.style.display='none';">
+
+<h1>Bally Astrocade</h1>
+
+
+<p class="platform-release">
+Released: 1977
+</p>
+
+
+<p>40 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Bally Astrocade, originally referred to as the Bally Home Library Computer, is a second generation (1976–1992) home video game console developed by Midway and distributed by Bally Manufacturing. It was released in late 1977 in North America at a retail price of $299. The console was not released outside North America. The Astrocade was known for having the most powerful graphics and sound capabilities for all consoles of it's era. The console was discontinued in mid to late 1983.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="280-zzzap---dodgem"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/280 zzzap dodgem.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="280 Zzzap / Dodgem"
+data-year="1978"
+data-genre="Compilation •  Racing"
+data-publisher="Midway"
+data-developer="Dave Nutting Associates"
+data-ra=""
+data-notes="The title was named after the US advertising campaign for the Datsun 280Z. Players can drive up to 200 miles per hour (320 km/h) while navigating a tricky road course at night. Players must watch out for treacherous turns, nasty competitors, and the ever-present time limit.\n\nIt is one of the earliest games, if not the earliest, with authorized branding."
+data-thumb="../thumbs/bally-astrocade/280 zzzap dodgem.jpg"
+data-media="../media/bally-astrocade/280 zzzap dodgem.jpg"
+data-screenshot="../screenshots/bally-astrocade/280 zzzap dodgem.jpg"
+data-logo="../logos/bally-astrocade/280 zzzap dodgem.png"
+data-fanart="../fanart/bally-astrocade/280 zzzap dodgem.jpg">
+280 Zzzap / Dodgem
+</a>
+</td>
+
+<td>1978</td>
+<td>Compilation •  Racing</td>
+<td>Midway</td>
+<td>Dave Nutting Associates</td>
+
+</tr>
+
+<tr id="amazing-maze-+-tic-tac-toe"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/amazing maze tic tac toe.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Amazing Maze + Tic-Tac-Toe"
+data-year="1979"
+data-genre="Compilation •  Strategy"
+data-publisher="Bally Manufacturing"
+data-developer="Dave Nutting Associates"
+data-ra=""
+data-notes="Two mind-boggling challenges! Amazing Maze is a race through a maze between you and the computer or another player. The maze is truly amazing because it changes every time you play. Select easy ones or hard ones to match any skill level. Tic-Tac-Toe is the traditional game with a diabolical twist. You get to play against the computer! 1 or 2 players."
+data-thumb="../thumbs/bally-astrocade/amazing maze tic tac toe.jpg"
+data-media="../media/bally-astrocade/amazing maze tic tac toe.jpg"
+data-screenshot="../screenshots/bally-astrocade/amazing maze tic tac toe.jpg"
+data-logo="../logos/bally-astrocade/amazing maze tic tac toe.png"
+data-fanart="../fanart/bally-astrocade/amazing maze tic tac toe.jpg">
+Amazing Maze + Tic-Tac-Toe
+</a>
+</td>
+
+<td>1979</td>
+<td>Compilation •  Strategy</td>
+<td>Bally Manufacturing</td>
+<td>Dave Nutting Associates</td>
+
+</tr>
+
+<tr id="astro-battle-2009"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/astro battle 2009.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Astro Battle 2009"
+data-year="1979"
+data-genre="Shooter"
+data-publisher="Astrovision"
+data-developer="Bally Midway"
+data-ra=""
+data-notes="Astro Battle 2009 (or sometimes just Astro Battle) is a Space Invaders clone published by Bally Manufacturing in 1978 for the Bally Astrocade arcade system. The aim is to defeat waves of aliens with a laser cannon and earn as many points as possible. Unlike Space Invaders, Astro Battle 2009 is in color."
+data-thumb="../thumbs/bally-astrocade/astro battle 2009.jpg"
+data-media="../media/bally-astrocade/astro battle 2009.jpg"
+data-screenshot="../screenshots/bally-astrocade/astro battle 2009.jpg"
+data-logo="../logos/bally-astrocade/astro battle 2009.png"
+data-fanart="../fanart/bally-astrocade/astro battle 2009.jpg">
+Astro Battle 2009
+</a>
+</td>
+
+<td>1979</td>
+<td>Shooter</td>
+<td>Astrovision</td>
+<td>Bally Midway</td>
+
+</tr>
+
+<tr id="bally-black-box"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/bally black box.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Bally Black Box"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/bally-astrocade/bally black box.jpg"
+data-media="../media/bally-astrocade/bally black box.jpg"
+data-screenshot="../screenshots/bally-astrocade/bally black box.jpg"
+data-logo="../logos/bally-astrocade/bally black box.png"
+data-fanart="../fanart/bally-astrocade/bally black box.jpg">
+Bally Black Box
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="bally-pin"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/bally pin.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Bally Pin"
+data-year="1979"
+data-genre="Pinball"
+data-publisher="Bally Manufacturing"
+data-developer="Dave Nutting Associates"
+data-ra=""
+data-notes="Bally Pin is a pinball game featuring two different tables. The game is played with two joysticks, with one controlling the two left flippers and the other controlling the two to the right. The game can be played by up to four players who take turns until all player have used up all of their five balls. The aim is simply to get the highest score. The two tables are similar but with slightly different layouts and both feature six bumpers (lit or unlit), drop targets, upper kicker targets and a spinner. The ball is meant to react as a real ball would when struck by a flipper with the speed and angle of it being affected by where on the flipper it is hit."
+data-thumb="../thumbs/bally-astrocade/bally pin.jpg"
+data-media="../media/bally-astrocade/bally pin.jpg"
+data-screenshot="../screenshots/bally-astrocade/bally pin.jpg"
+data-logo="../logos/bally-astrocade/bally pin.png"
+data-fanart="../fanart/bally-astrocade/bally pin.jpg">
+Bally Pin
+</a>
+</td>
+
+<td>1979</td>
+<td>Pinball</td>
+<td>Bally Manufacturing</td>
+<td>Dave Nutting Associates</td>
+
+</tr>
+
+<tr id="blackjack---poker---acey-deucey"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/blackjack poker acey deucey.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Blackjack / Poker / Acey-Deucey"
+data-year="1979"
+data-genre="Compilation"
+data-publisher="Bally Manufacturing"
+data-developer="Bally Manufacturing"
+data-ra=""
+data-notes="Blackjack / Poker / Acey-Deucey is a compilation of three classic card games. In Blackjack the goal is to get a card value of 21 or as close to without going over. All casino rules apply such as doubling down, splitting, and an automatic win with five cards.\n\nPoker is a version of poker using five cards up and three draw maximum. Players bet after seeing each initial five cards and can then replace up to three cards with a new random card. Afterwards whoever has the best poker hand wins the round.\n\nAcey-Deucey is a simple betting game where the player can either bet or fold on whether the next card drawn will have a value that lies between the last two cards.."
+data-thumb="../thumbs/bally-astrocade/blackjack poker acey deucey.jpg"
+data-media="../media/bally-astrocade/blackjack poker acey deucey.jpg"
+data-screenshot="../screenshots/bally-astrocade/blackjack poker acey deucey.jpg"
+data-logo="../logos/bally-astrocade/blackjack poker acey deucey.png"
+data-fanart="../fanart/bally-astrocade/blackjack poker acey deucey.jpg">
+Blackjack / Poker / Acey-Deucey
+</a>
+</td>
+
+<td>1979</td>
+<td>Compilation</td>
+<td>Bally Manufacturing</td>
+<td>Bally Manufacturing</td>
+
+</tr>
+
+<tr id="blast-droids"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/blast droids.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Blast Droids"
+data-year="1983"
+data-genre="Shooter"
+data-publisher="Esoterica"
+data-developer="Esoterica"
+data-ra=""
+data-notes="Blast Droids has players flying a ship around a horizontal arena, firing at alien vessels while being careful to avoid shots that ricochet off of the walls."
+data-thumb="../thumbs/bally-astrocade/blast droids.jpg"
+data-media="../media/bally-astrocade/blast droids.jpg"
+data-screenshot="../screenshots/bally-astrocade/blast droids.jpg"
+data-logo="../logos/bally-astrocade/blast droids.png"
+data-fanart="../fanart/bally-astrocade/blast droids.jpg">
+Blast Droids
+</a>
+</td>
+
+<td>1983</td>
+<td>Shooter</td>
+<td>Esoterica</td>
+<td>Esoterica</td>
+
+</tr>
+
+<tr id="brickyard---clowns"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/brickyard clowns.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Brickyard / Clowns"
+data-year="1978"
+data-genre="Action •  Compilation"
+data-publisher="Bally Manufacturing"
+data-developer="Dave Nutting Associates"
+data-ra=""
+data-notes="This cartridge offers a pair of games based upon the arcade classics Breakout and Clowns. Each game may be played by up to four players taking alternating turns. Up to 99 balls or clowns may be played.\n\nBrickyard is the Breakout influenced title. It features the familiar game play of using a paddle at the bottom of the screen to bounce a ball against bricks at the top of the screen. There are four different difficulty levels which adjust the speed of the ball and size of the paddle. Unlike Breakout, the ball in Brickyard builds up momentum with each hit.\n\nClowns adapts the essence of Breakout to a circus setting. A pair of clowns bounce up and down on a teeter-totter trying to pop rows of balloons at the top of the screen. The clowns pick up speed each time they bounce off the teeter-totter."
+data-thumb="../thumbs/bally-astrocade/brickyard clowns.jpg"
+data-media="../media/bally-astrocade/brickyard clowns.jpg"
+data-screenshot="../screenshots/bally-astrocade/brickyard clowns.jpg"
+data-logo="../logos/bally-astrocade/brickyard clowns.png"
+data-fanart="../fanart/bally-astrocade/brickyard clowns.jpg">
+Brickyard / Clowns
+</a>
+</td>
+
+<td>1978</td>
+<td>Action •  Compilation</td>
+<td>Bally Manufacturing</td>
+<td>Dave Nutting Associates</td>
+
+</tr>
+
+<tr id="candy-man"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/candy man.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Candy Man"
+data-year="1981"
+data-genre="Action"
+data-publisher="L&M Software"
+data-developer="L&M Software"
+data-ra=""
+data-notes="This factory is in a mess since the two jokers have scattered life savers all over the floor. The Candy Man must eat them up as quickly as possible while avoiding the jokers.\n\nBe careful the jokers will get their buddies, the gremlins, to help them keep the life savers. Are you up to it? This game will give you all the enjoyment of it's cousin of coin-up fame. With Blue Screen Bonus Scoe & Bonus Lives."
+data-thumb="../thumbs/bally-astrocade/candy man.jpg"
+data-media="../media/bally-astrocade/candy man.jpg"
+data-screenshot="../screenshots/bally-astrocade/candy man.jpg"
+data-logo="../logos/bally-astrocade/candy man.png"
+data-fanart="../fanart/bally-astrocade/candy man.jpg">
+Candy Man
+</a>
+</td>
+
+<td>1981</td>
+<td>Action</td>
+<td>L&M Software</td>
+<td>L&M Software</td>
+
+</tr>
+
+<tr id="chicken"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/chicken.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Chicken"
+data-year="1986"
+data-genre="Action"
+data-publisher="Bally Manufacturing"
+data-developer="Bit Fiddlers"
+data-ra=""
+data-notes="Get your chickens across SIX LANES of traffic! Success allows the next weekday to come up (traffic gets worse). 'GAME OVER' appears when player 1 has lost his last chicken, unless player 2 scores, then the game plays to the last chicken.\n\nWhen a player looses his last chicken it leaves a spot on the roadway. If another chicken touches this spot, he's dead!"
+data-thumb="../thumbs/bally-astrocade/chicken.jpg"
+data-media="../media/bally-astrocade/chicken.jpg"
+data-screenshot="../screenshots/bally-astrocade/chicken.jpg"
+data-logo="../logos/bally-astrocade/chicken.png"
+data-fanart="../fanart/bally-astrocade/chicken.jpg">
+Chicken
+</a>
+</td>
+
+<td>1986</td>
+<td>Action</td>
+<td>Bally Manufacturing</td>
+<td>Bit Fiddlers</td>
+
+</tr>
+
+<tr id="claim-jumpers"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/claim jumpers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Claim Jumpers"
+data-year="1981"
+data-genre="Board Game •  Strategy"
+data-publisher="L&M Software"
+data-developer="L&M Software"
+data-ra=""
+data-notes="Claim Jumper is a strategy game for the entire family. The goal of this game is to strategically place your lines on the board and claim as much area as you possibly can by closing in a square. Be careful not to let someone else grab your claim! Your claim marker will go in the box that you complete. This game can be played by one to four people, and if you wish you can even let \"Bally\" in on the fun. That's a total of five players at one time."
+data-thumb="../thumbs/bally-astrocade/claim jumpers.jpg"
+data-media="../media/bally-astrocade/claim jumpers.jpg"
+data-screenshot="../screenshots/bally-astrocade/claim jumpers.jpg"
+data-logo="../logos/bally-astrocade/claim jumpers.png"
+data-fanart="../fanart/bally-astrocade/claim jumpers.jpg">
+Claim Jumpers
+</a>
+</td>
+
+<td>1981</td>
+<td>Board Game •  Strategy</td>
+<td>L&M Software</td>
+<td>L&M Software</td>
+
+</tr>
+
+<tr id="conan-the-barbarian"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/conan the barbarian.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Conan the Barbarian"
+data-year="1985"
+data-genre="Action"
+data-publisher="Astrocade"
+data-developer="Dave Carson Software"
+data-ra=""
+data-notes="Fearsome monsters give chase through a series of mazes as Conan, armed with his sword, battles them. Various levels allow you to play this adventure game with skills ranging from novice to professional. See how many monsters you can get.\n\nThis cartridge was a prototype and never officially released. However, the unfinished game was given limited distribution in 1985 through Dave Carson Software. Astrocade was unable to secure the naming rights and the game code was eventually merged into the development of Quest for the Orb which also never saw official release."
+data-thumb="../thumbs/bally-astrocade/conan the barbarian.jpg"
+data-media="../media/bally-astrocade/conan the barbarian.jpg"
+data-screenshot="../screenshots/bally-astrocade/conan the barbarian.jpg"
+data-logo="../logos/bally-astrocade/conan the barbarian.png"
+data-fanart="../fanart/bally-astrocade/conan the barbarian.jpg">
+Conan the Barbarian
+</a>
+</td>
+
+<td>1985</td>
+<td>Action</td>
+<td>Astrocade</td>
+<td>Dave Carson Software</td>
+
+</tr>
+
+<tr id="cosmic-raiders"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/cosmic raiders.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Cosmic Raiders"
+data-year="1983"
+data-genre="Shooter"
+data-publisher="Astrocade"
+data-developer="Action Graphics"
+data-ra=""
+data-notes="Cosmic Raiders is a side-scrolling shoot 'em up similar to Defender. Like in that game the player's space ship can move both left and right and there is also a radar showing the locations of enemies. The game takes place in the alien sector Larkin and the player's objective is to defend a planet under attack while also collecting energy sources from an evil alien race called the Larkins. In every level four bombs are dropped along with a number of fighters to ensure the bombs reach the surface of the planet. The objective of the game is simply to clear all the enemies and get the highest score possible. For every two bombs destroyed an energy star that the player can collect will appear. By picking it up the player's ship is energized with an invincible energy shield. Once all enemies have been cleared from one level the game moves on to the next.\n\nBefore starting out it's possible to choose the number of players (1-4), number of lives (1-9) and the intensity of the game (0-9). Level 0 is the easiest one and the only one where enemies do not get harder as the game goes on. Each player can have a different intensity level."
+data-thumb="../thumbs/bally-astrocade/cosmic raiders.jpg"
+data-media="../media/bally-astrocade/cosmic raiders.jpg"
+data-screenshot="../screenshots/bally-astrocade/cosmic raiders.jpg"
+data-logo="../logos/bally-astrocade/cosmic raiders.png"
+data-fanart="../fanart/bally-astrocade/cosmic raiders.jpg">
+Cosmic Raiders
+</a>
+</td>
+
+<td>1983</td>
+<td>Shooter</td>
+<td>Astrocade</td>
+<td>Action Graphics</td>
+
+</tr>
+
+<tr id="crazy-climber"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/crazy climber.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Crazy Climber"
+data-year="2011"
+data-genre="Platform"
+data-publisher="Riff Raff Games"
+data-developer="Riff Raff Games"
+data-ra=""
+data-notes="Crazy Climber for the Bally Astrocade which is a homebrew game with a limited release in 2011 by Bally Alley. It's a port from the arcade game developed by Nichibutsu in 1980.\n\nIn Crazy Climber you must climb the sides of buildings, each having near 200 stories. Each building offers a variety of different challenges and obstacles that make the passage to the top more difficult.\n\nOn this upward journey, you will encounter \"mad potters\", bald-headed scoundrels who open and close windows and drop items to knock Crazy Climber from the building. By hanging on tightly it is possible to protect Crazy Climber from the flower pots, iron dumbbells, bottles and condor excrement. You'd better move fast, because the higher you climb and the more buildings you face, the quicker the pace becomes.\n\nThe original 2-joystick control scheme has been implemented as well as a single-controller mode."
+data-thumb="../thumbs/bally-astrocade/crazy climber.jpg"
+data-media="../media/bally-astrocade/crazy climber.jpg"
+data-screenshot="../screenshots/bally-astrocade/crazy climber.jpg"
+data-logo="../logos/bally-astrocade/crazy climber.png"
+data-fanart="../fanart/bally-astrocade/crazy climber.jpg">
+Crazy Climber
+</a>
+</td>
+
+<td>2011</td>
+<td>Platform</td>
+<td>Riff Raff Games</td>
+<td>Riff Raff Games</td>
+
+</tr>
+
+<tr id="dogpatch"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/dogpatch.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dogpatch"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/bally-astrocade/dogpatch.jpg"
+data-media="../media/bally-astrocade/dogpatch.jpg"
+data-screenshot="../screenshots/bally-astrocade/dogpatch.jpg"
+data-logo="../logos/bally-astrocade/dogpatch.png"
+data-fanart="../fanart/bally-astrocade/dogpatch.jpg">
+Dogpatch
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="football"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/football.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Football"
+data-year="1978"
+data-genre="Sports"
+data-publisher="Astrovision"
+data-developer="Dave Nutting Associates"
+data-ra=""
+data-notes="Football is an early attempt at simulating the American sport. The game is played from a top-down perspective and features two unnamed teams, one blue and one yellow. When starting out the offense first gets to choose which of five plays to be used. After that the playing field will be displayed and after the ball has been snapped the player controls the quarterback with the joystick. By pressing the trigger a throw is made and the flight of the ball depends on the angle of the quarterback's arm which is controlled with the knob on the controller. After the pass has been made offense gains control of the ends by using the joystick. The defense uses the joystick to control the patterns of the cornerbacks. The ball carrier is considered tackled when making contact with any other player on the field.\n\nIn addition to the two-player mode there is also the possibility of playing with four players. Then, when in offense, player 1 and 2 controls the movement of the quarterbacks while player 3 and 4 controls the movement of the tight end. When defending, player 1 and 2 controls the top cornerback while player 3 and 4 controls the bottom one. The game is multiplayer only and has no AI option."
+data-thumb="../thumbs/bally-astrocade/football.jpg"
+data-media="../media/bally-astrocade/football.jpg"
+data-screenshot="../screenshots/bally-astrocade/football.jpg"
+data-logo="../logos/bally-astrocade/football.png"
+data-fanart="../fanart/bally-astrocade/football.jpg">
+Football
+</a>
+</td>
+
+<td>1978</td>
+<td>Sports</td>
+<td>Astrovision</td>
+<td>Dave Nutting Associates</td>
+
+</tr>
+
+<tr id="galactic-invasion"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/galactic invasion.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Galactic Invasion"
+data-year="1981"
+data-genre="Shooter"
+data-publisher="Astrocade"
+data-developer="Bally Manufacturing"
+data-ra=""
+data-notes="Alien ships come at your missile launcher from every direction. They peel off from their formation singly or in groups of twos or threes. The more aliens you destroy, the more of their reinforcements attack. Each ship is piloted by a highly skilled captain capable of maneuvering with incredible agility. Realistic sounds add to the intensity. Up to 4 players.\n\nThe original title of Galactic Invasion was Galaxian after the arcade classic programmed by Bally (Midway). However, Midway only possessed arcade distribution rights and wasn't able to distribute home console versions of the game. The game was retitled and released as Galactic Invasion for the Astrocade. That said, there are some revisions of the game that do feature the title Galaxian on the title screen or on the physical cartridge itself."
+data-thumb="../thumbs/bally-astrocade/galactic invasion.jpg"
+data-media="../media/bally-astrocade/galactic invasion.jpg"
+data-screenshot="../screenshots/bally-astrocade/galactic invasion.jpg"
+data-logo="../logos/bally-astrocade/galactic invasion.png"
+data-fanart="../fanart/bally-astrocade/galactic invasion.jpg">
+Galactic Invasion
+</a>
+</td>
+
+<td>1981</td>
+<td>Shooter</td>
+<td>Astrocade</td>
+<td>Bally Manufacturing</td>
+
+</tr>
+
+<tr id="gate-escape,-the"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/gate escape the.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Gate Escape, The"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/bally-astrocade/gate escape the.jpg"
+data-media="../media/bally-astrocade/gate escape the.jpg"
+data-screenshot="../screenshots/bally-astrocade/gate escape the.jpg"
+data-logo="../logos/bally-astrocade/gate escape the.png"
+data-fanart="../fanart/bally-astrocade/gate escape the.jpg">
+Gate Escape, The
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="grand-prix---demolition-derby"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/grand prix demolition derby.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Grand Prix / Demolition Derby"
+data-year="1981"
+data-genre="Compilation •  Racing"
+data-publisher="Astrovision"
+data-developer="Astrovision"
+data-ra=""
+data-notes="Grand Prix is a formula racing game played from a top down perspective. There are three different tracks that are all one screen in size. The controls simply involve accelerating and steering left and right with the aim of reaching the finish line first. The number of laps (1-99) and the difficulty level (pro or beginner) can be selected before a race. Pro differs in the speed of the cars.\n\nDemolition Derby is similar to Grand Prix but here the objective is to ram into the other cars until only one remains in the arena. Each car has a number of points (which is chosen by the players) and for each hit one point is lost. When a car reaches zero points it loses and cannot move any further."
+data-thumb="../thumbs/bally-astrocade/grand prix demolition derby.jpg"
+data-media="../media/bally-astrocade/grand prix demolition derby.jpg"
+data-screenshot="../screenshots/bally-astrocade/grand prix demolition derby.jpg"
+data-logo="../logos/bally-astrocade/grand prix demolition derby.png"
+data-fanart="../fanart/bally-astrocade/grand prix demolition derby.jpg">
+Grand Prix / Demolition Derby
+</a>
+</td>
+
+<td>1981</td>
+<td>Compilation •  Racing</td>
+<td>Astrovision</td>
+<td>Astrovision</td>
+
+</tr>
+
+<tr id="haunted-house"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/haunted house.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Haunted House"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/bally-astrocade/haunted house.jpg"
+data-media="../media/bally-astrocade/haunted house.jpg"
+data-screenshot="../screenshots/bally-astrocade/haunted house.jpg"
+data-logo="../logos/bally-astrocade/haunted house.png"
+data-fanart="../fanart/bally-astrocade/haunted house.jpg">
+Haunted House
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="life"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/life.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Life"
+data-year="1982"
+data-genre="Life Simulation"
+data-publisher="Richard C. Degler"
+data-developer="Richard C. Degler"
+data-ra=""
+data-notes="LIFE is a machine language program originally written by Jay Fenton and coded by Richard C. Degler for the Astrocade to generate a universe of cellular objects on the TV Screen. The population of cells is changed in intervals called generations by a set of rules. These rules are to be applied simultaneously to every cell in the pattern. The application of the rules to every bit in the field constitutes a generation."
+data-thumb="../thumbs/bally-astrocade/life.jpg"
+data-media="../media/bally-astrocade/life.jpg"
+data-screenshot="../screenshots/bally-astrocade/life.jpg"
+data-logo="../logos/bally-astrocade/life.png"
+data-fanart="../fanart/bally-astrocade/life.jpg">
+Life
+</a>
+</td>
+
+<td>1982</td>
+<td>Life Simulation</td>
+<td>Richard C. Degler</td>
+<td>Richard C. Degler</td>
+
+</tr>
+
+<tr id="mazeman"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/mazeman.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mazeman"
+data-year="1984"
+data-genre="Action"
+data-publisher="Bally Manufacturing"
+data-developer="Bally Manufacturing"
+data-ra=""
+data-notes="You are captive in a maze of crazy, creepy ghosts. Its a spooky situation, and you can do one of two things: munch or be munched! Score as many points as possible, gobbling up everything in your path - including the ghosts with an appetite for YOU! Do your best to save your soul!\n\nThis homebrew cartridge is similar in play to Pac-Man. As released, there is no sound in the game. The developer and programmer remained anonymous to avoid legal issues with NAMCO."
+data-thumb="../thumbs/bally-astrocade/mazeman.jpg"
+data-media="../media/bally-astrocade/mazeman.jpg"
+data-screenshot="../screenshots/bally-astrocade/mazeman.jpg"
+data-logo="../logos/bally-astrocade/mazeman.png"
+data-fanart="../fanart/bally-astrocade/mazeman.jpg">
+Mazeman
+</a>
+</td>
+
+<td>1984</td>
+<td>Action</td>
+<td>Bally Manufacturing</td>
+<td>Bally Manufacturing</td>
+
+</tr>
+
+<tr id="ms.-candyman"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/ms candyman.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ms. Candyman"
+data-year="1983"
+data-genre="Action"
+data-publisher="L&M Software"
+data-developer="Bit Fiddlers"
+data-ra=""
+data-notes="Ms. Candyman must pick up all of the life savers as quickly as possible while avoiding contact with the Ghosts and Goblins. During the first half of a screen the Ghosts and Goblins will try to catch you. During the second half of a screen the Ghosts and Goblins will take up protective positions to keep you away from the life savers."
+data-thumb="../thumbs/bally-astrocade/ms candyman.jpg"
+data-media="../media/bally-astrocade/ms candyman.jpg"
+data-screenshot="../screenshots/bally-astrocade/ms candyman.jpg"
+data-logo="../logos/bally-astrocade/ms candyman.png"
+data-fanart="../fanart/bally-astrocade/ms candyman.jpg">
+Ms. Candyman
+</a>
+</td>
+
+<td>1983</td>
+<td>Action</td>
+<td>L&M Software</td>
+<td>Bit Fiddlers</td>
+
+</tr>
+
+<tr id="muncher"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/muncher.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Muncher"
+data-year="1983"
+data-genre="Action •  Puzzle"
+data-publisher="Esoterica"
+data-developer="Esoterica"
+data-ra=""
+data-notes="You are captive in a maze of creepy ghosts. It's a spooky situation, and you can do one of two things: munch or be munched. Score as many points as possible, gobbling up everything in your path - including the ghosts with an appetite for YOU! Do your best to save your soul."
+data-thumb="../thumbs/bally-astrocade/muncher.jpg"
+data-media="../media/bally-astrocade/muncher.jpg"
+data-screenshot="../screenshots/bally-astrocade/muncher.jpg"
+data-logo="../logos/bally-astrocade/muncher.png"
+data-fanart="../fanart/bally-astrocade/muncher.jpg">
+Muncher
+</a>
+</td>
+
+<td>1983</td>
+<td>Action •  Puzzle</td>
+<td>Esoterica</td>
+<td>Esoterica</td>
+
+</tr>
+
+<tr id="no-die!"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/no die.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="No-Die!"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/bally-astrocade/no die.jpg"
+data-media="../media/bally-astrocade/no die.jpg"
+data-screenshot="../screenshots/bally-astrocade/no die.jpg"
+data-logo="../logos/bally-astrocade/no die.png"
+data-fanart="../fanart/bally-astrocade/no die.jpg">
+No-Die!
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="pirates-chase"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/pirate s chase.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pirate's Chase"
+data-year="1982"
+data-genre="Action"
+data-publisher="Astrocade"
+data-developer="Astrocade"
+data-ra=""
+data-notes="Yo ho ho and bottle of rum! Race to scoop up as many gold doubloons as you can carry, but watch out! The pirates are on your tail! How much of the treasure can you collect before Long John Silver collects you! Score points for every doubloon and treasure chest you can steal from the pirate crew! A frantic, fast-paced game, and the action never stops. 1 or 2 players."
+data-thumb="../thumbs/bally-astrocade/pirate s chase.jpg"
+data-media="../media/bally-astrocade/pirate s chase.jpg"
+data-screenshot="../screenshots/bally-astrocade/pirate s chase.jpg"
+data-logo="../logos/bally-astrocade/pirate s chase.png"
+data-fanart="../fanart/bally-astrocade/pirate s chase.jpg">
+Pirate's Chase
+</a>
+</td>
+
+<td>1982</td>
+<td>Action</td>
+<td>Astrocade</td>
+<td>Astrocade</td>
+
+</tr>
+
+<tr id="red-baron---panzer-attack"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/red baron panzer attack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Red Baron / Panzer Attack"
+data-year="1978"
+data-genre="Compilation •  Shooter"
+data-publisher="Bally Manufacturing"
+data-developer="Dave Nutting Associates"
+data-ra=""
+data-notes="Red Baron is a dogfighting game played from a side perspective on a single screen. Both planes start rolling on the ground and have to lift before crashing into a barn. Once in the air the planes can be moved in all directions and it's also possible to alter the speed. The aim is simply to get as many kills as possible before the time runs out. The time limit is chosen by the players before starting out.\n\nPanzer Attack is a tank game viewed from a top-down perspective. All player share the same single screen which has a few blockades for protections. The tanks can move in all directions and the aim of the game is simply to score points by destroying the other tanks. A battle ends when just one tank remains standing and the player with the highest score when all battle have been played wins. The number of battles can be chosen before starting out from 1-99."
+data-thumb="../thumbs/bally-astrocade/red baron panzer attack.jpg"
+data-media="../media/bally-astrocade/red baron panzer attack.jpg"
+data-screenshot="../screenshots/bally-astrocade/red baron panzer attack.jpg"
+data-logo="../logos/bally-astrocade/red baron panzer attack.png"
+data-fanart="../fanart/bally-astrocade/red baron panzer attack.jpg">
+Red Baron / Panzer Attack
+</a>
+</td>
+
+<td>1978</td>
+<td>Compilation •  Shooter</td>
+<td>Bally Manufacturing</td>
+<td>Dave Nutting Associates</td>
+
+</tr>
+
+<tr id="road-toad"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/road toad.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Road Toad"
+data-year="1981"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes="The old proverbial chicken may have crossed the road to get to the other side but the road toad has slightly different motives. In the tradition of Angels Camp you will prod the toad with the use of your joystick skillfully guiding him through several lanes of traffic that becomes increasingly congested. But watch out for the speed demon in lane 3. He often comes without warning and definitely does not break for toads."
+data-thumb="../thumbs/bally-astrocade/road toad.jpg"
+data-media="../media/bally-astrocade/road toad.jpg"
+data-screenshot="../screenshots/bally-astrocade/road toad.jpg"
+data-logo="../logos/bally-astrocade/road toad.png"
+data-fanart="../fanart/bally-astrocade/road toad.jpg">
+Road Toad
+</a>
+</td>
+
+<td>1981</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="sea-devil"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/sea devil.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sea Devil"
+data-year="1983"
+data-genre="Action"
+data-publisher="L&M Software"
+data-developer="Bit-Fiddlers"
+data-ra=""
+data-notes="You are the guardian of the 21st century undersea farm. Not only is this important to the survival of the people on earth but the company you work for have risked millions on this venture.\n\nZardos, the evil king of a distant planet, needs this food for his-self and has sent android divers with other sea creatures to steal this food.\n\nYou are provided with the under sea hi-tech, sub-surface cruiser. Sea Devil, equipped with the latest in sonar screens. You can spot targets at a great distance. As they come into range your laser makes quick work of the poachers and accumulate valuable sub credit points for yourself.\n\nZardos personally is commanding a submarine which will fire cluster bombs to keep you at bay.\n\nCan you get Zardos in his sub? Hes worth 1000 points if you can."
+data-thumb="../thumbs/bally-astrocade/sea devil.jpg"
+data-media="../media/bally-astrocade/sea devil.jpg"
+data-screenshot="../screenshots/bally-astrocade/sea devil.jpg"
+data-logo="../logos/bally-astrocade/sea devil.png"
+data-fanart="../fanart/bally-astrocade/sea devil.jpg">
+Sea Devil
+</a>
+</td>
+
+<td>1983</td>
+<td>Action</td>
+<td>L&M Software</td>
+<td>Bit-Fiddlers</td>
+
+</tr>
+
+<tr id="seawolf---missile"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/seawolf missile.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Seawolf / Missile"
+data-year="1977"
+data-genre="Compilation •  Shooter"
+data-publisher="Astrovision"
+data-developer="Bally Manufacturing"
+data-ra=""
+data-notes="Seawolf! From deep beneath the sea, you fire your torpedoes at the tankers, battleships and other targets. Your mission is to sink more enemy ships than any other sub in the wolf pack. Its a race against time and other subs in your own navy. Missile! Launch guided missiles against cargo planes, bombers and fighters! Two complete games. Hours of fun! 1 or 2 players."
+data-thumb="../thumbs/bally-astrocade/seawolf missile.jpg"
+data-media="../media/bally-astrocade/seawolf missile.jpg"
+data-screenshot="../screenshots/bally-astrocade/seawolf missile.jpg"
+data-logo="../logos/bally-astrocade/seawolf missile.png"
+data-fanart="../fanart/bally-astrocade/seawolf missile.jpg">
+Seawolf / Missile
+</a>
+</td>
+
+<td>1977</td>
+<td>Compilation •  Shooter</td>
+<td>Astrovision</td>
+<td>Bally Manufacturing</td>
+
+</tr>
+
+<tr id="soccer"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/soccer.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Soccer"
+data-year="1985"
+data-genre="Sports"
+data-publisher="-"
+data-developer="Action Graphics"
+data-ra=""
+data-notes="America's fastest growing sport plays on your video screen. Dribble up field, pass to your teamate, shoot for the goal. Watch out for interceptions and blocking by the opposition. Up to 4 players.\n\nThis prototype game was never officially released."
+data-thumb="../thumbs/bally-astrocade/soccer.jpg"
+data-media="../media/bally-astrocade/soccer.jpg"
+data-screenshot="../screenshots/bally-astrocade/soccer.jpg"
+data-logo="../logos/bally-astrocade/soccer.png"
+data-fanart="../fanart/bally-astrocade/soccer.jpg">
+Soccer
+</a>
+</td>
+
+<td>1985</td>
+<td>Sports</td>
+<td>-</td>
+<td>Action Graphics</td>
+
+</tr>
+
+<tr id="solar-conqueror"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/solar conqueror.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Solar Conqueror"
+data-year="1983"
+data-genre="Shooter"
+data-publisher="Astrocade"
+data-developer="Action Graphics"
+data-ra=""
+data-notes="The game's release date is 1982 on the game box and 1981 on the cartridge.\n\nSolar Conqueror is a top-down viewed shoot 'em up with multidirectional shooting and movement similar to Asteroids or Robotron. The war hungry DEMENS are threatening to wipe out the player's race with a radiation death ray and therefore the player has to conquer their solar systems.\n\nEach solar system consists of two or four planets and to conquer them all planets have to be defeated. In each screen a planet is located to the far right of the screen and from it various alien defenders will appear. To defeat the planet and move on to the next one the player has to kill all the enemies while avoiding getting hit by them. There are three different enemies: kamikaze combat ships, ground-to-air missiles and super fighting (killer) satellites. There are also asteroids floating around the planets that has to be avoided. Larger planets have stronger gravity which leads to the spaceship being harder control. The effect of the gravity increases as the ship gets closer to the planet.\n\nThe game can be played by up to four players. Before starting out it's possible to choose how many lives each player should have and at what levels they should start on, thereby handicapping more skilled players. Any contact with an enemy, a projectile or a planet leads to a lost life but a new one is given for each solar system conquered."
+data-thumb="../thumbs/bally-astrocade/solar conqueror.jpg"
+data-media="../media/bally-astrocade/solar conqueror.jpg"
+data-screenshot="../screenshots/bally-astrocade/solar conqueror.jpg"
+data-logo="../logos/bally-astrocade/solar conqueror.png"
+data-fanart="../fanart/bally-astrocade/solar conqueror.jpg">
+Solar Conqueror
+</a>
+</td>
+
+<td>1983</td>
+<td>Shooter</td>
+<td>Astrocade</td>
+<td>Action Graphics</td>
+
+</tr>
+
+<tr id="space-fortress"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/space fortress.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Fortress"
+data-year="1981"
+data-genre="Shooter"
+data-publisher="Astrovision"
+data-developer="Midway"
+data-ra=""
+data-notes="Released on the Arcades as Space Zap and for the Bally Astrocade as Space Fortress.\n\nThis is a fixed screen shoot 'em up where the player is in control of a stationary laser base which is located in the middle of the screen. Alien space ships will appear from the four sides of the screen and launch space mines towards the laser base. The player's task is simply to shoot them down before they reach and destroy the laser base.\n\nThe game is controlled with five buttons: one for shooting and four for aiming, one for each direction. In addition to the mines and alien ships there are also attack satellites that orbit the laser base before attacking. The mines are worth 250 points, alien ships are worth 500 points and attack satellites are worth 2,000 points. The player starts out with three lives but earns a new one at 75,000, 150,000 and 300,000 points."
+data-thumb="../thumbs/bally-astrocade/space fortress.jpg"
+data-media="../media/bally-astrocade/space fortress.jpg"
+data-screenshot="../screenshots/bally-astrocade/space fortress.jpg"
+data-logo="../logos/bally-astrocade/space fortress.png"
+data-fanart="../fanart/bally-astrocade/space fortress.jpg">
+Space Fortress
+</a>
+</td>
+
+<td>1981</td>
+<td>Shooter</td>
+<td>Astrovision</td>
+<td>Midway</td>
+
+</tr>
+
+<tr id="space-invaders"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/space invaders.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Invaders"
+data-year="Unknown"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes="To say that Space Invaders was one of the most successful arcade games ever released would be an understatement. The game was so popular that it actually caused coin shortages in Japan! The unprecedented success of the arcade game made it an ideal killer app for the Atari 2600 in 1978, and it only makes sense that Bally would want a version of their own. An unlicensed version of Space Invaders was released on Bally\u2019s console in 1979, but the game was quickly renamed Astro Battle. It was a blatant clone regardless of what the title screen said. The entire game consists of shooting down alien spaceships and periodically seeking cover behind large barns. Astro Battle on the Astrocade doesn\u2019t feature quite as many gameplay modes as Space Invaders on the 2600, but it does a great job of capturing the spirit of the arcade game it was based on. The aliens are alive with color, the game is fast, and controls are responsive. The biggest downside is how abruptly the game ends. After finishing off the sixth wave of fighters, the game ends suddenly and immediately resets to the menu screen. This is annoying if you want to play the game for more than a few minutes at a time. Astro Battle didn\u2019t exactly make the same splash as Space Invaders did on the Atari 2600, but no console from the era would have been complete without their own take on the classic arcade game."
+data-thumb="../thumbs/bally-astrocade/space invaders.jpg"
+data-media="../media/bally-astrocade/space invaders.jpg"
+data-screenshot="../screenshots/bally-astrocade/space invaders.jpg"
+data-logo="../logos/bally-astrocade/space invaders.png"
+data-fanart="../fanart/bally-astrocade/space invaders.jpg">
+Space Invaders
+</a>
+</td>
+
+<td>Unknown</td>
+<td>Shooter</td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="star-battle"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/star battle.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Star Battle"
+data-year="1979"
+data-genre="Shooter"
+data-publisher="Astrovision"
+data-developer="Dave Nutting Associates"
+data-ra=""
+data-notes="Star Battle is a space shooter based on the trench run sequence from the original Star Wars movie. The game is for one or two players and involves a battle between an X-Wing and a Tie Fighter, although since it doesn't carry a license they are not called that. The X-Wing is controlled by player one while the Tie Fighter is controlled by player two or the computer. Before starting out a maximum score (1-999) is entered and the player that first reaches it wins the game. A single hit is enough to bring down the enemy ship and it is worth one point.\n\nThe game is viewed from a third-person perspective with a pseudo 3D representation of the trench. The colour of the trench changes constantly to illustrate the forward motion of the fighters. By moving the joystick up or down the fighters accelerate or decelerate which means they move to the top of the screen and decreases in size or move to the bottom and get larger. If one moves closer to the camera the other gets further away and vice versa."
+data-thumb="../thumbs/bally-astrocade/star battle.jpg"
+data-media="../media/bally-astrocade/star battle.jpg"
+data-screenshot="../screenshots/bally-astrocade/star battle.jpg"
+data-logo="../logos/bally-astrocade/star battle.png"
+data-fanart="../fanart/bally-astrocade/star battle.jpg">
+Star Battle
+</a>
+</td>
+
+<td>1979</td>
+<td>Shooter</td>
+<td>Astrovision</td>
+<td>Dave Nutting Associates</td>
+
+</tr>
+
+<tr id="stweek"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/stweek.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Stweek"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/bally-astrocade/stweek.jpg"
+data-media="../media/bally-astrocade/stweek.jpg"
+data-screenshot="../screenshots/bally-astrocade/stweek.jpg"
+data-logo="../logos/bally-astrocade/stweek.png"
+data-fanart="../fanart/bally-astrocade/stweek.jpg">
+Stweek
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="super-slope"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/super slope.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Super Slope"
+data-year="1983"
+data-genre="Sports"
+data-publisher="Esoterica"
+data-developer="Esoterica"
+data-ra=""
+data-notes="They called him Super Skier though he'd never had a lesson... And now you take up where he left off. Super Slope is a super skiing program from Eosterica. No experience necessary."
+data-thumb="../thumbs/bally-astrocade/super slope.jpg"
+data-media="../media/bally-astrocade/super slope.jpg"
+data-screenshot="../screenshots/bally-astrocade/super slope.jpg"
+data-logo="../logos/bally-astrocade/super slope.png"
+data-fanart="../fanart/bally-astrocade/super slope.jpg">
+Super Slope
+</a>
+</td>
+
+<td>1983</td>
+<td>Sports</td>
+<td>Esoterica</td>
+<td>Esoterica</td>
+
+</tr>
+
+<tr id="the-incredible-wizard"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/the incredible wizard.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Incredible Wizard"
+data-year="1982"
+data-genre="Shooter"
+data-publisher="Astrocade"
+data-developer="Action Graphics"
+data-ra=""
+data-notes="Wizard of Wor is an arcade shooter played from a top-down point of view.\nThe Bally Astrocade release of the game was titled The Incredible Wizard. It had the game ref number 2017 as a suffix.\n\nThe player controls a warrior who is trapped in a dungeon. The goal is to earn as many points as possible by shooting the numerous enemy creatures which wander about the maze like corridors. The creatures wander about at various speeds, may shoot darts at the player, and some even have the ability to disappear temporarily. At the bottom of the screen the player has a radar which can be used to locate creatures that are invisible.\n\nWhen the the player completes a maze, a Worluk sometimes appears. This creature moves rapidly and will only be on the screen momentarily. If the player destroys the creature before it escapes, the next dungeon will become a double score dungeon and all creatures will be worth twice as many points. Occasionally the Wizard of Wor himself may appear! He moves quickly and can teleport around the maze. If they destroy him, the player will earn a large amount of points.\n\nThe game may be played by one player or two players simultaneously."
+data-thumb="../thumbs/bally-astrocade/the incredible wizard.jpg"
+data-media="../media/bally-astrocade/the incredible wizard.jpg"
+data-screenshot="../screenshots/bally-astrocade/the incredible wizard.jpg"
+data-logo="../logos/bally-astrocade/the incredible wizard.png"
+data-fanart="../fanart/bally-astrocade/the incredible wizard.jpg">
+The Incredible Wizard
+</a>
+</td>
+
+<td>1982</td>
+<td>Shooter</td>
+<td>Astrocade</td>
+<td>Action Graphics</td>
+
+</tr>
+
+<tr id="tornado-baseball---tennis---hockey---handball"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/tornado baseball tennis hockey handball.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tornado Baseball / Tennis / Hockey / Handball"
+data-year="1978"
+data-genre="Compilation •  Sports"
+data-publisher="Bally Manufacturing"
+data-developer="Dave Nutting Associates"
+data-ra=""
+data-notes="Tornado Baseball / Tennis / Handball / Hockey features four sports game. Tornado Baseball is a game for one or two players in which the pitching player determines the speed and curve of the pitch. The whole baseball field is shown on the screen with all the characters moving around.\n\nHockey, Tennis, and Handball are different Pong variants. Each plays like pong, but features sports specific graphics and minor gameplay changes, such as hockey having two \"paddles\" (characters) per player and Handball playing like squash: the ball is bounced against the left side of the screen and is not allowed to touch the right side. Players must hit the ball if its their color."
+data-thumb="../thumbs/bally-astrocade/tornado baseball tennis hockey handball.jpg"
+data-media="../media/bally-astrocade/tornado baseball tennis hockey handball.jpg"
+data-screenshot="../screenshots/bally-astrocade/tornado baseball tennis hockey handball.jpg"
+data-logo="../logos/bally-astrocade/tornado baseball tennis hockey handball.png"
+data-fanart="../fanart/bally-astrocade/tornado baseball tennis hockey handball.jpg">
+Tornado Baseball / Tennis / Hockey / Handball
+</a>
+</td>
+
+<td>1978</td>
+<td>Compilation •  Sports</td>
+<td>Bally Manufacturing</td>
+<td>Dave Nutting Associates</td>
+
+</tr>
+
+<tr id="war"><td>
+<img
+class="thumb"
+src="../thumbs/bally-astrocade/war.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="WAR"
+data-year="2007"
+data-genre="Action"
+data-publisher="Riff Raff Games"
+data-developer="Riff Raff Games"
+data-ra=""
+data-notes="This is similar to the Warlords arcade game by Atari. Up to four players can play against each other, or a lesser number against each other and the machine."
+data-thumb="../thumbs/bally-astrocade/war.jpg"
+data-media="../media/bally-astrocade/war.jpg"
+data-screenshot="../screenshots/bally-astrocade/war.jpg"
+data-logo="../logos/bally-astrocade/war.png"
+data-fanart="../fanart/bally-astrocade/war.jpg">
+WAR
+</a>
+</td>
+
+<td>2007</td>
+<td>Action</td>
+<td>Riff Raff Games</td>
+<td>Riff Raff Games</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

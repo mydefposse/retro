@@ -1,0 +1,2768 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>WASM-4</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/wasm-4.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/wasm-4.png"
+onerror="this.style.display='none';">
+
+<h1>WASM-4</h1>
+
+
+<p class="platform-release">
+Released: 2021
+</p>
+
+
+<p>63 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>WASM-4 is a fantasy game console designed for creating small, retro-style games using WebAssembly. Launched in 2021, it provides a minimal virtual hardware platform featuring a 160x160 resolution display, 4-button input, and simple audio and sprite capabilities. Developers can write games in a variety of languages—including C, Rust, AssemblyScript, and more—then compile them to WebAssembly for cross-platform compatibility. WASM-4 games run directly in modern web browsers or via native runtimes, making it a popular choice for game jams, prototyping, and experimenting with low-level game development.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="2048"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/2048.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="2048"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19291"
+data-notes=""
+data-thumb="../thumbs/wasm-4/2048.jpg"
+data-media="../media/wasm-4/2048.jpg"
+data-screenshot="../screenshots/wasm-4/2048.jpg"
+data-logo="../logos/wasm-4/2048.png"
+data-fanart="../fanart/wasm-4/2048.jpg">
+2048
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="antcopter"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/antcopter.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Antcopter"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19292"
+data-notes=""
+data-thumb="../thumbs/wasm-4/antcopter.jpg"
+data-media="../media/wasm-4/antcopter.jpg"
+data-screenshot="../screenshots/wasm-4/antcopter.jpg"
+data-logo="../logos/wasm-4/antcopter.png"
+data-fanart="../fanart/wasm-4/antcopter.jpg">
+Antcopter
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="assemblio"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/assemblio.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Assemblio"
+data-year="2022"
+data-genre="Puzzle"
+data-publisher="Quic5"
+data-developer="Quic5"
+data-ra="19293"
+data-notes="Assemblio is a factory automation game for the WASM-4 fantasy game console. It is written in Zig and highly inspired by the great Factorio and shapez.io.\n\nThe goal of the game is to complete levels by producing the required items. Everything will start with a Miner which extracts Items that are transported on Belts to a Hub. On their way items may be transformed using machines."
+data-thumb="../thumbs/wasm-4/assemblio.jpg"
+data-media="../media/wasm-4/assemblio.jpg"
+data-screenshot="../screenshots/wasm-4/assemblio.jpg"
+data-logo="../logos/wasm-4/assemblio.png"
+data-fanart="../fanart/wasm-4/assemblio.jpg">
+Assemblio
+</a>
+</td>
+
+<td>2022</td>
+<td>Puzzle</td>
+<td>Quic5</td>
+<td>Quic5</td>
+
+</tr>
+
+<tr id="break-it"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/break it.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Break-It"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24476"
+data-notes=""
+data-thumb="../thumbs/wasm-4/break it.jpg"
+data-media="../media/wasm-4/break it.jpg"
+data-screenshot="../screenshots/wasm-4/break it.jpg"
+data-logo="../logos/wasm-4/break it.png"
+data-fanart="../fanart/wasm-4/break it.jpg">
+Break-It
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="comic-sans"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/comic sans.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Comic-Sans"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="35649"
+data-notes=""
+data-thumb="../thumbs/wasm-4/comic sans.jpg"
+data-media="../media/wasm-4/comic sans.jpg"
+data-screenshot="../screenshots/wasm-4/comic sans.jpg"
+data-logo="../logos/wasm-4/comic sans.png"
+data-fanart="../fanart/wasm-4/comic sans.jpg">
+Comic-Sans
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="dashy-dango"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/dashy dango.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dashy Dango"
+data-year="2022"
+data-genre="Fighting"
+data-publisher="samX500"
+data-developer="samX500"
+data-ra="24229"
+data-notes="Dashy Dango a wave fighting game made with WASM-4 by @samX500 and @willGuimont.\n\nHelp the Dango survive by fighting waves of enemies. Dash into enemies to eliminate them."
+data-thumb="../thumbs/wasm-4/dashy dango.jpg"
+data-media="../media/wasm-4/dashy dango.jpg"
+data-screenshot="../screenshots/wasm-4/dashy dango.jpg"
+data-logo="../logos/wasm-4/dashy dango.png"
+data-fanart="../fanart/wasm-4/dashy dango.jpg">
+Dashy Dango
+</a>
+</td>
+
+<td>2022</td>
+<td>Fighting</td>
+<td>samX500</td>
+<td>samX500</td>
+
+</tr>
+
+<tr id="disk-0-madness"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/disk 0 madness.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="disk-0 MADNESS"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="21395"
+data-notes=""
+data-thumb="../thumbs/wasm-4/disk 0 madness.jpg"
+data-media="../media/wasm-4/disk 0 madness.jpg"
+data-screenshot="../screenshots/wasm-4/disk 0 madness.jpg"
+data-logo="../logos/wasm-4/disk 0 madness.png"
+data-fanart="../fanart/wasm-4/disk 0 madness.jpg">
+disk-0 MADNESS
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="dodgeball"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/dodgeball.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dodgeball"
+data-year="2022"
+data-genre="Sports"
+data-publisher="Sander in 't Velt"
+data-developer="Sander in 't Velt"
+data-ra="19295"
+data-notes=""
+data-thumb="../thumbs/wasm-4/dodgeball.jpg"
+data-media="../media/wasm-4/dodgeball.jpg"
+data-screenshot="../screenshots/wasm-4/dodgeball.jpg"
+data-logo="../logos/wasm-4/dodgeball.png"
+data-fanart="../fanart/wasm-4/dodgeball.jpg">
+Dodgeball
+</a>
+</td>
+
+<td>2022</td>
+<td>Sports</td>
+<td>Sander in 't Velt</td>
+<td>Sander in 't Velt</td>
+
+</tr>
+
+<tr id="dont-smash-into-obstacles"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/don t smash into obstacles.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Don't Smash into Obstacles"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19331"
+data-notes=""
+data-thumb="../thumbs/wasm-4/don t smash into obstacles.jpg"
+data-media="../media/wasm-4/don t smash into obstacles.jpg"
+data-screenshot="../screenshots/wasm-4/don t smash into obstacles.jpg"
+data-logo="../logos/wasm-4/don t smash into obstacles.png"
+data-fanart="../fanart/wasm-4/don t smash into obstacles.jpg">
+Don't Smash into Obstacles
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="endless-runner"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/endless runner.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Endless Runner"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19314"
+data-notes=""
+data-thumb="../thumbs/wasm-4/endless runner.jpg"
+data-media="../media/wasm-4/endless runner.jpg"
+data-screenshot="../screenshots/wasm-4/endless runner.jpg"
+data-logo="../logos/wasm-4/endless runner.png"
+data-fanart="../fanart/wasm-4/endless runner.jpg">
+Endless Runner
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="explore-the-grotto"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/explore the grotto.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Explore the Grotto"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19313"
+data-notes=""
+data-thumb="../thumbs/wasm-4/explore the grotto.jpg"
+data-media="../media/wasm-4/explore the grotto.jpg"
+data-screenshot="../screenshots/wasm-4/explore the grotto.jpg"
+data-logo="../logos/wasm-4/explore the grotto.png"
+data-fanart="../fanart/wasm-4/explore the grotto.jpg">
+Explore the Grotto
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="first-flight"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/first flight.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="First Flight"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="21394"
+data-notes=""
+data-thumb="../thumbs/wasm-4/first flight.jpg"
+data-media="../media/wasm-4/first flight.jpg"
+data-screenshot="../screenshots/wasm-4/first flight.jpg"
+data-logo="../logos/wasm-4/first flight.png"
+data-fanart="../fanart/wasm-4/first flight.jpg">
+First Flight
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="formula-1"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/formula 1.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Formula 1"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="34167"
+data-notes=""
+data-thumb="../thumbs/wasm-4/formula 1.jpg"
+data-media="../media/wasm-4/formula 1.jpg"
+data-screenshot="../screenshots/wasm-4/formula 1.jpg"
+data-logo="../logos/wasm-4/formula 1.png"
+data-fanart="../fanart/wasm-4/formula 1.jpg">
+Formula 1
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="future-avoid"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/future avoid.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Future Avoid"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19335"
+data-notes=""
+data-thumb="../thumbs/wasm-4/future avoid.jpg"
+data-media="../media/wasm-4/future avoid.jpg"
+data-screenshot="../screenshots/wasm-4/future avoid.jpg"
+data-logo="../logos/wasm-4/future avoid.png"
+data-fanart="../fanart/wasm-4/future avoid.jpg">
+Future Avoid
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="fuzzy-world-cup"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/fuzzy world cup.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fuzzy World Cup"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="22550"
+data-notes=""
+data-thumb="../thumbs/wasm-4/fuzzy world cup.jpg"
+data-media="../media/wasm-4/fuzzy world cup.jpg"
+data-screenshot="../screenshots/wasm-4/fuzzy world cup.jpg"
+data-logo="../logos/wasm-4/fuzzy world cup.png"
+data-fanart="../fanart/wasm-4/fuzzy world cup.jpg">
+Fuzzy World Cup
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="galdr"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/galdr.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="GALDR"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="27651"
+data-notes=""
+data-thumb="../thumbs/wasm-4/galdr.jpg"
+data-media="../media/wasm-4/galdr.jpg"
+data-screenshot="../screenshots/wasm-4/galdr.jpg"
+data-logo="../logos/wasm-4/galdr.png"
+data-fanart="../fanart/wasm-4/galdr.jpg">
+GALDR
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="hammer-joe"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/hammer joe.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hammer Joe"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19324"
+data-notes=""
+data-thumb="../thumbs/wasm-4/hammer joe.jpg"
+data-media="../media/wasm-4/hammer joe.jpg"
+data-screenshot="../screenshots/wasm-4/hammer joe.jpg"
+data-logo="../logos/wasm-4/hammer joe.png"
+data-fanart="../fanart/wasm-4/hammer joe.jpg">
+Hammer Joe
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="hills-in-the-moonlight"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/hills in the moonlight.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hills in the Moonlight"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19322"
+data-notes=""
+data-thumb="../thumbs/wasm-4/hills in the moonlight.jpg"
+data-media="../media/wasm-4/hills in the moonlight.jpg"
+data-screenshot="../screenshots/wasm-4/hills in the moonlight.jpg"
+data-logo="../logos/wasm-4/hills in the moonlight.png"
+data-fanart="../fanart/wasm-4/hills in the moonlight.jpg">
+Hills in the Moonlight
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="its-corn!"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/it s corn.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="It's Corn!"
+data-year="2022"
+data-genre="Racing"
+data-publisher="-"
+data-developer="SLiV"
+data-ra="21491"
+data-notes="It's Corn! is a Racing game for the WASM-4, developed and released in 2022 by SLiV.\n\nMy entry for GBJam 10. Made in a little over a day using my own esoteric programming language, Penne, for the WASM-4 fantasy console.\nControls: arrow keys, X for a boost."
+data-thumb="../thumbs/wasm-4/it s corn.jpg"
+data-media="../media/wasm-4/it s corn.jpg"
+data-screenshot="../screenshots/wasm-4/it s corn.jpg"
+data-logo="../logos/wasm-4/it s corn.png"
+data-fanart="../fanart/wasm-4/it s corn.jpg">
+It's Corn!
+</a>
+</td>
+
+<td>2022</td>
+<td>Racing</td>
+<td>-</td>
+<td>SLiV</td>
+
+</tr>
+
+<tr id="journey-to-entorus"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/journey to entorus.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Journey to Entorus"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="20392"
+data-notes=""
+data-thumb="../thumbs/wasm-4/journey to entorus.jpg"
+data-media="../media/wasm-4/journey to entorus.jpg"
+data-screenshot="../screenshots/wasm-4/journey to entorus.jpg"
+data-logo="../logos/wasm-4/journey to entorus.png"
+data-fanart="../fanart/wasm-4/journey to entorus.jpg">
+Journey to Entorus
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="legend-of-geml,-the-awakening"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/legend of geml the awakening.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Legend of GEML, The: Awakening"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19325"
+data-notes=""
+data-thumb="../thumbs/wasm-4/legend of geml the awakening.jpg"
+data-media="../media/wasm-4/legend of geml the awakening.jpg"
+data-screenshot="../screenshots/wasm-4/legend of geml the awakening.jpg"
+data-logo="../logos/wasm-4/legend of geml the awakening.png"
+data-fanart="../fanart/wasm-4/legend of geml the awakening.jpg">
+Legend of GEML, The: Awakening
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="lime-volleyball"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/lime volleyball.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Lime Volleyball"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19336"
+data-notes=""
+data-thumb="../thumbs/wasm-4/lime volleyball.jpg"
+data-media="../media/wasm-4/lime volleyball.jpg"
+data-screenshot="../screenshots/wasm-4/lime volleyball.jpg"
+data-logo="../logos/wasm-4/lime volleyball.png"
+data-fanart="../fanart/wasm-4/lime volleyball.jpg">
+Lime Volleyball
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="lingword"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/lingword.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Lingword"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19302"
+data-notes=""
+data-thumb="../thumbs/wasm-4/lingword.jpg"
+data-media="../media/wasm-4/lingword.jpg"
+data-screenshot="../screenshots/wasm-4/lingword.jpg"
+data-logo="../logos/wasm-4/lingword.png"
+data-fanart="../fanart/wasm-4/lingword.jpg">
+Lingword
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="meteoroids"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/meteoroids.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Meteoroids"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19301"
+data-notes=""
+data-thumb="../thumbs/wasm-4/meteoroids.jpg"
+data-media="../media/wasm-4/meteoroids.jpg"
+data-screenshot="../screenshots/wasm-4/meteoroids.jpg"
+data-logo="../logos/wasm-4/meteoroids.png"
+data-fanart="../fanart/wasm-4/meteoroids.jpg">
+Meteoroids
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="micro-quest"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/micro quest.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Micro Quest"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19304"
+data-notes=""
+data-thumb="../thumbs/wasm-4/micro quest.jpg"
+data-media="../media/wasm-4/micro quest.jpg"
+data-screenshot="../screenshots/wasm-4/micro quest.jpg"
+data-logo="../logos/wasm-4/micro quest.png"
+data-fanart="../fanart/wasm-4/micro quest.jpg">
+Micro Quest
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="miku-15"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/miku 15.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="MIKU-15"
+data-year="2021"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Mr.Rafael"
+data-ra="19315"
+data-notes="This is a simple 15-Puzzle, with images of Hatsune MIku. You have to sort all the pieces until you get the final image.\n\n\u2022 On title screen, Press Z or X to start the game.\n\u2022 Use arrow keys to move the pieces.\n\u2022 Press X to open the game's menu, and Z to select an option."
+data-thumb="../thumbs/wasm-4/miku 15.jpg"
+data-media="../media/wasm-4/miku 15.jpg"
+data-screenshot="../screenshots/wasm-4/miku 15.jpg"
+data-logo="../logos/wasm-4/miku 15.png"
+data-fanart="../fanart/wasm-4/miku 15.jpg">
+MIKU-15
+</a>
+</td>
+
+<td>2021</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Mr.Rafael</td>
+
+</tr>
+
+<tr id="mind-palace"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/mind palace.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mind Palace"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19321"
+data-notes=""
+data-thumb="../thumbs/wasm-4/mind palace.jpg"
+data-media="../media/wasm-4/mind palace.jpg"
+data-screenshot="../screenshots/wasm-4/mind palace.jpg"
+data-logo="../logos/wasm-4/mind palace.png"
+data-fanart="../fanart/wasm-4/mind palace.jpg">
+Mind Palace
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="minesweeper"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/minesweeper.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Minesweeper"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19294"
+data-notes=""
+data-thumb="../thumbs/wasm-4/minesweeper.jpg"
+data-media="../media/wasm-4/minesweeper.jpg"
+data-screenshot="../screenshots/wasm-4/minesweeper.jpg"
+data-logo="../logos/wasm-4/minesweeper.png"
+data-fanart="../fanart/wasm-4/minesweeper.jpg">
+Minesweeper
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="minigolf"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/minigolf.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Minigolf"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24122"
+data-notes=""
+data-thumb="../thumbs/wasm-4/minigolf.jpg"
+data-media="../media/wasm-4/minigolf.jpg"
+data-screenshot="../screenshots/wasm-4/minigolf.jpg"
+data-logo="../logos/wasm-4/minigolf.png"
+data-fanart="../fanart/wasm-4/minigolf.jpg">
+Minigolf
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="ninja-vs-knights"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/ninja vs knights.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ninja vs Knights"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="21393"
+data-notes=""
+data-thumb="../thumbs/wasm-4/ninja vs knights.jpg"
+data-media="../media/wasm-4/ninja vs knights.jpg"
+data-screenshot="../screenshots/wasm-4/ninja vs knights.jpg"
+data-logo="../logos/wasm-4/ninja vs knights.png"
+data-fanart="../fanart/wasm-4/ninja vs knights.jpg">
+Ninja vs Knights
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="one-slime-army"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/one slime army.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="One Slime Army"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24193"
+data-notes=""
+data-thumb="../thumbs/wasm-4/one slime army.jpg"
+data-media="../media/wasm-4/one slime army.jpg"
+data-screenshot="../screenshots/wasm-4/one slime army.jpg"
+data-logo="../logos/wasm-4/one slime army.png"
+data-fanart="../fanart/wasm-4/one slime army.jpg">
+One Slime Army
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="phantom-shift"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/phantom shift.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Phantom Shift"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="25681"
+data-notes=""
+data-thumb="../thumbs/wasm-4/phantom shift.jpg"
+data-media="../media/wasm-4/phantom shift.jpg"
+data-screenshot="../screenshots/wasm-4/phantom shift.jpg"
+data-logo="../logos/wasm-4/phantom shift.png"
+data-fanart="../fanart/wasm-4/phantom shift.jpg">
+Phantom Shift
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="ping"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/ping.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="PING"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24472"
+data-notes=""
+data-thumb="../thumbs/wasm-4/ping.jpg"
+data-media="../media/wasm-4/ping.jpg"
+data-screenshot="../screenshots/wasm-4/ping.jpg"
+data-logo="../logos/wasm-4/ping.png"
+data-fanart="../fanart/wasm-4/ping.jpg">
+PING
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="pixel-vs-zombies"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/pixel vs zombies.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pixel vs Zombies"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="34384"
+data-notes=""
+data-thumb="../thumbs/wasm-4/pixel vs zombies.jpg"
+data-media="../media/wasm-4/pixel vs zombies.jpg"
+data-screenshot="../screenshots/wasm-4/pixel vs zombies.jpg"
+data-logo="../logos/wasm-4/pixel vs zombies.png"
+data-fanart="../fanart/wasm-4/pixel vs zombies.jpg">
+Pixel vs Zombies
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="plctfarmer"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/plctfarmer.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Plctfarmer"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19309"
+data-notes=""
+data-thumb="../thumbs/wasm-4/plctfarmer.jpg"
+data-media="../media/wasm-4/plctfarmer.jpg"
+data-screenshot="../screenshots/wasm-4/plctfarmer.jpg"
+data-logo="../logos/wasm-4/plctfarmer.png"
+data-fanart="../fanart/wasm-4/plctfarmer.jpg">
+Plctfarmer
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="pong"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/pong.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pong"
+data-year="2021"
+data-genre="Action"
+data-publisher="-"
+data-developer="Fabrizio Vitale"
+data-ra="19316"
+data-notes="A port of the classic arcade game Pong for the WASM-4.\n\nP1 controls: Arrows, X, Z / P2 controls: ESDF, Tab, Q"
+data-thumb="../thumbs/wasm-4/pong.jpg"
+data-media="../media/wasm-4/pong.jpg"
+data-screenshot="../screenshots/wasm-4/pong.jpg"
+data-logo="../logos/wasm-4/pong.png"
+data-fanart="../fanart/wasm-4/pong.jpg">
+Pong
+</a>
+</td>
+
+<td>2021</td>
+<td>Action</td>
+<td>-</td>
+<td>Fabrizio Vitale</td>
+
+</tr>
+
+<tr id="presents-to-the-metal"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/presents to the metal.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Presents to the Metal"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19308"
+data-notes=""
+data-thumb="../thumbs/wasm-4/presents to the metal.jpg"
+data-media="../media/wasm-4/presents to the metal.jpg"
+data-screenshot="../screenshots/wasm-4/presents to the metal.jpg"
+data-logo="../logos/wasm-4/presents to the metal.png"
+data-fanart="../fanart/wasm-4/presents to the metal.jpg">
+Presents to the Metal
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="punch-em-up"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/punch em up.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Punch-Em-Up"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="25680"
+data-notes=""
+data-thumb="../thumbs/wasm-4/punch em up.jpg"
+data-media="../media/wasm-4/punch em up.jpg"
+data-screenshot="../screenshots/wasm-4/punch em up.jpg"
+data-logo="../logos/wasm-4/punch em up.png"
+data-fanart="../fanart/wasm-4/punch em up.jpg">
+Punch-Em-Up
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="racer"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/racer.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Racer"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="27644"
+data-notes=""
+data-thumb="../thumbs/wasm-4/racer.jpg"
+data-media="../media/wasm-4/racer.jpg"
+data-screenshot="../screenshots/wasm-4/racer.jpg"
+data-logo="../logos/wasm-4/racer.png"
+data-fanart="../fanart/wasm-4/racer.jpg">
+Racer
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="rolly-dango"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/rolly dango.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Rolly Dango"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19311"
+data-notes=""
+data-thumb="../thumbs/wasm-4/rolly dango.jpg"
+data-media="../media/wasm-4/rolly dango.jpg"
+data-screenshot="../screenshots/wasm-4/rolly dango.jpg"
+data-logo="../logos/wasm-4/rolly dango.png"
+data-fanart="../fanart/wasm-4/rolly dango.jpg">
+Rolly Dango
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="samurai-revenge"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/samurai revenge.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Samurai Revenge"
+data-year="2022"
+data-genre="Action"
+data-publisher="Krylan & Dominik Koperkiewicz"
+data-developer="Krylan & Dominik Koperkiewicz"
+data-ra="20458"
+data-notes="Game for WASM-4 Game Jam #2. Earn the highest score in this endless-destroying game driven by greed of revenge."
+data-thumb="../thumbs/wasm-4/samurai revenge.jpg"
+data-media="../media/wasm-4/samurai revenge.jpg"
+data-screenshot="../screenshots/wasm-4/samurai revenge.jpg"
+data-logo="../logos/wasm-4/samurai revenge.png"
+data-fanart="../fanart/wasm-4/samurai revenge.jpg">
+Samurai Revenge
+</a>
+</td>
+
+<td>2022</td>
+<td>Action</td>
+<td>Krylan & Dominik Koperkiewicz</td>
+<td>Krylan & Dominik Koperkiewicz</td>
+
+</tr>
+
+<tr id="skipahead"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/skipahead.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Skipahead"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19312"
+data-notes=""
+data-thumb="../thumbs/wasm-4/skipahead.jpg"
+data-media="../media/wasm-4/skipahead.jpg"
+data-screenshot="../screenshots/wasm-4/skipahead.jpg"
+data-logo="../logos/wasm-4/skipahead.png"
+data-fanart="../fanart/wasm-4/skipahead.jpg">
+Skipahead
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="snake"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/snake.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Snake"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19300"
+data-notes=""
+data-thumb="../thumbs/wasm-4/snake.jpg"
+data-media="../media/wasm-4/snake.jpg"
+data-screenshot="../screenshots/wasm-4/snake.jpg"
+data-logo="../logos/wasm-4/snake.png"
+data-fanart="../fanart/wasm-4/snake.jpg">
+Snake
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="sokoban"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/sokoban.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sokoban"
+data-year="2022"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="chemecse"
+data-ra="19542"
+data-notes="A sokoban game built for the WASM-4 fantasy console in the WASM-4 Game Jam\n\nP1 controls: Arrows, X, Z / P2 controls: ESDF, Tab, Q"
+data-thumb="../thumbs/wasm-4/sokoban.jpg"
+data-media="../media/wasm-4/sokoban.jpg"
+data-screenshot="../screenshots/wasm-4/sokoban.jpg"
+data-logo="../logos/wasm-4/sokoban.png"
+data-fanart="../fanart/wasm-4/sokoban.jpg">
+Sokoban
+</a>
+</td>
+
+<td>2022</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>chemecse</td>
+
+</tr>
+
+<tr id="spunky"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/spunky.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Spunky"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19323"
+data-notes=""
+data-thumb="../thumbs/wasm-4/spunky.jpg"
+data-media="../media/wasm-4/spunky.jpg"
+data-screenshot="../screenshots/wasm-4/spunky.jpg"
+data-logo="../logos/wasm-4/spunky.png"
+data-fanart="../fanart/wasm-4/spunky.jpg">
+Spunky
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="starpilot-w"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/starpilot w.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="StarPilot W"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="20381"
+data-notes=""
+data-thumb="../thumbs/wasm-4/starpilot w.jpg"
+data-media="../media/wasm-4/starpilot w.jpg"
+data-screenshot="../screenshots/wasm-4/starpilot w.jpg"
+data-logo="../logos/wasm-4/starpilot w.png"
+data-fanart="../fanart/wasm-4/starpilot w.jpg">
+StarPilot W
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="strikeforce"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/strikeforce.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Strikeforce"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="21391"
+data-notes=""
+data-thumb="../thumbs/wasm-4/strikeforce.jpg"
+data-media="../media/wasm-4/strikeforce.jpg"
+data-screenshot="../screenshots/wasm-4/strikeforce.jpg"
+data-logo="../logos/wasm-4/strikeforce.png"
+data-fanart="../fanart/wasm-4/strikeforce.jpg">
+Strikeforce
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="tail-gunner"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/tail gunner.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tail Gunner"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19305"
+data-notes=""
+data-thumb="../thumbs/wasm-4/tail gunner.jpg"
+data-media="../media/wasm-4/tail gunner.jpg"
+data-screenshot="../screenshots/wasm-4/tail gunner.jpg"
+data-logo="../logos/wasm-4/tail gunner.png"
+data-fanart="../fanart/wasm-4/tail gunner.jpg">
+Tail Gunner
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="tappyloop"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/tappyloop.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="TappyLoop"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19434"
+data-notes=""
+data-thumb="../thumbs/wasm-4/tappyloop.jpg"
+data-media="../media/wasm-4/tappyloop.jpg"
+data-screenshot="../screenshots/wasm-4/tappyloop.jpg"
+data-logo="../logos/wasm-4/tappyloop.png"
+data-fanart="../fanart/wasm-4/tappyloop.jpg">
+TappyLoop
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="texas-chainsaw-dodge"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/texas chainsaw dodge.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Texas Chainsaw Dodge"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="22432"
+data-notes=""
+data-thumb="../thumbs/wasm-4/texas chainsaw dodge.jpg"
+data-media="../media/wasm-4/texas chainsaw dodge.jpg"
+data-screenshot="../screenshots/wasm-4/texas chainsaw dodge.jpg"
+data-logo="../logos/wasm-4/texas chainsaw dodge.png"
+data-fanart="../fanart/wasm-4/texas chainsaw dodge.jpg">
+Texas Chainsaw Dodge
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="to-the-core"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/to the core.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="To the Core"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19296"
+data-notes=""
+data-thumb="../thumbs/wasm-4/to the core.jpg"
+data-media="../media/wasm-4/to the core.jpg"
+data-screenshot="../screenshots/wasm-4/to the core.jpg"
+data-logo="../logos/wasm-4/to the core.png"
+data-fanart="../fanart/wasm-4/to the core.jpg">
+To the Core
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="totally-not-sumo"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/totally not sumo.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Totally Not Sumo"
+data-year="Unknown"
+data-genre="Fighting"
+data-publisher="-"
+data-developer="-"
+data-ra="19319"
+data-notes=""
+data-thumb="../thumbs/wasm-4/totally not sumo.jpg"
+data-media="../media/wasm-4/totally not sumo.jpg"
+data-screenshot="../screenshots/wasm-4/totally not sumo.jpg"
+data-logo="../logos/wasm-4/totally not sumo.png"
+data-fanart="../fanart/wasm-4/totally not sumo.jpg">
+Totally Not Sumo
+</a>
+</td>
+
+<td>Unknown</td>
+<td>Fighting</td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="touhou-spirits"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/touhou spirits.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Touhou Spirits"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="20058"
+data-notes=""
+data-thumb="../thumbs/wasm-4/touhou spirits.jpg"
+data-media="../media/wasm-4/touhou spirits.jpg"
+data-screenshot="../screenshots/wasm-4/touhou spirits.jpg"
+data-logo="../logos/wasm-4/touhou spirits.png"
+data-fanart="../fanart/wasm-4/touhou spirits.jpg">
+Touhou Spirits
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="untangle"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/untangle.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Untangle"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="33048"
+data-notes=""
+data-thumb="../thumbs/wasm-4/untangle.jpg"
+data-media="../media/wasm-4/untangle.jpg"
+data-screenshot="../screenshots/wasm-4/untangle.jpg"
+data-logo="../logos/wasm-4/untangle.png"
+data-fanart="../fanart/wasm-4/untangle.jpg">
+Untangle
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="wasm4nia"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/wasm4nia.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="wasm4nia"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19297"
+data-notes=""
+data-thumb="../thumbs/wasm-4/wasm4nia.jpg"
+data-media="../media/wasm-4/wasm4nia.jpg"
+data-screenshot="../screenshots/wasm-4/wasm4nia.jpg"
+data-logo="../logos/wasm-4/wasm4nia.png"
+data-fanart="../fanart/wasm-4/wasm4nia.jpg">
+wasm4nia
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="watris"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/watris.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Watris"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19334"
+data-notes=""
+data-thumb="../thumbs/wasm-4/watris.jpg"
+data-media="../media/wasm-4/watris.jpg"
+data-screenshot="../screenshots/wasm-4/watris.jpg"
+data-logo="../logos/wasm-4/watris.png"
+data-fanart="../fanart/wasm-4/watris.jpg">
+Watris
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="wired"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/wired.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wired"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19317"
+data-notes=""
+data-thumb="../thumbs/wasm-4/wired.jpg"
+data-media="../media/wasm-4/wired.jpg"
+data-screenshot="../screenshots/wasm-4/wired.jpg"
+data-logo="../logos/wasm-4/wired.png"
+data-fanart="../fanart/wasm-4/wired.jpg">
+Wired
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="wloku"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/wloku.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="WLOKU"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19310"
+data-notes=""
+data-thumb="../thumbs/wasm-4/wloku.jpg"
+data-media="../media/wasm-4/wloku.jpg"
+data-screenshot="../screenshots/wasm-4/wloku.jpg"
+data-logo="../logos/wasm-4/wloku.png"
+data-fanart="../fanart/wasm-4/wloku.jpg">
+WLOKU
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="wormhole"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/wormhole.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wormhole"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19333"
+data-notes=""
+data-thumb="../thumbs/wasm-4/wormhole.jpg"
+data-media="../media/wasm-4/wormhole.jpg"
+data-screenshot="../screenshots/wasm-4/wormhole.jpg"
+data-logo="../logos/wasm-4/wormhole.png"
+data-fanart="../fanart/wasm-4/wormhole.jpg">
+Wormhole
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="you-will-return"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/you will return.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="You Will Return"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19320"
+data-notes=""
+data-thumb="../thumbs/wasm-4/you will return.jpg"
+data-media="../media/wasm-4/you will return.jpg"
+data-screenshot="../screenshots/wasm-4/you will return.jpg"
+data-logo="../logos/wasm-4/you will return.png"
+data-fanart="../fanart/wasm-4/you will return.jpg">
+You Will Return
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="znake"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/znake.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Znake"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24185"
+data-notes=""
+data-thumb="../thumbs/wasm-4/znake.jpg"
+data-media="../media/wasm-4/znake.jpg"
+data-screenshot="../screenshots/wasm-4/znake.jpg"
+data-logo="../logos/wasm-4/znake.png"
+data-fanart="../fanart/wasm-4/znake.jpg">
+Znake
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="zoop-zoop-bee-adventures-7"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/zoop zoop bee adventures 7.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Zoop Zoop Bee Adventures 7"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="21490"
+data-notes=""
+data-thumb="../thumbs/wasm-4/zoop zoop bee adventures 7.jpg"
+data-media="../media/wasm-4/zoop zoop bee adventures 7.jpg"
+data-screenshot="../screenshots/wasm-4/zoop zoop bee adventures 7.jpg"
+data-logo="../logos/wasm-4/zoop zoop bee adventures 7.png"
+data-fanart="../fanart/wasm-4/zoop zoop bee adventures 7.jpg">
+Zoop Zoop Bee Adventures 7
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="zxz"><td>
+<img
+class="thumb"
+src="../thumbs/wasm-4/zxz.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="ZxZ"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19298"
+data-notes=""
+data-thumb="../thumbs/wasm-4/zxz.jpg"
+data-media="../media/wasm-4/zxz.jpg"
+data-screenshot="../screenshots/wasm-4/zxz.jpg"
+data-logo="../logos/wasm-4/zxz.png"
+data-fanart="../fanart/wasm-4/zxz.jpg">
+ZxZ
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

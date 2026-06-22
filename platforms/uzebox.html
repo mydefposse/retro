@@ -1,0 +1,2122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Uzebox</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/uzebox.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/uzebox.png"
+onerror="this.style.display='none';">
+
+<h1>Uzebox</h1>
+
+
+<p class="platform-release">
+Released: 2008
+</p>
+
+
+<p>44 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Uzebox is an open-source, DIY game console developed by Belogic Software and released in 2008. Powered by an ATmega644 microcontroller and designed with no dedicated graphics or sound chips, the Uzebox generates video and audio entirely in software, making it a unique challenge for low-level developers. Games are written in C and loaded via SD card, with a growing library of homebrew titles created by a passionate community. With support for NES/SNES controllers and retro-style video output, the Uzebox blends classic console charm with homebrew creativity.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="2048"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/2048.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="2048"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24713"
+data-notes=""
+data-thumb="../thumbs/uzebox/2048.jpg"
+data-media="../media/uzebox/2048.jpg"
+data-screenshot="../screenshots/uzebox/2048.jpg"
+data-logo="../logos/uzebox/2048.png"
+data-fanart="../fanart/uzebox/2048.jpg">
+2048
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="alter-ego"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/alter ego.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Alter Ego"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24715"
+data-notes=""
+data-thumb="../thumbs/uzebox/alter ego.jpg"
+data-media="../media/uzebox/alter ego.jpg"
+data-screenshot="../screenshots/uzebox/alter ego.jpg"
+data-logo="../logos/uzebox/alter ego.png"
+data-fanart="../fanart/uzebox/alter ego.jpg">
+Alter Ego
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="atomix"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/atomix.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Atomix"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24717"
+data-notes=""
+data-thumb="../thumbs/uzebox/atomix.jpg"
+data-media="../media/uzebox/atomix.jpg"
+data-screenshot="../screenshots/uzebox/atomix.jpg"
+data-logo="../logos/uzebox/atomix.png"
+data-fanart="../fanart/uzebox/atomix.jpg">
+Atomix
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="b.c.-dash"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/b c dash.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="B.C. Dash"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24718"
+data-notes=""
+data-thumb="../thumbs/uzebox/b c dash.jpg"
+data-media="../media/uzebox/b c dash.jpg"
+data-screenshot="../screenshots/uzebox/b c dash.jpg"
+data-logo="../logos/uzebox/b c dash.png"
+data-fanart="../fanart/uzebox/b c dash.jpg">
+B.C. Dash
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="bomber"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/bomber.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Bomber"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24712"
+data-notes=""
+data-thumb="../thumbs/uzebox/bomber.jpg"
+data-media="../media/uzebox/bomber.jpg"
+data-screenshot="../screenshots/uzebox/bomber.jpg"
+data-logo="../logos/uzebox/bomber.png"
+data-fanart="../fanart/uzebox/bomber.jpg">
+Bomber
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="bugz"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/bugz.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Bugz"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24724"
+data-notes=""
+data-thumb="../thumbs/uzebox/bugz.jpg"
+data-media="../media/uzebox/bugz.jpg"
+data-screenshot="../screenshots/uzebox/bugz.jpg"
+data-logo="../logos/uzebox/bugz.png"
+data-fanart="../fanart/uzebox/bugz.jpg">
+Bugz
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="chickens-in-choppers"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/chickens in choppers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Chickens In Choppers"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24725"
+data-notes=""
+data-thumb="../thumbs/uzebox/chickens in choppers.jpg"
+data-media="../media/uzebox/chickens in choppers.jpg"
+data-screenshot="../screenshots/uzebox/chickens in choppers.jpg"
+data-logo="../logos/uzebox/chickens in choppers.png"
+data-fanart="../fanart/uzebox/chickens in choppers.jpg">
+Chickens In Choppers
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="circuit-puzzle"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/circuit puzzle.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Circuit Puzzle"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24800"
+data-notes=""
+data-thumb="../thumbs/uzebox/circuit puzzle.jpg"
+data-media="../media/uzebox/circuit puzzle.jpg"
+data-screenshot="../screenshots/uzebox/circuit puzzle.jpg"
+data-logo="../logos/uzebox/circuit puzzle.png"
+data-fanart="../fanart/uzebox/circuit puzzle.jpg">
+Circuit Puzzle
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="columns"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/columns.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Columns"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24731"
+data-notes=""
+data-thumb="../thumbs/uzebox/columns.jpg"
+data-media="../media/uzebox/columns.jpg"
+data-screenshot="../screenshots/uzebox/columns.jpg"
+data-logo="../logos/uzebox/columns.png"
+data-fanart="../fanart/uzebox/columns.jpg">
+Columns
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="das-boot"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/das boot.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Das Boot"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24732"
+data-notes=""
+data-thumb="../thumbs/uzebox/das boot.jpg"
+data-media="../media/uzebox/das boot.jpg"
+data-screenshot="../screenshots/uzebox/das boot.jpg"
+data-logo="../logos/uzebox/das boot.png"
+data-fanart="../fanart/uzebox/das boot.jpg">
+Das Boot
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="donkey-kong"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/donkey kong.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Donkey Kong"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24733"
+data-notes=""
+data-thumb="../thumbs/uzebox/donkey kong.jpg"
+data-media="../media/uzebox/donkey kong.jpg"
+data-screenshot="../screenshots/uzebox/donkey kong.jpg"
+data-logo="../logos/uzebox/donkey kong.png"
+data-fanart="../fanart/uzebox/donkey kong.jpg">
+Donkey Kong
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="flight-of-a-dragon"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/flight of a dragon.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Flight of a Dragon"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24805"
+data-notes=""
+data-thumb="../thumbs/uzebox/flight of a dragon.jpg"
+data-media="../media/uzebox/flight of a dragon.jpg"
+data-screenshot="../screenshots/uzebox/flight of a dragon.jpg"
+data-logo="../logos/uzebox/flight of a dragon.png"
+data-fanart="../fanart/uzebox/flight of a dragon.jpg">
+Flight of a Dragon
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="frog-feast"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/frog feast.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Frog Feast"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24739"
+data-notes=""
+data-thumb="../thumbs/uzebox/frog feast.jpg"
+data-media="../media/uzebox/frog feast.jpg"
+data-screenshot="../screenshots/uzebox/frog feast.jpg"
+data-logo="../logos/uzebox/frog feast.png"
+data-fanart="../fanart/uzebox/frog feast.jpg">
+Frog Feast
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="frogger"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/frogger.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Frogger"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24740"
+data-notes=""
+data-thumb="../thumbs/uzebox/frogger.jpg"
+data-media="../media/uzebox/frogger.jpg"
+data-screenshot="../screenshots/uzebox/frogger.jpg"
+data-logo="../logos/uzebox/frogger.png"
+data-fanart="../fanart/uzebox/frogger.jpg">
+Frogger
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="gorillas"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/gorillas.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Gorillas"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24746"
+data-notes=""
+data-thumb="../thumbs/uzebox/gorillas.jpg"
+data-media="../media/uzebox/gorillas.jpg"
+data-screenshot="../screenshots/uzebox/gorillas.jpg"
+data-logo="../logos/uzebox/gorillas.png"
+data-fanart="../fanart/uzebox/gorillas.jpg">
+Gorillas
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="hattrick"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/hattrick.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hattrick"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24810"
+data-notes=""
+data-thumb="../thumbs/uzebox/hattrick.jpg"
+data-media="../media/uzebox/hattrick.jpg"
+data-screenshot="../screenshots/uzebox/hattrick.jpg"
+data-logo="../logos/uzebox/hattrick.png"
+data-fanart="../fanart/uzebox/hattrick.jpg">
+Hattrick
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="holey-moley"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/holey moley.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Holey Moley"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24743"
+data-notes=""
+data-thumb="../thumbs/uzebox/holey moley.jpg"
+data-media="../media/uzebox/holey moley.jpg"
+data-screenshot="../screenshots/uzebox/holey moley.jpg"
+data-logo="../logos/uzebox/holey moley.png"
+data-fanart="../fanart/uzebox/holey moley.jpg">
+Holey Moley
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="iros"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/iros.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Iros"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24754"
+data-notes=""
+data-thumb="../thumbs/uzebox/iros.jpg"
+data-media="../media/uzebox/iros.jpg"
+data-screenshot="../screenshots/uzebox/iros.jpg"
+data-logo="../logos/uzebox/iros.png"
+data-fanart="../fanart/uzebox/iros.jpg">
+Iros
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="joyrider"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/joyrider.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Joyrider"
+data-year="2014"
+data-genre="Racing"
+data-publisher="Belogic"
+data-developer="James Howard"
+data-ra="24744"
+data-notes="Joyrider is an action / driving game for the Uzebox, in the style of the original Grand Theft Auto and Driver games, created by James Howard for the Uzebox Coding Competition 2014.\n\nThere are several game modes available:\n - Story : Features three missions with specific objectives\n - Free roam : Freely explore the city at your own leisure\n - Survival (Arcade) : With the full force of the police after you, survive as long as you can!\n - Pursuit (Arcade) : Play as the police and chase down the suspect, ramming them off the road.\n - Pursuit (2 Player): Player 1 plays as the police, whilst Player 2 tries to escape"
+data-thumb="../thumbs/uzebox/joyrider.jpg"
+data-media="../media/uzebox/joyrider.jpg"
+data-screenshot="../screenshots/uzebox/joyrider.jpg"
+data-logo="../logos/uzebox/joyrider.png"
+data-fanart="../fanart/uzebox/joyrider.jpg">
+Joyrider
+</a>
+</td>
+
+<td>2014</td>
+<td>Racing</td>
+<td>Belogic</td>
+<td>James Howard</td>
+
+</tr>
+
+<tr id="laser-puzzle"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/laser puzzle.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Laser Puzzle"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24752"
+data-notes=""
+data-thumb="../thumbs/uzebox/laser puzzle.jpg"
+data-media="../media/uzebox/laser puzzle.jpg"
+data-screenshot="../screenshots/uzebox/laser puzzle.jpg"
+data-logo="../logos/uzebox/laser puzzle.png"
+data-fanart="../fanart/uzebox/laser puzzle.jpg">
+Laser Puzzle
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="megatris"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/megatris.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Megatris"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="28806"
+data-notes=""
+data-thumb="../thumbs/uzebox/megatris.jpg"
+data-media="../media/uzebox/megatris.jpg"
+data-screenshot="../screenshots/uzebox/megatris.jpg"
+data-logo="../logos/uzebox/megatris.png"
+data-fanart="../fanart/uzebox/megatris.jpg">
+Megatris
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="mellis-retro-land"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/melli s retro land.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Melli's Retro Land"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24767"
+data-notes=""
+data-thumb="../thumbs/uzebox/melli s retro land.jpg"
+data-media="../media/uzebox/melli s retro land.jpg"
+data-screenshot="../screenshots/uzebox/melli s retro land.jpg"
+data-logo="../logos/uzebox/melli s retro land.png"
+data-fanart="../fanart/uzebox/melli s retro land.jpg">
+Melli's Retro Land
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="pengo"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/pengo.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pengo"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24758"
+data-notes=""
+data-thumb="../thumbs/uzebox/pengo.jpg"
+data-media="../media/uzebox/pengo.jpg"
+data-screenshot="../screenshots/uzebox/pengo.jpg"
+data-logo="../logos/uzebox/pengo.png"
+data-fanart="../fanart/uzebox/pengo.jpg">
+Pengo
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="reels-of-fortune"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/reels of fortune.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Reels of Fortune"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24759"
+data-notes=""
+data-thumb="../thumbs/uzebox/reels of fortune.jpg"
+data-media="../media/uzebox/reels of fortune.jpg"
+data-screenshot="../screenshots/uzebox/reels of fortune.jpg"
+data-logo="../logos/uzebox/reels of fortune.png"
+data-fanart="../fanart/uzebox/reels of fortune.jpg">
+Reels of Fortune
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="ruby-crush"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/ruby crush.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ruby Crush"
+data-year="2010"
+data-genre="Puzzle"
+data-publisher="Belogic"
+data-developer="Adrastos"
+data-ra="24763"
+data-notes="Ruby Crush is an open source clone of Bejeweled (or any other match-3 game). It is currently single player, with two modes: Classic and Timed."
+data-thumb="../thumbs/uzebox/ruby crush.jpg"
+data-media="../media/uzebox/ruby crush.jpg"
+data-screenshot="../screenshots/uzebox/ruby crush.jpg"
+data-logo="../logos/uzebox/ruby crush.png"
+data-fanart="../fanart/uzebox/ruby crush.jpg">
+Ruby Crush
+</a>
+</td>
+
+<td>2010</td>
+<td>Puzzle</td>
+<td>Belogic</td>
+<td>Adrastos</td>
+
+</tr>
+
+<tr id="rubycrush"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/rubycrush.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="rubycrush"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24763"
+data-notes=""
+data-thumb="../thumbs/uzebox/rubycrush.jpg"
+data-media="../media/uzebox/rubycrush.jpg"
+data-screenshot="../screenshots/uzebox/rubycrush.jpg"
+data-logo="../logos/uzebox/rubycrush.png"
+data-fanart="../fanart/uzebox/rubycrush.jpg">
+rubycrush
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="sokoban-world"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/sokoban world.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sokoban World"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24770"
+data-notes=""
+data-thumb="../thumbs/uzebox/sokoban world.jpg"
+data-media="../media/uzebox/sokoban world.jpg"
+data-screenshot="../screenshots/uzebox/sokoban world.jpg"
+data-logo="../logos/uzebox/sokoban world.png"
+data-fanart="../fanart/uzebox/sokoban world.jpg">
+Sokoban World
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="sokoban-world-2"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/sokoban world 2.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sokoban World 2"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="27961"
+data-notes=""
+data-thumb="../thumbs/uzebox/sokoban world 2.jpg"
+data-media="../media/uzebox/sokoban world 2.jpg"
+data-screenshot="../screenshots/uzebox/sokoban world 2.jpg"
+data-logo="../logos/uzebox/sokoban world 2.png"
+data-fanart="../fanart/uzebox/sokoban world 2.jpg">
+Sokoban World 2
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="solitaire"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/solitaire.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Solitaire"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24772"
+data-notes=""
+data-thumb="../thumbs/uzebox/solitaire.jpg"
+data-media="../media/uzebox/solitaire.jpg"
+data-screenshot="../screenshots/uzebox/solitaire.jpg"
+data-logo="../logos/uzebox/solitaire.png"
+data-fanart="../fanart/uzebox/solitaire.jpg">
+Solitaire
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="space-age"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/space age.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Age"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24773"
+data-notes=""
+data-thumb="../thumbs/uzebox/space age.jpg"
+data-media="../media/uzebox/space age.jpg"
+data-screenshot="../screenshots/uzebox/space age.jpg"
+data-logo="../logos/uzebox/space age.png"
+data-fanart="../fanart/uzebox/space age.jpg">
+Space Age
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="space-age-directors-cut"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/space age director s cut.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Age: Director's Cut"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="28940"
+data-notes=""
+data-thumb="../thumbs/uzebox/space age director s cut.jpg"
+data-media="../media/uzebox/space age director s cut.jpg"
+data-screenshot="../screenshots/uzebox/space age director s cut.jpg"
+data-logo="../logos/uzebox/space age director s cut.png"
+data-fanart="../fanart/uzebox/space age director s cut.jpg">
+Space Age: Director's Cut
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="space-invaders"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/space invaders.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Invaders"
+data-year="2010"
+data-genre="Shooter"
+data-publisher="Belogic"
+data-developer="Paul McPhee"
+data-ra="24774"
+data-notes="Space Invaders is a re-make of the 1978 classic arcade game."
+data-thumb="../thumbs/uzebox/space invaders.jpg"
+data-media="../media/uzebox/space invaders.jpg"
+data-screenshot="../screenshots/uzebox/space invaders.jpg"
+data-logo="../logos/uzebox/space invaders.png"
+data-fanart="../fanart/uzebox/space invaders.jpg">
+Space Invaders
+</a>
+</td>
+
+<td>2010</td>
+<td>Shooter</td>
+<td>Belogic</td>
+<td>Paul McPhee</td>
+
+</tr>
+
+<tr id="stmforce"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/stmforce.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="STMFORCE"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24798"
+data-notes=""
+data-thumb="../thumbs/uzebox/stmforce.jpg"
+data-media="../media/uzebox/stmforce.jpg"
+data-screenshot="../screenshots/uzebox/stmforce.jpg"
+data-logo="../logos/uzebox/stmforce.png"
+data-fanart="../fanart/uzebox/stmforce.jpg">
+STMFORCE
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="stormforce"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/stormforce.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Stormforce"
+data-year="2016"
+data-genre="Shooter"
+data-publisher="Belogic"
+data-developer="Grobian99"
+data-ra="24798"
+data-notes="Stormforce is a vertical shooter. Use your star fighter to fight your way through 4 levels. There are no shields, so use your 3 smartbombs and 3 lives carefully.\n\nFeatures:\n- 4 levels\n- Some enemies\n- Some sound effects"
+data-thumb="../thumbs/uzebox/stormforce.jpg"
+data-media="../media/uzebox/stormforce.jpg"
+data-screenshot="../screenshots/uzebox/stormforce.jpg"
+data-logo="../logos/uzebox/stormforce.png"
+data-fanart="../fanart/uzebox/stormforce.jpg">
+Stormforce
+</a>
+</td>
+
+<td>2016</td>
+<td>Shooter</td>
+<td>Belogic</td>
+<td>Grobian99</td>
+
+</tr>
+
+<tr id="submarine"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/submarine.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="SubMarine"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24775"
+data-notes=""
+data-thumb="../thumbs/uzebox/submarine.jpg"
+data-media="../media/uzebox/submarine.jpg"
+data-screenshot="../screenshots/uzebox/submarine.jpg"
+data-logo="../logos/uzebox/submarine.png"
+data-fanart="../fanart/uzebox/submarine.jpg">
+SubMarine
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="tetris"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/tetris.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tetris"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24777"
+data-notes=""
+data-thumb="../thumbs/uzebox/tetris.jpg"
+data-media="../media/uzebox/tetris.jpg"
+data-screenshot="../screenshots/uzebox/tetris.jpg"
+data-logo="../logos/uzebox/tetris.png"
+data-fanart="../fanart/uzebox/tetris.jpg">
+Tetris
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="toorums-quest"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/toorum s quest.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Toorum's Quest"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24997"
+data-notes=""
+data-thumb="../thumbs/uzebox/toorum s quest.jpg"
+data-media="../media/uzebox/toorum s quest.jpg"
+data-screenshot="../screenshots/uzebox/toorum s quest.jpg"
+data-logo="../logos/uzebox/toorum s quest.png"
+data-fanart="../fanart/uzebox/toorum s quest.jpg">
+Toorum's Quest
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="uze-snakes"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/uze snakes.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Uze Snakes"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24781"
+data-notes=""
+data-thumb="../thumbs/uzebox/uze snakes.jpg"
+data-media="../media/uzebox/uze snakes.jpg"
+data-screenshot="../screenshots/uzebox/uze snakes.jpg"
+data-logo="../logos/uzebox/uze snakes.png"
+data-fanart="../fanart/uzebox/uze snakes.jpg">
+Uze Snakes
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="uzemaze"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/uzemaze.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="UzeMaze"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24801"
+data-notes=""
+data-thumb="../thumbs/uzebox/uzemaze.jpg"
+data-media="../media/uzebox/uzemaze.jpg"
+data-screenshot="../screenshots/uzebox/uzemaze.jpg"
+data-logo="../logos/uzebox/uzemaze.png"
+data-fanart="../fanart/uzebox/uzemaze.jpg">
+UzeMaze
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="uzemaze-uzemaze-ra"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/uzemaze uzemaze ra.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="UzeMaze: UzeMaze RA"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="25084"
+data-notes=""
+data-thumb="../thumbs/uzebox/uzemaze uzemaze ra.jpg"
+data-media="../media/uzebox/uzemaze uzemaze ra.jpg"
+data-screenshot="../screenshots/uzebox/uzemaze uzemaze ra.jpg"
+data-logo="../logos/uzebox/uzemaze uzemaze ra.png"
+data-fanart="../fanart/uzebox/uzemaze uzemaze ra.jpg">
+UzeMaze: UzeMaze RA
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="uzesweeper"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/uzesweeper.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Uzesweeper"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24783"
+data-notes=""
+data-thumb="../thumbs/uzebox/uzesweeper.jpg"
+data-media="../media/uzebox/uzesweeper.jpg"
+data-screenshot="../screenshots/uzebox/uzesweeper.jpg"
+data-logo="../logos/uzebox/uzesweeper.png"
+data-fanart="../fanart/uzebox/uzesweeper.jpg">
+Uzesweeper
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="xor"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/xor.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="XOR"
+data-year="2013"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Pitfall Jones"
+data-ra="24789"
+data-notes="XOR is a remake of an 8-bit game made by Astral Software back in 1987 for the BBC Micro, Amstrad CPC, ZX Spectrum etc. The object of the game is to pick up all the masks in the maze. That sounds easy but it can get devilishly difficult on later levels where you have things that can explode and turn the lights on and off. As you complete each level you are given a secret letter - once you have all 15 letters you can discover the hidden word - and become a member of the Order of XOR!"
+data-thumb="../thumbs/uzebox/xor.jpg"
+data-media="../media/uzebox/xor.jpg"
+data-screenshot="../screenshots/uzebox/xor.jpg"
+data-logo="../logos/uzebox/xor.png"
+data-fanart="../fanart/uzebox/xor.jpg">
+XOR
+</a>
+</td>
+
+<td>2013</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Pitfall Jones</td>
+
+</tr>
+
+<tr id="zombienator"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/zombienator.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Zombienator"
+data-year="2009"
+data-genre="Shooter"
+data-publisher="Belogic"
+data-developer="Peter Hedman (Phog)"
+data-ra="24790"
+data-notes="Zombinator is a shoot-em-up game taking place in a cemetery where you must shoot onslaughts of zombies.\n\nFeatures:\n - 2 player mode\n - Scrolling\n - Zombies!\n - Bushes and Churches!\n - FLAMETHROWER!!"
+data-thumb="../thumbs/uzebox/zombienator.jpg"
+data-media="../media/uzebox/zombienator.jpg"
+data-screenshot="../screenshots/uzebox/zombienator.jpg"
+data-logo="../logos/uzebox/zombienator.png"
+data-fanart="../fanart/uzebox/zombienator.jpg">
+Zombienator
+</a>
+</td>
+
+<td>2009</td>
+<td>Shooter</td>
+<td>Belogic</td>
+<td>Peter Hedman (Phog)</td>
+
+</tr>
+
+<tr id="zooming-secretary"><td>
+<img
+class="thumb"
+src="../thumbs/uzebox/zooming secretary.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Zooming Secretary"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="24793"
+data-notes=""
+data-thumb="../thumbs/uzebox/zooming secretary.jpg"
+data-media="../media/uzebox/zooming secretary.jpg"
+data-screenshot="../screenshots/uzebox/zooming secretary.jpg"
+data-logo="../logos/uzebox/zooming secretary.png"
+data-fanart="../fanart/uzebox/zooming secretary.jpg">
+Zooming Secretary
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

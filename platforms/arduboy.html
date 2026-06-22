@@ -1,0 +1,4026 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Arduboy</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/arduboy.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/arduboy.png"
+onerror="this.style.display='none';">
+
+<h1>Arduboy</h1>
+
+
+<p class="platform-release">
+Released: 2016
+</p>
+
+
+<p>100 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Arduboy is a credit card-sized, open-source handheld game console launched in 2016 by Kevin Bates. Powered by an ATmega32u4 microcontroller and featuring a monochrome OLED screen, the Arduboy was designed to bring accessible game development and retro-inspired gameplay to hobbyists and indie creators. With a focus on simplicity and creativity, games for the platform are written in Arduino C++, and users can upload new titles via USB. Despite its minimalist hardware, the Arduboy community has produced a wide range of homebrew games, from arcade classics to puzzle and RPG experiences.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="1944"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/1944.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="1944"
+data-year="2017"
+data-genre="Shooter"
+data-publisher="Filmote"
+data-developer="Filmote"
+data-ra="21470"
+data-notes=""
+data-thumb="../thumbs/arduboy/1944.jpg"
+data-media="../media/arduboy/1944.jpg"
+data-screenshot="../screenshots/arduboy/1944.jpg"
+data-logo="../logos/arduboy/1944.png"
+data-fanart="../fanart/arduboy/1944.jpg">
+1944
+</a>
+</td>
+
+<td>2017</td>
+<td>Shooter</td>
+<td>Filmote</td>
+<td>Filmote</td>
+
+</tr>
+
+<tr id="1nvader"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/1nvader.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="1nvader"
+data-year="2021"
+data-genre="Shooter"
+data-publisher="Filmote"
+data-developer="Filmote"
+data-ra="7911"
+data-notes="1NVADER is a one or two-player game played with one button, one laser, one 1NVADER, and one life. Play co-operatively, or competitively with a friend, or face the 1NVADER alone."
+data-thumb="../thumbs/arduboy/1nvader.jpg"
+data-media="../media/arduboy/1nvader.jpg"
+data-screenshot="../screenshots/arduboy/1nvader.jpg"
+data-logo="../logos/arduboy/1nvader.png"
+data-fanart="../fanart/arduboy/1nvader.jpg">
+1nvader
+</a>
+</td>
+
+<td>2021</td>
+<td>Shooter</td>
+<td>Filmote</td>
+<td>Filmote</td>
+
+</tr>
+
+<tr id="2048"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/2048.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="2048"
+data-year="2017"
+data-genre="Puzzle"
+data-publisher="Yuki"
+data-developer="Yuki"
+data-ra="29892"
+data-notes="A port of 2048 to Arduboy."
+data-thumb="../thumbs/arduboy/2048.jpg"
+data-media="../media/arduboy/2048.jpg"
+data-screenshot="../screenshots/arduboy/2048.jpg"
+data-logo="../logos/arduboy/2048.png"
+data-fanart="../fanart/arduboy/2048.jpg">
+2048
+</a>
+</td>
+
+<td>2017</td>
+<td>Puzzle</td>
+<td>Yuki</td>
+<td>Yuki</td>
+
+</tr>
+
+<tr id="ard-drivin"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ard drivin.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ard-Drivin"
+data-year="2017"
+data-genre="Racing"
+data-publisher="Remz"
+data-developer="Remz"
+data-ra="21384"
+data-notes="Technical info so far:\n\nGame runs at a constant rate of 67 frames per second\nRendered in 3 colors: black, gray, white\nGrayscale is achieved by flickering quickly between black and white, and also alternating the dithering pattern, so it looks more stable. The resulting grayscale is almost perfectly stable, except for a sort of visible subtle scanline glitch\nSprite scaling (pre-rendered scaled sprites, to be precise)\nSound (using ArduboyTones library)\nIt uses Arduboy2 lib, although most of the drawing routines have been written from scratch\nCustom font!\npng to Arduboy conversion made using Processing 3\nBold text!"
+data-thumb="../thumbs/arduboy/ard drivin.jpg"
+data-media="../media/arduboy/ard drivin.jpg"
+data-screenshot="../screenshots/arduboy/ard drivin.jpg"
+data-logo="../logos/arduboy/ard drivin.png"
+data-fanart="../fanart/arduboy/ard drivin.jpg">
+Ard-Drivin
+</a>
+</td>
+
+<td>2017</td>
+<td>Racing</td>
+<td>Remz</td>
+<td>Remz</td>
+
+</tr>
+
+<tr id="ardu-turf-masters"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardu turf masters.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ardu Turf Masters"
+data-year="2017"
+data-genre="Sports"
+data-publisher="FerJerez"
+data-developer="FerJerez"
+data-ra="29898"
+data-notes="A Golf game tribute to the classic Neo Turf Masters.\n\nYour main goal is to fill your card with the lowest score possible.\n\nYou can replay holes to improve your score."
+data-thumb="../thumbs/arduboy/ardu turf masters.jpg"
+data-media="../media/arduboy/ardu turf masters.jpg"
+data-screenshot="../screenshots/arduboy/ardu turf masters.jpg"
+data-logo="../logos/arduboy/ardu turf masters.png"
+data-fanart="../fanart/arduboy/ardu turf masters.jpg">
+Ardu Turf Masters
+</a>
+</td>
+
+<td>2017</td>
+<td>Sports</td>
+<td>FerJerez</td>
+<td>FerJerez</td>
+
+</tr>
+
+<tr id="ardu-ez-button"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardu ez button.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ardu-EZ Button"
+data-year="2019"
+data-genre=""
+data-publisher="Shiyouganai"
+data-developer="Shiyouganai"
+data-ra="19548"
+data-notes=""
+data-thumb="../thumbs/arduboy/ardu ez button.jpg"
+data-media="../media/arduboy/ardu ez button.jpg"
+data-screenshot="../screenshots/arduboy/ardu ez button.jpg"
+data-logo="../logos/arduboy/ardu ez button.png"
+data-fanart="../fanart/arduboy/ardu ez button.jpg">
+Ardu-EZ Button
+</a>
+</td>
+
+<td>2019</td>
+<td></td>
+<td>Shiyouganai</td>
+<td>Shiyouganai</td>
+
+</tr>
+
+<tr id="ardu-man"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardu man.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ardu-Man"
+data-year="2016"
+data-genre="Action"
+data-publisher="Seth Robinson"
+data-developer="Seth Robinson"
+data-ra="9250"
+data-notes="An Arduboy tribute to Pac-Man."
+data-thumb="../thumbs/arduboy/ardu man.jpg"
+data-media="../media/arduboy/ardu man.jpg"
+data-screenshot="../screenshots/arduboy/ardu man.jpg"
+data-logo="../logos/arduboy/ardu man.png"
+data-fanart="../fanart/arduboy/ardu man.jpg">
+Ardu-Man
+</a>
+</td>
+
+<td>2016</td>
+<td>Action</td>
+<td>Seth Robinson</td>
+<td>Seth Robinson</td>
+
+</tr>
+
+<tr id="arduboy-says"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/arduboy says.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Arduboy Says"
+data-year="2017"
+data-genre=""
+data-publisher="-"
+data-developer="Slade"
+data-ra="29900"
+data-notes=""
+data-thumb="../thumbs/arduboy/arduboy says.jpg"
+data-media="../media/arduboy/arduboy says.jpg"
+data-screenshot="../screenshots/arduboy/arduboy says.jpg"
+data-logo="../logos/arduboy/arduboy says.png"
+data-fanart="../fanart/arduboy/arduboy says.jpg">
+Arduboy Says
+</a>
+</td>
+
+<td>2017</td>
+<td></td>
+<td>-</td>
+<td>Slade</td>
+
+</tr>
+
+<tr id="ardubullets"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardubullets.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="ARDUBULLETs"
+data-year="2020"
+data-genre="Shooter"
+data-publisher="obono"
+data-developer="obono"
+data-ra="29902"
+data-notes="Defeat large waves of enemies within one minute. Enemy attack patterns are randomly generated from a five-letter code, which you can share to let others play the same level."
+data-thumb="../thumbs/arduboy/ardubullets.jpg"
+data-media="../media/arduboy/ardubullets.jpg"
+data-screenshot="../screenshots/arduboy/ardubullets.jpg"
+data-logo="../logos/arduboy/ardubullets.png"
+data-fanart="../fanart/arduboy/ardubullets.jpg">
+ARDUBULLETs
+</a>
+</td>
+
+<td>2020</td>
+<td>Shooter</td>
+<td>obono</td>
+<td>obono</td>
+
+</tr>
+
+<tr id="ardugods"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardugods.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="ArduGods"
+data-year="2021"
+data-genre="Construction and Management Simulation"
+data-publisher="Resetreboot"
+data-developer="Resetreboot"
+data-ra="19516"
+data-notes=""
+data-thumb="../thumbs/arduboy/ardugods.jpg"
+data-media="../media/arduboy/ardugods.jpg"
+data-screenshot="../screenshots/arduboy/ardugods.jpg"
+data-logo="../logos/arduboy/ardugods.png"
+data-fanart="../fanart/arduboy/ardugods.jpg">
+ArduGods
+</a>
+</td>
+
+<td>2021</td>
+<td>Construction and Management Simulation</td>
+<td>Resetreboot</td>
+<td>Resetreboot</td>
+
+</tr>
+
+<tr id="ardugolf-18-hole-mini-golf"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardugolf 18 hole mini golf.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="ArduGolf: 18-Hole Mini Golf"
+data-year="2022"
+data-genre="Sports"
+data-publisher="brow1067"
+data-developer="brow1067"
+data-ra="19855"
+data-notes=""
+data-thumb="../thumbs/arduboy/ardugolf 18 hole mini golf.jpg"
+data-media="../media/arduboy/ardugolf 18 hole mini golf.jpg"
+data-screenshot="../screenshots/arduboy/ardugolf 18 hole mini golf.jpg"
+data-logo="../logos/arduboy/ardugolf 18 hole mini golf.png"
+data-fanart="../fanart/arduboy/ardugolf 18 hole mini golf.jpg">
+ArduGolf: 18-Hole Mini Golf
+</a>
+</td>
+
+<td>2022</td>
+<td>Sports</td>
+<td>brow1067</td>
+<td>brow1067</td>
+
+</tr>
+
+<tr id="arduminer"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/arduminer.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Arduminer"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="10664"
+data-notes=""
+data-thumb="../thumbs/arduboy/arduminer.jpg"
+data-media="../media/arduboy/arduminer.jpg"
+data-screenshot="../screenshots/arduboy/arduminer.jpg"
+data-logo="../logos/arduboy/arduminer.png"
+data-fanart="../fanart/arduboy/arduminer.jpg">
+Arduminer
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="arduracer"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/arduracer.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="ArduRacer"
+data-year="2020"
+data-genre="Racing"
+data-publisher="Tonym128"
+data-developer="Tonym128"
+data-ra="28138"
+data-notes="Ardu-Racer is a top down racing time trail racing game for the ArduBoy.\n\nGame works like follows, if you beat the number 2 time, you can advance to the next stage. You need to do 5 laps on each stage. The stages have checkpoints which you have go through. Your fastest lap time is what gets you to advance.\n\nFeatures:\n-Top down racing action\n-10 Stages\n-Smooth scrolling\n-Saves best times and stage progression automatically when you get a better time or progress stages\n-Can use Tiled to make maps"
+data-thumb="../thumbs/arduboy/arduracer.jpg"
+data-media="../media/arduboy/arduracer.jpg"
+data-screenshot="../screenshots/arduboy/arduracer.jpg"
+data-logo="../logos/arduboy/arduracer.png"
+data-fanart="../fanart/arduboy/arduracer.jpg">
+ArduRacer
+</a>
+</td>
+
+<td>2020</td>
+<td>Racing</td>
+<td>Tonym128</td>
+<td>Tonym128</td>
+
+</tr>
+
+<tr id="ardurogue"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardurogue.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="ArduRogue"
+data-year="2022"
+data-genre="Action"
+data-publisher="brow1067"
+data-developer="brow1067"
+data-ra="29905"
+data-notes="An Arduboy roguelike."
+data-thumb="../thumbs/arduboy/ardurogue.jpg"
+data-media="../media/arduboy/ardurogue.jpg"
+data-screenshot="../screenshots/arduboy/ardurogue.jpg"
+data-logo="../logos/arduboy/ardurogue.png"
+data-fanart="../fanart/arduboy/ardurogue.jpg">
+ArduRogue
+</a>
+</td>
+
+<td>2022</td>
+<td>Action</td>
+<td>brow1067</td>
+<td>brow1067</td>
+
+</tr>
+
+<tr id="ardusweeper"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardusweeper.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ardusweeper"
+data-year="2016"
+data-genre="Puzzle"
+data-publisher="Frrout"
+data-developer="Frrout"
+data-ra="8633"
+data-notes="A minesweeper-like for the Arduboy."
+data-thumb="../thumbs/arduboy/ardusweeper.jpg"
+data-media="../media/arduboy/ardusweeper.jpg"
+data-screenshot="../screenshots/arduboy/ardusweeper.jpg"
+data-logo="../logos/arduboy/ardusweeper.png"
+data-fanart="../fanart/arduboy/ardusweeper.jpg">
+Ardusweeper
+</a>
+</td>
+
+<td>2016</td>
+<td>Puzzle</td>
+<td>Frrout</td>
+<td>Frrout</td>
+
+</tr>
+
+<tr id="arduventure-trail-of-the-blade"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/arduventure trail of the blade.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Arduventure: Trail of the Blade"
+data-year="2018"
+data-genre="Action •  Role-Playing"
+data-publisher="Team A.R.G."
+data-developer="Team A.R.G."
+data-ra="11124"
+data-notes=""
+data-thumb="../thumbs/arduboy/arduventure trail of the blade.jpg"
+data-media="../media/arduboy/arduventure trail of the blade.jpg"
+data-screenshot="../screenshots/arduboy/arduventure trail of the blade.jpg"
+data-logo="../logos/arduboy/arduventure trail of the blade.png"
+data-fanart="../fanart/arduboy/arduventure trail of the blade.jpg">
+Arduventure: Trail of the Blade
+</a>
+</td>
+
+<td>2018</td>
+<td>Action •  Role-Playing</td>
+<td>Team A.R.G.</td>
+<td>Team A.R.G.</td>
+
+</tr>
+
+<tr id="ardynia-an-elvish-adventure"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ardynia an elvish adventure.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ardynia: An Elvish Adventure"
+data-year="2018"
+data-genre="Adventure"
+data-publisher="city41"
+data-developer="city41"
+data-ra="5840"
+data-notes="Hey everyone! I wanted to share some information about the game I'm developing for the Arduboy, called Ardynia. It\u2019s inspired by the Zelda series, particularly Link\u2019s Awakening.\n\nThe game features an auto-save function, and completing the game will result in about 20 auto-saves being created.\n\nArdynia includes a large overworld to explore, three dungeons, three equipable items in addition to your sword, three bosses, six enemy types, and several secret areas. On average, each dungeon consists of 29 rooms.\n\nI\u2019ve fully implemented the game engine, and both the overworld and dungeons are in place. Right now, I'm focusing on populating the dungeons with content and designing engaging puzzles."
+data-thumb="../thumbs/arduboy/ardynia an elvish adventure.jpg"
+data-media="../media/arduboy/ardynia an elvish adventure.jpg"
+data-screenshot="../screenshots/arduboy/ardynia an elvish adventure.jpg"
+data-logo="../logos/arduboy/ardynia an elvish adventure.png"
+data-fanart="../fanart/arduboy/ardynia an elvish adventure.jpg">
+Ardynia: An Elvish Adventure
+</a>
+</td>
+
+<td>2018</td>
+<td>Adventure</td>
+<td>city41</td>
+<td>city41</td>
+
+</tr>
+
+<tr id="artillery"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/artillery.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="ARtillery"
+data-year="2017"
+data-genre="Action"
+data-publisher="Bergasms"
+data-developer="Bergasms"
+data-ra="29908"
+data-notes="The classic 2 player artillery game now on Arduboy!"
+data-thumb="../thumbs/arduboy/artillery.jpg"
+data-media="../media/arduboy/artillery.jpg"
+data-screenshot="../screenshots/arduboy/artillery.jpg"
+data-logo="../logos/arduboy/artillery.png"
+data-fanart="../fanart/arduboy/artillery.jpg">
+ARtillery
+</a>
+</td>
+
+<td>2017</td>
+<td>Action</td>
+<td>Bergasms</td>
+<td>Bergasms</td>
+
+</tr>
+
+<tr id="biribiribeat"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/biribiribeat.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="BiriBiriBeat"
+data-year="2020"
+data-genre="Music"
+data-publisher="Shiyouganai"
+data-developer="Shiyouganai"
+data-ra="19511"
+data-notes="BiriBiriBeat is a miniature rhythm game experience in a microscopic 28KB package. Join your robotic guide Navi and groove together to square wave sounds as you tap your way to the top of the scoreboard! This game is designed and compiled for the Arduboy handheld game system."
+data-thumb="../thumbs/arduboy/biribiribeat.jpg"
+data-media="../media/arduboy/biribiribeat.jpg"
+data-screenshot="../screenshots/arduboy/biribiribeat.jpg"
+data-logo="../logos/arduboy/biribiribeat.png"
+data-fanart="../fanart/arduboy/biribiribeat.jpg">
+BiriBiriBeat
+</a>
+</td>
+
+<td>2020</td>
+<td>Music</td>
+<td>Shiyouganai</td>
+<td>Shiyouganai</td>
+
+</tr>
+
+<tr id="bitwars"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/bitwars.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="BitWars"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="29919"
+data-notes=""
+data-thumb="../thumbs/arduboy/bitwars.jpg"
+data-media="../media/arduboy/bitwars.jpg"
+data-screenshot="../screenshots/arduboy/bitwars.jpg"
+data-logo="../logos/arduboy/bitwars.png"
+data-fanart="../fanart/arduboy/bitwars.jpg">
+BitWars
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="blackjack"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/blackjack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Blackjack"
+data-year="2018"
+data-genre="Casino"
+data-publisher="Filmote"
+data-developer="Filmote"
+data-ra="7871"
+data-notes="Blackjack for the Arduboy"
+data-thumb="../thumbs/arduboy/blackjack.jpg"
+data-media="../media/arduboy/blackjack.jpg"
+data-screenshot="../screenshots/arduboy/blackjack.jpg"
+data-logo="../logos/arduboy/blackjack.png"
+data-fanart="../fanart/arduboy/blackjack.jpg">
+Blackjack
+</a>
+</td>
+
+<td>2018</td>
+<td>Casino</td>
+<td>Filmote</td>
+<td>Filmote</td>
+
+</tr>
+
+<tr id="blade-runner"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/blade runner.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Blade Runner"
+data-year="2021"
+data-genre="Action"
+data-publisher="NoobGeek"
+data-developer="NoobGeek"
+data-ra="21408"
+data-notes="Your task is to move from one platform to another through the constructed blade-bridge. If you get to the exact center of the bridge, you earn one coin. Perfect hit 5 times in a row gives +5 coins. At the hard level, these indicators double."
+data-thumb="../thumbs/arduboy/blade runner.jpg"
+data-media="../media/arduboy/blade runner.jpg"
+data-screenshot="../screenshots/arduboy/blade runner.jpg"
+data-logo="../logos/arduboy/blade runner.png"
+data-fanart="../fanart/arduboy/blade runner.jpg">
+Blade Runner
+</a>
+</td>
+
+<td>2021</td>
+<td>Action</td>
+<td>NoobGeek</td>
+<td>NoobGeek</td>
+
+</tr>
+
+<tr id="blob-attack"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/blob attack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Blob Attack"
+data-year="2015"
+data-genre="Puzzle"
+data-publisher="Team A.R.G."
+data-developer="Team A.R.G."
+data-ra="29920"
+data-notes="Blob Attack is a falling block puzzle game inspired by Puyo Pop Fever. The game plays the same as most Puyo Puyo variants. Sets of two blobs fall from the top, and each blob can be one of five types. You need to match at least four of the same blobs in order to clear them and increase your score. You can see the next two upcoming sets of blobs on the side of the play field. The left, right, and down buttons on the directional pad are used to move the sets of blobs, and the two face buttons are used to rotate them clockwise and counterclockwise. The more points you score, the faster the sets of blobs fall. Once all the blobs pile up to the top of the screen, you lose the game."
+data-thumb="../thumbs/arduboy/blob attack.jpg"
+data-media="../media/arduboy/blob attack.jpg"
+data-screenshot="../screenshots/arduboy/blob attack.jpg"
+data-logo="../logos/arduboy/blob attack.png"
+data-fanart="../fanart/arduboy/blob attack.jpg">
+Blob Attack
+</a>
+</td>
+
+<td>2015</td>
+<td>Puzzle</td>
+<td>Team A.R.G.</td>
+<td>Team A.R.G.</td>
+
+</tr>
+
+<tr id="blocks"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/blocks.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Blocks"
+data-year="2016"
+data-genre="Puzzle"
+data-publisher="w3woody"
+data-developer="w3woody"
+data-ra="29924"
+data-notes="An Arudboy Sokoban type game."
+data-thumb="../thumbs/arduboy/blocks.jpg"
+data-media="../media/arduboy/blocks.jpg"
+data-screenshot="../screenshots/arduboy/blocks.jpg"
+data-logo="../logos/arduboy/blocks.png"
+data-fanart="../fanart/arduboy/blocks.jpg">
+Blocks
+</a>
+</td>
+
+<td>2016</td>
+<td>Puzzle</td>
+<td>w3woody</td>
+<td>w3woody</td>
+
+</tr>
+
+<tr id="bytes-and-knights"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/bytes and knights.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Bytes and Knights"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/arduboy/bytes and knights.jpg"
+data-media="../media/arduboy/bytes and knights.jpg"
+data-screenshot="../screenshots/arduboy/bytes and knights.jpg"
+data-logo="../logos/arduboy/bytes and knights.png"
+data-fanart="../fanart/arduboy/bytes and knights.jpg">
+Bytes and Knights
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="castleboy"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/castleboy.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="CastleBoy"
+data-year="2017"
+data-genre="Platform"
+data-publisher="-"
+data-developer="Joel Lauener"
+data-ra="10665"
+data-notes="An Arduboy Castlevania clone."
+data-thumb="../thumbs/arduboy/castleboy.jpg"
+data-media="../media/arduboy/castleboy.jpg"
+data-screenshot="../screenshots/arduboy/castleboy.jpg"
+data-logo="../logos/arduboy/castleboy.png"
+data-fanart="../fanart/arduboy/castleboy.jpg">
+CastleBoy
+</a>
+</td>
+
+<td>2017</td>
+<td>Platform</td>
+<td>-</td>
+<td>Joel Lauener</td>
+
+</tr>
+
+<tr id="cat-mines"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/cat mines.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Cat Mines"
+data-year="2021"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Visual-mov"
+data-ra="21381"
+data-notes="The objective is to successfully mark all the mines (or cats) on the grid in the shortest amount of time possible. If you accidentally reveal a mine, the game ends. The game has three different difficulty levels, each with a different number of mines on the grid. Once you have won or lost, your time will be shown."
+data-thumb="../thumbs/arduboy/cat mines.jpg"
+data-media="../media/arduboy/cat mines.jpg"
+data-screenshot="../screenshots/arduboy/cat mines.jpg"
+data-logo="../logos/arduboy/cat mines.png"
+data-fanart="../fanart/arduboy/cat mines.jpg">
+Cat Mines
+</a>
+</td>
+
+<td>2021</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Visual-mov</td>
+
+</tr>
+
+<tr id="catacombs-of-the-damned"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/catacombs of the damned.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Catacombs of the Damned"
+data-year="2019"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="jhhoward"
+data-ra="13862"
+data-notes="Catacombs of the damned! is a first person shooter / dungeon crawler where you navigate 10 floors of a randomly generated dungeon dispatching monsters with your magic fireballs whilst collecting as much loot as possible."
+data-thumb="../thumbs/arduboy/catacombs of the damned.jpg"
+data-media="../media/arduboy/catacombs of the damned.jpg"
+data-screenshot="../screenshots/arduboy/catacombs of the damned.jpg"
+data-logo="../logos/arduboy/catacombs of the damned.png"
+data-fanart="../fanart/arduboy/catacombs of the damned.jpg">
+Catacombs of the Damned
+</a>
+</td>
+
+<td>2019</td>
+<td>Shooter</td>
+<td>-</td>
+<td>jhhoward</td>
+
+</tr>
+
+<tr id="cattle-quest"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/cattle quest.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Cattle Quest"
+data-year="2020"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="GarBenjamin"
+data-ra="21421"
+data-notes="You control the saucer and you are on a quest for cows. Your ship is armed with missiles and a tractor beam. You collect a cow and transport it to the bin at the very far left of the level and drop it in. The level is 5 screens wide.\n\nUsing the tractor beam drains energy as indicated by the meter in the lower left. Run out and the beam shuts off and there is a tiny cooldown for it to recharge before you can activate it again. Energy recharges automatically. You begin the game with 3 lives total 2 lives in reserve as indicated by the icons to the right of the energy bar."
+data-thumb="../thumbs/arduboy/cattle quest.jpg"
+data-media="../media/arduboy/cattle quest.jpg"
+data-screenshot="../screenshots/arduboy/cattle quest.jpg"
+data-logo="../logos/arduboy/cattle quest.png"
+data-fanart="../fanart/arduboy/cattle quest.jpg">
+Cattle Quest
+</a>
+</td>
+
+<td>2020</td>
+<td>Shooter</td>
+<td>-</td>
+<td>GarBenjamin</td>
+
+</tr>
+
+<tr id="chri-bocchi-cat"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/chri bocchi cat.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Chri-Bocchi Cat"
+data-year="2017"
+data-genre="Action"
+data-publisher="-"
+data-developer="obono"
+data-ra="21400"
+data-notes="Move the cat and bounce gift boxes for 2 minutes."
+data-thumb="../thumbs/arduboy/chri bocchi cat.jpg"
+data-media="../media/arduboy/chri bocchi cat.jpg"
+data-screenshot="../screenshots/arduboy/chri bocchi cat.jpg"
+data-logo="../logos/arduboy/chri bocchi cat.png"
+data-fanart="../fanart/arduboy/chri bocchi cat.jpg">
+Chri-Bocchi Cat
+</a>
+</td>
+
+<td>2017</td>
+<td>Action</td>
+<td>-</td>
+<td>obono</td>
+
+</tr>
+
+<tr id="circuit-dude"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/circuit dude.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Circuit Dude"
+data-year="2016"
+data-genre=""
+data-publisher="-"
+data-developer="Jonathan Holmes"
+data-ra="8779"
+data-notes="Help Circuit Dude build an awesome invention by leading him through 75 unique levels, completing circuits and plugging in microchips. After all chips are inserted into their sockets, the exit will activate and you can advance to the next puzzle! What kind of secret invention is Circuit Dude building? Complete all of the levels to find out!"
+data-thumb="../thumbs/arduboy/circuit dude.jpg"
+data-media="../media/arduboy/circuit dude.jpg"
+data-screenshot="../screenshots/arduboy/circuit dude.jpg"
+data-logo="../logos/arduboy/circuit dude.png"
+data-fanart="../fanart/arduboy/circuit dude.jpg">
+Circuit Dude
+</a>
+</td>
+
+<td>2016</td>
+<td></td>
+<td>-</td>
+<td>Jonathan Holmes</td>
+
+</tr>
+
+<tr id="cooties-attack"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/cooties attack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Cooties Attack"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="9219"
+data-notes=""
+data-thumb="../thumbs/arduboy/cooties attack.jpg"
+data-media="../media/arduboy/cooties attack.jpg"
+data-screenshot="../screenshots/arduboy/cooties attack.jpg"
+data-logo="../logos/arduboy/cooties attack.png"
+data-fanart="../fanart/arduboy/cooties attack.jpg">
+Cooties Attack
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="crates-3d"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/crates 3d.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Crates 3D"
+data-year="2016"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Badja"
+data-ra="23788"
+data-notes=""
+data-thumb="../thumbs/arduboy/crates 3d.jpg"
+data-media="../media/arduboy/crates 3d.jpg"
+data-screenshot="../screenshots/arduboy/crates 3d.jpg"
+data-logo="../logos/arduboy/crates 3d.png"
+data-fanart="../fanart/arduboy/crates 3d.jpg">
+Crates 3D
+</a>
+</td>
+
+<td>2016</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Badja</td>
+
+</tr>
+
+<tr id="crazykart"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/crazykart.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="CrazyKart"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="22869"
+data-notes=""
+data-thumb="../thumbs/arduboy/crazykart.jpg"
+data-media="../media/arduboy/crazykart.jpg"
+data-screenshot="../screenshots/arduboy/crazykart.jpg"
+data-logo="../logos/arduboy/crazykart.png"
+data-fanart="../fanart/arduboy/crazykart.jpg">
+CrazyKart
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="curse-of-astarok,-the"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/curse of astarok the.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Curse of Astarok, The"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="20068"
+data-notes=""
+data-thumb="../thumbs/arduboy/curse of astarok the.jpg"
+data-media="../media/arduboy/curse of astarok the.jpg"
+data-screenshot="../screenshots/arduboy/curse of astarok the.jpg"
+data-logo="../logos/arduboy/curse of astarok the.png"
+data-fanart="../fanart/arduboy/curse of astarok the.jpg">
+Curse of Astarok, The
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="dark-and-under"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/dark and under.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dark and Under"
+data-year="2017"
+data-genre="Role-Playing"
+data-publisher="Garage Collective"
+data-developer="Garage Collective"
+data-ra="11123"
+data-notes="Dark & Under is a dungeon crawler for Arduboy.\n\nDo you have what it takes to survive the depths of the Undermountain? Alone?\nIf so, then pack your gear, strap on your shield, explore  labyrinthine corridors and battle unimaginable foes to steal the greedy Dragon\u2019s treasure.\n\nThis dungeon is hardcore and it doesn\u2019t have a safe word!"
+data-thumb="../thumbs/arduboy/dark and under.jpg"
+data-media="../media/arduboy/dark and under.jpg"
+data-screenshot="../screenshots/arduboy/dark and under.jpg"
+data-logo="../logos/arduboy/dark and under.png"
+data-fanart="../fanart/arduboy/dark and under.jpg">
+Dark and Under
+</a>
+</td>
+
+<td>2017</td>
+<td>Role-Playing</td>
+<td>Garage Collective</td>
+<td>Garage Collective</td>
+
+</tr>
+
+<tr id="dazzle-dash"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/dazzle dash.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dazzle Dash"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/arduboy/dazzle dash.jpg"
+data-media="../media/arduboy/dazzle dash.jpg"
+data-screenshot="../screenshots/arduboy/dazzle dash.jpg"
+data-logo="../logos/arduboy/dazzle dash.png"
+data-fanart="../fanart/arduboy/dazzle dash.jpg">
+Dazzle Dash
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="dice-of-fate"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/dice of fate.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dice of Fate"
+data-year="2016"
+data-genre="Board Game"
+data-publisher="Team A.R.G."
+data-developer="Team A.R.G."
+data-ra="19577"
+data-notes="Dice of Fate is a dice rolling simulator for the Arduboy."
+data-thumb="../thumbs/arduboy/dice of fate.jpg"
+data-media="../media/arduboy/dice of fate.jpg"
+data-screenshot="../screenshots/arduboy/dice of fate.jpg"
+data-logo="../logos/arduboy/dice of fate.png"
+data-fanart="../fanart/arduboy/dice of fate.jpg">
+Dice of Fate
+</a>
+</td>
+
+<td>2016</td>
+<td>Board Game</td>
+<td>Team A.R.G.</td>
+<td>Team A.R.G.</td>
+
+</tr>
+
+<tr id="dinosaur"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/dinosaur.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dinosaur"
+data-year="2022"
+data-genre="Action"
+data-publisher="-"
+data-developer="Broskibble"
+data-ra="21383"
+data-notes="Google's dinosaur game ported to Arduboy."
+data-thumb="../thumbs/arduboy/dinosaur.jpg"
+data-media="../media/arduboy/dinosaur.jpg"
+data-screenshot="../screenshots/arduboy/dinosaur.jpg"
+data-logo="../logos/arduboy/dinosaur.png"
+data-fanart="../fanart/arduboy/dinosaur.jpg">
+Dinosaur
+</a>
+</td>
+
+<td>2022</td>
+<td>Action</td>
+<td>-</td>
+<td>Broskibble</td>
+
+</tr>
+
+<tr id="electrocardioground-fx"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/electrocardioground fx.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Electrocardioground FX"
+data-year="2024"
+data-genre="Action"
+data-publisher="-"
+data-developer="oddgoo"
+data-ra="29339"
+data-notes="A minimalist arcade game about keeping the beat alive.\n\nFeatures 2 game modes and alternating colours.\n\nInstructions:\n-Raise the columns with the arrows / buttons\n-Avoid or stomp the beats\n-Raised columns lose life over time. Resting columns regain it."
+data-thumb="../thumbs/arduboy/electrocardioground fx.jpg"
+data-media="../media/arduboy/electrocardioground fx.jpg"
+data-screenshot="../screenshots/arduboy/electrocardioground fx.jpg"
+data-logo="../logos/arduboy/electrocardioground fx.png"
+data-fanart="../fanart/arduboy/electrocardioground fx.jpg">
+Electrocardioground FX
+</a>
+</td>
+
+<td>2024</td>
+<td>Action</td>
+<td>-</td>
+<td>oddgoo</td>
+
+</tr>
+
+<tr id="fill-the-cup"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/fill the cup.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fill the Cup"
+data-year="2020"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Spartanfox"
+data-ra="19518"
+data-notes="The objective of the game is simple: Fill the cup\n\nThere are 10 unique levels. Some challenging and some just pure fun all mixed in.\n\nAfter you complete level 10 the game will enter a new mode, the time trial mode where you have a set amount of time to complete the level and progress to the next level.\n\nBeyond level 20 the game will repeat over and over but giving you less and less time to complete the levels."
+data-thumb="../thumbs/arduboy/fill the cup.jpg"
+data-media="../media/arduboy/fill the cup.jpg"
+data-screenshot="../screenshots/arduboy/fill the cup.jpg"
+data-logo="../logos/arduboy/fill the cup.png"
+data-fanart="../fanart/arduboy/fill the cup.jpg">
+Fill the Cup
+</a>
+</td>
+
+<td>2020</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Spartanfox</td>
+
+</tr>
+
+<tr id="fire-panic"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/fire panic.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fire Panic"
+data-year="2019"
+data-genre="Action"
+data-publisher="-"
+data-developer="Press Play On Tape"
+data-ra="19512"
+data-notes="An Arduboy remake of the Game & Watch classic."
+data-thumb="../thumbs/arduboy/fire panic.jpg"
+data-media="../media/arduboy/fire panic.jpg"
+data-screenshot="../screenshots/arduboy/fire panic.jpg"
+data-logo="../logos/arduboy/fire panic.png"
+data-fanart="../fanart/arduboy/fire panic.jpg">
+Fire Panic
+</a>
+</td>
+
+<td>2019</td>
+<td>Action</td>
+<td>-</td>
+<td>Press Play On Tape</td>
+
+</tr>
+
+<tr id="flappy-ball"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/flappy ball.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Flappy Ball"
+data-year="2016"
+data-genre="Action"
+data-publisher="-"
+data-developer="Chris Martinez"
+data-ra="5816"
+data-notes="Floaty Ball, or Flappy Ball as the intro screen calls it, was a game included as an example in early versions of the Arduboy library. It was removed because it was virtually unplayable, due to the speed that the ball moved.\n\nI\u2019ve taken some time to clean it up a bit and fiddled with the rise and fall speed of the ball, to make it easier to play (maybe too easy?). I renamed it from FloatyBall to FlappyBall, to match the intro screen."
+data-thumb="../thumbs/arduboy/flappy ball.jpg"
+data-media="../media/arduboy/flappy ball.jpg"
+data-screenshot="../screenshots/arduboy/flappy ball.jpg"
+data-logo="../logos/arduboy/flappy ball.png"
+data-fanart="../fanart/arduboy/flappy ball.jpg">
+Flappy Ball
+</a>
+</td>
+
+<td>2016</td>
+<td>Action</td>
+<td>-</td>
+<td>Chris Martinez</td>
+
+</tr>
+
+<tr id="flappy-birdie"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/flappy birdie.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Flappy Birdie"
+data-year="2018"
+data-genre="Action"
+data-publisher="-"
+data-developer="GameExpress Leonardo"
+data-ra="8691"
+data-notes="An Arduboy Flappy Bird clone."
+data-thumb="../thumbs/arduboy/flappy birdie.jpg"
+data-media="../media/arduboy/flappy birdie.jpg"
+data-screenshot="../screenshots/arduboy/flappy birdie.jpg"
+data-logo="../logos/arduboy/flappy birdie.png"
+data-fanart="../fanart/arduboy/flappy birdie.jpg">
+Flappy Birdie
+</a>
+</td>
+
+<td>2018</td>
+<td>Action</td>
+<td>-</td>
+<td>GameExpress Leonardo</td>
+
+</tr>
+
+<tr id="floor-fall"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/floor fall.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Floor Fall"
+data-year="2021"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Pharap"
+data-ra="21386"
+data-notes="An 11 level puzzle game."
+data-thumb="../thumbs/arduboy/floor fall.jpg"
+data-media="../media/arduboy/floor fall.jpg"
+data-screenshot="../screenshots/arduboy/floor fall.jpg"
+data-logo="../logos/arduboy/floor fall.png"
+data-fanart="../fanart/arduboy/floor fall.jpg">
+Floor Fall
+</a>
+</td>
+
+<td>2021</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Pharap</td>
+
+</tr>
+
+<tr id="fluffles-rainy-day"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/fluffles rainy day.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fluffles Rainy Day"
+data-year="2020"
+data-genre="Action"
+data-publisher="-"
+data-developer="Dreamer2345"
+data-ra="21500"
+data-notes="Can you help fluffles get through the rain? This pup doesent like getting their paws wet unfortunately they\u2019ve gotten themselves stuck out in a storm. Try and avoid as many puddles as you can so that Fluffles doesent get wet!"
+data-thumb="../thumbs/arduboy/fluffles rainy day.jpg"
+data-media="../media/arduboy/fluffles rainy day.jpg"
+data-screenshot="../screenshots/arduboy/fluffles rainy day.jpg"
+data-logo="../logos/arduboy/fluffles rainy day.png"
+data-fanart="../fanart/arduboy/fluffles rainy day.jpg">
+Fluffles Rainy Day
+</a>
+</td>
+
+<td>2020</td>
+<td>Action</td>
+<td>-</td>
+<td>Dreamer2345</td>
+
+</tr>
+
+<tr id="galactea"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/galactea.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Galactea"
+data-year="2020"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="Ivan Villacampa"
+data-ra="21414"
+data-notes="You are a little ship in the middle of the space and your objective is pass through 3 levels full of enemies and beat a boss at the final of the level 3.\nWhen you kill enemies, they drop spacial money, and you can use that money to improve your ship in the shop."
+data-thumb="../thumbs/arduboy/galactea.jpg"
+data-media="../media/arduboy/galactea.jpg"
+data-screenshot="../screenshots/arduboy/galactea.jpg"
+data-logo="../logos/arduboy/galactea.png"
+data-fanart="../fanart/arduboy/galactea.jpg">
+Galactea
+</a>
+</td>
+
+<td>2020</td>
+<td>Shooter</td>
+<td>-</td>
+<td>Ivan Villacampa</td>
+
+</tr>
+
+<tr id="hangman"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/hangman.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hangman"
+data-year="2018"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="serisman"
+data-ra="8624"
+data-notes="A Hangman clone for the Arduboy, developed by serisman."
+data-thumb="../thumbs/arduboy/hangman.jpg"
+data-media="../media/arduboy/hangman.jpg"
+data-screenshot="../screenshots/arduboy/hangman.jpg"
+data-logo="../logos/arduboy/hangman.png"
+data-fanart="../fanart/arduboy/hangman.jpg">
+Hangman
+</a>
+</td>
+
+<td>2018</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>serisman</td>
+
+</tr>
+
+<tr id="holidate"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/holidate.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Holidate"
+data-year="2017"
+data-genre="Visual Novel"
+data-publisher="-"
+data-developer="Lapis Games"
+data-ra="21466"
+data-notes="Holidate is a Christmas-themed visual novel where you go on a date with Frosty the Snowman.\nMany MULTIPLE different endings are available. Will you win the heart of Frosty?\nPress RIGHT on the dpad to advance the text."
+data-thumb="../thumbs/arduboy/holidate.jpg"
+data-media="../media/arduboy/holidate.jpg"
+data-screenshot="../screenshots/arduboy/holidate.jpg"
+data-logo="../logos/arduboy/holidate.png"
+data-fanart="../fanart/arduboy/holidate.jpg">
+Holidate
+</a>
+</td>
+
+<td>2017</td>
+<td>Visual Novel</td>
+<td>-</td>
+<td>Lapis Games</td>
+
+</tr>
+
+<tr id="kemono-patrol"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/kemono patrol.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Kemono Patrol"
+data-year="2017"
+data-genre="Action"
+data-publisher="-"
+data-developer="metalidol"
+data-ra="23777"
+data-notes="An endless runner for Arduboy."
+data-thumb="../thumbs/arduboy/kemono patrol.jpg"
+data-media="../media/arduboy/kemono patrol.jpg"
+data-screenshot="../screenshots/arduboy/kemono patrol.jpg"
+data-logo="../logos/arduboy/kemono patrol.png"
+data-fanart="../fanart/arduboy/kemono patrol.jpg">
+Kemono Patrol
+</a>
+</td>
+
+<td>2017</td>
+<td>Action</td>
+<td>-</td>
+<td>metalidol</td>
+
+</tr>
+
+<tr id="knight-move"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/knight move.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Knight Move"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="33095"
+data-notes=""
+data-thumb="../thumbs/arduboy/knight move.jpg"
+data-media="../media/arduboy/knight move.jpg"
+data-screenshot="../screenshots/arduboy/knight move.jpg"
+data-logo="../logos/arduboy/knight move.png"
+data-fanart="../fanart/arduboy/knight move.jpg">
+Knight Move
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="kong"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/kong.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Kong"
+data-year="2020"
+data-genre="Action"
+data-publisher="-"
+data-developer="Filmote"
+data-ra="7912"
+data-notes="An Arduboy Donkey Kong-like."
+data-thumb="../thumbs/arduboy/kong.jpg"
+data-media="../media/arduboy/kong.jpg"
+data-screenshot="../screenshots/arduboy/kong.jpg"
+data-logo="../logos/arduboy/kong.png"
+data-fanart="../fanart/arduboy/kong.jpg">
+Kong
+</a>
+</td>
+
+<td>2020</td>
+<td>Action</td>
+<td>-</td>
+<td>Filmote</td>
+
+</tr>
+
+<tr id="kong-ii"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/kong ii.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Kong II"
+data-year="2020"
+data-genre="Action"
+data-publisher="-"
+data-developer="Filmote"
+data-ra="20318"
+data-notes="An Arduboy Donkey Kong-like."
+data-thumb="../thumbs/arduboy/kong ii.jpg"
+data-media="../media/arduboy/kong ii.jpg"
+data-screenshot="../screenshots/arduboy/kong ii.jpg"
+data-logo="../logos/arduboy/kong ii.png"
+data-fanart="../fanart/arduboy/kong ii.jpg">
+Kong II
+</a>
+</td>
+
+<td>2020</td>
+<td>Action</td>
+<td>-</td>
+<td>Filmote</td>
+
+</tr>
+
+<tr id="lagunita"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/lagunita.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Lagunita"
+data-year="2019"
+data-genre="Construction and Management Simulation"
+data-publisher="-"
+data-developer="renato-grottesi"
+data-ra="9218"
+data-notes="A wild west themed town builder."
+data-thumb="../thumbs/arduboy/lagunita.jpg"
+data-media="../media/arduboy/lagunita.jpg"
+data-screenshot="../screenshots/arduboy/lagunita.jpg"
+data-logo="../logos/arduboy/lagunita.png"
+data-fanart="../fanart/arduboy/lagunita.jpg">
+Lagunita
+</a>
+</td>
+
+<td>2019</td>
+<td>Construction and Management Simulation</td>
+<td>-</td>
+<td>renato-grottesi</td>
+
+</tr>
+
+<tr id="longcat"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/longcat.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="LongCat"
+data-year="2022"
+data-genre="Puzzle"
+data-publisher="jaguile6"
+data-developer="jaguile6"
+data-ra="19529"
+data-notes="LongCat is a little puzzle game inspired in the longcat minigame from the Fancade Android game."
+data-thumb="../thumbs/arduboy/longcat.jpg"
+data-media="../media/arduboy/longcat.jpg"
+data-screenshot="../screenshots/arduboy/longcat.jpg"
+data-logo="../logos/arduboy/longcat.png"
+data-fanart="../fanart/arduboy/longcat.jpg">
+LongCat
+</a>
+</td>
+
+<td>2022</td>
+<td>Puzzle</td>
+<td>jaguile6</td>
+<td>jaguile6</td>
+
+</tr>
+
+<tr id="mallard-hunt"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/mallard hunt.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="MallARD Hunt"
+data-year="2018"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="pixelplatforms"
+data-ra="19522"
+data-notes="An Arduboy Duck Hunt clone."
+data-thumb="../thumbs/arduboy/mallard hunt.jpg"
+data-media="../media/arduboy/mallard hunt.jpg"
+data-screenshot="../screenshots/arduboy/mallard hunt.jpg"
+data-logo="../logos/arduboy/mallard hunt.png"
+data-fanart="../fanart/arduboy/mallard hunt.jpg">
+MallARD Hunt
+</a>
+</td>
+
+<td>2018</td>
+<td>Shooter</td>
+<td>-</td>
+<td>pixelplatforms</td>
+
+</tr>
+
+<tr id="microcity"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/microcity.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="MicroCity"
+data-year="2018"
+data-genre="Construction and Management Simulation"
+data-publisher="-"
+data-developer="James Howard"
+data-ra="11132"
+data-notes="An Arduboy clone of SimCity."
+data-thumb="../thumbs/arduboy/microcity.jpg"
+data-media="../media/arduboy/microcity.jpg"
+data-screenshot="../screenshots/arduboy/microcity.jpg"
+data-logo="../logos/arduboy/microcity.png"
+data-fanart="../fanart/arduboy/microcity.jpg">
+MicroCity
+</a>
+</td>
+
+<td>2018</td>
+<td>Construction and Management Simulation</td>
+<td>-</td>
+<td>James Howard</td>
+
+</tr>
+
+<tr id="microtank"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/microtank.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="MicroTank"
+data-year="2019"
+data-genre="Shooter"
+data-publisher="hartmann1301"
+data-developer="hartmann1301"
+data-ra="8658"
+data-notes="You start with a small tank and your goal is to get as deep as possilbe into enemy territory. Some enemys drop coins for upgrading the weapon of your choice. For more detail see my github readme file."
+data-thumb="../thumbs/arduboy/microtank.jpg"
+data-media="../media/arduboy/microtank.jpg"
+data-screenshot="../screenshots/arduboy/microtank.jpg"
+data-logo="../logos/arduboy/microtank.png"
+data-fanart="../fanart/arduboy/microtank.jpg">
+MicroTank
+</a>
+</td>
+
+<td>2019</td>
+<td>Shooter</td>
+<td>hartmann1301</td>
+<td>hartmann1301</td>
+
+</tr>
+
+<tr id="microtd"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/microtd.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="MicroTD"
+data-year="2018"
+data-genre="Strategy"
+data-publisher="-"
+data-developer="drummyfish"
+data-ra="11126"
+data-notes="You build towers in order to keep creeps that spawn at start location(s) and run to the finish location(s). By killing creeps and finishing rounds you earn $$$ to buy more towers and upgrades. There are 5 maps, 8 tower types, most with 2 upgrades, and 11 creep types. Each map has an infinite number of rounds that get progressively more difficult. The goal is to last as long as you can."
+data-thumb="../thumbs/arduboy/microtd.jpg"
+data-media="../media/arduboy/microtd.jpg"
+data-screenshot="../screenshots/arduboy/microtd.jpg"
+data-logo="../logos/arduboy/microtd.png"
+data-fanart="../fanart/arduboy/microtd.jpg">
+MicroTD
+</a>
+</td>
+
+<td>2018</td>
+<td>Strategy</td>
+<td>-</td>
+<td>drummyfish</td>
+
+</tr>
+
+<tr id="midnight-wild"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/midnight wild.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Midnight Wild"
+data-year="2018"
+data-genre="Platform"
+data-publisher="-"
+data-developer="Crait"
+data-ra="7910"
+data-notes="Something\u2019s gone awry out West! Help Dusty Argile adventure out and defeat the baddies who are causing a commotion and stopping him from getting a good night\u2019s rest. Put them to sleep with your handy lasso and rack up as many points as you can, but watch out for falling barrels, cacti, whirling tumbleweeds, snakes, and coyotes! Most of all, watch out for the mad bull and crazy Texan twister!"
+data-thumb="../thumbs/arduboy/midnight wild.jpg"
+data-media="../media/arduboy/midnight wild.jpg"
+data-screenshot="../screenshots/arduboy/midnight wild.jpg"
+data-logo="../logos/arduboy/midnight wild.png"
+data-fanart="../fanart/arduboy/midnight wild.jpg">
+Midnight Wild
+</a>
+</td>
+
+<td>2018</td>
+<td>Platform</td>
+<td>-</td>
+<td>Crait</td>
+
+</tr>
+
+<tr id="mini-rogue"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/mini rogue.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mini Rogue"
+data-year="2018"
+data-genre="Role-Playing"
+data-publisher="-"
+data-developer="Press Play On Tape"
+data-ra="9267"
+data-notes="Mini Rogue is a 9-card game in which a single player delves into a deep dungeon to get the famous ruby called The Og\u2019s Blood on the bottom floor. The player must choose how to spend their resources in order to be powerful enough to confront ever difficult monsters. Random events and encounters make every play-through a unique experience."
+data-thumb="../thumbs/arduboy/mini rogue.jpg"
+data-media="../media/arduboy/mini rogue.jpg"
+data-screenshot="../screenshots/arduboy/mini rogue.jpg"
+data-logo="../logos/arduboy/mini rogue.png"
+data-fanart="../fanart/arduboy/mini rogue.jpg">
+Mini Rogue
+</a>
+</td>
+
+<td>2018</td>
+<td>Role-Playing</td>
+<td>-</td>
+<td>Press Play On Tape</td>
+
+</tr>
+
+<tr id="monpals"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/monpals.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Monpals"
+data-year="2019"
+data-genre="Role-Playing"
+data-publisher="Revlis64"
+data-developer="Revlis64"
+data-ra="19519"
+data-notes="Monpals is a rpg that is much like Pokemon and Monster Rancher.\n\nThere are 15 total monsters in the game that have one of three types: Nature, Mystic, Synth."
+data-thumb="../thumbs/arduboy/monpals.jpg"
+data-media="../media/arduboy/monpals.jpg"
+data-screenshot="../screenshots/arduboy/monpals.jpg"
+data-logo="../logos/arduboy/monpals.png"
+data-fanart="../fanart/arduboy/monpals.jpg">
+Monpals
+</a>
+</td>
+
+<td>2019</td>
+<td>Role-Playing</td>
+<td>Revlis64</td>
+<td>Revlis64</td>
+
+</tr>
+
+<tr id="mystic-balloon"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/mystic balloon.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mystic Balloon"
+data-year="2015"
+data-genre="Platform"
+data-publisher="-"
+data-developer="Team A.R.G."
+data-ra="11125"
+data-notes=""
+data-thumb="../thumbs/arduboy/mystic balloon.jpg"
+data-media="../media/arduboy/mystic balloon.jpg"
+data-screenshot="../screenshots/arduboy/mystic balloon.jpg"
+data-logo="../logos/arduboy/mystic balloon.png"
+data-fanart="../fanart/arduboy/mystic balloon.jpg">
+Mystic Balloon
+</a>
+</td>
+
+<td>2015</td>
+<td>Platform</td>
+<td>-</td>
+<td>Team A.R.G.</td>
+
+</tr>
+
+<tr id="ninja-fuzzgrawth"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/ninja fuzzgrawth.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ninja Fuzzgrawth"
+data-year="2017"
+data-genre="Platform"
+data-publisher="-"
+data-developer="Hundstrasse"
+data-ra="3660"
+data-notes="Guide the Fuzzgrawth up the three towers to collect the three \u2018things\u2019! It\u2019s a fast paced platformer against the clock with randomly ordered levels."
+data-thumb="../thumbs/arduboy/ninja fuzzgrawth.jpg"
+data-media="../media/arduboy/ninja fuzzgrawth.jpg"
+data-screenshot="../screenshots/arduboy/ninja fuzzgrawth.jpg"
+data-logo="../logos/arduboy/ninja fuzzgrawth.png"
+data-fanart="../fanart/arduboy/ninja fuzzgrawth.jpg">
+Ninja Fuzzgrawth
+</a>
+</td>
+
+<td>2017</td>
+<td>Platform</td>
+<td>-</td>
+<td>Hundstrasse</td>
+
+</tr>
+
+<tr id="not-just-a-hat-rack"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/not just a hat rack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Not Just a Hat Rack"
+data-year="2017"
+data-genre="Platform"
+data-publisher="-"
+data-developer="Hundstrasse"
+data-ra="8689"
+data-notes="\u2018Not Just a Hat Rack\u2019 is a fast paced platformer for the Arduboy inspired by titles such as \u2018Super Meat Boy\u2019 & \u2018Super House of Dead Ninjas\u2019. The aim is to complete the 40 rapidfire levels in the shortest time\u2026 There is no pause button\u2026"
+data-thumb="../thumbs/arduboy/not just a hat rack.jpg"
+data-media="../media/arduboy/not just a hat rack.jpg"
+data-screenshot="../screenshots/arduboy/not just a hat rack.jpg"
+data-logo="../logos/arduboy/not just a hat rack.png"
+data-fanart="../fanart/arduboy/not just a hat rack.jpg">
+Not Just a Hat Rack
+</a>
+</td>
+
+<td>2017</td>
+<td>Platform</td>
+<td>-</td>
+<td>Hundstrasse</td>
+
+</tr>
+
+<tr id="oil-panic"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/oil panic.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Oil Panic"
+data-year="2020"
+data-genre="Action"
+data-publisher="-"
+data-developer="Press Play On Tape"
+data-ra="8632"
+data-notes="Inspired by yet another Game and Watch, PPOT presents Oil Panic.\n\nCatch all the oil before it sets the shop on fire!"
+data-thumb="../thumbs/arduboy/oil panic.jpg"
+data-media="../media/arduboy/oil panic.jpg"
+data-screenshot="../screenshots/arduboy/oil panic.jpg"
+data-logo="../logos/arduboy/oil panic.png"
+data-fanart="../fanart/arduboy/oil panic.jpg">
+Oil Panic
+</a>
+</td>
+
+<td>2020</td>
+<td>Action</td>
+<td>-</td>
+<td>Press Play On Tape</td>
+
+</tr>
+
+<tr id="omega-horizon"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/omega horizon.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Omega Horizon"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="11121"
+data-notes=""
+data-thumb="../thumbs/arduboy/omega horizon.jpg"
+data-media="../media/arduboy/omega horizon.jpg"
+data-screenshot="../screenshots/arduboy/omega horizon.jpg"
+data-logo="../logos/arduboy/omega horizon.png"
+data-fanart="../fanart/arduboy/omega horizon.jpg">
+Omega Horizon
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="paqman"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/paqman.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Paqman"
+data-year="2016"
+data-genre="Action"
+data-publisher="-"
+data-developer="Yoda"
+data-ra="8676"
+data-notes="An Arduboy Pac-man port."
+data-thumb="../thumbs/arduboy/paqman.jpg"
+data-media="../media/arduboy/paqman.jpg"
+data-screenshot="../screenshots/arduboy/paqman.jpg"
+data-logo="../logos/arduboy/paqman.png"
+data-fanart="../fanart/arduboy/paqman.jpg">
+Paqman
+</a>
+</td>
+
+<td>2016</td>
+<td>Action</td>
+<td>-</td>
+<td>Yoda</td>
+
+</tr>
+
+<tr id="picross"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/picross.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="PiCross"
+data-year="2019"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Filmote"
+data-ra="9251"
+data-notes="Classic PiCross game with 300 puzzles ranging in size from 5x5 to 16x16."
+data-thumb="../thumbs/arduboy/picross.jpg"
+data-media="../media/arduboy/picross.jpg"
+data-screenshot="../screenshots/arduboy/picross.jpg"
+data-logo="../logos/arduboy/picross.png"
+data-fanart="../fanart/arduboy/picross.jpg">
+PiCross
+</a>
+</td>
+
+<td>2019</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Filmote</td>
+
+</tr>
+
+<tr id="pipes"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/pipes.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pipes"
+data-year="2017"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Filmote"
+data-ra="8626"
+data-notes="A version of the classic pipes game where you must lay pip between each pair of nodes without the pipes crossing each other. This version has puzzles ranging from 5 x 5 to 9 x 9."
+data-thumb="../thumbs/arduboy/pipes.jpg"
+data-media="../media/arduboy/pipes.jpg"
+data-screenshot="../screenshots/arduboy/pipes.jpg"
+data-logo="../logos/arduboy/pipes.png"
+data-fanart="../fanart/arduboy/pipes.jpg">
+Pipes
+</a>
+</td>
+
+<td>2017</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Filmote</td>
+
+</tr>
+
+<tr id="quarto!"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/quarto.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Quarto!"
+data-year="2019"
+data-genre="Board Game"
+data-publisher="-"
+data-developer="obono"
+data-ra="35173"
+data-notes="\u201cQuarto!\u201d is a board game played on a 4x4 board with 16 unique pieces."
+data-thumb="../thumbs/arduboy/quarto.jpg"
+data-media="../media/arduboy/quarto.jpg"
+data-screenshot="../screenshots/arduboy/quarto.jpg"
+data-logo="../logos/arduboy/quarto.png"
+data-fanart="../fanart/arduboy/quarto.jpg">
+Quarto!
+</a>
+</td>
+
+<td>2019</td>
+<td>Board Game</td>
+<td>-</td>
+<td>obono</td>
+
+</tr>
+
+<tr id="rayne-the-rogue"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/rayne the rogue.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Rayne the Rogue"
+data-year="2017"
+data-genre="Action"
+data-publisher="-"
+data-developer="Neo Retro Games"
+data-ra="19513"
+data-notes="As a child Rayne watched the rich from the streets of the village and burned with jealousy. After years and years of poverty an idea formed. Rayne has decided to sneak into the lairs of dragons and steel their treasures. Rayne need your help to navigate the dangerous caves and avoid the dragon\u2019s breath to become the wealthiest person in the village, but take heed, the further Rayne gets the more treacherous it will be."
+data-thumb="../thumbs/arduboy/rayne the rogue.jpg"
+data-media="../media/arduboy/rayne the rogue.jpg"
+data-screenshot="../screenshots/arduboy/rayne the rogue.jpg"
+data-logo="../logos/arduboy/rayne the rogue.png"
+data-fanart="../fanart/arduboy/rayne the rogue.jpg">
+Rayne the Rogue
+</a>
+</td>
+
+<td>2017</td>
+<td>Action</td>
+<td>-</td>
+<td>Neo Retro Games</td>
+
+</tr>
+
+<tr id="rhythum"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/rhythum.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Rhythum"
+data-year="2020"
+data-genre="Music"
+data-publisher="-"
+data-developer="RetrobitCoder"
+data-ra="26482"
+data-notes="Mobile suit/mech rhythm like game for the Arduboy.\n\nYou are piloting the Orchestra's new Rhythum mobile suit unit, when the ship you are on is attacked by a fleet of enemy suits known as the Conductors. Do you have what it takes to survive the Conductors' attack?\n\nPress the correct (directional or A) button when icon lines up with aim reticule.\nPause/Unpause game with B button."
+data-thumb="../thumbs/arduboy/rhythum.jpg"
+data-media="../media/arduboy/rhythum.jpg"
+data-screenshot="../screenshots/arduboy/rhythum.jpg"
+data-logo="../logos/arduboy/rhythum.png"
+data-fanart="../fanart/arduboy/rhythum.jpg">
+Rhythum
+</a>
+</td>
+
+<td>2020</td>
+<td>Music</td>
+<td>-</td>
+<td>RetrobitCoder</td>
+
+</tr>
+
+<tr id="rick-and-morty-game"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/rick and morty game.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Rick and Morty Game"
+data-year="2017"
+data-genre=""
+data-publisher="-"
+data-developer="Celinebins"
+data-ra="7935"
+data-notes=""
+data-thumb="../thumbs/arduboy/rick and morty game.jpg"
+data-media="../media/arduboy/rick and morty game.jpg"
+data-screenshot="../screenshots/arduboy/rick and morty game.jpg"
+data-logo="../logos/arduboy/rick and morty game.png"
+data-fanart="../fanart/arduboy/rick and morty game.jpg">
+Rick and Morty Game
+</a>
+</td>
+
+<td>2017</td>
+<td></td>
+<td>-</td>
+<td>Celinebins</td>
+
+</tr>
+
+<tr id="rick-ardurous"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/rick ardurous.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Rick Ardurous"
+data-year="2022"
+data-genre="Platform"
+data-publisher="-"
+data-developer="lswbanban"
+data-ra="32475"
+data-notes="Rick Dangerous, now on the Arduboy."
+data-thumb="../thumbs/arduboy/rick ardurous.jpg"
+data-media="../media/arduboy/rick ardurous.jpg"
+data-screenshot="../screenshots/arduboy/rick ardurous.jpg"
+data-logo="../logos/arduboy/rick ardurous.png"
+data-fanart="../fanart/arduboy/rick ardurous.jpg">
+Rick Ardurous
+</a>
+</td>
+
+<td>2022</td>
+<td>Platform</td>
+<td>-</td>
+<td>lswbanban</td>
+
+</tr>
+
+<tr id="road-trip"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/road trip.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Road Trip"
+data-year="2021"
+data-genre="Racing"
+data-publisher="-"
+data-developer="Press Play On Tape"
+data-ra="8678"
+data-notes="Strap on your goggles. Sink into your seat. And leave all your fears in the pit. You\u2019re about to enter the race of your life. You\u2019ll be required to pass lots of cars each day. From sunrise to sunset - as fast as you can. Welcome to the National Enduro!\n\nWith each passing day, your target number of cars will increase. For an extra challenge, switch to a manual transmission!"
+data-thumb="../thumbs/arduboy/road trip.jpg"
+data-media="../media/arduboy/road trip.jpg"
+data-screenshot="../screenshots/arduboy/road trip.jpg"
+data-logo="../logos/arduboy/road trip.png"
+data-fanart="../fanart/arduboy/road trip.jpg">
+Road Trip
+</a>
+</td>
+
+<td>2021</td>
+<td>Racing</td>
+<td>-</td>
+<td>Press Play On Tape</td>
+
+</tr>
+
+<tr id="santas-factory"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/santa s factory.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Santa's Factory"
+data-year="2017"
+data-genre="Action"
+data-publisher="-"
+data-developer="Madya121"
+data-ra="21473"
+data-notes="This holiday, there're too many good kids in the world. As usual, good kids will get a present from Santa in this holiday. But before that, you gotta help Santa to wrap all the presents.\n\nIn Santa's Factory, there's no room for one mistake. Your job is to deliver each present to the correct place. Press [Left] or [Right] to move the pipe, then press [A Button] to push the present into the box. If you create a single mistake (Misplacing the present or one present got skipped) you will break Santa's Factory and many kids hearts since they didn't get any present."
+data-thumb="../thumbs/arduboy/santa s factory.jpg"
+data-media="../media/arduboy/santa s factory.jpg"
+data-screenshot="../screenshots/arduboy/santa s factory.jpg"
+data-logo="../logos/arduboy/santa s factory.png"
+data-fanart="../fanart/arduboy/santa s factory.jpg">
+Santa's Factory
+</a>
+</td>
+
+<td>2017</td>
+<td>Action</td>
+<td>-</td>
+<td>Madya121</td>
+
+</tr>
+
+<tr id="shattered-lands-towers-of-perdition"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/shattered lands towers of perdition.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Shattered Lands: Towers of Perdition"
+data-year="2019"
+data-genre="Role-Playing"
+data-publisher="Justin Davis"
+data-developer="Justin Davis"
+data-ra="8778"
+data-notes="Shattered Lands: Towers of Perdition is a multi-part RPG saga for the Arduboy."
+data-thumb="../thumbs/arduboy/shattered lands towers of perdition.jpg"
+data-media="../media/arduboy/shattered lands towers of perdition.jpg"
+data-screenshot="../screenshots/arduboy/shattered lands towers of perdition.jpg"
+data-logo="../logos/arduboy/shattered lands towers of perdition.png"
+data-fanart="../fanart/arduboy/shattered lands towers of perdition.jpg">
+Shattered Lands: Towers of Perdition
+</a>
+</td>
+
+<td>2019</td>
+<td>Role-Playing</td>
+<td>Justin Davis</td>
+<td>Justin Davis</td>
+
+</tr>
+
+<tr id="single-ennead"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/single ennead.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Single Ennead"
+data-year="2021"
+data-genre="Board Game"
+data-publisher="-"
+data-developer="Jay Chan"
+data-ra="21876"
+data-notes="Single Ennead is a demake of the Triple Triad trading card game from the Final Fantasy franchise. In this clone, there are 100 cards to collect, each with different art and flavor text."
+data-thumb="../thumbs/arduboy/single ennead.jpg"
+data-media="../media/arduboy/single ennead.jpg"
+data-screenshot="../screenshots/arduboy/single ennead.jpg"
+data-logo="../logos/arduboy/single ennead.png"
+data-fanart="../fanart/arduboy/single ennead.jpg">
+Single Ennead
+</a>
+</td>
+
+<td>2021</td>
+<td>Board Game</td>
+<td>-</td>
+<td>Jay Chan</td>
+
+</tr>
+
+<tr id="sirene"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/sirene.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sirene"
+data-year="2016"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="Team A.R.G."
+data-ra="9215"
+data-notes=""
+data-thumb="../thumbs/arduboy/sirene.jpg"
+data-media="../media/arduboy/sirene.jpg"
+data-screenshot="../screenshots/arduboy/sirene.jpg"
+data-logo="../logos/arduboy/sirene.png"
+data-fanart="../fanart/arduboy/sirene.jpg">
+Sirene
+</a>
+</td>
+
+<td>2016</td>
+<td>Shooter</td>
+<td>-</td>
+<td>Team A.R.G.</td>
+
+</tr>
+
+<tr id="sliding-tiles"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/sliding tiles.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sliding Tiles"
+data-year="2020"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Pharap"
+data-ra="29879"
+data-notes="Various images have been sliced into nine equal pieces and it\u2019s your job to put them back in order.\nYou know the drill, it\u2019s a 3x3 sliding tile puzzle"
+data-thumb="../thumbs/arduboy/sliding tiles.jpg"
+data-media="../media/arduboy/sliding tiles.jpg"
+data-screenshot="../screenshots/arduboy/sliding tiles.jpg"
+data-logo="../logos/arduboy/sliding tiles.png"
+data-fanart="../fanart/arduboy/sliding tiles.jpg">
+Sliding Tiles
+</a>
+</td>
+
+<td>2020</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Pharap</td>
+
+</tr>
+
+<tr id="social-distance-game,-the"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/social distance game the.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Social Distance Game, The"
+data-year="2020"
+data-genre="Action"
+data-publisher="-"
+data-developer="Marcus Sanatan"
+data-ra="11680"
+data-notes="Get more points by keeping your distance from pedestrians and make your community proud. Ultimately, you should really be at home so at some point you\u2019ll lose lol."
+data-thumb="../thumbs/arduboy/social distance game the.jpg"
+data-media="../media/arduboy/social distance game the.jpg"
+data-screenshot="../screenshots/arduboy/social distance game the.jpg"
+data-logo="../logos/arduboy/social distance game the.png"
+data-fanart="../fanart/arduboy/social distance game the.jpg">
+Social Distance Game, The
+</a>
+</td>
+
+<td>2020</td>
+<td>Action</td>
+<td>-</td>
+<td>Marcus Sanatan</td>
+
+</tr>
+
+<tr id="spacecab"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/spacecab.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="SpaceCab"
+data-year="2018"
+data-genre="Action"
+data-publisher="-"
+data-developer="Filmote"
+data-ra="19515"
+data-notes="Collect and deliver customers to their destination as quickly as possible to make the most money! But be careful and make sure you do not run out of fuel, land without deploying your landing gear or squash a customer."
+data-thumb="../thumbs/arduboy/spacecab.jpg"
+data-media="../media/arduboy/spacecab.jpg"
+data-screenshot="../screenshots/arduboy/spacecab.jpg"
+data-logo="../logos/arduboy/spacecab.png"
+data-fanart="../fanart/arduboy/spacecab.jpg">
+SpaceCab
+</a>
+</td>
+
+<td>2018</td>
+<td>Action</td>
+<td>-</td>
+<td>Filmote</td>
+
+</tr>
+
+<tr id="squid-jump"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/squid jump.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Squid Jump"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="26074"
+data-notes=""
+data-thumb="../thumbs/arduboy/squid jump.jpg"
+data-media="../media/arduboy/squid jump.jpg"
+data-screenshot="../screenshots/arduboy/squid jump.jpg"
+data-logo="../logos/arduboy/squid jump.png"
+data-fanart="../fanart/arduboy/squid jump.jpg">
+Squid Jump
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="star-honor"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/star honor.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Star Honor"
+data-year="2016"
+data-genre="Action"
+data-publisher="-"
+data-developer="Wenceslao Villanueva Jr."
+data-ra="11671"
+data-notes="Star Honor is a Roguelike space adventure where you are field promoted into the Captain\u2019s chair of the USS Arduino. Your home world has become the victim of the a biological weapon deployed by enemies. You posses the only hope for your world, a cure for the phage. With a skeleton crew, a limping vessel and time running out, you must travel world to world, seeking supplies, upgrades and doing battle to make it home and save your planet."
+data-thumb="../thumbs/arduboy/star honor.jpg"
+data-media="../media/arduboy/star honor.jpg"
+data-screenshot="../screenshots/arduboy/star honor.jpg"
+data-logo="../logos/arduboy/star honor.png"
+data-fanart="../fanart/arduboy/star honor.jpg">
+Star Honor
+</a>
+</td>
+
+<td>2016</td>
+<td>Action</td>
+<td>-</td>
+<td>Wenceslao Villanueva Jr.</td>
+
+</tr>
+
+<tr id="starduino"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/starduino.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Starduino"
+data-year="2019"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="Stephane Hockenhull"
+data-ra="9237"
+data-notes="A StarFox themed space shooter."
+data-thumb="../thumbs/arduboy/starduino.jpg"
+data-media="../media/arduboy/starduino.jpg"
+data-screenshot="../screenshots/arduboy/starduino.jpg"
+data-logo="../logos/arduboy/starduino.png"
+data-fanart="../fanart/arduboy/starduino.jpg">
+Starduino
+</a>
+</td>
+
+<td>2019</td>
+<td>Shooter</td>
+<td>-</td>
+<td>Stephane Hockenhull</td>
+
+</tr>
+
+<tr id="stonk-simulator"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/stonk simulator.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Stonk Simulator"
+data-year="2023"
+data-genre=""
+data-publisher="-"
+data-developer="Laconic"
+data-ra="28355"
+data-notes=""
+data-thumb="../thumbs/arduboy/stonk simulator.jpg"
+data-media="../media/arduboy/stonk simulator.jpg"
+data-screenshot="../screenshots/arduboy/stonk simulator.jpg"
+data-logo="../logos/arduboy/stonk simulator.png"
+data-fanart="../fanart/arduboy/stonk simulator.jpg">
+Stonk Simulator
+</a>
+</td>
+
+<td>2023</td>
+<td></td>
+<td>-</td>
+<td>Laconic</td>
+
+</tr>
+
+<tr id="sudoku-nbp"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/sudoku nbp.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sudoku-NBP"
+data-year="2016"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Neil Pierson"
+data-ra="8690"
+data-notes="An Arduboy Sudoku game."
+data-thumb="../thumbs/arduboy/sudoku nbp.jpg"
+data-media="../media/arduboy/sudoku nbp.jpg"
+data-screenshot="../screenshots/arduboy/sudoku nbp.jpg"
+data-logo="../logos/arduboy/sudoku nbp.png"
+data-fanart="../fanart/arduboy/sudoku nbp.jpg">
+Sudoku-NBP
+</a>
+</td>
+
+<td>2016</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Neil Pierson</td>
+
+</tr>
+
+<tr id="tackle-box"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/tackle box.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tackle Box"
+data-year="2018"
+data-genre="Sports"
+data-publisher="-"
+data-developer="city41"
+data-ra="5843"
+data-notes="Armed with ten bucks, a fishing pole and a dream, your quest is to find and catch the big one."
+data-thumb="../thumbs/arduboy/tackle box.jpg"
+data-media="../media/arduboy/tackle box.jpg"
+data-screenshot="../screenshots/arduboy/tackle box.jpg"
+data-logo="../logos/arduboy/tackle box.png"
+data-fanart="../fanart/arduboy/tackle box.jpg">
+Tackle Box
+</a>
+</td>
+
+<td>2018</td>
+<td>Sports</td>
+<td>-</td>
+<td>city41</td>
+
+</tr>
+
+<tr id="the-bounce"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/the bounce.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Bounce"
+data-year="2016"
+data-genre=""
+data-publisher="-"
+data-developer="Joshimuz"
+data-ra="5838"
+data-notes="The Bounce is a bouncy ball physics platformer game. Simple to understand yet incredibly hard to master, what seems easy at first glance is actually pretty rage inducing when you get to the later levels."
+data-thumb="../thumbs/arduboy/the bounce.jpg"
+data-media="../media/arduboy/the bounce.jpg"
+data-screenshot="../screenshots/arduboy/the bounce.jpg"
+data-logo="../logos/arduboy/the bounce.png"
+data-fanart="../fanart/arduboy/the bounce.jpg">
+The Bounce
+</a>
+</td>
+
+<td>2016</td>
+<td></td>
+<td>-</td>
+<td>Joshimuz</td>
+
+</tr>
+
+<tr id="the-crawl"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/the crawl.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Crawl"
+data-year="2019"
+data-genre=""
+data-publisher="-"
+data-developer="LatheSoft"
+data-ra="7913"
+data-notes=""
+data-thumb="../thumbs/arduboy/the crawl.jpg"
+data-media="../media/arduboy/the crawl.jpg"
+data-screenshot="../screenshots/arduboy/the crawl.jpg"
+data-logo="../logos/arduboy/the crawl.png"
+data-fanart="../fanart/arduboy/the crawl.jpg">
+The Crawl
+</a>
+</td>
+
+<td>2019</td>
+<td></td>
+<td>-</td>
+<td>LatheSoft</td>
+
+</tr>
+
+<tr id="tiny-2048"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/tiny 2048.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tiny 2048"
+data-year="2016"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Akkera102"
+data-ra="25683"
+data-notes=""
+data-thumb="../thumbs/arduboy/tiny 2048.jpg"
+data-media="../media/arduboy/tiny 2048.jpg"
+data-screenshot="../screenshots/arduboy/tiny 2048.jpg"
+data-logo="../logos/arduboy/tiny 2048.png"
+data-fanart="../fanart/arduboy/tiny 2048.jpg">
+Tiny 2048
+</a>
+</td>
+
+<td>2016</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Akkera102</td>
+
+</tr>
+
+<tr id="tiny-sokoban"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/tiny sokoban.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tiny Sokoban"
+data-year="2016"
+data-genre="Puzzle"
+data-publisher="-"
+data-developer="Akkera102"
+data-ra="19547"
+data-notes="Tiny Sokoban is Sokoban(1982) clone."
+data-thumb="../thumbs/arduboy/tiny sokoban.jpg"
+data-media="../media/arduboy/tiny sokoban.jpg"
+data-screenshot="../screenshots/arduboy/tiny sokoban.jpg"
+data-logo="../logos/arduboy/tiny sokoban.png"
+data-fanart="../fanart/arduboy/tiny sokoban.jpg">
+Tiny Sokoban
+</a>
+</td>
+
+<td>2016</td>
+<td>Puzzle</td>
+<td>-</td>
+<td>Akkera102</td>
+
+</tr>
+
+<tr id="tiny-ddug"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/tiny ddug.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tiny-DDug"
+data-year="2020"
+data-genre="Action"
+data-publisher="-"
+data-developer="Daniel Champagne"
+data-ra="23778"
+data-notes="An Arduboy take on Dig-Dug"
+data-thumb="../thumbs/arduboy/tiny ddug.jpg"
+data-media="../media/arduboy/tiny ddug.jpg"
+data-screenshot="../screenshots/arduboy/tiny ddug.jpg"
+data-logo="../logos/arduboy/tiny ddug.png"
+data-fanart="../fanart/arduboy/tiny ddug.jpg">
+Tiny-DDug
+</a>
+</td>
+
+<td>2020</td>
+<td>Action</td>
+<td>-</td>
+<td>Daniel Champagne</td>
+
+</tr>
+
+<tr id="tower-of-pain"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/tower of pain.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tower of Pain"
+data-year="2021"
+data-genre="Action"
+data-publisher="-"
+data-developer="Franalvarez21"
+data-ra="19520"
+data-notes="Tower Of Pain is a small roguelike game with simplified mechanics and small assets."
+data-thumb="../thumbs/arduboy/tower of pain.jpg"
+data-media="../media/arduboy/tower of pain.jpg"
+data-screenshot="../screenshots/arduboy/tower of pain.jpg"
+data-logo="../logos/arduboy/tower of pain.png"
+data-fanart="../fanart/arduboy/tower of pain.jpg">
+Tower of Pain
+</a>
+</td>
+
+<td>2021</td>
+<td>Action</td>
+<td>-</td>
+<td>Franalvarez21</td>
+
+</tr>
+
+<tr id="turtle-bridge"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/turtle bridge.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Turtle Bridge"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="7880"
+data-notes=""
+data-thumb="../thumbs/arduboy/turtle bridge.jpg"
+data-media="../media/arduboy/turtle bridge.jpg"
+data-screenshot="../screenshots/arduboy/turtle bridge.jpg"
+data-logo="../logos/arduboy/turtle bridge.png"
+data-fanart="../fanart/arduboy/turtle bridge.jpg">
+Turtle Bridge
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="under-the-tower"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/under the tower.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Under the Tower"
+data-year="2018"
+data-genre="Role-Playing"
+data-publisher="-"
+data-developer="Wuuff"
+data-ra="9286"
+data-notes="In a dying city, cut off from the world due to plague, The Tower stands above its center. While the rich and powerful gather in the tower, safe from the devastation below, those below are not so lucky. Among the trash on mud flats by the river, scavengers seek to find anything valuable. They are known as Mudlarks. This is the tale of one of the many unfortunate souls that lives\u2026\n\nUnder the Tower."
+data-thumb="../thumbs/arduboy/under the tower.jpg"
+data-media="../media/arduboy/under the tower.jpg"
+data-screenshot="../screenshots/arduboy/under the tower.jpg"
+data-logo="../logos/arduboy/under the tower.png"
+data-fanart="../fanart/arduboy/under the tower.jpg">
+Under the Tower
+</a>
+</td>
+
+<td>2018</td>
+<td>Role-Playing</td>
+<td>-</td>
+<td>Wuuff</td>
+
+</tr>
+
+<tr id="virus-lqp-79"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/virus lqp 79.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Virus LQP-79"
+data-year="2016"
+data-genre="Action"
+data-publisher="Team A.R.G."
+data-developer="Team A.R.G."
+data-ra="11127"
+data-notes="Virus LQP-79 is a multi-directional shooter where you play as Amy, who is trying to escape her home town which has been infested by zombies. In the game you are placed into a small level and must find two survivors before the level exit opens up and you can move on to the next level. To do this you have to fight off all the zombies that get in your way. These zombies can drop coins, which give you points, and hearts, which replenish your health. Once you have found the two survivors and the exit opens, a timer starts counting down. If this timer reaches zero before you exit the level, your health starts to slowly drain. If you exit the level before the timer reaches zero, the remaining time is added to your score. There are 64 levels total.\n\nThe player character's movement is controlled with the directional pad, and you can shoot your gun with both of the action buttons. Holding down the action button will allow you to shoot at a faster rate, however if you hold it down for too long your gun will jam and you have to wait a few seconds before you can shoot again. Shooting by holding down the right action button will allow you to strafe using the directional pad."
+data-thumb="../thumbs/arduboy/virus lqp 79.jpg"
+data-media="../media/arduboy/virus lqp 79.jpg"
+data-screenshot="../screenshots/arduboy/virus lqp 79.jpg"
+data-logo="../logos/arduboy/virus lqp 79.png"
+data-fanart="../fanart/arduboy/virus lqp 79.jpg">
+Virus LQP-79
+</a>
+</td>
+
+<td>2016</td>
+<td>Action</td>
+<td>Team A.R.G.</td>
+<td>Team A.R.G.</td>
+
+</tr>
+
+<tr id="yatzy"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/yatzy.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Yatzy"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="23781"
+data-notes=""
+data-thumb="../thumbs/arduboy/yatzy.jpg"
+data-media="../media/arduboy/yatzy.jpg"
+data-screenshot="../screenshots/arduboy/yatzy.jpg"
+data-logo="../logos/arduboy/yatzy.png"
+data-fanart="../fanart/arduboy/yatzy.jpg">
+Yatzy
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="zoo-at-midnight"><td>
+<img
+class="thumb"
+src="../thumbs/arduboy/zoo at midnight.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Zoo at Midnight"
+data-year="2017"
+data-genre="Stealth"
+data-publisher="-"
+data-developer="Hundstrasse"
+data-ra="25180"
+data-notes="The zoo had to close, but the keepers had forgotten to feed the animals, now it\u2019s up to Scrawf to find them food and feed them without being caught in the zoo warden\u2019s flashlights!\n\nGuide Scrawf through, what can only be described as, the world\u2019s most warden heavy zoo & hedge-maze. Slip past the wardens and avoid their flashlights to find the three different types of food to feed the Lion, Zebra, and Elephant. Finally, once all the animals are fed and sleepy, escape from the zoo!"
+data-thumb="../thumbs/arduboy/zoo at midnight.jpg"
+data-media="../media/arduboy/zoo at midnight.jpg"
+data-screenshot="../screenshots/arduboy/zoo at midnight.jpg"
+data-logo="../logos/arduboy/zoo at midnight.png"
+data-fanart="../fanart/arduboy/zoo at midnight.jpg">
+Zoo at Midnight
+</a>
+</td>
+
+<td>2017</td>
+<td>Stealth</td>
+<td>-</td>
+<td>Hundstrasse</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Commodore Plus 4</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/commodore-plus-4.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/commodore-plus-4.png"
+onerror="this.style.display='none';">
+
+<h1>Commodore Plus 4</h1>
+
+
+<p class="platform-release">
+Released: 1984
+</p>
+
+
+<p>5 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Commodore Plus/4 is a home computer released by Commodore International in 1984. The "Plus/4" name refers to the four-application ROM resident office suite (word processor, spreadsheet, database, and graphing); it was billed as "the productivity computer with software built-in".  Internally, the Plus/4 shares the same basic architecture as the lower-end Commodore 16 and 116 models, and is able to use software and peripherals designed for them. However, it is not compatible with the well-established Commodore 64.  While the Plus/4 had some success in Europe, it was a failure in the United States, where it was derided as the "Minus/60".</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="atomic-mission"><td>
+<img
+class="thumb"
+src="../thumbs/commodore-plus-4/atomic mission.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Atomic Mission"
+data-year="1984"
+data-genre="Adventure"
+data-publisher="Commodore Business Machines"
+data-developer="Scott Adams"
+data-ra=""
+data-notes="This is adventure #3 in Scott Adam's text adventure series. It takes place in a nuclear power plant. You must race against time to fulfill your mission or the reactor may be doomed. You use one or two word commands to move around and manipulate objects."
+data-thumb="../thumbs/commodore-plus-4/atomic mission.jpg"
+data-media="../media/commodore-plus-4/atomic mission.jpg"
+data-screenshot="../screenshots/commodore-plus-4/atomic mission.jpg"
+data-logo="../logos/commodore-plus-4/atomic mission.png"
+data-fanart="../fanart/commodore-plus-4/atomic mission.jpg">
+Atomic Mission
+</a>
+</td>
+
+<td>1984</td>
+<td>Adventure</td>
+<td>Commodore Business Machines</td>
+<td>Scott Adams</td>
+
+</tr>
+
+<tr id="jack-attack"><td>
+<img
+class="thumb"
+src="../thumbs/commodore-plus-4/jack attack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Jack Attack"
+data-year="1984"
+data-genre="Action •  Platform"
+data-publisher="Commodore Business Machines"
+data-developer="Kevin Kieller"
+data-ra=""
+data-notes="This is a simple action game where your aim is to crush 8 spinning heads in each level. This can be done by either jumping on them or pushing blocks on them. While the first level is pretty basic with just a few blocks to move, later levels feature platforms and water, which is fatal to the character. Besides water, the spinning heads themselves are the main threat as they can kill Jack by jumping on him. Jack can push blocks on the water which will then float, allowing him to walk on them."
+data-thumb="../thumbs/commodore-plus-4/jack attack.jpg"
+data-media="../media/commodore-plus-4/jack attack.jpg"
+data-screenshot="../screenshots/commodore-plus-4/jack attack.jpg"
+data-logo="../logos/commodore-plus-4/jack attack.png"
+data-fanart="../fanart/commodore-plus-4/jack attack.jpg">
+Jack Attack
+</a>
+</td>
+
+<td>1984</td>
+<td>Action •  Platform</td>
+<td>Commodore Business Machines</td>
+<td>Kevin Kieller</td>
+
+</tr>
+
+<tr id="pirate-adventure"><td>
+<img
+class="thumb"
+src="../thumbs/commodore-plus-4/pirate adventure.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pirate Adventure"
+data-year="1984"
+data-genre="Adventure"
+data-publisher="Commodore Business Machines"
+data-developer="Scott Adams"
+data-ra=""
+data-notes="This is adventure #2 in Scott Adam's text adventure series. In this adventure, you shuffle between three locales: an unremarkable (at first) London flat and two islands littered with dangerous critters and people. The goal of the game is to find the two pirate treasures on the treasure island. You move about and use objects by typing one or two word commands such as NORTH, INVENTORY, or GET SNEAKERS. You only have to type the first 3 letters of a command or object for the parser to recognize it."
+data-thumb="../thumbs/commodore-plus-4/pirate adventure.jpg"
+data-media="../media/commodore-plus-4/pirate adventure.jpg"
+data-screenshot="../screenshots/commodore-plus-4/pirate adventure.jpg"
+data-logo="../logos/commodore-plus-4/pirate adventure.png"
+data-fanart="../fanart/commodore-plus-4/pirate adventure.jpg">
+Pirate Adventure
+</a>
+</td>
+
+<td>1984</td>
+<td>Adventure</td>
+<td>Commodore Business Machines</td>
+<td>Scott Adams</td>
+
+</tr>
+
+<tr id="strange-odyssey"><td>
+<img
+class="thumb"
+src="../thumbs/commodore-plus-4/strange odyssey.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Strange Odyssey"
+data-year="1984"
+data-genre="Adventure"
+data-publisher="Commodore Business Machines"
+data-developer="Scott Adams"
+data-ra=""
+data-notes="Strange Odyssey is the sixth game of the Scott Adams text adventures series, marketed by Scott's company, Adventure International. It is an old-style text adventure sporting a two word parser and split screen interface.\n\nYou play a space traveler whose space ship breaks down while orbiting a remote asteroid. Starting with only a phase pistol, space suit, and shovel, our mission is to collect 5 alien treasures and link back up with your mothership."
+data-thumb="../thumbs/commodore-plus-4/strange odyssey.jpg"
+data-media="../media/commodore-plus-4/strange odyssey.jpg"
+data-screenshot="../screenshots/commodore-plus-4/strange odyssey.jpg"
+data-logo="../logos/commodore-plus-4/strange odyssey.png"
+data-fanart="../fanart/commodore-plus-4/strange odyssey.jpg">
+Strange Odyssey
+</a>
+</td>
+
+<td>1984</td>
+<td>Adventure</td>
+<td>Commodore Business Machines</td>
+<td>Scott Adams</td>
+
+</tr>
+
+<tr id="viduzzles"><td>
+<img
+class="thumb"
+src="../thumbs/commodore-plus-4/viduzzles.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Viduzzles"
+data-year="1984"
+data-genre="Puzzle"
+data-publisher="Commodore Business Machines"
+data-developer="Camelot"
+data-ra=""
+data-notes="Viduzzles allows you to do jigsaw puzzles on your computer in either a 25 or 50 piece puzzle, with outlines or no outlines. You are first presented with the picture you have to complete before you are presented with an empty square and the pieces needed to complete the puzzle. You move the pieces into the square and you try to complete the puzzle in the quickest time. Once completed you then move to the next picture."
+data-thumb="../thumbs/commodore-plus-4/viduzzles.jpg"
+data-media="../media/commodore-plus-4/viduzzles.jpg"
+data-screenshot="../screenshots/commodore-plus-4/viduzzles.jpg"
+data-logo="../logos/commodore-plus-4/viduzzles.png"
+data-fanart="../fanart/commodore-plus-4/viduzzles.jpg">
+Viduzzles
+</a>
+</td>
+
+<td>1984</td>
+<td>Puzzle</td>
+<td>Commodore Business Machines</td>
+<td>Camelot</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

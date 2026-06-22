@@ -1,0 +1,1068 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>APF Imagination Machine</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/apf-imagination-machine.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/apf-imagination-machine.png"
+onerror="this.style.display='none';">
+
+<h1>APF Imagination Machine</h1>
+
+
+<p class="platform-release">
+Released: 1979
+</p>
+
+
+<p>13 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The APF Imagination Machine is a combination home video game console and computer system released by APF Electronics Inc. in late 1979. It was composed of two separate components, the APF-M1000 game system, and an add on docking bay with full sized typewriter keyboard and tape drive. The APF-M1000 was built specifically to compete with the Atari 2600.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="backgammon"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/backgammon.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Backgammon"
+data-year="1978"
+data-genre="Board Game"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="This is one of the earliest Backgammon videogame along with the Channel F Backgammon released the year before (1977).\n\nThere are two game variations:\n- two players game\n- play against the computer\n\nThis is an important point: to be able to play against the computer. In 1978 it was not that common.\n\nThe graphics are quite decent for such an early version."
+data-thumb="../thumbs/apf-imagination-machine/backgammon.jpg"
+data-media="../media/apf-imagination-machine/backgammon.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/backgammon.jpg"
+data-logo="../logos/apf-imagination-machine/backgammon.png"
+data-fanart="../fanart/apf-imagination-machine/backgammon.jpg">
+Backgammon
+</a>
+</td>
+
+<td>1978</td>
+<td>Board Game</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="baseball"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/baseball.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Baseball"
+data-year="1978"
+data-genre="Sports"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="It seems like all gaming systems must have their Baseball game, as early as 1978! Indeed the RCA Studio II, the Fairchild Channel F, the Bally Astrocade and the Atari VCS all had their Baseball game!\n\nThe controls are similar to other Baseball games. The outfielders are moved with the joystick, though you can't move them after the ball is pitched. They're spaced a little oddly, so there's usually a gap in right field that the computer player manages to hit to more often than not. To pitch, you send the ball with the fire button and control its path with the joystick. To bat you simply press the fire button.\n\nThe Bally's players are animated better, so if I had to rank this one by graphics, I'd place it as better than the Fairchild's version but not as good as the Bally's, based on overall look and player animations. Control-wise the Bally outfielders had a better range of motion, without the gap that the APF players can't seem to fill. At bat, it seems harder to get a hit on the APF than it does on the Bally and I don't feel I have the same control over where the ball is hit. Pitching is pretty similar in that you've got a lot of control over the ball after you \"throw\" it and it is fun to try to fake out the person at bat with wildly curving balls that they swing at anyway.\n\nYou can play with a friend or against the computer."
+data-thumb="../thumbs/apf-imagination-machine/baseball.jpg"
+data-media="../media/apf-imagination-machine/baseball.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/baseball.jpg"
+data-logo="../logos/apf-imagination-machine/baseball.png"
+data-fanart="../fanart/apf-imagination-machine/baseball.jpg">
+Baseball
+</a>
+</td>
+
+<td>1978</td>
+<td>Sports</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="blackjack"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/blackjack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Blackjack"
+data-year="1978"
+data-genre="Casino"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="Another Blackjack game, but maybe the best one released in 1978, compared to its competitors (Channel F, Atari VCS, Bally Astrocade).\n\nThe APF M1000 is the only system to bother to include symbols for the suit!\n\nYou can choose the number of decks up to four that the dealer draws from."
+data-thumb="../thumbs/apf-imagination-machine/blackjack.jpg"
+data-media="../media/apf-imagination-machine/blackjack.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/blackjack.jpg"
+data-logo="../logos/apf-imagination-machine/blackjack.png"
+data-fanart="../fanart/apf-imagination-machine/blackjack.jpg">
+Blackjack
+</a>
+</td>
+
+<td>1978</td>
+<td>Casino</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="bowling---micro-match"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/bowling micro match.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Bowling / Micro Match"
+data-year="1978"
+data-genre="Compilation"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="This cartridge offers two games: Bowling and Micro Match\n\nBowling:\n\nThis game is one of the earliest bowling videogame released, along with the RCA Studio II version (1977), the Fairchild Channel F bowling (1978) and the Atari VCS (1978). All of them seem to have been inspired by the first bowling arcade videogame Robot Bowl (1977).\n\nYou can play Bowling for the APF-1000 with up to 4 players. Like the other bowling games of the time, your ball is moving constantly back and forth and you must decide when you want to throw it by pressing the fire button at the right moment. There is no way to put hook effect on the ball here.\n\nMicro Match:\n\nMicro Match is a memory game. The object of the game is to match the hidden object or word with a similar object or word. If you guess correctly, the squares will disappear from the screen and you go again.\n\nHere again you can play with up to 4 players. There are 5 different game modes, from the easiest to the hardest, depending on what you must find (colors, patterns or words) and how many items (pairs or triplex)"
+data-thumb="../thumbs/apf-imagination-machine/bowling micro match.jpg"
+data-media="../media/apf-imagination-machine/bowling micro match.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/bowling micro match.jpg"
+data-logo="../logos/apf-imagination-machine/bowling micro match.png"
+data-fanart="../fanart/apf-imagination-machine/bowling micro match.jpg">
+Bowling / Micro Match
+</a>
+</td>
+
+<td>1978</td>
+<td>Compilation</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="boxing"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/boxing.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Boxing"
+data-year="1978"
+data-genre="Fighting •  Sports"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="Boxing is a recreation of the sport viewed from a side view perspective. The player can move the boxer forward and backward, throw punches and block the opponent's punches. The objective is to knock out the opponent (by managing five hits in a row) or win the most number of rounds."
+data-thumb="../thumbs/apf-imagination-machine/boxing.jpg"
+data-media="../media/apf-imagination-machine/boxing.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/boxing.jpg"
+data-logo="../logos/apf-imagination-machine/boxing.png"
+data-fanart="../fanart/apf-imagination-machine/boxing.jpg">
+Boxing
+</a>
+</td>
+
+<td>1978</td>
+<td>Fighting •  Sports</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="brickdown---shooting-gallery"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/brickdown shooting gallery.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Brickdown / Shooting Gallery"
+data-year="1978"
+data-genre="Compilation"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="This cartridge offers two games, Brick Down and Shooting Gallery.\n\nBrick Down:\n\nBrick Down is of course a copy of the arcade hit Breakout from Atari (1976), but here the playfield if turned 90\u00b0 to the right, so that the paddle up and down like a normal pong game.\n\nThe object of the game is to destroy all the bricks in the wall. Options include fast or slow ball speed, 8 or 12 layers wall.\n\nShooting Gallery:\n\nShooting Gallery is a simple shooting game for two players. Screen is split in two halves, one for each player. On each side a moving target is moving back and forth. You must shoot this target as many times as possible. Each time a target is hit, it will change color, size (smaller) and speed (faster). The color cycle goes like this: green - blue - purple - red - white. If the white target is hit, it disappears, the game is over. Your bullets are limited and this is how you will know who has won, but looking at the number of remaining bullets."
+data-thumb="../thumbs/apf-imagination-machine/brickdown shooting gallery.jpg"
+data-media="../media/apf-imagination-machine/brickdown shooting gallery.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/brickdown shooting gallery.jpg"
+data-logo="../logos/apf-imagination-machine/brickdown shooting gallery.png"
+data-fanart="../fanart/apf-imagination-machine/brickdown shooting gallery.jpg">
+Brickdown / Shooting Gallery
+</a>
+</td>
+
+<td>1978</td>
+<td>Compilation</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="casino-1-slots-roulette-keno"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/casino 1 slots roulette keno.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Casino 1: Slots-Roulette-Keno"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/apf-imagination-machine/casino 1 slots roulette keno.jpg"
+data-media="../media/apf-imagination-machine/casino 1 slots roulette keno.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/casino 1 slots roulette keno.jpg"
+data-logo="../logos/apf-imagination-machine/casino 1 slots roulette keno.png"
+data-fanart="../fanart/apf-imagination-machine/casino 1 slots roulette keno.jpg">
+Casino 1: Slots-Roulette-Keno
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="catena"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/catena.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Catena"
+data-year="1978"
+data-genre="Board Game •  Strategy"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="Catena is an adaptation of the board game Othello. It is played on a board consisting of 64 squares. Players take turns placing squares on the board and the aim is to surround the opponent's squares which causes them to change colour to the one of the player. The game ends when the board is full and the player with the most squares in its colour will win. Squares are added to the board by using the controller's keyboard to enter the position on the board.\n\nThe game can be played by one human player against an AI opponent or between two human players. It is also possible to run a game where two AI opponents compete against each other."
+data-thumb="../thumbs/apf-imagination-machine/catena.jpg"
+data-media="../media/apf-imagination-machine/catena.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/catena.jpg"
+data-logo="../logos/apf-imagination-machine/catena.png"
+data-fanart="../fanart/apf-imagination-machine/catena.jpg">
+Catena
+</a>
+</td>
+
+<td>1978</td>
+<td>Board Game •  Strategy</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="columns"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/columns.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Columns"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/apf-imagination-machine/columns.jpg"
+data-media="../media/apf-imagination-machine/columns.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/columns.jpg"
+data-logo="../logos/apf-imagination-machine/columns.png"
+data-fanart="../fanart/apf-imagination-machine/columns.jpg">
+Columns
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="hangman---tic-tac-toe---doodle"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/hangman tic tac toe doodle.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hangman / Tic-Tac-Toe / Doodle"
+data-year="1978"
+data-genre="Compilation"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="This cartridge offers 3 games:\n\nHangman:\n\nClassic Hangman videogame, though this one might be the first of its genre on a console along with Hangman for the Atari VCS 2600, and Hangman for the Channel F released the same year (1978). Maybe there was even earlier versions on computer systems, but no proof has been found yet.\nThis version for the APF M1000 offers many options and a has built-in vocabulary! Options include: from 1 to 4 player games, 3 to 6 letter words, 7 to 10 letter words or 3 to 10 letter words; and you can of course enter your own words.\n\nTic Tac Toe:\n\nSimple Tic Tac Toe game but well realised. You can play with a friend or against the computer.\n\nDoodle:\n\nVery simple paint program where you move a virtual pen on the screen with the joystick and you choose one of the 9 colors available by pressing the button in cycle."
+data-thumb="../thumbs/apf-imagination-machine/hangman tic tac toe doodle.jpg"
+data-media="../media/apf-imagination-machine/hangman tic tac toe doodle.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/hangman tic tac toe doodle.jpg"
+data-logo="../logos/apf-imagination-machine/hangman tic tac toe doodle.png"
+data-fanart="../fanart/apf-imagination-machine/hangman tic tac toe doodle.jpg">
+Hangman / Tic-Tac-Toe / Doodle
+</a>
+</td>
+
+<td>1978</td>
+<td>Compilation</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="pinball---dungeon-hunt---blockout"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/pinball dungeon hunt blockout.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pinball / Dungeon Hunt / Blockout"
+data-year="1978"
+data-genre="Compilation"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="Pinball - three variations of Pinball.\n\nDungeon Hunt - 70 squares, behind which are hidden 8 different colored objects. For finding monochrome additional bonuses are added. Up to 4 players.\n\nBlockout - 4 variations of the snake. A game for two."
+data-thumb="../thumbs/apf-imagination-machine/pinball dungeon hunt blockout.jpg"
+data-media="../media/apf-imagination-machine/pinball dungeon hunt blockout.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/pinball dungeon hunt blockout.jpg"
+data-logo="../logos/apf-imagination-machine/pinball dungeon hunt blockout.png"
+data-fanart="../fanart/apf-imagination-machine/pinball dungeon hunt blockout.jpg">
+Pinball / Dungeon Hunt / Blockout
+</a>
+</td>
+
+<td>1978</td>
+<td>Compilation</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="space-destroyers"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/space destroyers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Destroyers"
+data-year="1978"
+data-genre="Shooter"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="A Space Invaders knock-off with little no differences from the classic arcade game. Released in 1978 by APF Electronics."
+data-thumb="../thumbs/apf-imagination-machine/space destroyers.jpg"
+data-media="../media/apf-imagination-machine/space destroyers.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/space destroyers.jpg"
+data-logo="../logos/apf-imagination-machine/space destroyers.png"
+data-fanart="../fanart/apf-imagination-machine/space destroyers.jpg">
+Space Destroyers
+</a>
+</td>
+
+<td>1978</td>
+<td>Shooter</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+<tr id="ufo---sea-monsters---break-it-down---rebuild---shoot"><td>
+<img
+class="thumb"
+src="../thumbs/apf-imagination-machine/ufo sea monsters break it down rebuild shoot.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="UFO / Sea Monsters / Break It Down / Rebuild / Shoot"
+data-year="1978"
+data-genre="Compilation •  Shooter"
+data-publisher="APF Electronics"
+data-developer="APF Electronics"
+data-ra=""
+data-notes="This cartridge offers many variations based around shooting duels.\n\nUFO 1 & 2\nThe objective of these games is to destroy mmore UFOs than you oppponent. The difference between UFO 1 and 2 is the score value of the destroyed UFOs.\n\nSea Monsters\nDestroy the monsters at the bottom of the sea, but don't kill the fishes!\n\nBreak it down/rebuild\nThe objective of break it down is to use the least amount of shots to break up the rotating square. The square consists of 24 pieces, 24 being thus the best score possible.\n\nRebuild is just the opposite of Break it down. Use the least amount of shots to rebuild the rotating square.\n\nShoot a little / Shoot / Shoot a lot\nThe objective of these games is to the targets as many times as possible. When a target is hit, it changes color and speed. The difference between the 3 variations is how many shots you can do (20, 50 or 99)."
+data-thumb="../thumbs/apf-imagination-machine/ufo sea monsters break it down rebuild shoot.jpg"
+data-media="../media/apf-imagination-machine/ufo sea monsters break it down rebuild shoot.jpg"
+data-screenshot="../screenshots/apf-imagination-machine/ufo sea monsters break it down rebuild shoot.jpg"
+data-logo="../logos/apf-imagination-machine/ufo sea monsters break it down rebuild shoot.png"
+data-fanart="../fanart/apf-imagination-machine/ufo sea monsters break it down rebuild shoot.jpg">
+UFO / Sea Monsters / Break It Down / Rebuild / Shoot
+</a>
+</td>
+
+<td>1978</td>
+<td>Compilation •  Shooter</td>
+<td>APF Electronics</td>
+<td>APF Electronics</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

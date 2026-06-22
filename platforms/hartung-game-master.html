@@ -1,0 +1,1238 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Hartung Game Master</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/hartung-game-master.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/hartung-game-master.png"
+onerror="this.style.display='none';">
+
+<h1>Hartung Game Master</h1>
+
+
+<p class="platform-release">
+Released: 1990
+</p>
+
+
+<p>18 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Game Master is a handheld game console manufactured by Hartung, and designed to compete with the Nintendo Game Boy. In Germany it was marketed by Hartung itself, while in the UK it was released as the Systema 2000 by already well established maker of cheap LCD games Systema. It was also sold under alternate names in other countries, including Super Game and Game Tronic. The Game Master has a 64 x 64 monochrome LCD screen capable of displaying graphics on par with the Atari 2600.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="bubble-boy"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/bubble boy.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Bubble Boy"
+data-year="1990"
+data-genre="Puzzle"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Bubble Boy is a puzzle game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/bubble boy.jpg"
+data-media="../media/hartung-game-master/bubble boy.jpg"
+data-screenshot="../screenshots/hartung-game-master/bubble boy.jpg"
+data-logo="../logos/hartung-game-master/bubble boy.png"
+data-fanart="../fanart/hartung-game-master/bubble boy.jpg">
+Bubble Boy
+</a>
+</td>
+
+<td>1990</td>
+<td>Puzzle</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="continental-galaxy"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/continental galaxy.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Continental Galaxy"
+data-year="1990"
+data-genre="Shooter"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Continental Galaxy 2020 is a shooting game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/continental galaxy.jpg"
+data-media="../media/hartung-game-master/continental galaxy.jpg"
+data-screenshot="../screenshots/hartung-game-master/continental galaxy.jpg"
+data-logo="../logos/hartung-game-master/continental galaxy.png"
+data-fanart="../fanart/hartung-game-master/continental galaxy.jpg">
+Continental Galaxy
+</a>
+</td>
+
+<td>1990</td>
+<td>Shooter</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="dungeon-adventure"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/dungeon adventure.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dungeon Adventure"
+data-year="1990"
+data-genre="Platform"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Dungeon Adventure is a platform game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/dungeon adventure.jpg"
+data-media="../media/hartung-game-master/dungeon adventure.jpg"
+data-screenshot="../screenshots/hartung-game-master/dungeon adventure.jpg"
+data-logo="../logos/hartung-game-master/dungeon adventure.png"
+data-fanart="../fanart/hartung-game-master/dungeon adventure.jpg">
+Dungeon Adventure
+</a>
+</td>
+
+<td>1990</td>
+<td>Platform</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="falling-block!"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/falling block.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Falling Block!"
+data-year="1990"
+data-genre="Puzzle"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Falling Block! is a puzzle game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/falling block.jpg"
+data-media="../media/hartung-game-master/falling block.jpg"
+data-screenshot="../screenshots/hartung-game-master/falling block.jpg"
+data-logo="../logos/hartung-game-master/falling block.png"
+data-fanart="../fanart/hartung-game-master/falling block.jpg">
+Falling Block!
+</a>
+</td>
+
+<td>1990</td>
+<td>Puzzle</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="finite-zone"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/finite zone.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Finite Zone"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/hartung-game-master/finite zone.jpg"
+data-media="../media/hartung-game-master/finite zone.jpg"
+data-screenshot="../screenshots/hartung-game-master/finite zone.jpg"
+data-logo="../logos/hartung-game-master/finite zone.png"
+data-fanart="../fanart/hartung-game-master/finite zone.jpg">
+Finite Zone
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="formel-1"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/formel 1.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Formel 1"
+data-year="Unknown"
+data-genre="Racing"
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/hartung-game-master/formel 1.jpg"
+data-media="../media/hartung-game-master/formel 1.jpg"
+data-screenshot="../screenshots/hartung-game-master/formel 1.jpg"
+data-logo="../logos/hartung-game-master/formel 1.png"
+data-fanart="../fanart/hartung-game-master/formel 1.jpg">
+Formel 1
+</a>
+</td>
+
+<td>Unknown</td>
+<td>Racing</td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="fuss-ball"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/fuss ball.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fuss-Ball"
+data-year="Unknown"
+data-genre="Sports"
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/hartung-game-master/fuss ball.jpg"
+data-media="../media/hartung-game-master/fuss ball.jpg"
+data-screenshot="../screenshots/hartung-game-master/fuss ball.jpg"
+data-logo="../logos/hartung-game-master/fuss ball.png"
+data-fanart="../fanart/hartung-game-master/fuss ball.jpg">
+Fuss-Ball
+</a>
+</td>
+
+<td>Unknown</td>
+<td>Sports</td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="go-bang!"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/go bang.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Go Bang!"
+data-year="1990"
+data-genre="Board Game"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Go Bang is a board game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/go bang.jpg"
+data-media="../media/hartung-game-master/go bang.jpg"
+data-screenshot="../screenshots/hartung-game-master/go bang.jpg"
+data-logo="../logos/hartung-game-master/go bang.png"
+data-fanart="../fanart/hartung-game-master/go bang.jpg">
+Go Bang!
+</a>
+</td>
+
+<td>1990</td>
+<td>Board Game</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="hyper-space"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/hyper space.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hyper Space"
+data-year="1990"
+data-genre="Shooter"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Hyper Space is a shooting game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/hyper space.jpg"
+data-media="../media/hartung-game-master/hyper space.jpg"
+data-screenshot="../screenshots/hartung-game-master/hyper space.jpg"
+data-logo="../logos/hartung-game-master/hyper space.png"
+data-fanart="../fanart/hartung-game-master/hyper space.jpg">
+Hyper Space
+</a>
+</td>
+
+<td>1990</td>
+<td>Shooter</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="kung-fu"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/kung fu.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Kung Fu"
+data-year="1990"
+data-genre="Beat 'em Up"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Kung Fu Challenge is a beat 'em up game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/kung fu.jpg"
+data-media="../media/hartung-game-master/kung fu.jpg"
+data-screenshot="../screenshots/hartung-game-master/kung fu.jpg"
+data-logo="../logos/hartung-game-master/kung fu.png"
+data-fanart="../fanart/hartung-game-master/kung fu.jpg">
+Kung Fu
+</a>
+</td>
+
+<td>1990</td>
+<td>Beat 'em Up</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="move-it"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/move it.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Move It"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/hartung-game-master/move it.jpg"
+data-media="../media/hartung-game-master/move it.jpg"
+data-screenshot="../screenshots/hartung-game-master/move it.jpg"
+data-logo="../logos/hartung-game-master/move it.png"
+data-fanart="../fanart/hartung-game-master/move it.jpg">
+Move It
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="pin-ball"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/pin ball.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pin Ball"
+data-year="1990"
+data-genre="Pinball"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Pin Ball is a pinball game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/pin ball.jpg"
+data-media="../media/hartung-game-master/pin ball.jpg"
+data-screenshot="../screenshots/hartung-game-master/pin ball.jpg"
+data-logo="../logos/hartung-game-master/pin ball.png"
+data-fanart="../fanart/hartung-game-master/pin ball.jpg">
+Pin Ball
+</a>
+</td>
+
+<td>1990</td>
+<td>Pinball</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="space-castle"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/space castle.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Castle"
+data-year="1990"
+data-genre="Shooter"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Space Castle is a shooting game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/space castle.jpg"
+data-media="../media/hartung-game-master/space castle.jpg"
+data-screenshot="../screenshots/hartung-game-master/space castle.jpg"
+data-logo="../logos/hartung-game-master/space castle.png"
+data-fanart="../fanart/hartung-game-master/space castle.jpg">
+Space Castle
+</a>
+</td>
+
+<td>1990</td>
+<td>Shooter</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="space-invader"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/space invader.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Invader"
+data-year="1992"
+data-genre="Shooter"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Unlike the name might suggest, Space Invader is not a Space Invaders- clone but rather a horizontal shooter for this handheld console."
+data-thumb="../thumbs/hartung-game-master/space invader.jpg"
+data-media="../media/hartung-game-master/space invader.jpg"
+data-screenshot="../screenshots/hartung-game-master/space invader.jpg"
+data-logo="../logos/hartung-game-master/space invader.png"
+data-fanart="../fanart/hartung-game-master/space invader.jpg">
+Space Invader
+</a>
+</td>
+
+<td>1992</td>
+<td>Shooter</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="space-warrior"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/space warrior.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Warrior"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/hartung-game-master/space warrior.jpg"
+data-media="../media/hartung-game-master/space warrior.jpg"
+data-screenshot="../screenshots/hartung-game-master/space warrior.jpg"
+data-logo="../logos/hartung-game-master/space warrior.png"
+data-fanart="../fanart/hartung-game-master/space warrior.jpg">
+Space Warrior
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="tank-war"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/tank war.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tank War"
+data-year="Unknown"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="-"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/hartung-game-master/tank war.jpg"
+data-media="../media/hartung-game-master/tank war.jpg"
+data-screenshot="../screenshots/hartung-game-master/tank war.jpg"
+data-logo="../logos/hartung-game-master/tank war.png"
+data-fanart="../fanart/hartung-game-master/tank war.jpg">
+Tank War
+</a>
+</td>
+
+<td>Unknown</td>
+<td>Shooter</td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="tennis-master"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/tennis master.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tennis Master"
+data-year="1990"
+data-genre="Sports"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Tennis Master is a sports game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/tennis master.jpg"
+data-media="../media/hartung-game-master/tennis master.jpg"
+data-screenshot="../screenshots/hartung-game-master/tennis master.jpg"
+data-logo="../logos/hartung-game-master/tennis master.png"
+data-fanart="../fanart/hartung-game-master/tennis master.jpg">
+Tennis Master
+</a>
+</td>
+
+<td>1990</td>
+<td>Sports</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+<tr id="urban-champion"><td>
+<img
+class="thumb"
+src="../thumbs/hartung-game-master/urban champion.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Urban Champion"
+data-year="1990"
+data-genre="Shooter"
+data-publisher="Hartung"
+data-developer="Hartung"
+data-ra=""
+data-notes="Urban Champion is a shooting game, developed and published by Hartung, which was released in Germany in 1990."
+data-thumb="../thumbs/hartung-game-master/urban champion.jpg"
+data-media="../media/hartung-game-master/urban champion.jpg"
+data-screenshot="../screenshots/hartung-game-master/urban champion.jpg"
+data-logo="../logos/hartung-game-master/urban champion.png"
+data-fanart="../fanart/hartung-game-master/urban champion.jpg">
+Urban Champion
+</a>
+</td>
+
+<td>1990</td>
+<td>Shooter</td>
+<td>Hartung</td>
+<td>Hartung</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

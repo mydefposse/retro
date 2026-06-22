@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Atari ST</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/atari-st.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/atari-st.png"
+onerror="this.style.display='none';">
+
+<h1>Atari ST</h1>
+
+
+<p class="platform-release">
+Released: 1985
+</p>
+
+
+<p>6 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Atari ST is a line of home computers from Atari Corporation. The first models were released in June 1985 in North America at a retail price around $799.99 or $999.99, depending on the model. The computers were also released in limited availability in Europe (1985). The ST is the first personal computer to come with a bitmapped color GUI. The computers were manufactured until an unspecified time in 1993.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="221b-baker-street"><td>
+<img
+class="thumb"
+src="../thumbs/atari-st/221b baker street.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="221B Baker Street"
+data-year="1987"
+data-genre="Adventure •  Puzzle •  Strategy"
+data-publisher="Datasoft"
+data-developer="Sculptured Software"
+data-ra=""
+data-notes="Based on the board game of the same name, 221 B Baker St. pits up to four players against each other in a race to solve mysteries set in Victorian London. After picking a character (Sherlock Holmes, Dr. Watson, Irene Adler, or Inspector Lestrade), players select one of the thirty available mysteries and read its case file in the game's manual. The case file presents the particulars of the case, mentions the people involved, and explains what the players need to deduce to win the game.\n\nSolving the mysteries entails moving around London (the game board) via a roll of the dice, entering locales to collect clues, and then piecing the clues together. Among the fifteen locations available are a pub, a park, and a bank, and each location is brought to life with voice synthesis. Each location will have a clue, but not all clues will be useful.\n\nBefore solving the case, players must visit Scotland Yard for a badge. Players might also want to use a badge to lock a location with a useful clue, requiring other players to detour to the locksmith. Once a player believes they have solved the case, they must return to Baker Street and answer a quiz. If the player is incorrect, the other players can continue."
+data-thumb="../thumbs/atari-st/221b baker street.jpg"
+data-media="../media/atari-st/221b baker street.jpg"
+data-screenshot="../screenshots/atari-st/221b baker street.jpg"
+data-logo="../logos/atari-st/221b baker street.png"
+data-fanart="../fanart/atari-st/221b baker street.jpg">
+221B Baker Street
+</a>
+</td>
+
+<td>1987</td>
+<td>Adventure •  Puzzle •  Strategy</td>
+<td>Datasoft</td>
+<td>Sculptured Software</td>
+
+</tr>
+
+<tr id="red-storm-rising"><td>
+<img
+class="thumb"
+src="../thumbs/atari-st/red storm rising.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Red Storm Rising"
+data-year="1988"
+data-genre="Action •  Strategy"
+data-publisher="MicroProse"
+data-developer="MicroProse"
+data-ra=""
+data-notes="The Soviet Union, under severe pressure after destruction of one of their biggest oil refineries, must secure a new source of oil, and to do that, they must disable the West... which means they must invade Europe and fight NATO to a standstill... And the only way NATO can prevent that from happening is to reinforce their forces with convoys from the US and other countries. You are in command of one of the US attack submarines. You must hold the ocean against the Soviet navy at all costs, or the land battle will go badly. Part submarine simulator, part dynamic campaign, and part WW3 simulation, Red Storm Rising is an amazing look at modern warfare."
+data-thumb="../thumbs/atari-st/red storm rising.jpg"
+data-media="../media/atari-st/red storm rising.jpg"
+data-screenshot="../screenshots/atari-st/red storm rising.jpg"
+data-logo="../logos/atari-st/red storm rising.png"
+data-fanart="../fanart/atari-st/red storm rising.jpg">
+Red Storm Rising
+</a>
+</td>
+
+<td>1988</td>
+<td>Action •  Strategy</td>
+<td>MicroProse</td>
+<td>MicroProse</td>
+
+</tr>
+
+<tr id="sim-city"><td>
+<img
+class="thumb"
+src="../thumbs/atari-st/sim city.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sim City"
+data-year="1989"
+data-genre="Strategy"
+data-publisher="Maxis"
+data-developer="Maxis Software"
+data-ra=""
+data-notes="SimCity sets you as the mayor of a new municipality, with the responsibility of building and maintaining a place where citizens can move to and work and be happy. The first task is to place essentials such as housing, transport links, schools, factories and shops. There are 50 types of these, allowing for homes of all standards and different types of businesses. Make sure to consider which sites are effective for which tasks. Some power sources pollute, others don't but are more expensive. Taxes must be raised to ensure an income, and then portions allocated to public services such as policing and roads. Earthquakes, floods and fires are all emergency situations that must be dealt to contain any damage.\n\nSuccessful mayoring will cause the small village to grow into a town, then a city and finally a metropolis. As the city's size grows so do it's needs. Commercial buildings may suddenly find that they need an airport to expand trade, or housing may find itself changing rapidly as vast amounts of people come and leave.\n\nThe game also includes 8 pre-defined time-limited scenarios, with specific challenges and targets. The environment varies in each game (especially if you have the Terrain Editor add on), and this should affect your choices."
+data-thumb="../thumbs/atari-st/sim city.jpg"
+data-media="../media/atari-st/sim city.jpg"
+data-screenshot="../screenshots/atari-st/sim city.jpg"
+data-logo="../logos/atari-st/sim city.png"
+data-fanart="../fanart/atari-st/sim city.jpg">
+Sim City
+</a>
+</td>
+
+<td>1989</td>
+<td>Strategy</td>
+<td>Maxis</td>
+<td>Maxis Software</td>
+
+</tr>
+
+<tr id="tom-clancys-the-hunt-for-red-october-(book-version)"><td>
+<img
+class="thumb"
+src="../thumbs/atari-st/tom clancy s the hunt for red october book version.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tom Clancy's The Hunt for Red October (Book Version)"
+data-year="1987"
+data-genre="Shooter •  Vehicle Simulation"
+data-publisher="Datasoft"
+data-developer="Oxford Digital Enterprises"
+data-ra=""
+data-notes="An adaptation of Tom Clancy's popular novel, you play the part of Captain Marko Ramius attempting to defect to the US. \n\nNot to be confused with the later action game that was based on the movie."
+data-thumb="../thumbs/atari-st/tom clancy s the hunt for red october book version.jpg"
+data-media="../media/atari-st/tom clancy s the hunt for red october book version.jpg"
+data-screenshot="../screenshots/atari-st/tom clancy s the hunt for red october book version.jpg"
+data-logo="../logos/atari-st/tom clancy s the hunt for red october book version.png"
+data-fanart="../fanart/atari-st/tom clancy s the hunt for red october book version.jpg">
+Tom Clancy's The Hunt for Red October (Book Version)
+</a>
+</td>
+
+<td>1987</td>
+<td>Shooter •  Vehicle Simulation</td>
+<td>Datasoft</td>
+<td>Oxford Digital Enterprises</td>
+
+</tr>
+
+<tr id="tom-clancys-the-hunt-for-red-october-(movie-version)"><td>
+<img
+class="thumb"
+src="../thumbs/atari-st/tom clancy s the hunt for red october movie version.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tom Clancy's The Hunt for Red October (Movie Version)"
+data-year="1990"
+data-genre="Shooter"
+data-publisher="Grandslam Video"
+data-developer="Audio Visual Magic"
+data-ra=""
+data-notes="Based on the movie of the same name which was adapted from the best-seller by Tom Clancy. As Jack Ryan (a CIA officer) you must find out if Red October's mission is to DEFECT and if that is the situation try to prevent a possible deadly war. Red October is Russia's top secret nuclear missile submarine which is heading West on her maiden voyage...\n\nThe game is divided into 5 different action sequences in which you must perform various abilities like jumping from a helicopter, navigating big and small submarines through deep and narrow channels while trying to avoid from many obstacles."
+data-thumb="../thumbs/atari-st/tom clancy s the hunt for red october movie version.jpg"
+data-media="../media/atari-st/tom clancy s the hunt for red october movie version.jpg"
+data-screenshot="../screenshots/atari-st/tom clancy s the hunt for red october movie version.jpg"
+data-logo="../logos/atari-st/tom clancy s the hunt for red october movie version.png"
+data-fanart="../fanart/atari-st/tom clancy s the hunt for red october movie version.jpg">
+Tom Clancy's The Hunt for Red October (Movie Version)
+</a>
+</td>
+
+<td>1990</td>
+<td>Shooter</td>
+<td>Grandslam Video</td>
+<td>Audio Visual Magic</td>
+
+</tr>
+
+<tr id="wonderland"><td>
+<img
+class="thumb"
+src="../thumbs/atari-st/wonderland.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wonderland"
+data-year="1991"
+data-genre="Adventure"
+data-publisher="Virgin Interactive Entertainment"
+data-developer="magnetic Scrolls"
+data-ra=""
+data-notes="Alice was sitting at the river bank with her sister and got drowsy. Suddenly, she sees a white rabbit who was hurrying somewhere, muttering something to himself. Curious, Alice follows the rabbit into a hole that leads into a bizarre world populated by strange and exotic creatures. Alice has to use her wits in order to understand Wonderland's twisted laws of logic, and figure out a way to return home.\n\nWonderland is a text adventure with graphics, based on Lewis Carroll's classic novel Alice in Wonderland. The game follows the book's general story, while adding many descriptions, locations and puzzles of its own. The interaction with the environment is done mostly by typing; however, commands may also appear in pop-up menus and can be selected by the player. Sometimes puzzles need to be solved in order to be able to advance. The game features windows with adjustable size, separating graphical display from inventory, command interface, text descriptions, and other options."
+data-thumb="../thumbs/atari-st/wonderland.jpg"
+data-media="../media/atari-st/wonderland.jpg"
+data-screenshot="../screenshots/atari-st/wonderland.jpg"
+data-logo="../logos/atari-st/wonderland.png"
+data-fanart="../fanart/atari-st/wonderland.jpg">
+Wonderland
+</a>
+</td>
+
+<td>1991</td>
+<td>Adventure</td>
+<td>Virgin Interactive Entertainment</td>
+<td>magnetic Scrolls</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

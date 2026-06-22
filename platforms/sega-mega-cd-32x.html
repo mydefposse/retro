@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Sega Mega-CD 32X</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/sega-mega-cd-32x.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/sega-mega-cd-32x.png"
+onerror="this.style.display='none';">
+
+<h1>Sega Mega-CD 32X</h1>
+
+
+<p class="platform-release">
+Released: 1994
+</p>
+
+
+<p>6 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Sega Mega Drive console received two add-on hardware upgrades during its life time: the Sega Mega-CD and Sega 32X. It is possible to install both of these on the same base console, creating a system called the Sega Mega-CD 32X (PAL region) or Sega CD 32X (USA). This opens the possibility of software that can utilise both the Mega-CD's enhanced storage capacity and ability to play Red Book CD audio, and the 32X's enhancements in graphics and sound capabilities.  Six games were released that require both add-on units in order to be played. All of these titles are full motion video based games, which were previously available as standalone Mega-CD games, and later had their FMV assets upgraded to take advantage of the 32X's improved graphics. As such, all six were released on CDs, with the cart slot of the 32X being unused during gameplay.  Japan did not receive any Mega-CD 32X games, however North America received five while Europe recieved four of those five. Surgical Strike, once bound for a North American release, ended up being an exclusive title in Brazil (and curiously wound up being the only Mega-CD 32X game to reach this region). A further half-dozen titles were in development for the Mega-CD 32X at one stage, but were all cancelled, some merely appearing in Mega-CD form and some being moved to the Sega Saturn.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="corpse-killer"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-cd-32x/corpse killer.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Corpse Killer"
+data-year="1995"
+data-genre="Shooter"
+data-publisher="Digital Pictures"
+data-developer="Digital Pictures"
+data-ra=""
+data-notes="Corpse Killer is a full-motion-video (FMV) shoot-'em up. It seems the evil genius Dr. Hellman has found a way to raise the dead and created an island of zombies. The player is an elite special forces soldier who has been parachuted onto the island; it is up to them to shoot their way through the undead hordes and stop Dr. Hellman. The game is played from a first-person perspective. Various zombies pop up in front of a video background and the player must shoot them down either by moving a mouse cursor on screen or by using a light gun."
+data-thumb="../thumbs/sega-mega-cd-32x/corpse killer.jpg"
+data-media="../media/sega-mega-cd-32x/corpse killer.jpg"
+data-screenshot="../screenshots/sega-mega-cd-32x/corpse killer.jpg"
+data-logo="../logos/sega-mega-cd-32x/corpse killer.png"
+data-fanart="../fanart/sega-mega-cd-32x/corpse killer.jpg">
+Corpse Killer
+</a>
+</td>
+
+<td>1995</td>
+<td>Shooter</td>
+<td>Digital Pictures</td>
+<td>Digital Pictures</td>
+
+</tr>
+
+<tr id="fahrenheit"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-cd-32x/fahrenheit.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fahrenheit"
+data-year="1995"
+data-genre="Action"
+data-publisher="Sega"
+data-developer="SEGA Studios"
+data-ra=""
+data-notes="Fahrenheit is an interactive movie that puts players into the flame-resistant suit of a firefighter. You are the new guy in the firehouse. Last week, you saved three lives. But now, you're on a new squad, and have to prove yourself to them.\n\nLike most interactive movies, Fahrenheit is played entirely while watching a digitized video. At certain critical points in the video, players must press certain directions on the control pad or action buttons in order to progress in the game. Fahrenheit takes this a step further by providing several buildings in which the player has the ability to move from room to room in in a non-linear fashion. As players move from room to room, they have to locate victims and neutralize fire hazards."
+data-thumb="../thumbs/sega-mega-cd-32x/fahrenheit.jpg"
+data-media="../media/sega-mega-cd-32x/fahrenheit.jpg"
+data-screenshot="../screenshots/sega-mega-cd-32x/fahrenheit.jpg"
+data-logo="../logos/sega-mega-cd-32x/fahrenheit.png"
+data-fanart="../fanart/sega-mega-cd-32x/fahrenheit.jpg">
+Fahrenheit
+</a>
+</td>
+
+<td>1995</td>
+<td>Action</td>
+<td>Sega</td>
+<td>SEGA Studios</td>
+
+</tr>
+
+<tr id="night-trap"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-cd-32x/night trap.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Night Trap"
+data-year="1994"
+data-genre="Strategy"
+data-publisher="Digital Pictures"
+data-developer="Digital Pictures"
+data-ra=""
+data-notes="Five girls go to a party to a nice house on a lakeside. Five girls disappear without a trace... Now another five girls go there, in order to spend the vacation with the Martins, the owners of the house, in particular with the lovely Ms. Martin. This time, you should not let them die a gruesome death! Because \"nice people\" can sometimes turn out to be... yes, that's right - vampires. The whole house is full of traps, that are intended to catch the poor innocent girls, so that the vampires can suck their blood... ugh. Luckily, the brave adventurer is there in order to cease to be hunted and to become a hunter instead! Set the traps so that they will capture the villains themselves, using precise timing and good organization.\n\nNight Trap was the very first game that used the FMV (full-motion video) technology with live actors. Although it didn't contain nudity or particularly gory scenes, it was considered one of the first games to have a mature content."
+data-thumb="../thumbs/sega-mega-cd-32x/night trap.jpg"
+data-media="../media/sega-mega-cd-32x/night trap.jpg"
+data-screenshot="../screenshots/sega-mega-cd-32x/night trap.jpg"
+data-logo="../logos/sega-mega-cd-32x/night trap.png"
+data-fanart="../fanart/sega-mega-cd-32x/night trap.jpg">
+Night Trap
+</a>
+</td>
+
+<td>1994</td>
+<td>Strategy</td>
+<td>Digital Pictures</td>
+<td>Digital Pictures</td>
+
+</tr>
+
+<tr id="slam-city-with-scottie-pippen"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-cd-32x/slam city with scottie pippen.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Slam City with Scottie Pippen"
+data-year="1995"
+data-genre="Sports"
+data-publisher="Digital Pictures"
+data-developer="Digital Pictures"
+data-ra=""
+data-notes="Slam City with Scottie Pippen is a Full-Motion-Video basketball game. It uses proprietary technology to allow switching from one scene to another without lag, which allows for smoother interactive video.\n\nGameplay is relatively simple, using little more than arrow keys, and is very different from any other basketball simulation. Basketball is merely the subject for the game's plot, involving the new-guy, Ace (the player), and a host of other characters, basketball players or just spectators, all with different personalities. It's basically play one-on-one on a warehouse court and climb the \"ladders\" until you earn enough respect to play against Scottie Pippen.\n\nThe game features a total of 13 characters, 5 of which the player has an option to play against, all of which are played by real actors."
+data-thumb="../thumbs/sega-mega-cd-32x/slam city with scottie pippen.jpg"
+data-media="../media/sega-mega-cd-32x/slam city with scottie pippen.jpg"
+data-screenshot="../screenshots/sega-mega-cd-32x/slam city with scottie pippen.jpg"
+data-logo="../logos/sega-mega-cd-32x/slam city with scottie pippen.png"
+data-fanart="../fanart/sega-mega-cd-32x/slam city with scottie pippen.jpg">
+Slam City with Scottie Pippen
+</a>
+</td>
+
+<td>1995</td>
+<td>Sports</td>
+<td>Digital Pictures</td>
+<td>Digital Pictures</td>
+
+</tr>
+
+<tr id="supreme-warrior"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-cd-32x/supreme warrior.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Supreme Warrior"
+data-year="1994"
+data-genre="Action"
+data-publisher="Digital Pictures"
+data-developer="Digital Pictures"
+data-ra=""
+data-notes="Supreme Warrior is a full-motion video fighting game. The game, or interactive movie, is set in China hundreds of years ago. You are tasked with protecting half of a magical mask. The wearer of the mask will be granted untold power. Unfortunately, the villanous Wang Tu has the other half of the mask, and wants your half badly. So, you must fight off Wang Tu's minions, and eventually Fang Tu himself.\n\nThe gameplay in Supreme Warrior consists of digitized video with interactive elements. At many points during the video, you can unleash a punch, kick, or block. If your timing is correct, you inflict damage on your opponent. If you timing is off, your opponent hurts you."
+data-thumb="../thumbs/sega-mega-cd-32x/supreme warrior.jpg"
+data-media="../media/sega-mega-cd-32x/supreme warrior.jpg"
+data-screenshot="../screenshots/sega-mega-cd-32x/supreme warrior.jpg"
+data-logo="../logos/sega-mega-cd-32x/supreme warrior.png"
+data-fanart="../fanart/sega-mega-cd-32x/supreme warrior.jpg">
+Supreme Warrior
+</a>
+</td>
+
+<td>1994</td>
+<td>Action</td>
+<td>Digital Pictures</td>
+<td>Digital Pictures</td>
+
+</tr>
+
+<tr id="surgical-strike"><td>
+<img
+class="thumb"
+src="../thumbs/sega-mega-cd-32x/surgical strike.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Surgical Strike"
+data-year="1995"
+data-genre="Shooter"
+data-publisher="Sega"
+data-developer="The Code Monkeys"
+data-ra=""
+data-notes="Surgical Strike is a full motion video based game developed by The Code Monkeys and published by Sega of America. It was released on November 16, 1993.\n\nAn enhanced 32X CD version of the game was published by Tec Toy and released in Brazil in 1995."
+data-thumb="../thumbs/sega-mega-cd-32x/surgical strike.jpg"
+data-media="../media/sega-mega-cd-32x/surgical strike.jpg"
+data-screenshot="../screenshots/sega-mega-cd-32x/surgical strike.jpg"
+data-logo="../logos/sega-mega-cd-32x/surgical strike.png"
+data-fanart="../fanart/sega-mega-cd-32x/surgical strike.jpg">
+Surgical Strike
+</a>
+</td>
+
+<td>1995</td>
+<td>Shooter</td>
+<td>Sega</td>
+<td>The Code Monkeys</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

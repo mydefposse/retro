@@ -1,0 +1,932 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Casio Loopy</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/casio-loopy.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/casio-loopy.png"
+onerror="this.style.display='none';">
+
+<h1>Casio Loopy</h1>
+
+
+<p class="platform-release">
+Released: 1995
+</p>
+
+
+<p>9 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The Casio Loopy, subtitled My Seal Computer SV-100, is a fifth generation (1993–2005) video game console developed and distributed by Casio. It was released on October 19, 1995 in Japan at a retail price believed to be 25,000¥. The console was not released outside Japan. The Loopy was marketed to a female audience, and included a built-in thermal color printer that could be used to create stickers from game screenshots. The console was discontinued in October 1996.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="anime-land"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/anime land.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Anime Land"
+data-year="1995"
+data-genre=""
+data-publisher="Casio Computer"
+data-developer="Casio Computer"
+data-ra=""
+data-notes="This game is an art tool, in which players can create their own anime girls or boys and print them as stickers. Before starting on the design, the player selects the framework characteristics such as body shape. After establishing the character build, the player proceeds to make cosmetic changes to the face including hair, eyes, brows, nose, mouth, and head shape as well as facial expressions, accessories, clothes, screen backgrounds and patterns, and speech bubbles. In addition to a custom character, the player can also create a custom anime animal or object."
+data-thumb="../thumbs/casio-loopy/anime land.jpg"
+data-media="../media/casio-loopy/anime land.jpg"
+data-screenshot="../screenshots/casio-loopy/anime land.jpg"
+data-logo="../logos/casio-loopy/anime land.png"
+data-fanart="../fanart/casio-loopy/anime land.jpg">
+Anime Land
+</a>
+</td>
+
+<td>1995</td>
+<td></td>
+<td>Casio Computer</td>
+<td>Casio Computer</td>
+
+</tr>
+
+<tr id="chakrakun-no-omajinai-paradise"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/chakrakun no omajinai paradise.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Chakrakun no Omajinai Paradise"
+data-year="1997"
+data-genre="Education"
+data-publisher="Casio Computer"
+data-developer="Armat"
+data-ra=""
+data-notes="Based on the manga Magic Cat Chakra-kun, this game contains a number of activities made up of picture puzzles, fortune telling in the form of a slot machine, trivial quizzes, and coloring pages, which can be printed into stickers."
+data-thumb="../thumbs/casio-loopy/chakrakun no omajinai paradise.jpg"
+data-media="../media/casio-loopy/chakrakun no omajinai paradise.jpg"
+data-screenshot="../screenshots/casio-loopy/chakrakun no omajinai paradise.jpg"
+data-logo="../logos/casio-loopy/chakrakun no omajinai paradise.png"
+data-fanart="../fanart/casio-loopy/chakrakun no omajinai paradise.jpg">
+Chakrakun no Omajinai Paradise
+</a>
+</td>
+
+<td>1997</td>
+<td>Education</td>
+<td>Casio Computer</td>
+<td>Armat</td>
+
+</tr>
+
+<tr id="dorīmuchenji-kokinchanno-fasshonpātī"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/dor muchenji kokinchanno fasshonp t.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dor\u012bmuchenji Kokinchanno Fasshonp\u0101t\u012b"
+data-year="1995"
+data-genre="Life Simulation"
+data-publisher="Casio Computer"
+data-developer="Casio Computer"
+data-ra=""
+data-notes="Dream Change: Kogane-chan no Fashion Party is a Miscellaneous game, developed and published by Casio, which was released in Japan in 1995."
+data-thumb="../thumbs/casio-loopy/dor muchenji kokinchanno fasshonp t.jpg"
+data-media="../media/casio-loopy/dor muchenji kokinchanno fasshonp t.jpg"
+data-screenshot="../screenshots/casio-loopy/dor muchenji kokinchanno fasshonp t.jpg"
+data-logo="../logos/casio-loopy/dor muchenji kokinchanno fasshonp t.png"
+data-fanart="../fanart/casio-loopy/dor muchenji kokinchanno fasshonp t.jpg">
+Dorīmuchenji Kokinchanno Fasshonpātī
+</a>
+</td>
+
+<td>1995</td>
+<td>Life Simulation</td>
+<td>Casio Computer</td>
+<td>Casio Computer</td>
+
+</tr>
+
+<tr id="harihari-shīru-paradaisu"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/harihari sh ru paradaisu.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="HARIHARI Sh\u012bru Paradaisu"
+data-year="1995"
+data-genre="Education"
+data-publisher="Casio Computer"
+data-developer="Casio Computer"
+data-ra=""
+data-notes="The player joins Harihari and her friends in this sticker activity game, which includes animated sticker pages, special occasions stickers, greetings stickers, poster stickers, and a music session. Players can also make their own custom stickers, changing the proportions of objects, selecting the background, adding borders, and implementing some animations with a variety of art tools."
+data-thumb="../thumbs/casio-loopy/harihari sh ru paradaisu.jpg"
+data-media="../media/casio-loopy/harihari sh ru paradaisu.jpg"
+data-screenshot="../screenshots/casio-loopy/harihari sh ru paradaisu.jpg"
+data-logo="../logos/casio-loopy/harihari sh ru paradaisu.png"
+data-fanart="../fanart/casio-loopy/harihari sh ru paradaisu.jpg">
+HARIHARI Shīru Paradaisu
+</a>
+</td>
+
+<td>1995</td>
+<td>Education</td>
+<td>Casio Computer</td>
+<td>Casio Computer</td>
+
+</tr>
+
+<tr id="little-romance"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/little romance.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Little Romance"
+data-year="1996"
+data-genre="Life Simulation"
+data-publisher="Casio Computer"
+data-developer="Casio Computer"
+data-ra=""
+data-notes="Little Romance is a Simulation game, developed and published by Casio, which was released in Japan in 1996."
+data-thumb="../thumbs/casio-loopy/little romance.jpg"
+data-media="../media/casio-loopy/little romance.jpg"
+data-screenshot="../screenshots/casio-loopy/little romance.jpg"
+data-logo="../logos/casio-loopy/little romance.png"
+data-fanart="../fanart/casio-loopy/little romance.jpg">
+Little Romance
+</a>
+</td>
+
+<td>1996</td>
+<td>Life Simulation</td>
+<td>Casio Computer</td>
+<td>Casio Computer</td>
+
+</tr>
+
+<tr id="lupiton-no-wonder-palette"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/lupiton no wonder palette.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Lupiton no Wonder Palette"
+data-year="1995"
+data-genre=""
+data-publisher="Casio Computer"
+data-developer="Casio Computer"
+data-ra=""
+data-notes="Lupiton no Wonder Palette is a Miscellaneous game, developed by Axes Art Amuse and published by Casio, which was released in Japan in 1996."
+data-thumb="../thumbs/casio-loopy/lupiton no wonder palette.jpg"
+data-media="../media/casio-loopy/lupiton no wonder palette.jpg"
+data-screenshot="../screenshots/casio-loopy/lupiton no wonder palette.jpg"
+data-logo="../logos/casio-loopy/lupiton no wonder palette.png"
+data-fanart="../fanart/casio-loopy/lupiton no wonder palette.jpg">
+Lupiton no Wonder Palette
+</a>
+</td>
+
+<td>1995</td>
+<td></td>
+<td>Casio Computer</td>
+<td>Casio Computer</td>
+
+</tr>
+
+<tr id="nigaoe-artist"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/nigaoe artist.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Nigaoe Artist"
+data-year="1995"
+data-genre="Education"
+data-publisher="Casio Computer"
+data-developer="Casio Computer"
+data-ra=""
+data-notes="This game is designed as an art tool to create caricatures and facial impressions. First the player picks an avatar of a gender and age group. Using the selected avatar as a template, the player can customize the hairstyle, brows, eyes, nose, mouth, head shape and clothes. The parts of the face can be repositioned and resized. Additionally, paint tools can be used to further accessorize the caricature with colors, objects and speech bubbles. To finish off, the caricature can be placed in one of many sceneries provided. The player also has the option to paint their own pictures from scratch or make use of one of the ready made caricatures."
+data-thumb="../thumbs/casio-loopy/nigaoe artist.jpg"
+data-media="../media/casio-loopy/nigaoe artist.jpg"
+data-screenshot="../screenshots/casio-loopy/nigaoe artist.jpg"
+data-logo="../logos/casio-loopy/nigaoe artist.png"
+data-fanart="../fanart/casio-loopy/nigaoe artist.jpg">
+Nigaoe Artist
+</a>
+</td>
+
+<td>1995</td>
+<td>Education</td>
+<td>Casio Computer</td>
+<td>Casio Computer</td>
+
+</tr>
+
+<tr id="pc-collection"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/pc collection.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="PC Collection"
+data-year="1996"
+data-genre="Compilation"
+data-publisher="Casio Computer"
+data-developer="Casio Computer"
+data-ra=""
+data-notes="This game is a small collection of ten different mini-game activities. Those activities include a word processor, a paint and illustration program, a music composer, a fortune-telling screen with printable charms, a simple fashion designer, jigsaw puzzles, a crane machine game, animal dress up, a calendar, and an address book. The game came packaged with the Loopy Mouse."
+data-thumb="../thumbs/casio-loopy/pc collection.jpg"
+data-media="../media/casio-loopy/pc collection.jpg"
+data-screenshot="../screenshots/casio-loopy/pc collection.jpg"
+data-logo="../logos/casio-loopy/pc collection.png"
+data-fanart="../fanart/casio-loopy/pc collection.jpg">
+PC Collection
+</a>
+</td>
+
+<td>1996</td>
+<td>Compilation</td>
+<td>Casio Computer</td>
+<td>Casio Computer</td>
+
+</tr>
+
+<tr id="rūpī-taun-no-o-heya-ga-hoshii!"><td>
+<img
+class="thumb"
+src="../thumbs/casio-loopy/r p taun no o heya ga hoshii.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="R\u016bp\u012b Taun no O-heya ga Hoshii!"
+data-year="1995"
+data-genre="Life Simulation"
+data-publisher="Casio Computer"
+data-developer="Casio Computer"
+data-ra=""
+data-notes=""
+data-thumb="../thumbs/casio-loopy/r p taun no o heya ga hoshii.jpg"
+data-media="../media/casio-loopy/r p taun no o heya ga hoshii.jpg"
+data-screenshot="../screenshots/casio-loopy/r p taun no o heya ga hoshii.jpg"
+data-logo="../logos/casio-loopy/r p taun no o heya ga hoshii.png"
+data-fanart="../fanart/casio-loopy/r p taun no o heya ga hoshii.jpg">
+Rūpī Taun no O-heya ga Hoshii!
+</a>
+</td>
+
+<td>1995</td>
+<td>Life Simulation</td>
+<td>Casio Computer</td>
+<td>Casio Computer</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

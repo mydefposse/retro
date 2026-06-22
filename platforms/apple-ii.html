@@ -1,0 +1,4366 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Apple II</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/apple-ii.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/apple-ii.png"
+onerror="this.style.display='none';">
+
+<h1>Apple II</h1>
+
+
+<p class="platform-release">
+Released: 1977
+</p>
+
+
+<p>110 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>In 1976, computer pioneers Steve Wozniak and Steve Jobs began selling their Apple I computer in kit form to computer stores. A month later, Wozniak was working on a design for an improved version, the Apple II. They demonstrated a prototype in December, and then introduced it to the public in April 1977. The Apple II started the boom in personal computer sales in the late 1970s, and pushed Apple into the lead among personal computer makers.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="a.e."><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/a e.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="A.E."
+data-year="1982"
+data-genre="Shooter"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Jun Wada"
+data-ra=""
+data-notes="A.E. is a Space Invaders inspired game with a 3D view. In A.E. the earth is under attack by swarms of aliens who drop bomb after bomb, and it's your job to defend planet Earth.\n\nYou control a laser cannon that moves horizontally at the bottom of the screen. To earn point you should shoot all the alien forces before they shoot you! The game becomes more challenging when you progress in the game as the alien swarm splits up and attack you from several sides."
+data-thumb="../thumbs/apple-ii/a e.jpg"
+data-media="../media/apple-ii/a e.jpg"
+data-screenshot="../screenshots/apple-ii/a e.jpg"
+data-logo="../logos/apple-ii/a e.png"
+data-fanart="../fanart/apple-ii/a e.jpg">
+A.E.
+</a>
+</td>
+
+<td>1982</td>
+<td>Shooter</td>
+<td>Brøderbund Software</td>
+<td>Jun Wada</td>
+
+</tr>
+
+<tr id="akalabeth-world-of-doom"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/akalabeth world of doom.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Akalabeth: World of Doom"
+data-year="1980"
+data-genre="Role-Playing"
+data-publisher="California Pacific Computer"
+data-developer="Richard Garriott"
+data-ra="14025"
+data-notes="Once, the land of Akalabeth was peaceful and quiet. But then came Mondain, an evil and ambitious man who created dungeons and populated them with foul creatures. The noble warrior British was able to drive Mondain from Akalabeth, but the monsters he brought with him remain.\n\nAs either a fighter or a mage, it is your job to explore Akalabeth, descend into the dungeons and vanquish the beasts dwelling within. On an overhead map of the land, one can find the dungeons, towns where one may buy supplies, weapons and armor, and a castle, where one will be given quests by Lord British. To fulfill such a quest, a certain type of creature must be destroyed in a dungeon.\n\nInside the dungeons, the view switches to a first-person perspective. Fight, explore and find treasure on your way to complete a quest. Each successive quest will require you to destroy a stronger monster, which will reside on a deeper dungeon level than the one before it.\n\nAkalabeth is the precursor to the Ultima series so is sometimes referred to as Ultima 0 or Ultima: Akalabeth."
+data-thumb="../thumbs/apple-ii/akalabeth world of doom.jpg"
+data-media="../media/apple-ii/akalabeth world of doom.jpg"
+data-screenshot="../screenshots/apple-ii/akalabeth world of doom.jpg"
+data-logo="../logos/apple-ii/akalabeth world of doom.png"
+data-fanart="../fanart/apple-ii/akalabeth world of doom.jpg">
+Akalabeth: World of Doom
+</a>
+</td>
+
+<td>1980</td>
+<td>Role-Playing</td>
+<td>California Pacific Computer</td>
+<td>Richard Garriott</td>
+
+</tr>
+
+<tr id="alf-the-first-adventure"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/alf the first adventure.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="ALF: The First Adventure"
+data-year="1987"
+data-genre="Action"
+data-publisher="Box Office"
+data-developer="Box Office"
+data-ra="32138"
+data-notes="This was a budget release computer game based on the popular '80s television show of the same name. The player controls Alf, who has to run around the neighborhood collecting pizzas and avoiding cats and the man of the household."
+data-thumb="../thumbs/apple-ii/alf the first adventure.jpg"
+data-media="../media/apple-ii/alf the first adventure.jpg"
+data-screenshot="../screenshots/apple-ii/alf the first adventure.jpg"
+data-logo="../logos/apple-ii/alf the first adventure.png"
+data-fanart="../fanart/apple-ii/alf the first adventure.jpg">
+ALF: The First Adventure
+</a>
+</td>
+
+<td>1987</td>
+<td>Action</td>
+<td>Box Office</td>
+<td>Box Office</td>
+
+</tr>
+
+<tr id="apple-bowl"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/apple bowl.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Apple Bowl"
+data-year="1979"
+data-genre="Sports"
+data-publisher="Apple Computer"
+data-developer="Charlie Kellner"
+data-ra="22163"
+data-notes="Apple Bowl is a 1-player bowling game for the Apple II.\n\nPlayed from a 1st person perspective at a bowling alley, the player bowls in lane ][, while occasionally another member at the bowling alley will bowl in lanes I or ]I[. A throw indicator scrolls slowly along the bottom of the screen, and the player starts their bowl when the ball is in their preferred position. The player controls the power and spin of the ball using the game paddles, and the game attempts to accurately simulate the physics of bowling. Follows standard 10-pin bowling rules with a total of 10 frames of bowling."
+data-thumb="../thumbs/apple-ii/apple bowl.jpg"
+data-media="../media/apple-ii/apple bowl.jpg"
+data-screenshot="../screenshots/apple-ii/apple bowl.jpg"
+data-logo="../logos/apple-ii/apple bowl.png"
+data-fanart="../fanart/apple-ii/apple bowl.jpg">
+Apple Bowl
+</a>
+</td>
+
+<td>1979</td>
+<td>Sports</td>
+<td>Apple Computer</td>
+<td>Charlie Kellner</td>
+
+</tr>
+
+<tr id="battle-of-hoth"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/battle of hoth.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Battle of Hoth"
+data-year="1980"
+data-genre="Shooter"
+data-publisher="Baked Apple Users Group"
+data-developer="Tukumo Original Soft"
+data-ra="20871"
+data-notes="Battle of Hoth is a Star Wars themed 1-player arcade game for the Apple II.\n\nThree columns of Imperial AT-AT walkers walk inexorably from the right of the screen towards the Rebel defensive positions on the left. The player controls a Rebel snowspeeder, which travels from the left ot right of the screen, and can fire horizontally to the right. The player can move the snowspeeder vertically up and down, and must avoid fire from the AT-ATs and shoot them down. Whenever an AT-AT is destroyed, a new AT-AT immediately appears to the right of the screen in that row. The player's goal is to survive for 300 seconds to allow for evacuation of Rebel forces. If an Imperial vessel reaches the left of the screen, the Rebel forces are routed, and the player loses the game. The player starts with a total of 9 snowspeeders, and if all are lost to Imperial fire, it's game over."
+data-thumb="../thumbs/apple-ii/battle of hoth.jpg"
+data-media="../media/apple-ii/battle of hoth.jpg"
+data-screenshot="../screenshots/apple-ii/battle of hoth.jpg"
+data-logo="../logos/apple-ii/battle of hoth.png"
+data-fanart="../fanart/apple-ii/battle of hoth.jpg">
+Battle of Hoth
+</a>
+</td>
+
+<td>1980</td>
+<td>Shooter</td>
+<td>Baked Apple Users Group</td>
+<td>Tukumo Original Soft</td>
+
+</tr>
+
+<tr id="black-magic"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/black magic.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Black Magic"
+data-year="1987"
+data-genre="Action •  Adventure •  Role-Playing"
+data-publisher="Datasoft"
+data-developer="Action Software"
+data-ra="20414"
+data-notes="For centuries, the people of MariGold have suffered under the rule of the Red Warlock, Zahgrim, making a once prosperous and happy place to live into an evil and depressive land. Zangrim had defeated the wizard Anakar the Wise by turning him to a stone statue before overthrowing King Tauraus. A hero is needed to defeat the evil warlock and return the peace and happiness back to MariGold - and you are that hero. You were an apprentice to a wizard called Goff, but your training was cut short when he was killed by demons and with all the magic books destroyed your magic powers became limited. You have, however, discovered a parchment explaining that Anakar's six magical eyes have been scattered over the land and if returned to his statue, the secret on how to defeat Zahgrim will be revealed. Furthermore, you have to set out across the land looking for the eyes before making the journey to the warlock's castle and defeating him.\n\nBlack Magic is an action game with role-playing elements. The main playing area is viewed from the side, with the screen scrolling in multiple directions when you move. You start your quest on the surface of the land as the class Apprentice, and you are armed with limited amounts of arrows and two types of spells, though more can be found as the game progresses. You must search the land on the surface and venture deep underground into areas connected by ladders on your quest. As you explore you will encounter many creatures, and if you are touched or shot by them, you lose part of the health gauge; when it empties you die, and it is game over. Food can be found scattered around and can be used to top up your health or stored on your person for later usage. \n\nAs you progress and complete tasks, your experience points increase. Collect a certain amount pf them and your class is promoted to Wizard and then to Sorcerer, before you become Necromancer, which is needed to defeat Zahgrim. The types of spells you have and use also increase when you move up a class. You will also encounter trapped prisoners who require freeing just by walking through them."
+data-thumb="../thumbs/apple-ii/black magic.jpg"
+data-media="../media/apple-ii/black magic.jpg"
+data-screenshot="../screenshots/apple-ii/black magic.jpg"
+data-logo="../logos/apple-ii/black magic.png"
+data-fanart="../fanart/apple-ii/black magic.jpg">
+Black Magic
+</a>
+</td>
+
+<td>1987</td>
+<td>Action •  Adventure •  Role-Playing</td>
+<td>Datasoft</td>
+<td>Action Software</td>
+
+</tr>
+
+<tr id="both-barrels"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/both barrels.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Both Barrels"
+data-year="1980"
+data-genre="Shooter"
+data-publisher="Sirius Software"
+data-developer="Sirius Software"
+data-ra="32563"
+data-notes="Both Barrels contains two shooting games: High Noon and Duck Hunt.\n\nHigh Noon is set in the old west and involves a shootout outside a saloon. Enemies will pop out from covers, doors and windows and the player simply has to shoot them before they shoot. The player is equipped with two revolvers and each is aimed and shoot individually using paddles.\n\nDuck Hunt is a two player game that is played with just a single button. It's viewed from the side where the shooters are located on the ground while ducks fly across the screen above them. Each shooter fires from its own angle and all the player has to do is time the shot. The player with most hits after ten rounds wins the game."
+data-thumb="../thumbs/apple-ii/both barrels.jpg"
+data-media="../media/apple-ii/both barrels.jpg"
+data-screenshot="../screenshots/apple-ii/both barrels.jpg"
+data-logo="../logos/apple-ii/both barrels.png"
+data-fanart="../fanart/apple-ii/both barrels.jpg">
+Both Barrels
+</a>
+</td>
+
+<td>1980</td>
+<td>Shooter</td>
+<td>Sirius Software</td>
+<td>Sirius Software</td>
+
+</tr>
+
+<tr id="breakout"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/breakout.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Breakout"
+data-year="1977"
+data-genre="Action"
+data-publisher="Apple Computer"
+data-developer="Steve Wozniak"
+data-ra="14022"
+data-notes="When the first fully-assembled Apple II systems began shipping in June 1977, a single tape cassette was included, containing demonstration programs written in Integer BASIC by Steve Wozniak. Notably, one side of the tape held the first Apple II version of Breakout, inspired by Wozniak's own work on Atari's blockbuster arcade game of the same title.\n\nOwing to the monitor's horizontal orientation, the playfield is rotated 90 degrees from that of the arcade original - paddle on the left, brick wall on the right, arranged in 8 columns of increasing point value; bounce the ball off the paddle to knock out the bricks and rack up score accordingly. Lose all five balls, and the game will give you a frank verbal evaluation: 720 is a perfect score, while under 100 will earn you the questionable award of \"terrible!\". And if the default color set doesn't meet your aesthetic approval, you can customize it to your heart's content.\n\nSome of the Apple II's features were a direct result of this game's demands - color graphics, sound and paddle controllers. The intent was to showcase the feasibility of implementing such a game, in an accessible programming language, on a consumer-level machine: until then, this was possible using expensive, custom hardware. Remakes of this game would later surface on the Apple II (and derivatives), including Brick Out and Little Brick Out.\n\nThe other side of the tape held Color Demos, a succinctly-titled collection of routines showing off the machine's graphics capabilities. The BASIC source code for both programs was included in the original Apple II \"mini manual\"."
+data-thumb="../thumbs/apple-ii/breakout.jpg"
+data-media="../media/apple-ii/breakout.jpg"
+data-screenshot="../screenshots/apple-ii/breakout.jpg"
+data-logo="../logos/apple-ii/breakout.png"
+data-fanart="../fanart/apple-ii/breakout.jpg">
+Breakout
+</a>
+</td>
+
+<td>1977</td>
+<td>Action</td>
+<td>Apple Computer</td>
+<td>Steve Wozniak</td>
+
+</tr>
+
+<tr id="castle-wolfenstein"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/castle wolfenstein.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Castle Wolfenstein"
+data-year="1981"
+data-genre="Shooter •  Stealth"
+data-publisher="Muse Software"
+data-developer="Silas S. Warner"
+data-ra="13929"
+data-notes="In this game, the player takes control of a lone prisoner who has been taking captive in a large castle occupied by the Nazis. Getting out of the cell and picking up a weapon is just the beginning; the ultimate goal is to acquire the war plans of the Nazis, and escape from Castle Wolfenstein alive.\n\nCastle Wolfenstein is notable for being the first game that incorporated stealth-based gameplay mechanics. The player navigates the hero through the top-down corridors and rooms of the castle. The main gameplay challenge lies in dealing with the guards who patrol the castle and will be alerted to any noise made by the player. It is possible to shoot the guards, but the ammunition in the game is scarce, and some guards are very hard to kill, so the preferred course of action is moving without being noticed. If the player surprises a guard with a gun drawn, the guard will surrender, and the player will be able to frisk him for valuable items.\n\nThe player should also search the treasure chests scattered across the castle. Some of them contain war plans, which are essential for winning the game; others have useful items, such as bullets, grenades, bulletproof vests, and guard uniforms. The uniforms can be worn for disguise; however, higher-ranked SS guards will be able to recognize the intruder. Chests might also contain food and beverage; imbibing alcohol will result in a temporary loss of aim and balance for the player character.\n\nThe game's sound effects include some of the earliest examples of digital voice samples. The guards would sometimes shout out short phrases in German in an attempt to stop the protagonist."
+data-thumb="../thumbs/apple-ii/castle wolfenstein.jpg"
+data-media="../media/apple-ii/castle wolfenstein.jpg"
+data-screenshot="../screenshots/apple-ii/castle wolfenstein.jpg"
+data-logo="../logos/apple-ii/castle wolfenstein.png"
+data-fanart="../fanart/apple-ii/castle wolfenstein.jpg">
+Castle Wolfenstein
+</a>
+</td>
+
+<td>1981</td>
+<td>Shooter •  Stealth</td>
+<td>Muse Software</td>
+<td>Silas S. Warner</td>
+
+</tr>
+
+<tr id="cavern-creatures"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/cavern creatures.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Cavern Creatures"
+data-year="1983"
+data-genre="Shooter"
+data-publisher="Datamost"
+data-developer="Paul Lowrance"
+data-ra="31970"
+data-notes="Cavern Creatures is a 1983 game for the Apple II, written by Paul Lowrance and published by Datamost, with title art by Art Huff. The game is similar to Caverns of Mars for the Atari 8-bit family.\n\nThe player controls a small craft, navigating it through a series of winding caverns and tunnels while shooting or avoiding obstacles. The caverns scroll from the bottom of the screen to the top at a fixed speed, so the player must always move forward.\n\nThe obstacles filling the tunnels are mostly the eponymous \"creatures\" and appear as simple icons like smiley faces, floppy diskettes, birds, eyes, apples, bunches of grapes, Pac-Man ghosts, baseball hats, turrets, etc. Many of these objects are animated, but they do not actually move about. The player's craft fires bolts of energy simultaneously in three directions (left, right and forward) that destroy the creatures but consume the ship's energy, tracked by a green bar at the bottom of the screen. Energy is replenished by shooting occasional \"tanks\" on the tunnel walls.\n\nSpecial objects in the caverns include indestructible Rubik's cube-like boxes that can be shot to gain extra points, indestructible wriggling snakes (one of the cavern's few mobile opponents), and pulsing energy barriers.\n\nThe craft is destroyed if it strikes any object or the cavern wall; a new one can be put back into play at any position on the screen. The game ends when the last craft is destroyed or when the player beats the final challenge. The game's introduction promises that \"the end battle will be a surprise that no one can miss.\""
+data-thumb="../thumbs/apple-ii/cavern creatures.jpg"
+data-media="../media/apple-ii/cavern creatures.jpg"
+data-screenshot="../screenshots/apple-ii/cavern creatures.jpg"
+data-logo="../logos/apple-ii/cavern creatures.png"
+data-fanart="../fanart/apple-ii/cavern creatures.jpg">
+Cavern Creatures
+</a>
+</td>
+
+<td>1983</td>
+<td>Shooter</td>
+<td>Datamost</td>
+<td>Paul Lowrance</td>
+
+</tr>
+
+<tr id="ceiling-zero"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/ceiling zero.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ceiling Zero"
+data-year="1981"
+data-genre="Shooter"
+data-publisher="Turnkey Software"
+data-developer="Mad Ram Software"
+data-ra="25365"
+data-notes="Ceiling Zero is a fixed screen shoot 'em up. It features an alien mothership that is protected by the titular ceiling, a power field that the player can't shoot through. The mothership throws various objects onto the screen that will bounce around until the player has shot them all down, or he is killed when colliding with them. Once all the objects have been destroyed, the ceiling moves down one step and another wave is released. The player's goal is to survive until the ceiling has reached the floor. There are three different kinds of objects, and they differ, not only in appearance, but in their speed and how they move. In addition to these, there is also occasionally a creature that attempts to land. If it succeeds before the player shoots it down, a life is lost, no matter how far from the player it is. Similar to other early shooters, the player is restricted to move left and right."
+data-thumb="../thumbs/apple-ii/ceiling zero.jpg"
+data-media="../media/apple-ii/ceiling zero.jpg"
+data-screenshot="../screenshots/apple-ii/ceiling zero.jpg"
+data-logo="../logos/apple-ii/ceiling zero.png"
+data-fanart="../fanart/apple-ii/ceiling zero.jpg">
+Ceiling Zero
+</a>
+</td>
+
+<td>1981</td>
+<td>Shooter</td>
+<td>Turnkey Software</td>
+<td>Mad Ram Software</td>
+
+</tr>
+
+<tr id="championship-lode-runner"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/championship lode runner.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Championship Lode Runner"
+data-year="1984"
+data-genre="Platform •  Puzzle"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Doug Smith"
+data-ra="22830"
+data-notes="A follow-up to the original Lode Runner, with identical gameplay. This package contained 50 of the most challenging levels ever designed, and was intended for expert players only. It did not include the level editor, you had to play through the levels in order, but a save-game option was provided (although you lost one life every time you restored)."
+data-thumb="../thumbs/apple-ii/championship lode runner.jpg"
+data-media="../media/apple-ii/championship lode runner.jpg"
+data-screenshot="../screenshots/apple-ii/championship lode runner.jpg"
+data-logo="../logos/apple-ii/championship lode runner.png"
+data-fanart="../fanart/apple-ii/championship lode runner.jpg">
+Championship Lode Runner
+</a>
+</td>
+
+<td>1984</td>
+<td>Platform •  Puzzle</td>
+<td>Brøderbund Software</td>
+<td>Doug Smith</td>
+
+</tr>
+
+<tr id="conan"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/conan.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Conan"
+data-year="1984"
+data-genre="Action •  Platform"
+data-publisher="Datasoft"
+data-developer="SE Software"
+data-ra="30974"
+data-notes="Conan: Hall of Volta is a 1984 action-platform computer game, designed by Eric Robinson and Eric Parker, and published by Datasoft.\n\nIt is based on the character Conan created by Robert E. Howard.\n\nReleased in 1984, the game's launch coincided with the debut of the sequel to the 1984 feature film Conan the Destroyer. The game's box featured a painting of Arnold Schwarzenegger as the muscle-bound warrior with his new costume for Destroyer. Despite this attempted tie-in, the game has little to do with the movie series except that it features the Cimmerian in the title role. This is due to having originally been designed without the Conan tie-in, as a boomerang-throwing game titled Visigoth. One of the screenshots on the back of the packaging is from a prototype version, and shows a boomerang instead of a sword."
+data-thumb="../thumbs/apple-ii/conan.jpg"
+data-media="../media/apple-ii/conan.jpg"
+data-screenshot="../screenshots/apple-ii/conan.jpg"
+data-logo="../logos/apple-ii/conan.png"
+data-fanart="../fanart/apple-ii/conan.jpg">
+Conan
+</a>
+</td>
+
+<td>1984</td>
+<td>Action •  Platform</td>
+<td>Datasoft</td>
+<td>SE Software</td>
+
+</tr>
+
+<tr id="congo-bongo"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/congo bongo.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Congo Bongo"
+data-year="1983"
+data-genre="Platform"
+data-publisher="Sega"
+data-developer="Sega"
+data-ra="32457"
+data-notes="Congo Bongo is an isometric platform arcade game released by Sega in 1983. The player takes the role of a red-nosed safari hunter who tries to catch an ape named Bongo. The hunter seeks Bongo to exact revenge for an apparent practical joke in which Bongo set fire to the hunter's tent, giving him a literal \"hot foot.\""
+data-thumb="../thumbs/apple-ii/congo bongo.jpg"
+data-media="../media/apple-ii/congo bongo.jpg"
+data-screenshot="../screenshots/apple-ii/congo bongo.jpg"
+data-logo="../logos/apple-ii/congo bongo.png"
+data-fanart="../fanart/apple-ii/congo bongo.jpg">
+Congo Bongo
+</a>
+</td>
+
+<td>1983</td>
+<td>Platform</td>
+<td>Sega</td>
+<td>Sega</td>
+
+</tr>
+
+<tr id="cranston-manor"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/cranston manor.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Cranston Manor"
+data-year="1981"
+data-genre="Adventure"
+data-publisher="On-Line Systems"
+data-developer="On-Line Systems"
+data-ra="31996"
+data-notes="Cranston Manor is the fourth game in On-Line System's Hi-Res Adventures series, along with Mystery House, The Wizard and the Princess, and Mission Asteroid. In the game, you must invade a mansion that was occupied by a late millionaire and steal the sixteen treasures that lie in it. You perform actions in the game by only typing a one- or two-word command (e.g. \"west\", \"get shovel\", etc.), and you can save the game at any point in the game by inserting a disk and pressing a letter.\n\nCranston Manor was based on the original text adventure, The Cranston Manor Adventure, by Larry Ledden."
+data-thumb="../thumbs/apple-ii/cranston manor.jpg"
+data-media="../media/apple-ii/cranston manor.jpg"
+data-screenshot="../screenshots/apple-ii/cranston manor.jpg"
+data-logo="../logos/apple-ii/cranston manor.png"
+data-fanart="../fanart/apple-ii/cranston manor.jpg">
+Cranston Manor
+</a>
+</td>
+
+<td>1981</td>
+<td>Adventure</td>
+<td>On-Line Systems</td>
+<td>On-Line Systems</td>
+
+</tr>
+
+<tr id="dangerous-dave-in-the-deserted-pirates-hideout!"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/dangerous dave in the deserted pirate s hideout.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dangerous Dave in the deserted Pirate's Hideout!"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="19570"
+data-notes=""
+data-thumb="../thumbs/apple-ii/dangerous dave in the deserted pirate s hideout.jpg"
+data-media="../media/apple-ii/dangerous dave in the deserted pirate s hideout.jpg"
+data-screenshot="../screenshots/apple-ii/dangerous dave in the deserted pirate s hideout.jpg"
+data-logo="../logos/apple-ii/dangerous dave in the deserted pirate s hideout.png"
+data-fanart="../fanart/apple-ii/dangerous dave in the deserted pirate s hideout.jpg">
+Dangerous Dave in the deserted Pirate's Hideout!
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="dark-lord"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/dark lord.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dark Lord"
+data-year="1987"
+data-genre="Adventure"
+data-publisher="Datasoft"
+data-developer="Datasoft"
+data-ra="32644"
+data-notes="Journey through a magic mirror, which leads you to the alterworld where you must defeat Nequam, the Dark Lord who killed your grandfather. Dark Lord is an adventure game that involves the player reading a description of each scene, and entering one- or two-word commands at the prompt. Some of the commands recognized include GET, EXAMINE, GIVE, and SAY (to have conversations with people you meet)."
+data-thumb="../thumbs/apple-ii/dark lord.jpg"
+data-media="../media/apple-ii/dark lord.jpg"
+data-screenshot="../screenshots/apple-ii/dark lord.jpg"
+data-logo="../logos/apple-ii/dark lord.png"
+data-fanart="../fanart/apple-ii/dark lord.jpg">
+Dark Lord
+</a>
+</td>
+
+<td>1987</td>
+<td>Adventure</td>
+<td>Datasoft</td>
+<td>Datasoft</td>
+
+</tr>
+
+<tr id="donald-ducks-playground"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/donald duck s playground.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Donald Duck's Playground"
+data-year="1984"
+data-genre="Education"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="22129"
+data-notes="Donald Duck's Playground won several awards from educational software magazines as best educational game of the year. In it, you are Donald, working to earn money, which you then spend to buy playground equipment for your nephews Huey, Dewey and Louie to enjoy.\n\nThe first job is to guide the Amquack Express around a top-down map with 8 stations, setting the junctions to ensure that packages are delivered to the correct stations. His job in produce involves catching fruits as they are thrown at him and placing them in the correct basket. At the toy store he must sort items by shape and colour, and be careful with the security switch. His final job is at an internal US airport, soring products based on their location's delivery code.\n\nThe equipment for the playground must then be purchased and arranged, helping young minds get an appreciation of money management and cash-handling."
+data-thumb="../thumbs/apple-ii/donald duck s playground.jpg"
+data-media="../media/apple-ii/donald duck s playground.jpg"
+data-screenshot="../screenshots/apple-ii/donald duck s playground.jpg"
+data-logo="../logos/apple-ii/donald duck s playground.png"
+data-fanart="../fanart/apple-ii/donald duck s playground.jpg">
+Donald Duck's Playground
+</a>
+</td>
+
+<td>1984</td>
+<td>Education</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="donalds-alphabet-chase"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/donald s alphabet chase.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Donald's Alphabet Chase"
+data-year="1988"
+data-genre="Education"
+data-publisher="Disney Interactive"
+data-developer="-"
+data-ra="22160"
+data-notes="Donald's Alphabet Chase is an educational game for children ages 2-5 featuring Donald Duck. Donald's alphabet letters have escaped and are now hiding throughout the house! You need to help Donald locate all 26 of the letters and put them back in place. By pressing a letter on the keyboard, an animation is displayed where Donald finds and catches that letter. There are six different screens a letter may be hiding on, and each letter features a different animation. When all of the letters have been collected, the game is over and a bonus screen is displayed."
+data-thumb="../thumbs/apple-ii/donald s alphabet chase.jpg"
+data-media="../media/apple-ii/donald s alphabet chase.jpg"
+data-screenshot="../screenshots/apple-ii/donald s alphabet chase.jpg"
+data-logo="../logos/apple-ii/donald s alphabet chase.png"
+data-fanart="../fanart/apple-ii/donald s alphabet chase.jpg">
+Donald's Alphabet Chase
+</a>
+</td>
+
+<td>1988</td>
+<td>Education</td>
+<td>Disney Interactive</td>
+<td>-</td>
+
+</tr>
+
+<tr id="donkey-kong"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/donkey kong.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Donkey Kong"
+data-year="1984"
+data-genre="Platform"
+data-publisher="Atari"
+data-developer="Nintendo"
+data-ra="14184"
+data-notes="Donkey Kong is an arcade game released by Nintendo in 1981. An early example of the platform game genre, the gameplay focuses on maneuvering the main character across a series of platforms while dodging and jumping over obstacles. In the game, Mario (originally named Mr. Video and then Jumpman) must rescue a damsel in distress named Pauline (originally named Lady), from a giant ape named Donkey Kong. The hero and ape later became two of Nintendo's most popular and recognizable characters. Donkey Kong is one of the most important titles from the golden age of arcade video games, and is one of the most popular arcade games of all time."
+data-thumb="../thumbs/apple-ii/donkey kong.jpg"
+data-media="../media/apple-ii/donkey kong.jpg"
+data-screenshot="../screenshots/apple-ii/donkey kong.jpg"
+data-logo="../logos/apple-ii/donkey kong.png"
+data-fanart="../fanart/apple-ii/donkey kong.jpg">
+Donkey Kong
+</a>
+</td>
+
+<td>1984</td>
+<td>Platform</td>
+<td>Atari</td>
+<td>Nintendo</td>
+
+</tr>
+
+<tr id="eamon-adventure-001-main-hall--beginners-cave"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/eamon adventure 001 main hall beginners cave.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Eamon Adventure: 001: Main Hall & Beginners Cave"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14023"
+data-notes=""
+data-thumb="../thumbs/apple-ii/eamon adventure 001 main hall beginners cave.jpg"
+data-media="../media/apple-ii/eamon adventure 001 main hall beginners cave.jpg"
+data-screenshot="../screenshots/apple-ii/eamon adventure 001 main hall beginners cave.jpg"
+data-logo="../logos/apple-ii/eamon adventure 001 main hall beginners cave.png"
+data-fanart="../fanart/apple-ii/eamon adventure 001 main hall beginners cave.jpg">
+Eamon Adventure: 001: Main Hall & Beginners Cave
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="eamon-adventure-002-the-lair-of-the-minotaur"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/eamon adventure 002 the lair of the minotaur.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Eamon Adventure: 002: The Lair of the Minotaur"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14023"
+data-notes=""
+data-thumb="../thumbs/apple-ii/eamon adventure 002 the lair of the minotaur.jpg"
+data-media="../media/apple-ii/eamon adventure 002 the lair of the minotaur.jpg"
+data-screenshot="../screenshots/apple-ii/eamon adventure 002 the lair of the minotaur.jpg"
+data-logo="../logos/apple-ii/eamon adventure 002 the lair of the minotaur.png"
+data-fanart="../fanart/apple-ii/eamon adventure 002 the lair of the minotaur.jpg">
+Eamon Adventure: 002: The Lair of the Minotaur
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="eamon-adventure-003-the-cave-of-the-mind"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/eamon adventure 003 the cave of the mind.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Eamon Adventure: 003: The Cave of the Mind"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14023"
+data-notes=""
+data-thumb="../thumbs/apple-ii/eamon adventure 003 the cave of the mind.jpg"
+data-media="../media/apple-ii/eamon adventure 003 the cave of the mind.jpg"
+data-screenshot="../screenshots/apple-ii/eamon adventure 003 the cave of the mind.jpg"
+data-logo="../logos/apple-ii/eamon adventure 003 the cave of the mind.png"
+data-fanart="../fanart/apple-ii/eamon adventure 003 the cave of the mind.jpg">
+Eamon Adventure: 003: The Cave of the Mind
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="eamon-adventure-006-the-death-star"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/eamon adventure 006 the death star.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Eamon Adventure: 006: The Death Star"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14023"
+data-notes=""
+data-thumb="../thumbs/apple-ii/eamon adventure 006 the death star.jpg"
+data-media="../media/apple-ii/eamon adventure 006 the death star.jpg"
+data-screenshot="../screenshots/apple-ii/eamon adventure 006 the death star.jpg"
+data-logo="../logos/apple-ii/eamon adventure 006 the death star.png"
+data-fanart="../fanart/apple-ii/eamon adventure 006 the death star.jpg">
+Eamon Adventure: 006: The Death Star
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="eamon-adventure-007-the-devils-tomb"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/eamon adventure 007 the devil s tomb.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Eamon Adventure: 007: The Devil's Tomb"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14023"
+data-notes=""
+data-thumb="../thumbs/apple-ii/eamon adventure 007 the devil s tomb.jpg"
+data-media="../media/apple-ii/eamon adventure 007 the devil s tomb.jpg"
+data-screenshot="../screenshots/apple-ii/eamon adventure 007 the devil s tomb.jpg"
+data-logo="../logos/apple-ii/eamon adventure 007 the devil s tomb.png"
+data-fanart="../fanart/apple-ii/eamon adventure 007 the devil s tomb.jpg">
+Eamon Adventure: 007: The Devil's Tomb
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="eamon-adventure-044-escape-from-the-orc-lair"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/eamon adventure 044 escape from the orc lair.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Eamon Adventure: 044: Escape From the Orc Lair"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14023"
+data-notes=""
+data-thumb="../thumbs/apple-ii/eamon adventure 044 escape from the orc lair.jpg"
+data-media="../media/apple-ii/eamon adventure 044 escape from the orc lair.jpg"
+data-screenshot="../screenshots/apple-ii/eamon adventure 044 escape from the orc lair.jpg"
+data-logo="../logos/apple-ii/eamon adventure 044 escape from the orc lair.png"
+data-fanart="../fanart/apple-ii/eamon adventure 044 escape from the orc lair.jpg">
+Eamon Adventure: 044: Escape From the Orc Lair
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="eamon-adventure-061-the-harpy-cloud"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/eamon adventure 061 the harpy cloud.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Eamon Adventure: 061: The Harpy Cloud"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14023"
+data-notes=""
+data-thumb="../thumbs/apple-ii/eamon adventure 061 the harpy cloud.jpg"
+data-media="../media/apple-ii/eamon adventure 061 the harpy cloud.jpg"
+data-screenshot="../screenshots/apple-ii/eamon adventure 061 the harpy cloud.jpg"
+data-logo="../logos/apple-ii/eamon adventure 061 the harpy cloud.png"
+data-fanart="../fanart/apple-ii/eamon adventure 061 the harpy cloud.jpg">
+Eamon Adventure: 061: The Harpy Cloud
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="eamon-adventure-096-the-chamber-of-the-dragons"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/eamon adventure 096 the chamber of the dragons.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Eamon Adventure: 096: The Chamber of the Dragons"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14023"
+data-notes=""
+data-thumb="../thumbs/apple-ii/eamon adventure 096 the chamber of the dragons.jpg"
+data-media="../media/apple-ii/eamon adventure 096 the chamber of the dragons.jpg"
+data-screenshot="../screenshots/apple-ii/eamon adventure 096 the chamber of the dragons.jpg"
+data-logo="../logos/apple-ii/eamon adventure 096 the chamber of the dragons.png"
+data-fanart="../fanart/apple-ii/eamon adventure 096 the chamber of the dragons.jpg">
+Eamon Adventure: 096: The Chamber of the Dragons
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="evolution"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/evolution.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Evolution"
+data-year="1983"
+data-genre="Action"
+data-publisher="Sydney Development"
+data-developer="Sydney Development"
+data-ra="17741"
+data-notes="Evolution is an arcade style action game with six levels where you need to evolve from an amoeba to a human. Each level is a different stage in evolution with it's own unique goals. The first level is the amoeba stage where you need to eat all the DNA on the screen while avoiding the spores, microbes, and antibodies that are trying to stop you. The second level is the tadpole stage. The tadpole needs to eat three flies to move on to the next stage while avoiding the very hungry fish. Next is the rodent stage, where you need to eat five blocks of cheese while avoiding the snakes. In level four you need to guide a beaver across alligator infested waters to retrieve sticks and build a dam. The fifth level is the gorilla stage, where your gorilla has to use coconuts to fight off monkeys that are trying to steel its orange stash. And finally is the human stage, where you have to use a laser gun to fight off mutants that are trying to take over the earth."
+data-thumb="../thumbs/apple-ii/evolution.jpg"
+data-media="../media/apple-ii/evolution.jpg"
+data-screenshot="../screenshots/apple-ii/evolution.jpg"
+data-logo="../logos/apple-ii/evolution.png"
+data-fanart="../fanart/apple-ii/evolution.jpg">
+Evolution
+</a>
+</td>
+
+<td>1983</td>
+<td>Action</td>
+<td>Sydney Development</td>
+<td>Sydney Development</td>
+
+</tr>
+
+<tr id="fix-it"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/fix it.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fix It"
+data-year="1985"
+data-genre="Puzzle"
+data-publisher="Random House Inc"
+data-developer="Random House Inc"
+data-ra="27437"
+data-notes=""
+data-thumb="../thumbs/apple-ii/fix it.jpg"
+data-media="../media/apple-ii/fix it.jpg"
+data-screenshot="../screenshots/apple-ii/fix it.jpg"
+data-logo="../logos/apple-ii/fix it.png"
+data-fanart="../fanart/apple-ii/fix it.jpg">
+Fix It
+</a>
+</td>
+
+<td>1985</td>
+<td>Puzzle</td>
+<td>Random House Inc</td>
+<td>Random House Inc</td>
+
+</tr>
+
+<tr id="fixit"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/fixit.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="FixIt"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="27437"
+data-notes=""
+data-thumb="../thumbs/apple-ii/fixit.jpg"
+data-media="../media/apple-ii/fixit.jpg"
+data-screenshot="../screenshots/apple-ii/fixit.jpg"
+data-logo="../logos/apple-ii/fixit.png"
+data-fanart="../fanart/apple-ii/fixit.jpg">
+FixIt
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="flapple-bird"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/flapple bird.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Flapple Bird"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="20042"
+data-notes=""
+data-thumb="../thumbs/apple-ii/flapple bird.jpg"
+data-media="../media/apple-ii/flapple bird.jpg"
+data-screenshot="../screenshots/apple-ii/flapple bird.jpg"
+data-logo="../logos/apple-ii/flapple bird.png"
+data-fanart="../fanart/apple-ii/flapple bird.jpg">
+Flapple Bird
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="fraction-munchers"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/fraction munchers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fraction Munchers"
+data-year="1987"
+data-genre="Education"
+data-publisher="MECC"
+data-developer="MECC"
+data-ra="32114"
+data-notes="Fraction Munchers is the second math based game in the Munchers series of educational games. Aside from the subject matter, the basic concept is the same as other games in the series. It is played on a grid where the player controls a creature called the Fraction Muncher, who has to eat the numbers or fractional expressions that correspond to the statement that is written above the grid. Other creatures known as toggles roam the grid and try to get to the muncher. There are five different ones, and they all have their own behavior and movement patterns. Eating wrong answers or getting caught by a toggle leads to a life being lost. There are four different game modes which decide what kind of statements should appear: fraction types, equivalents, comparing and expression. Additionally, there is a combined mode that mixes all."
+data-thumb="../thumbs/apple-ii/fraction munchers.jpg"
+data-media="../media/apple-ii/fraction munchers.jpg"
+data-screenshot="../screenshots/apple-ii/fraction munchers.jpg"
+data-logo="../logos/apple-ii/fraction munchers.png"
+data-fanart="../fanart/apple-ii/fraction munchers.jpg">
+Fraction Munchers
+</a>
+</td>
+
+<td>1987</td>
+<td>Education</td>
+<td>MECC</td>
+<td>MECC</td>
+
+</tr>
+
+<tr id="frog-jump-ordering-numbers"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/frog jump ordering numbers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Frog Jump: Ordering Numbers"
+data-year="1985"
+data-genre="Education"
+data-publisher="Mindscape"
+data-developer="Scott, Foresman and Company"
+data-ra="33058"
+data-notes="Frog Jump is an educational game for one or two players.\n\nPlayers jump their frogs around a series of lily pads. Players are given addition and subtraction questions and receive 1, 2, or 3 points depending on how quickly they answer the question. They receive 0 points for an incorrect answer. The first player to reach 20 points and circumnavigate the lily pads is the victor."
+data-thumb="../thumbs/apple-ii/frog jump ordering numbers.jpg"
+data-media="../media/apple-ii/frog jump ordering numbers.jpg"
+data-screenshot="../screenshots/apple-ii/frog jump ordering numbers.jpg"
+data-logo="../logos/apple-ii/frog jump ordering numbers.png"
+data-fanart="../fanart/apple-ii/frog jump ordering numbers.jpg">
+Frog Jump: Ordering Numbers
+</a>
+</td>
+
+<td>1985</td>
+<td>Education</td>
+<td>Mindscape</td>
+<td>Scott, Foresman and Company</td>
+
+</tr>
+
+<tr id="galaxian"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/galaxian.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Galaxian"
+data-year="1984"
+data-genre="Shooter"
+data-publisher="Atari"
+data-developer="Namco"
+data-ra="16188"
+data-notes="Galaxian is an arcade game that was developed by Namco and released in October 1979. It was published by Namco in Japan and imported to North America by Midway that December. A fixed shooter game in which the player controls a spaceship at the bottom of the screen, and shoots enemies descending in various directions, it was designed to compete with Taito Corporation's successful earlier game Space Invaders (which was released in the previous year, and also imported to the US by Midway Games).\n\nThe game was highly popular for Namco upon its release, and has been a focus of competitive gaming ever since. It spawned a successful sequel, Galaga, in 1981, and the lesser known Gaplus and Galaga '88 in 1984 and 1987 respectively, as well as many later ports and adaptations. Along with its immediate sequel, it was one of the most popular games during the golden age of arcade video games."
+data-thumb="../thumbs/apple-ii/galaxian.jpg"
+data-media="../media/apple-ii/galaxian.jpg"
+data-screenshot="../screenshots/apple-ii/galaxian.jpg"
+data-logo="../logos/apple-ii/galaxian.png"
+data-fanart="../fanart/apple-ii/galaxian.jpg">
+Galaxian
+</a>
+</td>
+
+<td>1984</td>
+<td>Shooter</td>
+<td>Atari</td>
+<td>Namco</td>
+
+</tr>
+
+<tr id="gold-rush!"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/gold rush.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Gold Rush!"
+data-year="1988"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="18959"
+data-notes="In Gold Rush!, Jerrod Wilson (the player character) receives a letter from his long-lost brother (who fled the city years before when was hastily accused and convicted of a crime he didn't commit) asking him to join in Sacramento, California. If that's not enough for Jerrod sell everything and give his hometown Brooklyn a fond adieu, under the stamp was one of the first nuggets of Californian gold seen in the Atlantic shores of the United States. So, Jerrod bids farewell to his peaceful life as a newspaper editor, and becomes a fore-runner in the the great Gold Rush of 1849, hoping to find his brother and \"strike gold\" (literally)."
+data-thumb="../thumbs/apple-ii/gold rush.jpg"
+data-media="../media/apple-ii/gold rush.jpg"
+data-screenshot="../screenshots/apple-ii/gold rush.jpg"
+data-logo="../logos/apple-ii/gold rush.png"
+data-fanart="../fanart/apple-ii/gold rush.jpg">
+Gold Rush!
+</a>
+</td>
+
+<td>1988</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="hard-hat-mack"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/hard hat mack.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Hard Hat Mack"
+data-year="1983"
+data-genre="Platform"
+data-publisher="Electronic Arts"
+data-developer="Michael Abbot & Matthew Alexander"
+data-ra="14322"
+data-notes="Hard Hat Mack is a platform game developed by Michael Abbot and Matthew Alexander for the Apple II which was published by Electronic Arts in 1983. Ports for the Atari 8-bit family and Commodore 64 were released simultaneously. It is one of the first batch of five games published by Electronic Arts, and EA specifically calls it out as \"truly EA's first game.\"  Versions for the Amstrad CPC and IBM PC (as a PC booter) followed in 1984\n\nHard Hat Mack is similar in theme and gameplay to Nintendo's Donkey Kong arcade game of 1981."
+data-thumb="../thumbs/apple-ii/hard hat mack.jpg"
+data-media="../media/apple-ii/hard hat mack.jpg"
+data-screenshot="../screenshots/apple-ii/hard hat mack.jpg"
+data-logo="../logos/apple-ii/hard hat mack.png"
+data-fanart="../fanart/apple-ii/hard hat mack.jpg">
+Hard Hat Mack
+</a>
+</td>
+
+<td>1983</td>
+<td>Platform</td>
+<td>Electronic Arts</td>
+<td>Michael Abbot & Matthew Alexander</td>
+
+</tr>
+
+<tr id="indiana-jones-and-the-temple-of-doom"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/indiana jones and the temple of doom.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Indiana Jones and the Temple of Doom"
+data-year="1989"
+data-genre="Platform"
+data-publisher="Mindscape"
+data-developer="Tengen"
+data-ra="32161"
+data-notes="The computer versions of Indiana Jones and the Temple of Doom are conversions of the Atari arcade game based on the second movie in the series. As Indy, the player must complete several cycles of the following three types of levels:\n\nMine level: Whip your way through a mine in order to free children that are held captive. Use your whip to swing across chasms, climb ladders, ride along conveyor belts and defend yourself against attacks from Thuggee guards, bats, snakes and the fireball-throwing Mola ram. Escape with the mine cart after you've freed all children.\n\nMine cart level: Pick the right route through a network of tracks while riding in a mine cart. Avoid potholes, broken tracks & guards in carts and safely reach the end of the track.\n\nTemple level: Make your way to the altar and grab the Sankara stone while Mola Ram, bats and Thuggee guards attack you. Watch out for that lava.\nWith every cycle the mine & mine cart levels become more complex, the layout of the temple levels is always the same. After several cycles there's a showdown with Mola Ram on the rope bridge."
+data-thumb="../thumbs/apple-ii/indiana jones and the temple of doom.jpg"
+data-media="../media/apple-ii/indiana jones and the temple of doom.jpg"
+data-screenshot="../screenshots/apple-ii/indiana jones and the temple of doom.jpg"
+data-logo="../logos/apple-ii/indiana jones and the temple of doom.png"
+data-fanart="../fanart/apple-ii/indiana jones and the temple of doom.jpg">
+Indiana Jones and the Temple of Doom
+</a>
+</td>
+
+<td>1989</td>
+<td>Platform</td>
+<td>Mindscape</td>
+<td>Tengen</td>
+
+</tr>
+
+<tr id="investigating-plant-growth"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/investigating plant growth.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Investigating Plant Growth"
+data-year="1987"
+data-genre="Education •  Quiz"
+data-publisher="Silver, Burdett & Ginn"
+data-developer="John Boeschen"
+data-ra="31972"
+data-notes="\"Investigating Plant Growth\" is a 1987 educational program distributed by Silver, Burdett and Ginn."
+data-thumb="../thumbs/apple-ii/investigating plant growth.jpg"
+data-media="../media/apple-ii/investigating plant growth.jpg"
+data-screenshot="../screenshots/apple-ii/investigating plant growth.jpg"
+data-logo="../logos/apple-ii/investigating plant growth.png"
+data-fanart="../fanart/apple-ii/investigating plant growth.jpg">
+Investigating Plant Growth
+</a>
+</td>
+
+<td>1987</td>
+<td>Education •  Quiz</td>
+<td>Silver, Burdett & Ginn</td>
+<td>John Boeschen</td>
+
+</tr>
+
+<tr id="karateka"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/karateka.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Karateka"
+data-year="1984"
+data-genre="Beat 'em Up"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Jordan Mechner"
+data-ra="13936"
+data-notes="Karateka is a 1984 martial arts action game by Jordan Mechner, and was his first published game, created while attending Yale University. It was originally programmed for the Apple II, then widely ported. Along with Karate Champ (1984) and Yie-Ar Kung Fu (1985), Karateka established the basis of the modern fighting game.\n\nThe player controls an unnamed protagonist who is attempting to rescue his love interest, the Princess Mariko, from Akuma's castle fortress. The game exhibits a combination of a side-scrolling platform and fighting game elements similar to a beat 'em up. The player uses punches and kicks to defeat Akuma and his guards and make his way deeper into the fortress."
+data-thumb="../thumbs/apple-ii/karateka.jpg"
+data-media="../media/apple-ii/karateka.jpg"
+data-screenshot="../screenshots/apple-ii/karateka.jpg"
+data-logo="../logos/apple-ii/karateka.png"
+data-fanart="../fanart/apple-ii/karateka.jpg">
+Karateka
+</a>
+</td>
+
+<td>1984</td>
+<td>Beat 'em Up</td>
+<td>Brøderbund Software</td>
+<td>Jordan Mechner</td>
+
+</tr>
+
+<tr id="kings-quest-ii-romancing-the-throne"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/king s quest ii romancing the throne.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="King's Quest II: Romancing the Throne"
+data-year="1985"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="17138"
+data-notes="After having recovered the three treasures, King Graham has been crowned king. Now having needing a queen for companionship, Graham searches the land for a maiden, but to no avail, so he turns to the magic mirror for help. The mirror shows him a beautiful girl locked away in a quartz tower in a faraway land of Kolyma, and must find three keys that are used to unlock the door that will lead to her."
+data-thumb="../thumbs/apple-ii/king s quest ii romancing the throne.jpg"
+data-media="../media/apple-ii/king s quest ii romancing the throne.jpg"
+data-screenshot="../screenshots/apple-ii/king s quest ii romancing the throne.jpg"
+data-logo="../logos/apple-ii/king s quest ii romancing the throne.png"
+data-fanart="../fanart/apple-ii/king s quest ii romancing the throne.jpg">
+King's Quest II: Romancing the Throne
+</a>
+</td>
+
+<td>1985</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="kings-quest-iii-to-heir-is-human"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/king s quest iii to heir is human.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="King's Quest III: To Heir is Human"
+data-year="1988"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="17931"
+data-notes="In King's Quest III, the story moves away from Daventry and King Graham to the land of Llewdor, where a boy named Gwydion is being kept by the wicked wizard Manannan. According to the introduction, for as long as he could remember, 17-year-old Gwydion has been held captive by Manannan as his servant, cooking and cleaning for him in his home atop a large mountain in Llewdor. From this vantage point, and with the help of a telescope, the seemingly all-knowing wizard watches the countryside, the shoreline and vast ocean to the east and an endless desert to the west.\n\nManannan takes a series of absences and Gwydion seizes his chance to escape. He breaks into the wizard's laboratory and reads Manannan's book of spells, then goes out into Llewdor to collect ingredients for them. After solving many puzzles to obtain the spell ingredients Gwydion turns Manannan into a cat and is free. His journey then takes him across the ocean to Daventry to rescue a beautiful princess from a dangerous three-headed dragon. It is eventually revealed that he is the son of King Graham, kidnapped from Daventry by the magician at a young age, and the princess he has rescued is his sister, Rosella.\n\nThe game's title is a pun on the proverb \"To err is human, to forgive divine\" by Alexander Pope. The actions taken by Gwydion in this story lead directly to the events that begin King's Quest IV."
+data-thumb="../thumbs/apple-ii/king s quest iii to heir is human.jpg"
+data-media="../media/apple-ii/king s quest iii to heir is human.jpg"
+data-screenshot="../screenshots/apple-ii/king s quest iii to heir is human.jpg"
+data-logo="../logos/apple-ii/king s quest iii to heir is human.png"
+data-fanart="../fanart/apple-ii/king s quest iii to heir is human.jpg">
+King's Quest III: To Heir is Human
+</a>
+</td>
+
+<td>1988</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="kings-quest-iv-the-perils-of-rosella"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/king s quest iv the perils of rosella.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="King's Quest IV: The Perils of Rosella"
+data-year="1988"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="18952"
+data-notes="King Graham and Queen Valanice were glad to have their children back. Graham thinks that it is time to pass onto them his old adventurers' hat. When he throws it across the room, he suffers a heart attack and collapses on the floor, and he is carried off to bed. The only way that Graham's health can be restored is by retrieving the magic fruit in the faraway land of Tamir. A beautiful fairy called Genesta offers Rosella the chance to be transported to the land, and find the fruit. But once she gets transported, she cannot be sent back unless she helps the fairy regain her talisman that was stolen by the evil witch, Lolotte."
+data-thumb="../thumbs/apple-ii/king s quest iv the perils of rosella.jpg"
+data-media="../media/apple-ii/king s quest iv the perils of rosella.jpg"
+data-screenshot="../screenshots/apple-ii/king s quest iv the perils of rosella.jpg"
+data-logo="../logos/apple-ii/king s quest iv the perils of rosella.png"
+data-fanart="../fanart/apple-ii/king s quest iv the perils of rosella.jpg">
+King's Quest IV: The Perils of Rosella
+</a>
+</td>
+
+<td>1988</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="kq1"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/kq1.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="KQ1"
+data-year="1988"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="14398"
+data-notes="King's Quest is commonly considered the progenitor of third-person-perspective adventure games. As opposed to earlier graphic adventures, the player is able to navigate the protagonist on screen in eight directions, creating an effect of three-dimensional exploration."
+data-thumb="../thumbs/apple-ii/kq1.jpg"
+data-media="../media/apple-ii/kq1.jpg"
+data-screenshot="../screenshots/apple-ii/kq1.jpg"
+data-logo="../logos/apple-ii/kq1.png"
+data-fanart="../fanart/apple-ii/kq1.jpg">
+KQ1
+</a>
+</td>
+
+<td>1988</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="la-femme-qui-ne-supportait-pas-les-ordinateurs..."><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/la femme qui ne supportait pas les ordinateurs.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="La Femme qui ne supportait pas les ordinateurs..."
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="14391"
+data-notes=""
+data-thumb="../thumbs/apple-ii/la femme qui ne supportait pas les ordinateurs.jpg"
+data-media="../media/apple-ii/la femme qui ne supportait pas les ordinateurs.jpg"
+data-screenshot="../screenshots/apple-ii/la femme qui ne supportait pas les ordinateurs.jpg"
+data-logo="../logos/apple-ii/la femme qui ne supportait pas les ordinateurs.png"
+data-fanart="../fanart/apple-ii/la femme qui ne supportait pas les ordinateurs.jpg">
+La Femme qui ne supportait pas les ordinateurs...
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="leisure-suit-larry-in-the-land-of-the-lounge-lizards"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/leisure suit larry in the land of the lounge lizards.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Leisure Suit Larry in the Land of the Lounge Lizards"
+data-year="1987"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="13935"
+data-notes="Leisure Suit Larry in the Land of the Lounge Lizards is a graphic adventure game originally released in 1987 as the first part of the Leisure Suit Larry series. Originally developed for the PC DOS and the Apple II, it was later ported to other platforms such as the Amiga, Atari ST, Apple IIGS, Apple Macintosh, and the Tandy Color Computer 3. It utilizes the Adventure Game Interpreter (AGI) engine made famous by King's Quest: Quest for the Crown.\n\nThe game's story follows a middle-aged male virgin named Larry Laffer as he desperately tries to \"get lucky\" in the fictional American city of Lost Wages. Land of the Lounge Lizards establishes several elements which recur in the later Larry games, including Larry's campy attire, perpetual bad luck with women, and penchant for double-entendres. The story and basic structure of the game are lifted from Softporn Adventure, a 1981 Apple II text adventure.\n\nDespite a lack of advertising, the game was a sleeper hit and a commercial and critical success. Sierra developed and published a remake that used the Sierra's Creative Interpreter (SCI) engine with 256 colors and a point-and-click, icon-driven (as opposed to text-based) user interface, released for the PC DOS, Apple Macintosh, and Amiga in 1991. A second, high-definition remake, titled Leisure Suit Larry: Reloaded, was developed by N-Fusion Interactive working with series' creator Al Lowe and published by Replay Games in 2013."
+data-thumb="../thumbs/apple-ii/leisure suit larry in the land of the lounge lizards.jpg"
+data-media="../media/apple-ii/leisure suit larry in the land of the lounge lizards.jpg"
+data-screenshot="../screenshots/apple-ii/leisure suit larry in the land of the lounge lizards.jpg"
+data-logo="../logos/apple-ii/leisure suit larry in the land of the lounge lizards.png"
+data-fanart="../fanart/apple-ii/leisure suit larry in the land of the lounge lizards.jpg">
+Leisure Suit Larry in the Land of the Lounge Lizards
+</a>
+</td>
+
+<td>1987</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="lemonade-stand"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/lemonade stand.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Lemonade Stand"
+data-year="1979"
+data-genre="Construction and Management Simulation •  Education"
+data-publisher="Apple Computer"
+data-developer="MECC"
+data-ra="26622"
+data-notes="Lemonade Stand is a simulation game where players take charge of their own lemonade business in the fictional town of Lemonsville.\n\nBefore the start of each business day, players are given the day's weather forecast: Sunny, cloudy or hot and dry. After receiving the weather report, players take charge of three factors that will affect business for the day: The number of glasses of lemonade to make, the number of advertising signs, and the cost of lemonade per glass.\n\nDepending on how the prices are set during the day's weather conditions, players will either make a profit or lose money until the next day.\n\nLemonade stand is a single-player game or can be played with up to 30 players alternating turns.\n\nIn 1979, the game was ported by Charlie Kellner to the Apple II; Apple subsequently included the game with their computers throughout the 1980s. MECC also offered the game for sale as a part of bundles of children's software for Apple computers and Atari 8-bit computers. Kellner's source code was released, and has since been ported to modern computers as a free, open-source game."
+data-thumb="../thumbs/apple-ii/lemonade stand.jpg"
+data-media="../media/apple-ii/lemonade stand.jpg"
+data-screenshot="../screenshots/apple-ii/lemonade stand.jpg"
+data-logo="../logos/apple-ii/lemonade stand.png"
+data-fanart="../fanart/apple-ii/lemonade stand.jpg">
+Lemonade Stand
+</a>
+</td>
+
+<td>1979</td>
+<td>Construction and Management Simulation •  Education</td>
+<td>Apple Computer</td>
+<td>MECC</td>
+
+</tr>
+
+<tr id="lode-runner"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/lode runner.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Lode Runner"
+data-year="1983"
+data-genre="Platform •  Puzzle"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Douglas E. Smith"
+data-ra="14225"
+data-notes="The Bungeling Empire has stolen a huge cache of gold from its rightful owners, and your mission is to infiltrate its treasury and recapture it. This entails progressing through 150 screens of platforms, ladders and ropes.\n\nThe Empire has sent robotic guards down to protect the gold, and contact with any of these will cost you a life. Your method of escaping them is to press fire to dig a hole in their line of movement, thus causing them to fall in briefly, allowing you to move across the gap safely. Once all the gold has been collected, a ladder allowing you to move onto the next screen is added. Completing these screens often requires forward planning and precision.\n\nThis was one of the earliest games to include a level editor, allowing the creation of new level designs with no programming skill."
+data-thumb="../thumbs/apple-ii/lode runner.jpg"
+data-media="../media/apple-ii/lode runner.jpg"
+data-screenshot="../screenshots/apple-ii/lode runner.jpg"
+data-logo="../logos/apple-ii/lode runner.png"
+data-fanart="../fanart/apple-ii/lode runner.jpg">
+Lode Runner
+</a>
+</td>
+
+<td>1983</td>
+<td>Platform •  Puzzle</td>
+<td>Brøderbund Software</td>
+<td>Douglas E. Smith</td>
+
+</tr>
+
+<tr id="lunar-greenhouse"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/lunar greenhouse.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Lunar Greenhouse"
+data-year="1989"
+data-genre="Education"
+data-publisher="MECC"
+data-developer="MECC"
+data-ra="20057"
+data-notes="Lunar Greenhouse is an educational game for the Apple II.\n\nThe player has been tasked with growing crops in a newly established lunar colony to ensure there is sufficient nutrition to feed the hungry astronauts. In order to prepare for this mission, the player must experiment with different food crops to determine their preferred levels of light, water, temperature, and plant food. There are 3 possible settings for light, water, and food, and multiple temperature settings. After determining the ideal growing condition for crops, the player is then transported to the moon, where they must attempt to replicate their previous success to grow specific crops for the hungry astronauts. The player is rewarded points based upon the quantity and timing of their yield."
+data-thumb="../thumbs/apple-ii/lunar greenhouse.jpg"
+data-media="../media/apple-ii/lunar greenhouse.jpg"
+data-screenshot="../screenshots/apple-ii/lunar greenhouse.jpg"
+data-logo="../logos/apple-ii/lunar greenhouse.png"
+data-fanart="../fanart/apple-ii/lunar greenhouse.jpg">
+Lunar Greenhouse
+</a>
+</td>
+
+<td>1989</td>
+<td>Education</td>
+<td>MECC</td>
+<td>MECC</td>
+
+</tr>
+
+<tr id="maniac-mansion"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/maniac mansion.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Maniac Mansion"
+data-year="1987"
+data-genre="Adventure"
+data-publisher="LucasArts"
+data-developer="LucasArts"
+data-ra="16360"
+data-notes="The Edison mansion has always been a creepy old house on the edge of town. There have been rumors of strange experiments going on and of odd creatures living amongst the Edison family. There is even a story that a meteorite once crashed near the home nearly 20 years ago. More immediately, a girl named Sandy has gone missing from the local highschool and her boyfriend Dave swears that he saw Dr. Fred abducting her. Dave knows that he cannot do it alone and will need help from two other students if he has any hope of infiltrating the mansion and rescuing Sandy.\n\nPlayers start by choosing two students to accompany Dave to the Edison mansion, and can then switch between these three characters at will. Most actions are carried out by selecting verbs on the screen and applying them to an object (such as \"OPEN Door\"). Each character maintains a separate personality and may have a different way to solve a problem from his classmates. Thus many of the puzzles can be overcome in different ways depending on the character being used. If any one of the kids are captured by the Edisons, they are thrown into the dungeon and must be rescued themselves by any character who still has their freedom."
+data-thumb="../thumbs/apple-ii/maniac mansion.jpg"
+data-media="../media/apple-ii/maniac mansion.jpg"
+data-screenshot="../screenshots/apple-ii/maniac mansion.jpg"
+data-logo="../logos/apple-ii/maniac mansion.png"
+data-fanart="../fanart/apple-ii/maniac mansion.jpg">
+Maniac Mansion
+</a>
+</td>
+
+<td>1987</td>
+<td>Adventure</td>
+<td>LucasArts</td>
+<td>LucasArts</td>
+
+</tr>
+
+<tr id="mario-bros."><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/mario bros.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mario Bros."
+data-year="1983"
+data-genre="Platform"
+data-publisher="-"
+data-developer="Atarisoft"
+data-ra="14183"
+data-notes="Developed by Atarisoft in 1983, but not released. A prototype version was found, hacked and distributed."
+data-thumb="../thumbs/apple-ii/mario bros.jpg"
+data-media="../media/apple-ii/mario bros.jpg"
+data-screenshot="../screenshots/apple-ii/mario bros.jpg"
+data-logo="../logos/apple-ii/mario bros.png"
+data-fanart="../fanart/apple-ii/mario bros.jpg">
+Mario Bros.
+</a>
+</td>
+
+<td>1983</td>
+<td>Platform</td>
+<td>-</td>
+<td>Atarisoft</td>
+
+</tr>
+
+<tr id="megabots"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/megabots.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Megabots"
+data-year="1986"
+data-genre="Strategy"
+data-publisher="UXB"
+data-developer="Neosoft Inc."
+data-ra="14024"
+data-notes="Megabots is a futuristic strategy game that utilizes 3D graphics, animation, music and sound effects.\n\nThe game begins with an introduction to set the scene before the player enters a grid filled with robots that might be good or bad. The objective to find a power cell within the grid to move on to the next level. Good robots can be interrogated for information. Bad robots must be destroyed with the right weapon before you can move past them. The strategy element comes from choosing the right weapons for the bad robots, and navigating the grid based on the information received to find the power cell before the player's own power reserve is depleted."
+data-thumb="../thumbs/apple-ii/megabots.jpg"
+data-media="../media/apple-ii/megabots.jpg"
+data-screenshot="../screenshots/apple-ii/megabots.jpg"
+data-logo="../logos/apple-ii/megabots.png"
+data-fanart="../fanart/apple-ii/megabots.jpg">
+Megabots
+</a>
+</td>
+
+<td>1986</td>
+<td>Strategy</td>
+<td>UXB</td>
+<td>Neosoft Inc.</td>
+
+</tr>
+
+<tr id="mind-castle-i"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/mind castle i.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mind Castle I"
+data-year="1991"
+data-genre="Education •  Puzzle"
+data-publisher="Lawrence Productions"
+data-developer="Lawrence Productions"
+data-ra="32652"
+data-notes="Mind Castle I is an educational title that teaches logic and reasoning. You begin by entering the basement of a mysterious, seemingly abandoned castle. There you are greeted by Mr. Winn, who says that a treasure awaits you at the top of a tower, but you must first solve puzzles and riddles to move up the floors of the castle. The puzzles themselves are generally of the type that require recognizing patterns. They can also be logic puzzles where you deduce who is lying based on statements made. They may also be a simple play on words. Mr. Winn can offer hints, but it is up to you to solve the puzzles of each floor to make it to the top of the tower."
+data-thumb="../thumbs/apple-ii/mind castle i.jpg"
+data-media="../media/apple-ii/mind castle i.jpg"
+data-screenshot="../screenshots/apple-ii/mind castle i.jpg"
+data-logo="../logos/apple-ii/mind castle i.png"
+data-fanart="../fanart/apple-ii/mind castle i.jpg">
+Mind Castle I
+</a>
+</td>
+
+<td>1991</td>
+<td>Education •  Puzzle</td>
+<td>Lawrence Productions</td>
+<td>Lawrence Productions</td>
+
+</tr>
+
+<tr id="mind-castle-ii"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/mind castle ii.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mind Castle II"
+data-year="1991"
+data-genre="Education •  Puzzle"
+data-publisher="Lawrence Productions"
+data-developer="Lawrence Productions"
+data-ra="32653"
+data-notes="During the player's adventures in Mind Castle I, they escaped the haunted old mansion owned by Mr. Winn.\n\nUpon visiting their local library, the player finds an old newspaper clippings about millions in old Confederate bills that may be hidden deep within the deceased Mr. Winn's mansion. The old mansion out on Route 1 has now been boarded up for public safety, but the desire for adventure and riches gets the better of the player, and they decide to investigate the building. Upon climbing through a gate to the basement, the player becomes trapped within Mind Castle.\n\nHere, the player meets a number of Mr. Winn's family and employees, who still possess the mansion. The player must move between rooms of the mansion, while they slowly work their way up a number of floors. Each room possesses a riddle based upon logic or pattern recognition. If the player completes enough riddles, they move to a higher floor, where they meet a new riddlemaster. The residents of the manor can offer hints if requested. The challenges become more difficult as the player ascends."
+data-thumb="../thumbs/apple-ii/mind castle ii.jpg"
+data-media="../media/apple-ii/mind castle ii.jpg"
+data-screenshot="../screenshots/apple-ii/mind castle ii.jpg"
+data-logo="../logos/apple-ii/mind castle ii.png"
+data-fanart="../fanart/apple-ii/mind castle ii.jpg">
+Mind Castle II
+</a>
+</td>
+
+<td>1991</td>
+<td>Education •  Puzzle</td>
+<td>Lawrence Productions</td>
+<td>Lawrence Productions</td>
+
+</tr>
+
+<tr id="mission-asteroid"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/mission asteroid.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mission Asteroid"
+data-year="1980"
+data-genre="Adventure"
+data-publisher="On-Line Systems"
+data-developer="On-Line Systems"
+data-ra="31997"
+data-notes="Enter the world of computer adventure. Each Sierra On-Line adventure takes several weeks to master providing hours of fascination and intrigue. The player must use their imagination and logic to unlock the mysteries of each adventure. \nMap skills are a must since our adventure games contain over a hundred full-color computer-generated images which lead you in every direction. So, muster up all your wit, logic and perseverance for this is a Sierra On-Line adventure and a challenge to your ingenuity. \n\nAn asteroid of overwhelming proportions is on a collision course with the planet Earth. As an astronaut, it is your duty and hazardous adventure to rocket to the asteroid and alter its course. But, there is no time to waste! If procedures and instructions are not followed precisely, disaster is eminent. . The trouble is: you will be unable to find the asteroid without a flight plan."
+data-thumb="../thumbs/apple-ii/mission asteroid.jpg"
+data-media="../media/apple-ii/mission asteroid.jpg"
+data-screenshot="../screenshots/apple-ii/mission asteroid.jpg"
+data-logo="../logos/apple-ii/mission asteroid.png"
+data-fanart="../fanart/apple-ii/mission asteroid.jpg">
+Mission Asteroid
+</a>
+</td>
+
+<td>1980</td>
+<td>Adventure</td>
+<td>On-Line Systems</td>
+<td>On-Line Systems</td>
+
+</tr>
+
+<tr id="mixed-up-mother-goose"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/mixed up mother goose.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mixed-Up Mother Goose"
+data-year="1990"
+data-genre="Adventure •  Education"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="18954"
+data-notes="Roberta Williams' Mixed-Up Mother Goose is a computer game first released by Sierra On-Line in 1987. It is, in essence, an edutainment title, directed specifically at young gamers, as well as an adventure game. A second game in the series, Mixed-Up Fairy Tales, was released in 1991."
+data-thumb="../thumbs/apple-ii/mixed up mother goose.jpg"
+data-media="../media/apple-ii/mixed up mother goose.jpg"
+data-screenshot="../screenshots/apple-ii/mixed up mother goose.jpg"
+data-logo="../logos/apple-ii/mixed up mother goose.png"
+data-fanart="../fanart/apple-ii/mixed up mother goose.jpg">
+Mixed-Up Mother Goose
+</a>
+</td>
+
+<td>1990</td>
+<td>Adventure •  Education</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="ms.-pac-man"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/ms pac man.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ms. Pac-Man"
+data-year="1984"
+data-genre="Action"
+data-publisher="Atari"
+data-developer="General Computer"
+data-ra="26718"
+data-notes="Ms. Pac-Man is an arcade video game from the Golden Age. It was produced by Illinois-based Midway Manufacturing corporation, the North American publisher of Pac-Man. Ms. Pac-Man was released in North America in July 1981, and is one of the most popular arcade video games of all time. This popularity led to its adoption as an official title by Namco, the creator of Pac-Man, which was released in the United States in late 1980. Ms Pac-Man introduced a female protagonist, new maze designs, and several other improved gameplay changes over the original Pac-Man. Ms. Pac-Man became the most successful American-produced arcade game, selling 115,000 arcade cabinets."
+data-thumb="../thumbs/apple-ii/ms pac man.jpg"
+data-media="../media/apple-ii/ms pac man.jpg"
+data-screenshot="../screenshots/apple-ii/ms pac man.jpg"
+data-logo="../logos/apple-ii/ms pac man.png"
+data-fanart="../fanart/apple-ii/ms pac man.jpg">
+Ms. Pac-Man
+</a>
+</td>
+
+<td>1984</td>
+<td>Action</td>
+<td>Atari</td>
+<td>General Computer</td>
+
+</tr>
+
+<tr id="mystery-house"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/mystery house.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mystery House"
+data-year="1980"
+data-genre="Adventure"
+data-publisher="On-Line Systems"
+data-developer="On-Line Systems"
+data-ra="18955"
+data-notes="As you near the front yard of the large, old victorian house, you feel an unexplainable tension. A small voice whispers inside your head. \"Open the door and step inside. If you dare...\"\nUpon entering, the door closes and locks behind you. Inside the house lies murder and mystery -  it's up to you to solve them. \nWho is the killer and what are his motives? Where does the secret passageway lea to?\nWho is dropping those curious notes?\nAnd, who wil be the next victim... If you are not careful, it could be you? You cannot leave the property until you bring the killer to justice. \nTurn the knob and walk in to Mystery House. Someone is waiting for you!\n\nMystery House is the first graphical adventure game!"
+data-thumb="../thumbs/apple-ii/mystery house.jpg"
+data-media="../media/apple-ii/mystery house.jpg"
+data-screenshot="../screenshots/apple-ii/mystery house.jpg"
+data-logo="../logos/apple-ii/mystery house.png"
+data-fanart="../fanart/apple-ii/mystery house.jpg">
+Mystery House
+</a>
+</td>
+
+<td>1980</td>
+<td>Adventure</td>
+<td>On-Line Systems</td>
+<td>On-Line Systems</td>
+
+</tr>
+
+<tr id="newbery-winners-bridge-to-terabithia"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/newbery winners bridge to terabithia.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Newbery Winners: Bridge to Terabithia"
+data-year="1982"
+data-genre="Education •  Quiz"
+data-publisher="Sunburst Communications"
+data-developer="Sunburst Communications"
+data-ra="32479"
+data-notes="Newbery Winners: Bridge to Terabithia is a 1982 educational game developed and distributed by Sunburst Communications."
+data-thumb="../thumbs/apple-ii/newbery winners bridge to terabithia.jpg"
+data-media="../media/apple-ii/newbery winners bridge to terabithia.jpg"
+data-screenshot="../screenshots/apple-ii/newbery winners bridge to terabithia.jpg"
+data-logo="../logos/apple-ii/newbery winners bridge to terabithia.png"
+data-fanart="../fanart/apple-ii/newbery winners bridge to terabithia.jpg">
+Newbery Winners: Bridge to Terabithia
+</a>
+</td>
+
+<td>1982</td>
+<td>Education •  Quiz</td>
+<td>Sunburst Communications</td>
+<td>Sunburst Communications</td>
+
+</tr>
+
+<tr id="nibbler"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/nibbler.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Nibbler"
+data-year="1982"
+data-genre="Action"
+data-publisher="Datasoft"
+data-developer="Rock-Ola"
+data-ra="14724"
+data-notes="Nibbler is an arcade game released in 1982 by Chicago-based developer Rock-Ola, in which players navigate a long snake through an enclosed maze consuming food along the way, while the length of the snake increases with each object consumed. Home versions were produced in 1983 by Datasoft for the Atari 8-bit and the Apple II. The game gained fame for becoming the first to include a nine-digit scoring system that enabled players to surpass one billion points during gameplay, which sparked numerous attempts to set high-score records in competitive play over the course of several decades, in turn inspiring the 2016 award-winning documentary Man vs. Snake: The Long and Twisted Tale of Nibbler."
+data-thumb="../thumbs/apple-ii/nibbler.jpg"
+data-media="../media/apple-ii/nibbler.jpg"
+data-screenshot="../screenshots/apple-ii/nibbler.jpg"
+data-logo="../logos/apple-ii/nibbler.png"
+data-fanart="../fanart/apple-ii/nibbler.jpg">
+Nibbler
+</a>
+</td>
+
+<td>1982</td>
+<td>Action</td>
+<td>Datasoft</td>
+<td>Rock-Ola</td>
+
+</tr>
+
+<tr id="number-munchers"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/number munchers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Number Munchers"
+data-year="1986"
+data-genre="Education"
+data-publisher="MECC"
+data-developer="MECC"
+data-ra="14034"
+data-notes="Number Munchers is the first educational game in the Munchers series. Designed to teach basic math skills, it was popular among American school children in the 1980s and 1990s and was the recipient of several awards. An updated 3D version, Math Munchers Deluxe, was released in 1995.\n\nModes of Play\nThere are 5 different modes of play in Number Munchers to advance your mathematical skills. These modes include Multiples, Factors, Primes, Equalities, and Inequalities.\n\nMultiples - The objective is to find multiples of the number given. If presented a 3, you would select numbers like 3, 6, 9, 12, etc.\n\nFactors - In this mode you find factors divisible by the number given. If the number is 12, you would choose to eat 1, 2, 3, 4, 6, and 12.\n\nPrimes - This mode helps you find prime numbers that are only divisible by 1 and themselves. e.g., 2, 3, 5, 7, 11, 13.\n\nEquality - This mode gives you the chance to find equations equaling the current number. If given the number 6, you would 'munch' 3 x 2, 3 + 3, 12 / 2, and so on.\n\nInequality - This mode gives you the number and you must select the equations that DO NOT equal the current number. If given 6, you would eat equations such as 4 X 2, 18 / 9, and 3 + 5."
+data-thumb="../thumbs/apple-ii/number munchers.jpg"
+data-media="../media/apple-ii/number munchers.jpg"
+data-screenshot="../screenshots/apple-ii/number munchers.jpg"
+data-logo="../logos/apple-ii/number munchers.png"
+data-fanart="../fanart/apple-ii/number munchers.jpg">
+Number Munchers
+</a>
+</td>
+
+<td>1986</td>
+<td>Education</td>
+<td>MECC</td>
+<td>MECC</td>
+
+</tr>
+
+<tr id="odell-lake"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/odell lake.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Odell Lake"
+data-year="1986"
+data-genre="Life Simulation"
+data-publisher="MECC"
+data-developer="MECC"
+data-ra="14231"
+data-notes="Odell Lake is an educational simulation game about the lives of fish. Set in an underwater ecosystem, players play as one of several species of fish and play by selecting actions from a list at each junction in the game. The goal is to survive and find food while avoiding hostile creatures and exploring the lake.\n\nThere are two ways to play, \"go exploring\" or \"play for points.\" In \"play for points\" mode the player is assigned a random species of fish to play as and earns points for making the best decision in each encounter.\n\nSpecies of fish include rainbow trout, whitefish, and mackinaw trout. There are other living things around the lake as well including fishermen, plankton and otters."
+data-thumb="../thumbs/apple-ii/odell lake.jpg"
+data-media="../media/apple-ii/odell lake.jpg"
+data-screenshot="../screenshots/apple-ii/odell lake.jpg"
+data-logo="../logos/apple-ii/odell lake.png"
+data-fanart="../fanart/apple-ii/odell lake.jpg">
+Odell Lake
+</a>
+</td>
+
+<td>1986</td>
+<td>Life Simulation</td>
+<td>MECC</td>
+<td>MECC</td>
+
+</tr>
+
+<tr id="pac-man"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/pac man.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pac-Man"
+data-year="1982"
+data-genre="Action"
+data-publisher="Datasoft"
+data-developer="Atari"
+data-ra="13932"
+data-notes="One of the most popular and influential games of the 1980's, Pac-Man stars a little, yellow dot-muncher who works his way around to clear a maze of the various dots and fruit which inhabit the board.\n\nPac-Man's goal is continually challenged by four ghosts: The shy blue ghost Bashful (\"Inky\"), the trailing red ghost Shadow (\"Blinky\"), the fast pink ghost Speedy (\"Pinky\"), and the forgetful orange ghost Pokey (\"Clyde\"). One touch from any of these ghosts means loss of a life for Pac-Man.\n\nPac-Man can turn the tables on his pursuers by eating one of the four Power-Pills located around the maze. During this time, the ghosts turn blue, and Pac-Man can eat them for bonus points. This only lasts for a limited amount of time as the ghosts' eyes float back to their center box and regenerate to chase after Pac-Man again."
+data-thumb="../thumbs/apple-ii/pac man.jpg"
+data-media="../media/apple-ii/pac man.jpg"
+data-screenshot="../screenshots/apple-ii/pac man.jpg"
+data-logo="../logos/apple-ii/pac man.png"
+data-fanart="../fanart/apple-ii/pac man.jpg">
+Pac-Man
+</a>
+</td>
+
+<td>1982</td>
+<td>Action</td>
+<td>Datasoft</td>
+<td>Atari</td>
+
+</tr>
+
+<tr id="paranoiak"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/paranoiak.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Paranoiak"
+data-year="1984"
+data-genre=""
+data-publisher="Froggy Software"
+data-developer="Froggy Software"
+data-ra="14038"
+data-notes="Paranoiak is a humorous French text adventure set inside a city. The game screen consists of a graphics area near the top, and a text area with a prompt near the bottom. The player's character is plagued by a large number of conditions, including an Oedipus Complex, asthma, amnesia, dizziness, shyness, and yet needs to overcome these while walking around the city and avoid getting taken in at the psychiatric hospital. At the same time he is completely out of money so most locations are completely inaccessible to him."
+data-thumb="../thumbs/apple-ii/paranoiak.jpg"
+data-media="../media/apple-ii/paranoiak.jpg"
+data-screenshot="../screenshots/apple-ii/paranoiak.jpg"
+data-logo="../logos/apple-ii/paranoiak.png"
+data-fanart="../fanart/apple-ii/paranoiak.jpg">
+Paranoiak
+</a>
+</td>
+
+<td>1984</td>
+<td></td>
+<td>Froggy Software</td>
+<td>Froggy Software</td>
+
+</tr>
+
+<tr id="pooyan"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/pooyan.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pooyan"
+data-year="1984"
+data-genre="Shooter"
+data-publisher="Datasoft"
+data-developer="Datasoft"
+data-ra="26106"
+data-notes="In Pooyan, you play the role of a pig, protecting its piglets from wolves.\n\nThe first screen takes place near the pigs' home. Mrs. Pig rides up and down in a cable car, shooting at wolves, who are riding balloons downward, towards the ground. If the wolves land safely on the ground, then they can climb a ladder, near the cable-car, and catch Mrs. Pig. But if she shoots their balloons, they splat on the ground instead.\n\nThe wolves shoot acorns at the pig. But Mrs. Pig has a food based weapon too. If she gets to the top, she can get meat, to toss at the wolves and make them jump off their balloons in pursuit. Each wolf taken out this way is worth bonus points (on a doubling scheme: 400, 800 1600...)\n\nThe second scene takes place at the wolves lair. Here the wolves have reinforced balloons--it takes multiple hits to make them fall. Here they float upwards toward a big rock, which they push on top of Mrs. Pig, when seven wolves are present. Additionally, an alpha wolf (wolf leader) appears and summons wolves in packs."
+data-thumb="../thumbs/apple-ii/pooyan.jpg"
+data-media="../media/apple-ii/pooyan.jpg"
+data-screenshot="../screenshots/apple-ii/pooyan.jpg"
+data-logo="../logos/apple-ii/pooyan.png"
+data-fanart="../fanart/apple-ii/pooyan.jpg">
+Pooyan
+</a>
+</td>
+
+<td>1984</td>
+<td>Shooter</td>
+<td>Datasoft</td>
+<td>Datasoft</td>
+
+</tr>
+
+<tr id="portal"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/portal.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Portal"
+data-year="1986"
+data-genre="Adventure"
+data-publisher="Activision"
+data-developer="Nexa"
+data-ra="16129"
+data-notes="Where are all the humans? Upon returning from your 100 year voyage in the milky way, you find earth empty and abandoned. Between the decaying remnants of civilization, you discover a terminal for Worldnet, the global network that recorded all human activities. The answer must lie deep in its database. Anxious, you log on.\n\nPortal is a computer novel - an attempt of creating and adapting a novel specifically for the computer. The story of the boy Peter Devore, his incredible discovery and the mysterious portal are told by an AI named Homer, who reconstructs it piece by piece out of database fragments. As the plot develops, you acquire accompanying information by accessing eleven additional databases - for example a historical archive, military files or social backgrounds. As you switch between the databases to uncover new details, an extensive sci-fi story unfolds."
+data-thumb="../thumbs/apple-ii/portal.jpg"
+data-media="../media/apple-ii/portal.jpg"
+data-screenshot="../screenshots/apple-ii/portal.jpg"
+data-logo="../logos/apple-ii/portal.png"
+data-fanart="../fanart/apple-ii/portal.jpg">
+Portal
+</a>
+</td>
+
+<td>1986</td>
+<td>Adventure</td>
+<td>Activision</td>
+<td>Nexa</td>
+
+</tr>
+
+<tr id="prince-of-persia"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/prince of persia.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Prince of Persia"
+data-year="1989"
+data-genre="Platform"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Br\u00f8derbund Software"
+data-ra="13925"
+data-notes="While the Sultan of Persia is fighting a war in a foreign country, his Grand Vizier Jaffar orchestrates a coup d'\u00e9tat. His way to the throne lies through the Sultan's lovely daughter. Jaffar kidnaps her and threatens to kill her if she refuses to marry him. Meanwhile, the man the Princess loves is thrown into the dungeon. He has only one hour to escape from his prison, defeat the guards on his way, and stop Jaffar before the terrible marriage takes place.\n\nPrince of Persia is a 2D platformer that is commonly regarded as a progenitor of the cinematic platform genre. Rather than following the more common jump-and-run mechanics, it focuses on careful advancement through fairly complex levels, emphasizing the protagonist's vulnerability and survival aspect. Rotoscoping technique is used to give more realism to the animation of the characters' movements.\n\nThe protagonist must avoid deadly traps, solve some simple jumping and environmental puzzles (such as stepping on pressure plates to raise portcullis), and engage in sword fights with the guards. The player character has an infinite amount of lives, but has to restart at the beginning of a level each time he dies, and must complete the game within an hour. The hero starts with three units of health, which can be replenished with small health potions or permanently increased with large jars.\n\nThe Game Boy Color and SNES versions of the game feature additional levels and new enemies. The Genesis version has a new intro, an altered set of graphics and four new levels."
+data-thumb="../thumbs/apple-ii/prince of persia.jpg"
+data-media="../media/apple-ii/prince of persia.jpg"
+data-screenshot="../screenshots/apple-ii/prince of persia.jpg"
+data-logo="../logos/apple-ii/prince of persia.png"
+data-fanart="../fanart/apple-ii/prince of persia.jpg">
+Prince of Persia
+</a>
+</td>
+
+<td>1989</td>
+<td>Platform</td>
+<td>Brøderbund Software</td>
+<td>Brøderbund Software</td>
+
+</tr>
+
+<tr id="pyramid-of-ra"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/pyramid of ra.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Pyramid of Ra"
+data-year="2018"
+data-genre="Strategy"
+data-publisher="Naspite Labs"
+data-developer="Naspite Labs"
+data-ra="32349"
+data-notes="Pyramid of Ra is a 1-player strategy game for the Apple II.\n\nThe player must move a flashing block through a maze. Each square in the maze can be stepped on only once, with the goal being to return to the starting point on each level. The player loses if they attempt to move in the direction where there is not an empty square. The player progresses to more difficult puzzles as the previous are completed."
+data-thumb="../thumbs/apple-ii/pyramid of ra.jpg"
+data-media="../media/apple-ii/pyramid of ra.jpg"
+data-screenshot="../screenshots/apple-ii/pyramid of ra.jpg"
+data-logo="../logos/apple-ii/pyramid of ra.png"
+data-fanart="../fanart/apple-ii/pyramid of ra.jpg">
+Pyramid of Ra
+</a>
+</td>
+
+<td>2018</td>
+<td>Strategy</td>
+<td>Naspite Labs</td>
+<td>Naspite Labs</td>
+
+</tr>
+
+<tr id="questprobe-featuring-the-hulk"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/questprobe featuring the hulk.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Questprobe featuring the Hulk"
+data-year="1984"
+data-genre="Adventure"
+data-publisher="Adventure International"
+data-developer="Adventure International"
+data-ra="14320"
+data-notes="Questprobe is a trilogy of graphical adventure computer games featuring Marvel Comics characters. The three games are Questprobe featuring The Hulk, Questprobe featuring Spider-Man and Questprobe featuring The Human Torch and The Thing.\n\nThe manual of Questprobe featuring the Hulk credits John Romita Sr., Mark Gruenwald and Kem McNair with creating the art, however it is not clear if this is the in-game art, or the artwork in the manual. The manual feature images so detailed they could have been pulled directly out of the comics."
+data-thumb="../thumbs/apple-ii/questprobe featuring the hulk.jpg"
+data-media="../media/apple-ii/questprobe featuring the hulk.jpg"
+data-screenshot="../screenshots/apple-ii/questprobe featuring the hulk.jpg"
+data-logo="../logos/apple-ii/questprobe featuring the hulk.png"
+data-fanart="../fanart/apple-ii/questprobe featuring the hulk.jpg">
+Questprobe featuring the Hulk
+</a>
+</td>
+
+<td>1984</td>
+<td>Adventure</td>
+<td>Adventure International</td>
+<td>Adventure International</td>
+
+</tr>
+
+<tr id="rainy-day-games"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/rainy day games.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Rainy Day Games"
+data-year="1985"
+data-genre="Action"
+data-publisher="Baudville"
+data-developer="Dyadic Software Associates"
+data-ra="25207"
+data-notes="Rainy Day Games is 1 - 3 player series of 3 card games for children.\n\nThe player competes in card games against their opponent Ted Bear. There are three difficulty levels: beginner, smart, and genius. The three included games are: Concentration, where the player must memorize the location of a number of animated card, Old Maid, where the players choose matching cards from each other with the goal not to be the last holding the Joker, and Go Fish, where the players attempt to pick pairs from their opponent's hand."
+data-thumb="../thumbs/apple-ii/rainy day games.jpg"
+data-media="../media/apple-ii/rainy day games.jpg"
+data-screenshot="../screenshots/apple-ii/rainy day games.jpg"
+data-logo="../logos/apple-ii/rainy day games.png"
+data-fanart="../fanart/apple-ii/rainy day games.jpg">
+Rainy Day Games
+</a>
+</td>
+
+<td>1985</td>
+<td>Action</td>
+<td>Baudville</td>
+<td>Dyadic Software Associates</td>
+
+</tr>
+
+<tr id="realm-of-impossibility"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/realm of impossibility.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Realm of Impossibility"
+data-year="1986"
+data-genre="Action •  Puzzle"
+data-publisher="Electronic Arts"
+data-developer="Logical Design Works"
+data-ra="31991"
+data-notes="Realm of Impossibility is a computer game created by Mike Edwards for the Atari 8-bit family and published by Electronic Arts in 1984. It was ported to the Apple II, and Commodore 64, then later to the ZX Spectrum in 1985 and published by Ariolasoft UK Ltd.\n\nThe game was originally released as Zombies! for the Atari 8-bit and published by BRAM, Inc., a company formed by Edwards and his friend. It was the second Atari game from the company, the first being Attack at EP-CYG-4."
+data-thumb="../thumbs/apple-ii/realm of impossibility.jpg"
+data-media="../media/apple-ii/realm of impossibility.jpg"
+data-screenshot="../screenshots/apple-ii/realm of impossibility.jpg"
+data-logo="../logos/apple-ii/realm of impossibility.png"
+data-fanart="../fanart/apple-ii/realm of impossibility.jpg">
+Realm of Impossibility
+</a>
+</td>
+
+<td>1986</td>
+<td>Action •  Puzzle</td>
+<td>Electronic Arts</td>
+<td>Logical Design Works</td>
+
+</tr>
+
+<tr id="space-quest-ii"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/space quest ii.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Quest II"
+data-year="1987"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="18958"
+data-notes="The ace janitor Roger Wilco thought he'd seen the last of Sludge Vohaul. However, like every evil scientist is supposed to, Vohaul returns with an even meaner scheme. This time he intends to infest the planet Xenon with thousands of genetically engineered door-to-door life insurance salesmen. The last thing he wants is Roger messing things up, and so the brave janitor is captured and brought to the planet Labion to spend the rest of his days working in Vohaul's mines. Fortunately, the shuttle that takes him to the mines crashes, and Roger is the only survivor. He will have to survive the dangers of the jungle planet Labion, and eventually stop Vohaul from executing his mad plan.\n\nVohaul's Revenge is the sequel to The Sarien Encounter, and the second game in Sierra's humorous Space Quest series of adventure games. The player navigates Roger Wilco around with arrow keys, and interacts with the world by typing commands. Like in the previous game, there are many ways for the player character to die. Much of the gameplay is dedicated to avoiding the many traps and hazards Roger will meet on his way. Some actions must be performed quickly in order to prevent Roger from getting killed."
+data-thumb="../thumbs/apple-ii/space quest ii.jpg"
+data-media="../media/apple-ii/space quest ii.jpg"
+data-screenshot="../screenshots/apple-ii/space quest ii.jpg"
+data-logo="../logos/apple-ii/space quest ii.png"
+data-fanart="../fanart/apple-ii/space quest ii.jpg">
+Space Quest II
+</a>
+</td>
+
+<td>1987</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="space-quest-chapter-i-the-sarien-encounter"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/space quest chapter i the sarien encounter.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Quest: Chapter I: The Sarien Encounter"
+data-year="1986"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="18951"
+data-notes="Roger Wilco is one of the most important men on the starship Arcada: he is the janitor! Just when he was doing what he does best (dozing off in a closet), the shrill sound of an alarm penetrated the air. Arcada is attacked by the evil Sariens! Before Roger realizes what is going on, he discovers that he is the only survivor. The Sariens have killed the entire crew and stolen the valuable Star Generator. Roger's immediate task is to find a way to leave Arcada, which is about to explode in fifteen minutes. And then he'll have to show the Sariens why they should never mess with brave intergalactic janitors!\n\nSpace Quest: The Sarien Encounter is a humorous sci-fi adventure game made with Sierra's AGI engine. There are puzzles to solve and plenty of situations where the player will have to use his wit to save Roger from death."
+data-thumb="../thumbs/apple-ii/space quest chapter i the sarien encounter.jpg"
+data-media="../media/apple-ii/space quest chapter i the sarien encounter.jpg"
+data-screenshot="../screenshots/apple-ii/space quest chapter i the sarien encounter.jpg"
+data-logo="../logos/apple-ii/space quest chapter i the sarien encounter.png"
+data-fanart="../fanart/apple-ii/space quest chapter i the sarien encounter.jpg">
+Space Quest: Chapter I: The Sarien Encounter
+</a>
+</td>
+
+<td>1986</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="space-subtraction"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/space subtraction.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Space Subtraction"
+data-year="1985"
+data-genre="Education"
+data-publisher="Minnesota Educational Computing Corporation (MECC)"
+data-developer="Minnesota Educational Computing Corporation (MECC)"
+data-ra="20419"
+data-notes="Space Subtraction is a series of 1-player subtraction games for the Apple II.\n\n-  Blast Off: The player answers 25 questions, and each correct answer progresses a portion of a cartoon of a rocket launch.\n-  Cosmic Creatures: Every 4 correct questions, the player adds a piece of an alien creature.\n-  Shuttle Trip: The player answers 20 questions, and each correct answer progresses a portion of a cartoon of a shuttle launch.\nSpace Match: Every 5 correct answers, the player can play Space Match. The player tries to math an item on the left of the screen to the correct item on the right.\n-  Zemoon Walk: Every 5 correct answers, the player engages a minigame, where they try to guess where on a number line from 0 - 100 a flat space lies to allow an alien ship to land."
+data-thumb="../thumbs/apple-ii/space subtraction.jpg"
+data-media="../media/apple-ii/space subtraction.jpg"
+data-screenshot="../screenshots/apple-ii/space subtraction.jpg"
+data-logo="../logos/apple-ii/space subtraction.png"
+data-fanart="../fanart/apple-ii/space subtraction.jpg">
+Space Subtraction
+</a>
+</td>
+
+<td>1985</td>
+<td>Education</td>
+<td>Minnesota Educational Computing Corporation (MECC)</td>
+<td>Minnesota Educational Computing Corporation (MECC)</td>
+
+</tr>
+
+<tr id="spare-change"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/spare change.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Spare Change"
+data-year="1983"
+data-genre="Action"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Br\u00f8derbund Software"
+data-ra="18693"
+data-notes="In Spare Change, you are the owner and operator of the Spare Change Arcade, dedicated to making your place of business run as smoothly as possible. Inside the arcade are Token machines, jukeboxes, telephones, movie booths, popcorn machines, and so on. The token machines need to be restocked with money from the cash register when they are out of tokens, but eventually, the register must be replenished with cash from the safe. You must drop the tokens in one of your two storage bins. When you have stored at least ten tokens, the movie booth opens, and you can go inside to proceed to the next level. You are also awarded one bag of money, but if you store more than ten tokens, then more than one bag of money is awarded for each extra token collected. If nine bags of money are obtained, you proceed to the next level.\n\nBut the Zerks, two aliens that run around the screen, can steal tokens either from the machines or from the storage bins. Sometimes, a Zerk will toss a token to the other nearest the \"piggy bank\". You must touch them in order to get the token back, before they throw it in their piggy bank. Alternatively, you can throw a token into the jukebox, telephone, popcorn machine, etc. and the Zerks will get distracted from their goal, giving you enough time to continue filling the storage bins. If the Zerks insert five tokens in the piggy bank, the game is over.\n\nBetween levels, an intermission plays, which are similar to those in Pac-Man. Later in the game, you have the ability to access these intermissions. As you proceed through the levels, the game gets quite difficult."
+data-thumb="../thumbs/apple-ii/spare change.jpg"
+data-media="../media/apple-ii/spare change.jpg"
+data-screenshot="../screenshots/apple-ii/spare change.jpg"
+data-logo="../logos/apple-ii/spare change.png"
+data-fanart="../fanart/apple-ii/spare change.jpg">
+Spare Change
+</a>
+</td>
+
+<td>1983</td>
+<td>Action</td>
+<td>Brøderbund Software</td>
+<td>Brøderbund Software</td>
+
+</tr>
+
+<tr id="stickybear-math-2"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/stickybear math 2.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Stickybear Math 2"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="27029"
+data-notes=""
+data-thumb="../thumbs/apple-ii/stickybear math 2.jpg"
+data-media="../media/apple-ii/stickybear math 2.jpg"
+data-screenshot="../screenshots/apple-ii/stickybear math 2.jpg"
+data-logo="../logos/apple-ii/stickybear math 2.png"
+data-fanart="../fanart/apple-ii/stickybear math 2.jpg">
+Stickybear Math 2
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="stickybear-shapes"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/stickybear shapes.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Stickybear Shapes"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="27028"
+data-notes=""
+data-thumb="../thumbs/apple-ii/stickybear shapes.jpg"
+data-media="../media/apple-ii/stickybear shapes.jpg"
+data-screenshot="../screenshots/apple-ii/stickybear shapes.jpg"
+data-logo="../logos/apple-ii/stickybear shapes.png"
+data-fanart="../fanart/apple-ii/stickybear shapes.jpg">
+Stickybear Shapes
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="sudoku"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/sudoku.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sudoku"
+data-year="2015"
+data-genre="Puzzle"
+data-publisher="Rand-Emonium Software"
+data-developer="Rand-Emonium Software"
+data-ra="14674"
+data-notes="Apple II Sudoku is a sudoku interpretation for Apple II systems.\n\nFollows typical sudoku rules. There is a 3 x 3 square consisting of smaller 3 x 3 squares. The players must put the numbers 1 - 9 into each small square, so that each number is used only once per square, as well as used only once in a vertical and horizontal line. Controlled via the keyboard, there are three levels of difficulty. Players have the option to allow incorrect or invalid values to be flagged."
+data-thumb="../thumbs/apple-ii/sudoku.jpg"
+data-media="../media/apple-ii/sudoku.jpg"
+data-screenshot="../screenshots/apple-ii/sudoku.jpg"
+data-logo="../logos/apple-ii/sudoku.png"
+data-fanart="../fanart/apple-ii/sudoku.jpg">
+Sudoku
+</a>
+</td>
+
+<td>2015</td>
+<td>Puzzle</td>
+<td>Rand-Emonium Software</td>
+<td>Rand-Emonium Software</td>
+
+</tr>
+
+<tr id="super-bunny"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/super bunny.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Super Bunny"
+data-year="1983"
+data-genre="Action"
+data-publisher="Datamost"
+data-developer="Datamost"
+data-ra="24889"
+data-notes="Super Bunny is a 1983 computer game for the Apple II family of computers, written by Vic Leone and published by Datamost.  The player starts as a defenseless rabbit, hopping from the left side of the screen to the right on scrolling platforms. The goal is to avoid the creatures that appear on the platforms and reach the carrot at the right side of the screen. Landing on (\"eating\") the carrot turns the rabbit into Super Bunny, at which point he must return to the starting position, dispatching creatures and earning points.\n\nThe game has a different saying and song for each level (e.g., \"crunch those critters\" and the song Here Comes Peter Cottontail!). Super Bunny is credited in the game's splash screen as Reginald Rabbit."
+data-thumb="../thumbs/apple-ii/super bunny.jpg"
+data-media="../media/apple-ii/super bunny.jpg"
+data-screenshot="../screenshots/apple-ii/super bunny.jpg"
+data-logo="../logos/apple-ii/super bunny.png"
+data-fanart="../fanart/apple-ii/super bunny.jpg">
+Super Bunny
+</a>
+</td>
+
+<td>1983</td>
+<td>Action</td>
+<td>Datamost</td>
+<td>Datamost</td>
+
+</tr>
+
+<tr id="super-othello"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/super othello.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Super Othello"
+data-year="1979"
+data-genre="Board Game •  Strategy"
+data-publisher="Programma International"
+data-developer="Gary J. Shannon"
+data-ra="25283"
+data-notes="Super Othello is a one-player adaptation of the board game for the Apple II.\n\nOne player game versus a single difficulty computer opponent. The game is played on an 8x8 board where the keyboard is used to move a cursor between playable squares. The player can choose to start or let the opponent start. Like in the original board game the two players take turns adding stones to the board in an attempt to trap the opponent's stones which then will change color. When the board is full the game ends and the player with the most amount of stones wins."
+data-thumb="../thumbs/apple-ii/super othello.jpg"
+data-media="../media/apple-ii/super othello.jpg"
+data-screenshot="../screenshots/apple-ii/super othello.jpg"
+data-logo="../logos/apple-ii/super othello.png"
+data-fanart="../fanart/apple-ii/super othello.jpg">
+Super Othello
+</a>
+</td>
+
+<td>1979</td>
+<td>Board Game •  Strategy</td>
+<td>Programma International</td>
+<td>Gary J. Shannon</td>
+
+</tr>
+
+<tr id="swashbuckler"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/swashbuckler.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Swashbuckler"
+data-year="1982"
+data-genre="Fighting"
+data-publisher="Datamost"
+data-developer="Datamost"
+data-ra="22170"
+data-notes="Swashbuckler is an early fighting game for the Apple II family of computers, created by Paul Stephenson and published by Datamost in 1982.\n\nThe player controls a sword-wielding swashbuckler who must fight and dispatch various attackers. Combat occurs in a wooden-beamed ship's hold littered with skeletons and cobwebs, which the player views from the side. (from Wikipedia)"
+data-thumb="../thumbs/apple-ii/swashbuckler.jpg"
+data-media="../media/apple-ii/swashbuckler.jpg"
+data-screenshot="../screenshots/apple-ii/swashbuckler.jpg"
+data-logo="../logos/apple-ii/swashbuckler.png"
+data-fanart="../fanart/apple-ii/swashbuckler.jpg">
+Swashbuckler
+</a>
+</td>
+
+<td>1982</td>
+<td>Fighting</td>
+<td>Datamost</td>
+<td>Datamost</td>
+
+</tr>
+
+<tr id="tapper"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/tapper.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tapper"
+data-year="1983"
+data-genre="Action"
+data-publisher="Bally Midway"
+data-developer="Bally Midway"
+data-ra="14215"
+data-notes="Tapper, also known as Root Beer Tapper, is a 1983 arcade game released by Bally Midway. Tapper puts the player in the shoes of a bartender. The player must serve eager, thirsty patrons before their patience expires while collecting empty mugs and tips. The game was produced in association with Budweiser.\n\nSeveral variants of the game were released, with similar gameplay but different graphics and music. The first was with Budweiser branding, followed in 1984 by Root Beer Tapper, which was developed specifically for arcades because the original version was construed as advertising alcohol to minors (since many of the games appeared in video game arcades). Developer Marvin Glass and Associates filed a patent in 1984 covering the game and variants, granted in 1987.\n\nTapper was ported to the Apple 2, Atari 8-bit family, Atari 5200, Atari 2600, BBC Micro, ColecoVision, Commodore 64, MSX, ZX Spectrum, IBM PC, and Amstrad CPC. Most of the home versions of Tapper featured the Mountain Dew logo, but retained the bartender character of the original arcade game instead of the soda jerk in Root Beer Tapper."
+data-thumb="../thumbs/apple-ii/tapper.jpg"
+data-media="../media/apple-ii/tapper.jpg"
+data-screenshot="../screenshots/apple-ii/tapper.jpg"
+data-logo="../logos/apple-ii/tapper.png"
+data-fanart="../fanart/apple-ii/tapper.jpg">
+Tapper
+</a>
+</td>
+
+<td>1983</td>
+<td>Action</td>
+<td>Bally Midway</td>
+<td>Bally Midway</td>
+
+</tr>
+
+<tr id="taxman"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/taxman.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Taxman"
+data-year="1981"
+data-genre="Action"
+data-publisher="H.A.L. Labs"
+data-developer="H.A.L. Labs"
+data-ra="13932"
+data-notes="Taxman is a pretty accurate clone of the arcade smash hit Pac-Man where the player takes the role of the \"Taxman\" and has to collect tax from the rebellious citizens.\n\nYou control the now famous circular dot muncher that has to go around the maze and collect all the \"tax pellets\". He is chased by four ghosts that will kill the poor taxman on touch. If the Taxman eats a power pellet, the roles are reversed and he can chase the ghosts and eat them in return. Levels repeat with increased difficulty and once three lives are lost, it is Game Over."
+data-thumb="../thumbs/apple-ii/taxman.jpg"
+data-media="../media/apple-ii/taxman.jpg"
+data-screenshot="../screenshots/apple-ii/taxman.jpg"
+data-logo="../logos/apple-ii/taxman.png"
+data-fanart="../fanart/apple-ii/taxman.jpg">
+Taxman
+</a>
+</td>
+
+<td>1981</td>
+<td>Action</td>
+<td>H.A.L. Labs</td>
+<td>H.A.L. Labs</td>
+
+</tr>
+
+<tr id="tempete-sur-les-bermudes"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/tempete sur les bermudes.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tempete sur les Bermudes"
+data-year="1986"
+data-genre="Adventure"
+data-publisher="Froggy Software"
+data-developer="-"
+data-ra="22568"
+data-notes="Your strong taste for adventure and sardines in oil led you to participate in the solo deckchair. Everything is bathed in plankton, until this day when an unexpected and sneaky storm surprises you from behind, the traitor.\nBefore you can even say \"unconstitutionally\", a blade is sweeping your deck. Lack of pot, it's just the moment you are there! In the next minute you lose consciousness, your boat, your balance and your head.\nBut Neptune is a nice god and rather than renewing the coup of the Rainbow Warrior, he drops you groggy (software) on a deserted beach.\nWhen you open an eye clouded with algae, you see that you are on an island. Your boat ran aground not far from there. Do not panic. It is a question of repairing as quickly as possible so that we can start again. It's your turn !\n\nAdventure game entirely in French and in colors made by Christophe Bourrier. The cover design is by Jean Sol\u00e9, the graphics by Philippe Bousquet."
+data-thumb="../thumbs/apple-ii/tempete sur les bermudes.jpg"
+data-media="../media/apple-ii/tempete sur les bermudes.jpg"
+data-screenshot="../screenshots/apple-ii/tempete sur les bermudes.jpg"
+data-logo="../logos/apple-ii/tempete sur les bermudes.png"
+data-fanart="../fanart/apple-ii/tempete sur les bermudes.jpg">
+Tempete sur les Bermudes
+</a>
+</td>
+
+<td>1986</td>
+<td>Adventure</td>
+<td>Froggy Software</td>
+<td>-</td>
+
+</tr>
+
+<tr id="the-black-cauldron"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/the black cauldron.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Black Cauldron"
+data-year="1986"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="14478"
+data-notes="The Black Cauldron is an adventure game designed by Al Lowe of Sierra On-Line and released in 1986. It was made shortly after the first King's Quest game, so it resembled that adventure in many ways. Along with The Dark Crystal it remains one of only a few adventure games by Sierra to be based on films.\n\nThe player character is a young assistant pig-keeper, Taran, undertaking a quest to stop the evil Horned King, who sought for Hen Wen, the magical pig of the wizard Dallben, for her visionary abilities. With these abilities, the King would be able to discover the Black Cauldron and rule the land. Taran's first mission is to lead her to the Fair Folk while the King's Gwythiants are looking for them. Should the pig be captured (the game allows either possibility), Taran can go to the King's castle and rescue her. Once inside, Taran will meet and rescue Eilonwy with her magic bauble and Fflewddur Fflam, as well as discover a Magic Sword. The Cauldron is in the possession of three witches of Morva who will trade it for the Sword. Unfortunately a gwythiant grasps the cauldron and Taran goes back to encounter the evil man himself. The game actually featured plot branches and multiple endings depending on many variables, such as whether Hen Wen the pig was saved, how the cauldron was destroyed and what reward was chosen afterwards. This use of multiple endings predated the more famous use in Lucasfilm's game Maniac Mansion by a year."
+data-thumb="../thumbs/apple-ii/the black cauldron.jpg"
+data-media="../media/apple-ii/the black cauldron.jpg"
+data-screenshot="../screenshots/apple-ii/the black cauldron.jpg"
+data-logo="../logos/apple-ii/the black cauldron.png"
+data-fanart="../fanart/apple-ii/the black cauldron.jpg">
+The Black Cauldron
+</a>
+</td>
+
+<td>1986</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="the-dark-crystal"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/the dark crystal.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Dark Crystal"
+data-year="1983"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="18957"
+data-notes="The Dark Crystal is a graphic adventure computer game based on Jim Henson's fantasy film, The Dark Crystal. The game was designed by Roberta Williams and published under the SierraVenture line in 1983 as Hi-Res Adventure #6: The Dark Crystal\n\nThe Dark Crystal is set in Thra, a world with three suns. Every thousand years the three suns come together in an event known as \"The Great Conjunction\".  The player controls Jen, a gelfling. Two souls are destined to battle to reveal the secrets of their past. One warrior's fate rests in the hands of a tyrannical villain who is hellbent on destruction.\n\nThe game features no music, a single beep is used to alert that no action other than the return key can be taken and a double beep if another command is used at that time."
+data-thumb="../thumbs/apple-ii/the dark crystal.jpg"
+data-media="../media/apple-ii/the dark crystal.jpg"
+data-screenshot="../screenshots/apple-ii/the dark crystal.jpg"
+data-logo="../logos/apple-ii/the dark crystal.png"
+data-fanart="../fanart/apple-ii/the dark crystal.jpg">
+The Dark Crystal
+</a>
+</td>
+
+<td>1983</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="the-demons-forge"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/the demon s forge.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Demon's Forge"
+data-year="1981"
+data-genre="Adventure"
+data-publisher="Mastertronic"
+data-developer="Brian Fargo"
+data-ra="32722"
+data-notes="Demon's Forge is the first commercially published game made by Brian Fargo, who was well known for a variety of classic RPG's like Wasteland and The Bard's Tale.  The game is a graphical adventure game which places the player in the caverns of Demon's Forge.  The game was known for its difficulty due to its esoteric puzzles."
+data-thumb="../thumbs/apple-ii/the demon s forge.jpg"
+data-media="../media/apple-ii/the demon s forge.jpg"
+data-screenshot="../screenshots/apple-ii/the demon s forge.jpg"
+data-logo="../logos/apple-ii/the demon s forge.png"
+data-fanart="../fanart/apple-ii/the demon s forge.jpg">
+The Demon's Forge
+</a>
+</td>
+
+<td>1981</td>
+<td>Adventure</td>
+<td>Mastertronic</td>
+<td>Brian Fargo</td>
+
+</tr>
+
+<tr id="the-hitchhikers-guide-to-the-galaxy"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/the hitchhiker s guide to the galaxy.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Hitchhiker's Guide to the Galaxy"
+data-year="1984"
+data-genre="Adventure"
+data-publisher="Infocom"
+data-developer="Infocom"
+data-ra="16168"
+data-notes="You are Arthur Dent, an Englishman with a bad hangover wearing a dressing gown containing a much needed buffered analgesic and some fluff. Your house has just been destroyed, followed shortly thereafter by your planet Earth (mostly harmless). You\u2019ve been rescued by your friend Ford Prefect, who\u2019s not actually an out-of-work actor. He has given you a book (The Hitchhiker\u2019s Guide to the Galaxy), a towel, and is now telling you to put a fish in your ear. It must be a Thursday; you\u2019ve never quite gotten the hang of Thursdays. The Hitchhiker\u2019s Guide to the Galaxy is written by Douglas Adams and Steven Meretzky and based on Adams\u2019 BBC radio series, television series, and the series of subsequent novelizations. It\u2019s one of the classic Interactive Fiction games produced by Infocom, labeled as Science Fiction and has a Standard Level of Difficulty. Though divergent from the source material, the main characters, locations, and concepts are here. Unlike the book, death can come quickly if Arthur fails to observe his surroundings, collect inventory, talk to people, and consult the Guide. DON\u2019T PANIC! Original C=64 Grey Box Contents: Megadodo Publications Advertising Booklet for your very own Hitchhiker's Guide to the Galaxy complete with Fluff, Destruct orders for your home and planet, a nice red button with the words DON'T PANIC printed in large yellow letters, a pair of Joo Janta 200 Super-Chromatic Peril-Sensitive Sunglasses, No Tea, and your very own Microscopic Space Fleet. All this can be yours, for the low, low price of only 59.99 Altairian Dollars."
+data-thumb="../thumbs/apple-ii/the hitchhiker s guide to the galaxy.jpg"
+data-media="../media/apple-ii/the hitchhiker s guide to the galaxy.jpg"
+data-screenshot="../screenshots/apple-ii/the hitchhiker s guide to the galaxy.jpg"
+data-logo="../logos/apple-ii/the hitchhiker s guide to the galaxy.png"
+data-fanart="../fanart/apple-ii/the hitchhiker s guide to the galaxy.jpg">
+The Hitchhiker's Guide to the Galaxy
+</a>
+</td>
+
+<td>1984</td>
+<td>Adventure</td>
+<td>Infocom</td>
+<td>Infocom</td>
+
+</tr>
+
+<tr id="the-lurking-horror"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/the lurking horror.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Lurking Horror"
+data-year="1987"
+data-genre="Adventure •  Horror"
+data-publisher="Infocom"
+data-developer="Infocom"
+data-ra="22860"
+data-notes="Despite a terrible snowstorm, a young G.U.E. Tech student travels to the school's computer lab to work on his grad paper. However, something strange has happened. The file containing the student's document has been partially overwritten by the Department of Alchemy's files. At first the student's only goal is to retrieve his lost document, but soon he realizes that something far more sinister is occurring in the depths of the school building.\n\nThe Lurking Horror is Infocom's only horror-themed text adventure game. The game is set in the haunted school building, in the midst of a blizzard that rendered escape impossible. The player explores the environments and has to solve puzzles to overcome obstacles. There are hostile creatures in the game, most of which must be defeated or outsmarted by using specific items.\n\nWhile not a direct adaption of his stories, the game itself was heavily inspired by the writings of H.P. Lovecraft."
+data-thumb="../thumbs/apple-ii/the lurking horror.jpg"
+data-media="../media/apple-ii/the lurking horror.jpg"
+data-screenshot="../screenshots/apple-ii/the lurking horror.jpg"
+data-logo="../logos/apple-ii/the lurking horror.png"
+data-fanart="../fanart/apple-ii/the lurking horror.jpg">
+The Lurking Horror
+</a>
+</td>
+
+<td>1987</td>
+<td>Adventure •  Horror</td>
+<td>Infocom</td>
+<td>Infocom</td>
+
+</tr>
+
+<tr id="the-rocky-horror-show"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/the rocky horror show.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Rocky Horror Show"
+data-year="1986"
+data-genre="Action"
+data-publisher="Electric Dreams Software"
+data-developer="CRL Group"
+data-ra="32089"
+data-notes="Play as either Brad or Janet to rescue the other, in this computer adaptation of the hit Broadway Musical The Rocky Horror Picture Show.\n\nSearch the castle for pieces of the Medusa machine to free your partner from stone and escape the castle before it blasts off. Each one must be taken to the De-Medusa machine, only carrying one at a time. You must collect keys and disable force fields along the way.\n\nOther characters in the game will hinder your progress by stealing and hiding your clothes or other objects you may be carrying. Watch out for Riff-Raff or he'll shoot you with his laser gun. And if Eddie thaws out and escapes from the freezer, he'll run you over with his motorcycle."
+data-thumb="../thumbs/apple-ii/the rocky horror show.jpg"
+data-media="../media/apple-ii/the rocky horror show.jpg"
+data-screenshot="../screenshots/apple-ii/the rocky horror show.jpg"
+data-logo="../logos/apple-ii/the rocky horror show.png"
+data-fanart="../fanart/apple-ii/the rocky horror show.jpg">
+The Rocky Horror Show
+</a>
+</td>
+
+<td>1986</td>
+<td>Action</td>
+<td>Electric Dreams Software</td>
+<td>CRL Group</td>
+
+</tr>
+
+<tr id="the-wizard-of-oz"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/the wizard of oz.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Wizard of Oz"
+data-year="1985"
+data-genre="Adventure"
+data-publisher="Windham Classics"
+data-developer="Windham Classics"
+data-ra="32104"
+data-notes="The Wizard of Oz is an illustrated text adventure game developed by and published by Windham Classics for the Apple II, Commodore 64, DOS and MSX in 1985. Based on the famous novel by L. Frank Baum, the Wizard of Oz places the player in the role of Dorothy Gale, who is transported by a cyclone to the magical world of Oz. Accompanied by her dog Toto, a Scarecrow, a Tin Woodman, and a Lion, she tries to find her way to the Emerald City, where she hopes the Wizard of Oz can help her find a way back home.\n\nGameplay-wise, the game is a traditional text adventure with graphics. The player can type in various commands to interact with the game world, manipulate objects, talk to NPCs, or ask Dorothy's companions for help."
+data-thumb="../thumbs/apple-ii/the wizard of oz.jpg"
+data-media="../media/apple-ii/the wizard of oz.jpg"
+data-screenshot="../screenshots/apple-ii/the wizard of oz.jpg"
+data-logo="../logos/apple-ii/the wizard of oz.png"
+data-fanart="../fanart/apple-ii/the wizard of oz.jpg">
+The Wizard of Oz
+</a>
+</td>
+
+<td>1985</td>
+<td>Adventure</td>
+<td>Windham Classics</td>
+<td>Windham Classics</td>
+
+</tr>
+
+<tr id="time-zone"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/time zone.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Time Zone"
+data-year="1982"
+data-genre="Adventure"
+data-publisher="On-Line Systems"
+data-developer="On-Line Systems"
+data-ra="32343"
+data-notes="The year is 4081 and the people of Mother Earth are in peril. Ramadu, the mighty and sinister ruler of the planet Neburon, a thousand light years away, is about to declare war on weaker and smaller Earth--a war which would mean total destruction, or worse, total servitude on the part of the people of Earth, to the evil Ramadu.\n\nFor thousands of years the inhabitants of Neburon (a very advanced society) have watched the struggling and developing Earthlings--as one would watch animals in a zoo. The Neburites, over the years, had traveled to Earth, sometimes learning, sometimes teaching, always curious. They saw revealed to them, in the development of Earthlings, their own beginnings so many millions of years ago.\n\nBut Earth was catching up to Neburon--technically, medically, scientifically, all ways, Neburon had once been extremely advanced compared to Earth but had grown comfortable and lazy.\n\nThe Neburites were in a slump. They needed a stimulus. They were angry about Earth's advancement and their own inactivity. Why, if something was not done about it, Earth might very well pass Neburon in superiority in a few decades!\n\nSo Ramadu had come to power. But instead of spurring his people on to new growth and productivity, and perhaps working with Earth to trade knowledge and ideas beneficial to both, he chose war. After all, Neburon was still more powerful than Earth and the Earthlings wouldn't stand a chance.\n\nThe year is 1981. You are an ordinary person walking through a meadow one day, when you notice a strange looking contraption right in the middle of the meadow. You glance around you. There appears to be no one around. You look inside the contraption--there are a lot of dials and something that looks like a bucket seat. The outside of the contraption is round with a large inviting doorway. Hesitantly, you enter the contraption and sit down in the bucket seat. Gingerly, you turn a dial and suddenly reality becomes a blue as you enter the greatest adventure of your life!"
+data-thumb="../thumbs/apple-ii/time zone.jpg"
+data-media="../media/apple-ii/time zone.jpg"
+data-screenshot="../screenshots/apple-ii/time zone.jpg"
+data-logo="../logos/apple-ii/time zone.png"
+data-fanart="../fanart/apple-ii/time zone.jpg">
+Time Zone
+</a>
+</td>
+
+<td>1982</td>
+<td>Adventure</td>
+<td>On-Line Systems</td>
+<td>On-Line Systems</td>
+
+</tr>
+
+<tr id="trinity"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/trinity.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Trinity"
+data-year="1986"
+data-genre="Adventure"
+data-publisher="Infocom"
+data-developer="Infocom"
+data-ra="25627"
+data-notes="Trinity is an interactive fiction computer game written by Brian Moriarty and published in 1986 by Infocom. It is widely regarded as one of the company's best works.  Trinity was included as one of the titles in the 2010 book 1001 Video Games You Must Play Before You Die.\n\nThe plot blends historical and fantastic elements as part of a prose poem regarding the destructive power of the atomic bomb and the futile nature of war in the atomic age. The name refers to the Trinity test, the first nuclear explosion, which took place in July 1945. It is Infocom's twentieth game and the last game released by the company when it was solvent."
+data-thumb="../thumbs/apple-ii/trinity.jpg"
+data-media="../media/apple-ii/trinity.jpg"
+data-screenshot="../screenshots/apple-ii/trinity.jpg"
+data-logo="../logos/apple-ii/trinity.png"
+data-fanart="../fanart/apple-ii/trinity.jpg">
+Trinity
+</a>
+</td>
+
+<td>1986</td>
+<td>Adventure</td>
+<td>Infocom</td>
+<td>Infocom</td>
+
+</tr>
+
+<tr id="ultima-i-the-first-age-of-darkness"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/ultima i the first age of darkness.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ultima I: The First Age of Darkness"
+data-year="1986"
+data-genre="Role-Playing"
+data-publisher="Origin Systems"
+data-developer="Richard Garriott"
+data-ra="13926"
+data-notes="Ultima I is a remake of the classic RPG Ultima from 1981. You must travel to another world and save the land Sosaria from the evil wizard Mondain. The game features tile based top-down overworld graphics and first person perspective pseudo-3D dungeons.\n\nThe original Ultima was re-programmed using assembly language, with updated graphics, minor changes in towns' and people's names, and some different puzzles."
+data-thumb="../thumbs/apple-ii/ultima i the first age of darkness.jpg"
+data-media="../media/apple-ii/ultima i the first age of darkness.jpg"
+data-screenshot="../screenshots/apple-ii/ultima i the first age of darkness.jpg"
+data-logo="../logos/apple-ii/ultima i the first age of darkness.png"
+data-fanart="../fanart/apple-ii/ultima i the first age of darkness.jpg">
+Ultima I: The First Age of Darkness
+</a>
+</td>
+
+<td>1986</td>
+<td>Role-Playing</td>
+<td>Origin Systems</td>
+<td>Richard Garriott</td>
+
+</tr>
+
+<tr id="ultima-ii-revenge-of-the-enchantress"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/ultima ii revenge of the enchantress.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ultima II: Revenge of the Enchantress"
+data-year="1982"
+data-genre="Role-Playing"
+data-publisher="Sierra"
+data-developer="Richard Garriott"
+data-ra="22745"
+data-notes="Ultima II: The Revenge of the Enchantress, released on August 24, 1982 (USCO# PA-317-502), is the second role-playing video game in the Ultima series.\n\nIt was also the only official Ultima game published by Sierra On-Line. Controversy with Sierra over royalties for the PC port of this game led the series creator Richard Garriott to start his own company, Origin Systems.\n\nThe gameplay is very similar to the previous game in the series, Ultima. The scope of the game is bigger, in that there are several more places to explore, even though some of them (like most of the solar system planets and the dungeons and towers) are optional and not required to complete the game.\n\nIn the game, the player has to travel to several different time periods of Earth, using time doors. The periods are the Time of Legends (a mythological period), Pangea (about 300 to 250 million years ago), B.C. (1423, \"before the dawn of civilization\"), A.D. (1990), and the Aftermath (after 2112)."
+data-thumb="../thumbs/apple-ii/ultima ii revenge of the enchantress.jpg"
+data-media="../media/apple-ii/ultima ii revenge of the enchantress.jpg"
+data-screenshot="../screenshots/apple-ii/ultima ii revenge of the enchantress.jpg"
+data-logo="../logos/apple-ii/ultima ii revenge of the enchantress.png"
+data-fanart="../fanart/apple-ii/ultima ii revenge of the enchantress.jpg">
+Ultima II: Revenge of the Enchantress
+</a>
+</td>
+
+<td>1982</td>
+<td>Role-Playing</td>
+<td>Sierra</td>
+<td>Richard Garriott</td>
+
+</tr>
+
+<tr id="ultima-iii-exodus"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/ultima iii exodus.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ultima III: Exodus"
+data-year="1983"
+data-genre="Role-Playing"
+data-publisher="Origin Systems"
+data-developer="Origin Systems"
+data-ra="27573"
+data-notes="Ultima III: Exodus is the third game in the Ultima series. Exodus is also the name of the game's principal antagonist. Released in 1983, it was the first Ultima game published by Origin Systems. Originally developed for the Apple II, Exodus was eventually ported to 13 other platforms, including a NES/Famicom remake.\n\nExodus featured revolutionary graphics for its time, as one of the first computer RPGs to display animated characters. Also, Exodus differs from previous games in that players now direct the actions of a party of four characters rather than just one. During regular play the characters are represented as a single player icon and move as one. However, in battle mode, each character is represented separately on a separate \"battle screen\" and the player alternates commands between each character in order, followed by each enemy character having a turn. Thus the player must understand weapons and magic commands and employ rudimentary tactics in order to overcome each opponent. This differs from the two previous games in the Ultima series in which the player is simply depicted as trading blows with one opponent on the main map until either is defeated. Enemies on the overworld map can be seen and at least temporarily avoided, while enemies in a dungeon may appear randomly without any forewarning."
+data-thumb="../thumbs/apple-ii/ultima iii exodus.jpg"
+data-media="../media/apple-ii/ultima iii exodus.jpg"
+data-screenshot="../screenshots/apple-ii/ultima iii exodus.jpg"
+data-logo="../logos/apple-ii/ultima iii exodus.png"
+data-fanart="../fanart/apple-ii/ultima iii exodus.jpg">
+Ultima III: Exodus
+</a>
+</td>
+
+<td>1983</td>
+<td>Role-Playing</td>
+<td>Origin Systems</td>
+<td>Origin Systems</td>
+
+</tr>
+
+<tr id="ultima-iv-quest-of-the-avatar"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/ultima iv quest of the avatar.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ultima IV: Quest of the Avatar"
+data-year="1985"
+data-genre="Role-Playing"
+data-publisher="Origin Systems"
+data-developer="Origin Systems"
+data-ra="27574"
+data-notes="Ultima IV: Quest of the Avatar, first released in 1985 for the Apple II, is the fourth in the series of Ultima role-playing video games. It is the first in the \"Age of Enlightenment\" trilogy, shifting the series from the hack and slash, dungeon crawl gameplay of its \"Age of Darkness\" predecessors towards an ethically-nuanced, story-driven approach. In 1996 Computer Gaming World named Ultima IV as #2 on its Best Games of All Time list on the PC. Designer Richard Garriott considers this game to be among his favorites from the Ultima series.\n\nUltima IV is among the few computer role-playing games, and perhaps the first, in which the game's story does not center on asking a player to overcome a tangible ultimate evil."
+data-thumb="../thumbs/apple-ii/ultima iv quest of the avatar.jpg"
+data-media="../media/apple-ii/ultima iv quest of the avatar.jpg"
+data-screenshot="../screenshots/apple-ii/ultima iv quest of the avatar.jpg"
+data-logo="../logos/apple-ii/ultima iv quest of the avatar.png"
+data-fanart="../fanart/apple-ii/ultima iv quest of the avatar.jpg">
+Ultima IV: Quest of the Avatar
+</a>
+</td>
+
+<td>1985</td>
+<td>Role-Playing</td>
+<td>Origin Systems</td>
+<td>Origin Systems</td>
+
+</tr>
+
+<tr id="ultima-v-warriors-of-destiny"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/ultima v warriors of destiny.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ultima V: Warriors of Destiny"
+data-year="1988"
+data-genre="Role-Playing"
+data-publisher="Origin Systems"
+data-developer="Origin Systems"
+data-ra="27575"
+data-notes="Ultima V: Warriors of Destiny (1988) is the fifth entry in the role-playing video game series Ultima.  After having mastered the eight Virtues, attaining Avatarhood and retrieving the Codex of Ultimate Wisdom in the previous game, the Avatar is summoned back to Britannia by his old comrades Iolo and Shamino using a magic coin, which was included as a trinket in the game's box. Upon arrival he is greeted by Shamino but they immediately come under attack from the three powerful beings known as the Shadowlords. \n\nWarriors of Destiny featured much more polished writing (earlier games were riddled with some spelling errors and uneven vocabulary) and considerably greater detail than previous games. It was the first Ultima to implement a time-of-day system in which the sun rises and sets, and non-player characters follow daily routine schedules. This game has been lauded as realistically portraying a culture living under a dictatorial regime; its tone is much darker than that of Ultima IV: Quest of the Avatar."
+data-thumb="../thumbs/apple-ii/ultima v warriors of destiny.jpg"
+data-media="../media/apple-ii/ultima v warriors of destiny.jpg"
+data-screenshot="../screenshots/apple-ii/ultima v warriors of destiny.jpg"
+data-logo="../logos/apple-ii/ultima v warriors of destiny.png"
+data-fanart="../fanart/apple-ii/ultima v warriors of destiny.jpg">
+Ultima V: Warriors of Destiny
+</a>
+</td>
+
+<td>1988</td>
+<td>Role-Playing</td>
+<td>Origin Systems</td>
+<td>Origin Systems</td>
+
+</tr>
+
+<tr id="ulysses-and-the-golden-fleece"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/ulysses and the golden fleece.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Ulysses and the Golden Fleece"
+data-year="1981"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="31999"
+data-notes="Ulysses and the Golden Fleece is an adventure game where you play the part of Ulysses in ancient Greece. The king has given you the task of finding the golden fleece, a legendary treasure which is protected by the gods. You begin your quest in a small town, and will need to travel to several far away lands to find the fleece. Many characters from ancient mythology will be encountered along the way, including King Neptune, the Sirens, Cyclops, and others. You need to find a way past them as well as the many obstacles on sea and land if you are to be successful. \n\nAlong the bottom of the screen is a text parser which accepts two word commands to interact with the game, and at the top (covering most of the screen) are graphics depicting your current situation. If needed, the graphics can temporarily be cleared to see some of the most recent commands entered."
+data-thumb="../thumbs/apple-ii/ulysses and the golden fleece.jpg"
+data-media="../media/apple-ii/ulysses and the golden fleece.jpg"
+data-screenshot="../screenshots/apple-ii/ulysses and the golden fleece.jpg"
+data-logo="../logos/apple-ii/ulysses and the golden fleece.png"
+data-fanart="../fanart/apple-ii/ulysses and the golden fleece.jpg">
+Ulysses and the Golden Fleece
+</a>
+</td>
+
+<td>1981</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="viper"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/viper.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Viper"
+data-year="1982"
+data-genre="Action"
+data-publisher="RDA Systems"
+data-developer="RDA Systems"
+data-ra="22529"
+data-notes="Viper is a 1-player arcade game for the Apple II.\n\nThe player controls a continuous snake that can move in the 4 cardinal direction. On the screen appears a mouse, who will slowly move about. The goal is to move the snake so that it eats the mouse. Every time the snake eats a mouse, it elongates, and a new mouse appears on the screen. If the snake runs into a wall or its own tail, the player loses a life. The player gains 3 points for every snake eaten, and gains a new life at 500 points. The player can define mouse and snake speed, as well as how many obstacles appear in the playfield. The player starts with 3 lives, and when all are lost, it's game over."
+data-thumb="../thumbs/apple-ii/viper.jpg"
+data-media="../media/apple-ii/viper.jpg"
+data-screenshot="../screenshots/apple-ii/viper.jpg"
+data-logo="../logos/apple-ii/viper.png"
+data-fanart="../fanart/apple-ii/viper.jpg">
+Viper
+</a>
+</td>
+
+<td>1982</td>
+<td>Action</td>
+<td>RDA Systems</td>
+<td>RDA Systems</td>
+
+</tr>
+
+<tr id="wasteland"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/wasteland.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wasteland"
+data-year="1988"
+data-genre="Role-Playing"
+data-publisher="Electronic Arts"
+data-developer="Interplay"
+data-ra="14021"
+data-notes="Wasteland takes place in the future after the nuclear holocaust of World War III. The player guides band of Desert Rangers from town to town, gradually uncovering a sinister plot that threatens what's left of mankind.\n\nMuch of the game is played like most other RPGs of its time: the player navigates the party through the top-down world, fights enemies (which appear randomly in hostile areas) in turn-based style on combat screens represented by enemy pictures, acquires information, equipment, and items from NPCs in towns, etc. The player can create a whole party of adventurers and/or recruit some of the characters that populate the game's world.\n\nHowever, Wasteland also introduced an original skill system that has had a significant influence on the genre. The game makes use of the skill system in conjunction with traditional character attributes to achieve goals and get past obstacles. Beside helping the characters to fight more efficiently, main attributes sometimes have an impact on activities used outside of combat. For example, high strength can be applied to break a heavy object, charisma rating might influence the way NPCs interact with the main character, etc.\n\nThe skills work in a similar way: some of them improve the characters' proficiencies with different types of attacks and weapons, while others are needed to solve and/or by pass certain situations during interaction with the game's characters and objects. These skills are rather diverse, ranging from physical abilities such as swimming to more complex actions (medic, lock-picking), or even psychological states (confidence). Skill learning and progression depend on the main character's IQ rating."
+data-thumb="../thumbs/apple-ii/wasteland.jpg"
+data-media="../media/apple-ii/wasteland.jpg"
+data-screenshot="../screenshots/apple-ii/wasteland.jpg"
+data-logo="../logos/apple-ii/wasteland.png"
+data-fanart="../fanart/apple-ii/wasteland.jpg">
+Wasteland
+</a>
+</td>
+
+<td>1988</td>
+<td>Role-Playing</td>
+<td>Electronic Arts</td>
+<td>Interplay</td>
+
+</tr>
+
+<tr id="wheel-of-fortune"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/wheel of fortune.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wheel of Fortune"
+data-year="1987"
+data-genre="Puzzle"
+data-publisher="ShareData"
+data-developer="Sharedata"
+data-ra="32091"
+data-notes="A very basic translation of the popular game show Wheel Of Fortune, where you guess letters until you can guess the phrase. This CGA version has three old-school rounds of Wheel of Fortune (where the puzzles are simply \"Phrase\", \"Title\", \"Person\", etc.) and then a bonus round. You can compete against 2 computer players or up to three people can play against each other."
+data-thumb="../thumbs/apple-ii/wheel of fortune.jpg"
+data-media="../media/apple-ii/wheel of fortune.jpg"
+data-screenshot="../screenshots/apple-ii/wheel of fortune.jpg"
+data-logo="../logos/apple-ii/wheel of fortune.png"
+data-fanart="../fanart/apple-ii/wheel of fortune.jpg">
+Wheel of Fortune
+</a>
+</td>
+
+<td>1987</td>
+<td>Puzzle</td>
+<td>ShareData</td>
+<td>Sharedata</td>
+
+</tr>
+
+<tr id="where-in-hell-is-carmen-santiago"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/where in hell is carmen santiago.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Where in Hell is Carmen Santiago"
+data-year="Unknown"
+data-genre=""
+data-publisher="-"
+data-developer="-"
+data-ra="33413"
+data-notes=""
+data-thumb="../thumbs/apple-ii/where in hell is carmen santiago.jpg"
+data-media="../media/apple-ii/where in hell is carmen santiago.jpg"
+data-screenshot="../screenshots/apple-ii/where in hell is carmen santiago.jpg"
+data-logo="../logos/apple-ii/where in hell is carmen santiago.png"
+data-fanart="../fanart/apple-ii/where in hell is carmen santiago.jpg">
+Where in Hell is Carmen Santiago
+</a>
+</td>
+
+<td>Unknown</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+
+</tr>
+
+<tr id="where-in-north-dakota-is-carmen-sandiego"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/where in north dakota is carmen sandiego.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Where in North Dakota is Carmen Sandiego?"
+data-year="1989"
+data-genre="Education"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Br\u00f8derbund Software"
+data-ra="25719"
+data-notes="Where in North Dakota Is Carmen Sandiego? is a 1989 edutainment video game. It is the fourth game in the Carmen Sandiego video game series which includes World, U.S.A., and Europe. Having observed the popularity of the Carmen Sandiego franchise in the education of school children, educators were inspired to develop a North Dakota version to teach North Dakotans about their state's history and geography."
+data-thumb="../thumbs/apple-ii/where in north dakota is carmen sandiego.jpg"
+data-media="../media/apple-ii/where in north dakota is carmen sandiego.jpg"
+data-screenshot="../screenshots/apple-ii/where in north dakota is carmen sandiego.jpg"
+data-logo="../logos/apple-ii/where in north dakota is carmen sandiego.png"
+data-fanart="../fanart/apple-ii/where in north dakota is carmen sandiego.jpg">
+Where in North Dakota is Carmen Sandiego?
+</a>
+</td>
+
+<td>1989</td>
+<td>Education</td>
+<td>Brøderbund Software</td>
+<td>Brøderbund Software</td>
+
+</tr>
+
+<tr id="where-in-the-world-is-carmen-sandiego"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/where in the world is carmen sandiego.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Where in the World is Carmen Sandiego?"
+data-year="1985"
+data-genre="Education"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Br\u00f8derbund Software"
+data-ra=""
+data-notes="You start out as a rookie detective whose job is to track down a crop of thieves stealing the world's most precious treasures. After each assignment briefing, you'll be given a deadline to capture the thief that stole the artifact using clues dealing with your knowledge of geography. \n\nThe game is an updated version of the original Where in the World is Carmen Sandiego?, featuring enhanced graphics, sound effects, and additional control schemes, such as joystick support for computer platforms."
+data-thumb="../thumbs/apple-ii/where in the world is carmen sandiego.jpg"
+data-media="../media/apple-ii/where in the world is carmen sandiego.jpg"
+data-screenshot="../screenshots/apple-ii/where in the world is carmen sandiego.jpg"
+data-logo="../logos/apple-ii/where in the world is carmen sandiego.png"
+data-fanart="../fanart/apple-ii/where in the world is carmen sandiego.jpg">
+Where in the World is Carmen Sandiego?
+</a>
+</td>
+
+<td>1985</td>
+<td>Education</td>
+<td>Brøderbund Software</td>
+<td>Brøderbund Software</td>
+
+</tr>
+
+<tr id="winnie-the-pooh-in-the-hundred-acre-wood"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/winnie the pooh in the hundred acre wood.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Winnie the Pooh in the Hundred Acre Wood"
+data-year="1986"
+data-genre="Adventure"
+data-publisher="Sierra"
+data-developer="Sierra On-Line"
+data-ra="32905"
+data-notes="Early this morning, a strong wind went through the hundred acre wood and picked up many objects and scattered them about. It is your job to locate all the objects, determine who the proper owners are, and return them. You had better hurry though, before the wind returns again! Along the way you'll meet all the familiar Winnie The Pooh characters including Eeyore, Owl, Tigger, and Piglet. The game's interface involves no typing, instead the cursor keys are used to choose from a list of actions specific to the current location or situation, pick up and drop objects, and navigate around the wood."
+data-thumb="../thumbs/apple-ii/winnie the pooh in the hundred acre wood.jpg"
+data-media="../media/apple-ii/winnie the pooh in the hundred acre wood.jpg"
+data-screenshot="../screenshots/apple-ii/winnie the pooh in the hundred acre wood.jpg"
+data-logo="../logos/apple-ii/winnie the pooh in the hundred acre wood.png"
+data-fanart="../fanart/apple-ii/winnie the pooh in the hundred acre wood.jpg">
+Winnie the Pooh in the Hundred Acre Wood
+</a>
+</td>
+
+<td>1986</td>
+<td>Adventure</td>
+<td>Sierra</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="wizard-and-the-princess"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/wizard and the princess.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wizard and the Princess"
+data-year="1980"
+data-genre="Adventure"
+data-publisher="On-Line Systems"
+data-developer="On-Line Systems"
+data-ra="32003"
+data-notes="You are a happy wanderer passing through a village in the land of Serenia when you notice a large crowd. Being a curious wanderer you saunter over to see what is going on. From the middle of the chaos you hear a bell ringing. As you get closer, you see the town cryer with a proclamation from the King of Serenia.\n\n\"HEAR YE\" \"HEAR YE\", he cries. \"His Majesty King George has just suffered a terrible loss. His fair daughter, the Princess Priscilla, has been abducted by the great and dreadful wizard. Harlin, to his castle beyond the great mountains.\"\n\nThe crowd is now hushed, waiting to hear more. The town cryer then shouts.\" His Majesty offers half his kingdom to anyone who can bring the princess back to safety..\" That is all he has to say, but it leaves you shaking. Not only are you a happy wanderer, but you love adventure as well, and half a king is a great reward. You decide to find her. But where are the great mountains? As you look around you see no mountains. Just a vast desert that seems never to end. You ask a villager where great mountains are located and he points to the north and tells you \" There are a great many dangers on the way to the great mountains, and the Wizard Harlin is very powerful and bad.\"\n\nYou thank the villager for his information and start of to the north. As you enter the desert, you check your belongings, a flask of water, a small knife, a loaf of bread and a blanket. Not much for such long journey, but it will have to do, for you have no money. And so you are on your way ...\n\nThis game was actually a prequel to one of the \n\nThis game was actually a prequel to what was arguably Sierra's most successful adventure franchises: The King's Quest series"
+data-thumb="../thumbs/apple-ii/wizard and the princess.jpg"
+data-media="../media/apple-ii/wizard and the princess.jpg"
+data-screenshot="../screenshots/apple-ii/wizard and the princess.jpg"
+data-logo="../logos/apple-ii/wizard and the princess.png"
+data-fanart="../fanart/apple-ii/wizard and the princess.jpg">
+Wizard and the Princess
+</a>
+</td>
+
+<td>1980</td>
+<td>Adventure</td>
+<td>On-Line Systems</td>
+<td>On-Line Systems</td>
+
+</tr>
+
+<tr id="word-munchers"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/word munchers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Word Munchers"
+data-year="1985"
+data-genre="Action •  Education"
+data-publisher="Minnesota Educational Computing Corporation"
+data-developer="Minnesota Educational Computing Corporation"
+data-ra="18715"
+data-notes="Word Munchers is an installment in the Munchers series focused on vowel sounds. The player moves his muncher creature on a board, the task is to eat the right words with the same vowel sound as a word shown at the top of the screen. Sometimes, unfriendly creatures called Troggles enter the playfield. They come in different types with different patterns and abilities, and running into them depletes Muncher lives, as does eating incorrect words. Occasionally, safety squares appear which offer some temporary protection. It's possible to make some adjustments to the game, such as the difficulty by using the management options"
+data-thumb="../thumbs/apple-ii/word munchers.jpg"
+data-media="../media/apple-ii/word munchers.jpg"
+data-screenshot="../screenshots/apple-ii/word munchers.jpg"
+data-logo="../logos/apple-ii/word munchers.png"
+data-fanart="../fanart/apple-ii/word munchers.jpg">
+Word Munchers
+</a>
+</td>
+
+<td>1985</td>
+<td>Action •  Education</td>
+<td>Minnesota Educational Computing Corporation</td>
+<td>Minnesota Educational Computing Corporation</td>
+
+</tr>
+
+<tr id="zork-i-the-great-underground-empire"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/zork i the great underground empire.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Zork I: The Great Underground Empire"
+data-year="1982"
+data-genre="Adventure"
+data-publisher="Infocom"
+data-developer="Infocom"
+data-ra="13924"
+data-notes="The game takes place in the Zork calendar year 948 GUE (although the passage of time is not notable in gameplay). The player steps into the deliberately vague role of an \"adventurer\". The game begins near a white house in a small, self-contained area. Although the player is given little instruction, the house provides an obvious point of interest.\n\nWhen the player enters the house, it yields a number of intriguing objects, including a brass, battery-powered lantern, an empty trophy case, and an Elvish sword of great antiquity. Beneath the rug a trap door leads down into a dark cellar, which is revealed to be one of several entrances to a vast subterranean land known as the Great Underground Empire. The player soon encounters dangerous creatures, including deadly grues who only prey on their victims in the dark, an axe-wielding troll, a giant cyclops who cowers at the mention of Odysseus, and a nimble-fingered thief who makes mapping the maze difficult by removing or scattering any items that the player might drop to leave a trail.\n\nThe ultimate goal of Zork I is to collect the Twenty Treasures of Zork and install them in the trophy case. Finding the treasures requires solving a variety of puzzles such as the navigation of two complex mazes and some intricate manipulations at Flood Control Dam #3."
+data-thumb="../thumbs/apple-ii/zork i the great underground empire.jpg"
+data-media="../media/apple-ii/zork i the great underground empire.jpg"
+data-screenshot="../screenshots/apple-ii/zork i the great underground empire.jpg"
+data-logo="../logos/apple-ii/zork i the great underground empire.png"
+data-fanart="../fanart/apple-ii/zork i the great underground empire.jpg">
+Zork I: The Great Underground Empire
+</a>
+</td>
+
+<td>1982</td>
+<td>Adventure</td>
+<td>Infocom</td>
+<td>Infocom</td>
+
+</tr>
+
+<tr id="zork-ii"><td>
+<img
+class="thumb"
+src="../thumbs/apple-ii/zork ii.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Zork II"
+data-year="1986"
+data-genre="Adventure"
+data-publisher="Infocom"
+data-developer="Infocom"
+data-ra="18584"
+data-notes="The player begins in the Barrow from Zork I armed only with the trusty brass lantern and the elvish sword of great antiquity from before. The objective of the game is not initially clear.\n\nThe Wizard of Frobozz is soon introduced. The wizard was once a respected enchanter, but when his powers began to fade he was exiled by Lord Dimwit Flathead. Now bordering on senility, the wizard is still a force to be reckoned with. The player's goal in the wizard's realm is to avoid his capricious tricks and to learn to control his magic.\n\nZork II has two notoriously difficult puzzles: the Bank puzzle, in which the player must figure out how to walk through several bank walls in order to figure out how to get out of bank with the loot from the vault without tripping the security alarm; and the Oddly-Angled Room, a diamond-shaped room filed with panes of glass representing baseball bases. The player must figure out how to traverse the diamond in order to open a door that will lead to the game's finale.\n\nLike its predecessor, Zork II is essentially a treasure hunt. Unlike the previous game, the ten treasures are tied together by a crude plot. Finding the treasures does not end the game, nor are all the treasures needed to finish the game. Instead, the adventurer must figure out a way to use the treasures in order to reach the game's finale."
+data-thumb="../thumbs/apple-ii/zork ii.jpg"
+data-media="../media/apple-ii/zork ii.jpg"
+data-screenshot="../screenshots/apple-ii/zork ii.jpg"
+data-logo="../logos/apple-ii/zork ii.png"
+data-fanart="../fanart/apple-ii/zork ii.jpg">
+Zork II
+</a>
+</td>
+
+<td>1986</td>
+<td>Adventure</td>
+<td>Infocom</td>
+<td>Infocom</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

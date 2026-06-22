@@ -1,0 +1,1706 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>MS-DOS</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/ms-dos.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/ms-dos.png"
+onerror="this.style.display='none';">
+
+<h1>MS-DOS</h1>
+
+
+
+<p>32 games</p>
+
+</div>
+
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="alone-in-the-dark"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/alone in the dark.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Alone in the Dark"
+data-year="1992"
+data-genre="Action •  Adventure •  Horror"
+data-publisher="Infogrames Europe"
+data-developer="Infogrames Europe"
+data-ra=""
+data-notes="Jeremy Hartwood has committed suicide in his Louisiana mansion, Derceto. You take the role of either Edward Carnby, a private investigator, or Emily Hartwood, Jeremy's niece, and investigate the suspicious death. The three-floor mansion is reputed to be haunted by its eccentric past owner. Very quickly, you realise that it is. Warped rats, zombies and giant worms are among the foes who are after you, and you must somehow escape. \n\nAlone in the Dark is an action-adventure survival horror game. The action is displayed from a number of fixed viewpoints. The backgrounds are 2D painted images, while the player character, all items and monsters are rendered as 3D models. \n\nTo escape the mansion, you'll have to solve a number of puzzles. They usually involve finding an item and using it in a proper place. Apart from items necessary for the puzzles, you can also find books and documents that can be read, healing items which can be consumed to restore hit points, and weapons. \n\nWeapons come in handy, since Derceto is full of various monsters. Some monsters can be killed with weapons, but others are either impossible to kill or require a bit of thinking to take down. Note also that you have limited amounts of ammunition, so you have to use firearms carefully."
+data-thumb="../thumbs/ms-dos/alone in the dark.jpg"
+data-media="../media/ms-dos/alone in the dark.jpg"
+data-screenshot="../screenshots/ms-dos/alone in the dark.jpg"
+data-logo="../logos/ms-dos/alone in the dark.png"
+data-fanart="../fanart/ms-dos/alone in the dark.jpg">
+Alone in the Dark
+</a>
+</td>
+
+<td>1992</td>
+<td>Action •  Adventure •  Horror</td>
+<td>Infogrames Europe</td>
+<td>Infogrames Europe</td>
+
+</tr>
+
+<tr id="alone-in-the-dark-2"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/alone in the dark 2.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Alone in the Dark 2"
+data-year="1993"
+data-genre="Action •  Adventure •  Horror"
+data-publisher="I\u2022Motion"
+data-developer="Infogrames Europe"
+data-ra=""
+data-notes="In Alone in the Dark 2, you take the role of detective Edward Carnby, one of the two main characters in the original Alone in the Dark. Carnby is now called upon to investigate a bootlegger named One Eyed Jack after an old detective college name Stryker attributes Jack to the kidnapping of young Grace Saunders. Stryker attempts to infiltrate Jack's dilapidated mansion of Hell's Kitchen and rescue the girl, only to disappear himself. That's where Carnby comes in.\n\nCarnby soon learns that Jack and his gangsters are really 15th century pirates who gained immortality after Jack joined forces with Elizabeth Jarret, a Voodoo witch. However the dark magic which keeps them immortal also requires Jack and his crew to regularly make human sacrifices (which explains Grace's kidnapping).\n\nNow Carnby must battle his way through Hell's Kitchen and Jack's army of tommy-gun wielding gangsters, searching for a way to break the spell and make them stay dead."
+data-thumb="../thumbs/ms-dos/alone in the dark 2.jpg"
+data-media="../media/ms-dos/alone in the dark 2.jpg"
+data-screenshot="../screenshots/ms-dos/alone in the dark 2.jpg"
+data-logo="../logos/ms-dos/alone in the dark 2.png"
+data-fanart="../fanart/ms-dos/alone in the dark 2.jpg">
+Alone in the Dark 2
+</a>
+</td>
+
+<td>1993</td>
+<td>Action •  Adventure •  Horror</td>
+<td>I•Motion</td>
+<td>Infogrames Europe</td>
+
+</tr>
+
+<tr id="alone-in-the-dark-3"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/alone in the dark 3.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Alone in the Dark 3"
+data-year="1994"
+data-genre="Action •  Adventure •  Horror"
+data-publisher="Infogrames Europe"
+data-developer="Infogrames Europe"
+data-ra=""
+data-notes="It's 1926 and after Edward Carnby's success in his previous two investigations, a journalist has nicknamed him the 'Supernatural Private Eye'. This time, he is called to investigate the disappearance of a film crew at a two-bit ghost town known by the name of Slaughter Gulch located in the Mojave Desert in California. Among the disappeared crew is Emily Hartwood, Jeremy Hartwood's niece from the original. Edward soon discovers that a curse has gripped the town, and an evil cowboy from the Badlands named Jed Stone is the villain who is responsible for the crew's disappearance. Lurking around town are many trigger-happy sharpshooters, deranged prospectors, and bloodthirsty lost souls whom Edward must ward off with both his strength and his wit."
+data-thumb="../thumbs/ms-dos/alone in the dark 3.jpg"
+data-media="../media/ms-dos/alone in the dark 3.jpg"
+data-screenshot="../screenshots/ms-dos/alone in the dark 3.jpg"
+data-logo="../logos/ms-dos/alone in the dark 3.png"
+data-fanart="../fanart/ms-dos/alone in the dark 3.jpg">
+Alone in the Dark 3
+</a>
+</td>
+
+<td>1994</td>
+<td>Action •  Adventure •  Horror</td>
+<td>Infogrames Europe</td>
+<td>Infogrames Europe</td>
+
+</tr>
+
+<tr id="civilization"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/civilization.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Civilization"
+data-year="1991"
+data-genre="Strategy"
+data-publisher="MicroProse Software"
+data-developer="MPS Labs"
+data-ra=""
+data-notes="Civilization has the widest scope of any strategy game of its time. You are a leader of a nation. You begin in the Stone Age, and complete the game in the XXIth century (unless your civilization gets destroyed earlier). Your eventual goal is to become the dominant civilization in the world, either by wiping out everybody else, or being the first to get a space ship to Alpha Centauri.\n\nAs the nation's leader, you have many responsibilities. You have to build cities, and then micromanage them, constructing various buildings. Most of people in your cities will be working on the neighbouring lands to get food (without it, your city won't survive or grow), production (used to build military units and buildings) and trade (which can be exchanged for money, science (see below) or luxuries that make people happy. You decide how much trade you want to invest into each of these areas.) You have to make sure that your people are in a good mood; if they get too unhappy, the city will collapse into disorder, and won't produce anything until you fix the situation. \n\nIf you're ambitious, you can build Wonders of the World - epic constructions, such as the Pyramids or the Hoover Dam. Each Wonder is an unique thing, and only one of each can exist in the world. They give you a lot of benefits if you complete them, but they take a long time to build, and many of them will eventually stop working. \n\nThere are other nations in the world, and there are also barbarians, so you'll have to invest into the military to protect yourself and to attack. Sure, you can sign peace treaties with other nations, and even exchange scientific knowledge with them (although sometimes they'll demand tribute from you), but eventually you'll probably have to fight. You control each of your military units on the world map, attacking your opponents' units and cities (possibly taking over them). \n\nNot all units are for combat though. Settlers are used to build cities, create roads (for easier travel of your units) and improve the land around cities, increasing production. Diplomats can be sent to foreign cities to negotiate with the other nations or create embassies, but they can also bribe enemy units to join you and conduct espionage and sabotage in the enemies' cities. Caravans can be sent to faraway cities to increase trade in their home city, and they can also help in building Wonders of the World. \n\nScientific progress is an important part of the game. The more science your cities produce, the faster you research new technologies. Initially, you'll be finding out about the wonders of Alphabet or Bronze Working, but late in the game you'll be researching Computers and Robotics. Most technologies give you some new units, buildings and other things, although some have more interesting effects - for example, after inventing the Automobile, you'll find out that your citizens started producing pollution. Pollution is a bad thing; if there's too much of it, global warming may occur. \n\nHow your cities prosper depends partially on the type of government that your nation has. Initially you're living in Despotism, but this can stunt growth of your civilization, so it's a good idea to switch to something else - Monarchy, Republic, Democracy or Communism."
+data-thumb="../thumbs/ms-dos/civilization.jpg"
+data-media="../media/ms-dos/civilization.jpg"
+data-screenshot="../screenshots/ms-dos/civilization.jpg"
+data-logo="../logos/ms-dos/civilization.png"
+data-fanart="../fanart/ms-dos/civilization.jpg">
+Civilization
+</a>
+</td>
+
+<td>1991</td>
+<td>Strategy</td>
+<td>MicroProse Software</td>
+<td>MPS Labs</td>
+
+</tr>
+
+<tr id="coaster"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/coaster.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Coaster"
+data-year="1993"
+data-genre="Construction and Management Simulation"
+data-publisher="Walt Disney Computer Software"
+data-developer="Code To Go"
+data-ra=""
+data-notes="The goal of \"Coaster\" is quite simply to build a roller coaster! After designing your coaster you have it ridden by a panel of experts which assign it a score. You can also ride it yourself."
+data-thumb="../thumbs/ms-dos/coaster.jpg"
+data-media="../media/ms-dos/coaster.jpg"
+data-screenshot="../screenshots/ms-dos/coaster.jpg"
+data-logo="../logos/ms-dos/coaster.png"
+data-fanart="../fanart/ms-dos/coaster.jpg">
+Coaster
+</a>
+</td>
+
+<td>1993</td>
+<td>Construction and Management Simulation</td>
+<td>Walt Disney Computer Software</td>
+<td>Code To Go</td>
+
+</tr>
+
+<tr id="dark-seed"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/dark seed.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Dark Seed"
+data-year="1992"
+data-genre="Adventure"
+data-publisher="Cyberdreams"
+data-developer="Cyberdreams"
+data-ra=""
+data-notes="Dark Seed is an adventure game which capitalizes on the drawings of famous horror designer H. R. Giger as a source of background artwork and inspiration.\n\nYou play Mike Dawson, an ad company manager who, in pursuit of his goal in life to become a writer, purchases a solitary mansion in a small town called Woodland Hills. Although the low cost and hush-hush transactions when purchasing the house do raise your suspicion, the solitary environment and sheer beauty of the house crush common sense and you decide to buy the house. That's when trouble begin. Upon reaching the house, you suddenly feel tired. You find a bed and fall asleep...\n\n... and wake up from a terrible dream, only to find out that your life has just become a worse nightmare: an unknown source has implanted a seed of darkness in your mind, and you only have three days to find a way to stop it."
+data-thumb="../thumbs/ms-dos/dark seed.jpg"
+data-media="../media/ms-dos/dark seed.jpg"
+data-screenshot="../screenshots/ms-dos/dark seed.jpg"
+data-logo="../logos/ms-dos/dark seed.png"
+data-fanart="../fanart/ms-dos/dark seed.jpg">
+Dark Seed
+</a>
+</td>
+
+<td>1992</td>
+<td>Adventure</td>
+<td>Cyberdreams</td>
+<td>Cyberdreams</td>
+
+</tr>
+
+<tr id="doom"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/doom.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="DOOM"
+data-year="1993"
+data-genre="Shooter"
+data-publisher="GT Interactive Software"
+data-developer="id Software"
+data-ra=""
+data-notes="The Union Aerospace Corporation has been experimenting with teleportation technology on Mars' moons Phobos and Deimos. After early successes, something goes wrong. It seems the scientists have opened a gateway straight to Hell. Phobos base is overrun with demonic creatures, and the whole of Deimos simply vanishes. A squad of marines is sent to Phobos, but all except one are quickly slaughtered. It falls to the surviving marine to grab some guns and strike back at the demons.\n\nid Software's follow-up to their genre-defining Wolfenstein 3D, DOOM is another first-person 3D shooter: full-on action seen from the space marine's perspective. Like Wolfenstein, the game consists of distinct episodes, playable in any order. The first episode, Knee-Deep in the Dead, takes place in the Phobos base and is freely available as shareware. The full game continues on Deimos in The Shores of Hell and culminates in Inferno, the final episode, which takes place in Hell itself (the Sega 32x version lacks this episode).\n\nThe basic objective in each level is simply to reach the exit. Since dozens of enemies stand in the way, the only way to get there is through killing them. Switches and buttons must be pressed to advance to certain points, and often color-coded locked doors will block the way - matching keycards or skull keys must be found to pass.\n\nThe game's engine technology is more advanced than Wolfenstein's, and thus the levels are more varied and complex. The engine simulates different heights (stairs and lifts appear frequently) and different lighting conditions (some rooms are pitch black, others only barely illuminated). There are outdoor areas, pools of radioactive waste that hurt the player, ceilings that come down and crush him, and unlike Wolfenstein's orthogonally aligned corridors, the walls in DOOM can be in any angle to each other. An automap helps in navigating the levels.\n\nStylistically, the levels begin with a futuristic theme in the military base on Phobos and gradually change to a hellish environment, complete with satanic symbols (pentagrams, upside-down-crosses and portraits of horned demons), hung-up mutilated corpses and the distorted faces of the damned.\n\nDOOM features a large weapon arsenal, with most weapons having both advantages and drawbacks. The starting weapons are the fists and a simple pistol. Also, available are a shotgun (high damage, slow reload, not good at distances), a chaingun (high firing rate, but slightly inaccurate in longer bursts) and a plasma rifle (combining a high firing rate and large damage). The rocket launcher also deals out lots of damage, but the explosion causes blast damage and must be used with care in confined areas or it might prove deadly to the player as well as the enemies. Two further weapons in the game are the chainsaw for close-quarter carnage, and the BFG9000 energy gun, that, while taking some practice to fire correctly, can destroy most enemies in a single burst. The different weapons use four different ammunition types (bullets, shells, rockets and energy cells), so collecting the right type for a certain gun is important.\n\nThe game drops some of Wolfenstein's arcade-inspired aspects, so there are no extra lives or treasures to be collected for points, but many other power-ups are still available. Medpacks heal damage, while armor protects from receiving it in the first place. Backpacks allow more ammunition to be carried, a computer map reveals the whole layout of the level on the automap (including any secret areas), light amplification visors illuminate dark areas and radiation suits allow travel over waste without taking damage. Also, available are berserk packs (which radically increase the damage inflicted by the fists) as well as short-time invisibility and invulnerability power-ups.\n\nThe enemies to be destroyed include former humans corrupted during the invasion, plus demons in all shapes and sizes: fireball-throwing imps, floating skulls, pink-skinned d"
+data-thumb="../thumbs/ms-dos/doom.jpg"
+data-media="../media/ms-dos/doom.jpg"
+data-screenshot="../screenshots/ms-dos/doom.jpg"
+data-logo="../logos/ms-dos/doom.png"
+data-fanart="../fanart/ms-dos/doom.jpg">
+DOOM
+</a>
+</td>
+
+<td>1993</td>
+<td>Shooter</td>
+<td>GT Interactive Software</td>
+<td>id Software</td>
+
+</tr>
+
+<tr id="doom-ii-x-treme"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/doom ii x treme.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Doom II X-Treme"
+data-year="1996"
+data-genre="Shooter"
+data-publisher="-"
+data-developer="Chuck Lai"
+data-ra=""
+data-notes="Known as Doom II X-Treme, Doom2X-treme, \u201cDoom 2 Extreme\u201d, or simply D2X, this mod is a 32-level total conversion for Doom II released on August 12, 1996 by Chuck Lai and the third entry in Lai's X-series (after Doom2X and Ultra Doom2X). While weapon and monster tweaks were done by him, employing an extensive DeHackEd patch and updated graphics, the 32 levels were created by others with some being edits of official id Software and TeamTNT levels. X-Treme gives a larger HP pool for both monsters and the player, while boosting weapons to a whole new level. For example, the automatic shotgun's fire rate is much faster than the default chaingun.\n\nX-Treme was followed by a sequel, Doom 2 Extreme Gold, in 1997."
+data-thumb="../thumbs/ms-dos/doom ii x treme.jpg"
+data-media="../media/ms-dos/doom ii x treme.jpg"
+data-screenshot="../screenshots/ms-dos/doom ii x treme.jpg"
+data-logo="../logos/ms-dos/doom ii x treme.png"
+data-fanart="../fanart/ms-dos/doom ii x treme.jpg">
+Doom II X-Treme
+</a>
+</td>
+
+<td>1996</td>
+<td>Shooter</td>
+<td>-</td>
+<td>Chuck Lai</td>
+
+</tr>
+
+<tr id="fallout"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/fallout.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Fallout"
+data-year="1997"
+data-genre="Role-Playing"
+data-publisher="Interplay Productions"
+data-developer="Interplay Productions"
+data-ra=""
+data-notes="A devastating nuclear war had wiped out almost the entire population of the Earth. The civilization, as we know it, has been destroyed. The Earth has become a huge wasteland populated by mutated creatures. Only small number of humans survived and they formed communities living on the surface, where they mostly scavenge what remains from the pre-war civilization. Some lucky people managed to reach safety of the Vaults, huge underground dwellings, during the war. Recently, the water purification controller chip in Vault 13 broke. Without clean water, the people of the Vault cannot survive. One person is sent to find a replacement chip and ventures outside to face a dangerous world, hoping to return within a hundred and fifty days.\n\nFallout is a role-playing game that utilizes a character development system called S.P.E.C.I.A.L., an acronym formed from the first letters of the game's basic character attributes: Strength, Perception, Endurance, Charisma, Intelligence, Agility and Luck. In addition to having these attributes, the protagonist can also learn and improve skills, as well as acquire traits and perks. \n\nSkill points are awarded when the player character levels up; traits are assigned during character creation, while perks are obtained every three character levels. There are eighteen different skills in the game, divided into combat, active, and passive categories. Combat skills include weapon proficiencies (e.g. small and big guns, melee, etc.); active skills are used for support or interacting with the environment (doctor, lockpick, science, steal, and others); passive skills are mainly dedicated to social interaction (barter, speech, gambling, and so on). Traits bestow various benefits upon the character while also imposing penalties; in contrast, perks are purely beneficial. By developing and customizing attributes, skills, traits and perks, the player is granted a considerable freedom in shaping the protagonist in his combat-related and social behavior. \n\nThe game has an open world which can be freely explored from the onset. Only a few quests are required to complete in order to advance the main plot; a vast amount of side quests is available. Thanks to the game's emphasis on social interaction, many problems can be solved in a non-violent way; in fact, it is possible to complete the game without engaging in battles at all, running away from enemy encounters and concluding the final confrontation in a relatively peaceful fashion. Conversely, the player can opt for a destructive path, killing everyone in sight. A Karma system is used to track the player's moral decisions during the game.\n\nCombat in Fallout is turn-based. Participants have a limited amount of action points (AP) per turn; each action (including movement) depletes a certain number of AP, eventually ending a character's turn. The player can target specific body parts of enemies during battles. Characters may join the protagonist, traveling together and participating in combat as a party. Though the player may assign general commands to the companions, their actions are controlled by the AI, and they cannot be customized."
+data-thumb="../thumbs/ms-dos/fallout.jpg"
+data-media="../media/ms-dos/fallout.jpg"
+data-screenshot="../screenshots/ms-dos/fallout.jpg"
+data-logo="../logos/ms-dos/fallout.png"
+data-fanart="../fanart/ms-dos/fallout.jpg">
+Fallout
+</a>
+</td>
+
+<td>1997</td>
+<td>Role-Playing</td>
+<td>Interplay Productions</td>
+<td>Interplay Productions</td>
+
+</tr>
+
+<tr id="gabriel-knight-2-the-beast-within"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/gabriel knight 2 the beast within.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Gabriel Knight 2: The Beast Within"
+data-year="1995"
+data-genre="Adventure"
+data-publisher="Sierra On-Line"
+data-developer="Sierra On-Line"
+data-ra=""
+data-notes="The Beast Within: A Gabriel Knight Mystery is a direct sequel to Gabriel Knight: Sins of the Fathers, the first in the supernatural mystery adventure series telling the story of a bookstore owner and writer Gabriel Knight, the last offspring of generations of Schattenjaegers (shadow hunters), whose task is to fight the evil forces that abound in the world.\n\nAfter leaving New Orleans, Gabriel moves to the Ritter Castle in Bavaria, Germany, his family heritage. One day, a group of peasants approach the castle, and the elder tells Gabriel about a terrible death of a little girl, who was killed by a vicious wolf. Suspecting the wolf could be a supernatural creature, the peasant asks the Schattenjaeger to purge the evil. The investigation brings Gabriel and his assistant Grace Nakimura to the mysterious Hunter Society and to Bavaria's dark past.\n\nThe game utilizes a cast of live actors and full-motion video technology: the actors are filmed over photorealistic images of Munich and its surroundings, and nearly every interaction with the environment leads to a FMV sequence. Despite its visual style, The Beast Within is not an interactive movie, but a full-fledged adventure game with many dialogues, detective work to do, and puzzles to solve. Unlike the first game, it is entirely controlled through point-and-click actions - all the icons have been replaced by a single cursor. Both Gabriel and Grace are available as playable characters during different chapters of the story."
+data-thumb="../thumbs/ms-dos/gabriel knight 2 the beast within.jpg"
+data-media="../media/ms-dos/gabriel knight 2 the beast within.jpg"
+data-screenshot="../screenshots/ms-dos/gabriel knight 2 the beast within.jpg"
+data-logo="../logos/ms-dos/gabriel knight 2 the beast within.png"
+data-fanart="../fanart/ms-dos/gabriel knight 2 the beast within.jpg">
+Gabriel Knight 2: The Beast Within
+</a>
+</td>
+
+<td>1995</td>
+<td>Adventure</td>
+<td>Sierra On-Line</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="gabriel-knight-sins-of-the-fathers"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/gabriel knight sins of the fathers.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Gabriel Knight: Sins of the Fathers"
+data-year="1993"
+data-genre="Adventure •  Puzzle"
+data-publisher="Sierra On-Line"
+data-developer="Sierra On-Line"
+data-ra=""
+data-notes="Gabriel Knight is a wise-cracking bookstore owner and would-be author. He is the last in a long line of Shadow Hunters, those fated to fight supernatural forces of evil. Tormented by terrifying nightmares, he must spend every waking moment scouring the side streets and back alleys of New Orleans for the key to his dark past. One day, a blood-chilling murder shocks the inhabitants of the city. The police detective assigned to investigate the crime is Gabriel's friend. In the beginning Gabriel collects evidence in hope of using the material for his new novel; but soon he finds himself personally involved in the investigation, and plunges deeper into the world of secret societies and murderous cults.\n\nGabriel Knight: Sins of the Fathers is a third-person puzzle-solving adventure game. Created by Jane Jensen, the game differs from Sierra's Quest games (e.g. Space Quest) by having a realistic setting and focusing (despite its supernatural elements and humor) on mature themes and detective work. In this way it is more similar to the company's earlier Laura Bow games. \n\nThe game's icon-based interface is the same as in Sierra's previous titles, with verb commands that allow interaction with the game world and its inhabitants. Though the game still has plenty of inventory-based puzzles characteristic for classic adventure, its gameplay is heavily inclined towards dialogue. Typically, Gabriel will have to interrogate other characters, choosing conversation topics and thus gradually finding clues and advancing towards the mystery's solution.\n\nThe game's locations are done in hand-painted style. The CD version of the game adds full voice-overs to the dialogues, as well as narrator's voice to text descriptions."
+data-thumb="../thumbs/ms-dos/gabriel knight sins of the fathers.jpg"
+data-media="../media/ms-dos/gabriel knight sins of the fathers.jpg"
+data-screenshot="../screenshots/ms-dos/gabriel knight sins of the fathers.jpg"
+data-logo="../logos/ms-dos/gabriel knight sins of the fathers.png"
+data-fanart="../fanart/ms-dos/gabriel knight sins of the fathers.jpg">
+Gabriel Knight: Sins of the Fathers
+</a>
+</td>
+
+<td>1993</td>
+<td>Adventure •  Puzzle</td>
+<td>Sierra On-Line</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="i-have-no-mouth,-and-i-must-scream"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/i have no mouth and i must scream.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="I Have No Mouth, and I Must Scream"
+data-year="1995"
+data-genre="Adventure •  Horror"
+data-publisher="Acclaim Entertainment"
+data-developer="The Dreamers Guild"
+data-ra=""
+data-notes="I Have No Mouth, and I Must Scream is based on the short story of the same name by Harlan Ellison. After the Cold War, the computers of the USA, Russia and China take over the world and wipe out almost the entire human race. The Allied Mastercomputer (called AM) holds the last five humans as prisoners to torture them. Any of them has to face his or her past in a virtual adventure AM has designed for them. There they encounter their fears and weaknesses.\n\nThe player can choose which of the protagonists he wants to be but in fact he has to complete all of the six stories in order to solve the game. There are different ways of completing the game depending on the humanity the player shows.\n\nThe voice acting features Harlan Ellison as AM."
+data-thumb="../thumbs/ms-dos/i have no mouth and i must scream.jpg"
+data-media="../media/ms-dos/i have no mouth and i must scream.jpg"
+data-screenshot="../screenshots/ms-dos/i have no mouth and i must scream.jpg"
+data-logo="../logos/ms-dos/i have no mouth and i must scream.png"
+data-fanart="../fanart/ms-dos/i have no mouth and i must scream.jpg">
+I Have No Mouth, and I Must Scream
+</a>
+</td>
+
+<td>1995</td>
+<td>Adventure •  Horror</td>
+<td>Acclaim Entertainment</td>
+<td>The Dreamers Guild</td>
+
+</tr>
+
+<tr id="jack-in-the-dark"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/jack in the dark.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Jack in the Dark"
+data-year="1993"
+data-genre="Adventure"
+data-publisher="Interplay Entertainment"
+data-developer="Infogrames Europe"
+data-ra=""
+data-notes="Jack in the Dark is a spin-off game made during Alone in the Dark 2's development. It was used as a promotional game, distributed at Christmas 1993. The game was on a single floppy disk in a golden wrap featuring a Jack-in-the-box illustration on top. Later CD versions of both Alone in the Dark and Alone in the Dark 2 came packaged with Jack in the Dark.\n\nIt is Halloween, and Grace Saunders is out for tricks or treats, when she enters a small toy store and gets locked in. The Jack-in-the-Box laughs, the toys play and walk by themselves and hold a dark secret. Grace must discover what secret is that and figure out a way to leave this somewhat eccentric toy store, governed by a somewhat psychopathic Jack-in-the-Box."
+data-thumb="../thumbs/ms-dos/jack in the dark.jpg"
+data-media="../media/ms-dos/jack in the dark.jpg"
+data-screenshot="../screenshots/ms-dos/jack in the dark.jpg"
+data-logo="../logos/ms-dos/jack in the dark.png"
+data-fanart="../fanart/ms-dos/jack in the dark.jpg">
+Jack in the Dark
+</a>
+</td>
+
+<td>1993</td>
+<td>Adventure</td>
+<td>Interplay Entertainment</td>
+<td>Infogrames Europe</td>
+
+</tr>
+
+<tr id="monkey-island-2-lechucks-revenge"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/monkey island 2 lechuck s revenge.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Monkey Island 2: LeChuck's Revenge"
+data-year="1991"
+data-genre="Adventure"
+data-publisher="Lucasfilm Games"
+data-developer="Lucasfilm Games"
+data-ra=""
+data-notes="Guybrush Threepwood, the mighty pirate who can hold his breath for ten minutes, could have lived quietly and happily with his sweetheart Elaine, the governor of Melee Island. But the restless pirate spirit won't let Guybrush in peace. Things don't go very well with Elaine, and Guybrush (now with a beard) embarks on a new adventure: searching for the legendary treasure of Big Whoop. However, the evil ghost pirate LeChuck hasn't left the stage yet. His subordinates are trying to bring him back from the dead one more time. Will Guybrush be able to defeat his archenemy again?\n\nMonkey Island 2: LeChuck's Revenge is a puzzle-solving adventure game and a sequel to The Secret of Monkey Island. It utilizes the same command-based SCUMM interface (the player uses verb commands on highlighted objects) and branching dialogue system (choosing between several different responses during conversations) that were used in its predecessor. The game features hand-painted graphics, and is the first to utilize LucasArts' iMUSE system, which synchronizes music with visual action on the screen by providing smooth transition between themes.\n\nThe events of the game take place on a new set of islands; a part of the game allows the player to explore several islands simultaneously. Uncommonly for adventure games, LeChuck's Revenge features two difficulty levels. The easier one is dubbed Monkey Island 2 Lite; it bypasses or simplifies some of the harder puzzles."
+data-thumb="../thumbs/ms-dos/monkey island 2 lechuck s revenge.jpg"
+data-media="../media/ms-dos/monkey island 2 lechuck s revenge.jpg"
+data-screenshot="../screenshots/ms-dos/monkey island 2 lechuck s revenge.jpg"
+data-logo="../logos/ms-dos/monkey island 2 lechuck s revenge.png"
+data-fanart="../fanart/ms-dos/monkey island 2 lechuck s revenge.jpg">
+Monkey Island 2: LeChuck's Revenge
+</a>
+</td>
+
+<td>1991</td>
+<td>Adventure</td>
+<td>Lucasfilm Games</td>
+<td>Lucasfilm Games</td>
+
+</tr>
+
+<tr id="nascar-racing"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/nascar racing.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="NASCAR Racing"
+data-year="1994"
+data-genre="Racing"
+data-publisher="Sierra On-Line"
+data-developer="Papyrus Design Group"
+data-ra=""
+data-notes="In Papyrus' third racing game, the focus is moved from open-wheeled cars (IndyCar Racing) to closed-cockpit Nascar stock cars. 640x480 is the highest resolution on offer, on the CD-ROM version.\n\nNascar Racing is a detailed simulation with realistic car models, accurate controls and room for a distinct racing style. Nine tracks are featured, the Watkins Glen road course alongside oval racing. You have full control over the car's set up and paint job.\n\nTo reach a wide audience, various driving aids are available, such as auto-shifting and auto-braking. Races can be fine-tuned with the amount of laps.\n\nOne of the notable features is drafting, by which you can position your car just inches off the rear of competitors in front of you. When in this aerodynamically optimal position, you gain acceleration, conserve fuel and place less stress on the mechanical parts. By timing right, you can also make a quick pass."
+data-thumb="../thumbs/ms-dos/nascar racing.jpg"
+data-media="../media/ms-dos/nascar racing.jpg"
+data-screenshot="../screenshots/ms-dos/nascar racing.jpg"
+data-logo="../logos/ms-dos/nascar racing.png"
+data-fanart="../fanart/ms-dos/nascar racing.jpg">
+NASCAR Racing
+</a>
+</td>
+
+<td>1994</td>
+<td>Racing</td>
+<td>Sierra On-Line</td>
+<td>Papyrus Design Group</td>
+
+</tr>
+
+<tr id="phantasmagoria-a-puzzle-of-flesh"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/phantasmagoria a puzzle of flesh.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Phantasmagoria: A Puzzle of Flesh"
+data-year="1996"
+data-genre="Adventure •  Horror"
+data-publisher="Sierra On-Line"
+data-developer="Sierra On-Line"
+data-ra=""
+data-notes="Curtis Craig is a thirty-year-old man whose distorted childhood is filled with horrors. His father was involved in an illegal, top-secret experiment for a company called WynTech Industries. Nearly nothing is known about the true nature of this experiment; but something in it affected the sanity of Curtis' mother, eventually driving her to suicide. Curtis' father was later shot, leaving the poor little boy with serious behavioural disturbances, and eventually in therapy.\n\nNow, a year after having been released from the mental institution, Curtis is employed at WynTech Industries, whose manager, Paul Warner, has seemingly taken it upon himself to take care of Curtis. He tries to find the cause of his psychotic episodes and the mysterious murders that break out all around him, all the while discovering more and more about his past life and his father's fate.\n\nPhantasmagoria: A Puzzle of Flesh is not an actual sequel to the original Phantasmagoria, but rather a follow-up that has similar themes and visual concept. The game is more heavy on puzzles and traditional adventure gameplay than its predecessor. The gameplay involves standard activities found in adventure games, including extended conversations with the characters featuring selectable dialogue topics, collecting and manipulating inventory items with the environment, etc. It is possible (and often necessary) to call characters on the phone, as well as check and answer e-mails accessed by Curtis' computer at his workplace.\n\nLike its predecessor, the game has a simple point-and-click interface and employs video sequences with live actors as cutscenes. Short movies are usually shown after each action performed by the protagonist."
+data-thumb="../thumbs/ms-dos/phantasmagoria a puzzle of flesh.jpg"
+data-media="../media/ms-dos/phantasmagoria a puzzle of flesh.jpg"
+data-screenshot="../screenshots/ms-dos/phantasmagoria a puzzle of flesh.jpg"
+data-logo="../logos/ms-dos/phantasmagoria a puzzle of flesh.png"
+data-fanart="../fanart/ms-dos/phantasmagoria a puzzle of flesh.jpg">
+Phantasmagoria: A Puzzle of Flesh
+</a>
+</td>
+
+<td>1996</td>
+<td>Adventure •  Horror</td>
+<td>Sierra On-Line</td>
+<td>Sierra On-Line</td>
+
+</tr>
+
+<tr id="prince-of-persia"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/prince of persia.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Prince of Persia"
+data-year="1990"
+data-genre="Action •  Platform"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Br\u00f8derbund Software"
+data-ra=""
+data-notes="While the Sultan of Persia is fighting a war in a foreign country, his Grand Vizier Jaffar orchestrates a coup d'\u00e9tat. His way to the throne lies through the Sultan's lovely daughter. Jaffar kidnaps her and threatens to kill her if she refuses to marry him. Meanwhile, the man the Princess loves is thrown into the dungeon. He has only one hour to escape from his prison, defeat the guards on his way, and stop Jaffar before the terrible marriage takes place.\n\nPrince of Persia is a 2D platformer that is commonly regarded as a progenitor of the cinematic platform genre. Rather than following the more common jump-and-run mechanics, it focuses on careful advancement through fairly complex levels, emphasizing the protagonist's vulnerability and survival aspect. Rotoscoping technique is used to give more realism to the animation of the characters' movements.\n\nThe protagonist must avoid deadly traps, solve some simple jumping and environmental puzzles (such as stepping on pressure plates to raise portcullis), and engage in sword fights with the guards. The player character has an infinite amount of lives, but has to restart at the beginning of a level each time he dies, and must complete the game within an hour. The hero starts with three units of health, which can be replenished with small health potions or permanently increased with large jars."
+data-thumb="../thumbs/ms-dos/prince of persia.jpg"
+data-media="../media/ms-dos/prince of persia.jpg"
+data-screenshot="../screenshots/ms-dos/prince of persia.jpg"
+data-logo="../logos/ms-dos/prince of persia.png"
+data-fanart="../fanart/ms-dos/prince of persia.jpg">
+Prince of Persia
+</a>
+</td>
+
+<td>1990</td>
+<td>Action •  Platform</td>
+<td>Brøderbund Software</td>
+<td>Brøderbund Software</td>
+
+</tr>
+
+<tr id="quake"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/quake.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Quake"
+data-year="1996"
+data-genre="Shooter"
+data-publisher="id Software"
+data-developer="id Software"
+data-ra=""
+data-notes="From the creators of DOOM and DOOM II comes the most intense, technologically advanced 3-D experience ever captured on CD-ROM. Features free fluid motion, ambient sound and lighting, and unmatched multi-player capabilities (play with up to 15 others via internet, modem, LAN or serial connection). Rage through 32 single player levels and 6 deathmatch levels of sheer terror and fully immersive sound and lighting. Arm yourself against the cannibalistic Ogre, fiendish Vore and indestructible Shambler using lethal nails, fierce Thunderbolts and abominable Rocket and Grenade Launchers."
+data-thumb="../thumbs/ms-dos/quake.jpg"
+data-media="../media/ms-dos/quake.jpg"
+data-screenshot="../screenshots/ms-dos/quake.jpg"
+data-logo="../logos/ms-dos/quake.png"
+data-fanart="../fanart/ms-dos/quake.jpg">
+Quake
+</a>
+</td>
+
+<td>1996</td>
+<td>Shooter</td>
+<td>id Software</td>
+<td>id Software</td>
+
+</tr>
+
+<tr id="red-storm-rising"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/red storm rising.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Red Storm Rising"
+data-year="1989"
+data-genre="Strategy •  Vehicle Simulation"
+data-publisher="MicroProse Software"
+data-developer="MicroProse Software"
+data-ra=""
+data-notes="The Soviet Union, under severe pressure after destruction of one of their biggest oil refineries, must secure a new source of oil, and to do that, they must disable the West... which means they must invade Europe and fight NATO to a standstill... And the only way NATO can prevent that from happening is to reinforce their forces with convoys from the US and other countries. \n\nYou are in command of one of the US attack submarines. You must hold the ocean against the Soviet navy at all costs, or the land battle will go badly. Part submarine simulator, part dynamic campaign, and part WW3 simulation, Red Storm Rising is an amazing look at modern warfare."
+data-thumb="../thumbs/ms-dos/red storm rising.jpg"
+data-media="../media/ms-dos/red storm rising.jpg"
+data-screenshot="../screenshots/ms-dos/red storm rising.jpg"
+data-logo="../logos/ms-dos/red storm rising.png"
+data-fanart="../fanart/ms-dos/red storm rising.jpg">
+Red Storm Rising
+</a>
+</td>
+
+<td>1989</td>
+<td>Strategy •  Vehicle Simulation</td>
+<td>MicroProse Software</td>
+<td>MicroProse Software</td>
+
+</tr>
+
+<tr id="sherlock-holmes-consulting-detective-volume-iii"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/sherlock holmes consulting detective volume iii.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sherlock Holmes: Consulting Detective: Volume III"
+data-year="1993"
+data-genre="Adventure"
+data-publisher="ICOM Simulations"
+data-developer="ICOM Simulations"
+data-ra=""
+data-notes="In this third installment of Sherlock Holmes Consulting Detective your task is to solve three separate crimes by visiting various locations, listening to the dialogues and reading the in the package included mock London newspapers. Once you have gathered enough evidence, you have to present your case in court and answer all of the judge\u2019s questions correctly. The three cases are:\n\n* The Solicitous Solicitor\n\nThis case involves the sudden death of Melvin Tuttle, a solicitor who apparently has died of a heart attack. You are visited by Inspector Lestrade, who believes that Tuttle was murdered, poisoned to be exact.\n\n* The Banker's Final Debt\n\nThis case involves the murder of Oswald Mason at his home. Scotland Yard believes that the murder was a result of Mason disturbing a burglar, but the Treasury wants you to investigate the case as Mason was dealing with sensitive Treasury work at the time. \n\n* The Thames Murders\n\nThis case requests your assistance in solving five murder cases in which the bodies are all found on the bank of the Thames, this at first being the only thing linking the murders."
+data-thumb="../thumbs/ms-dos/sherlock holmes consulting detective volume iii.jpg"
+data-media="../media/ms-dos/sherlock holmes consulting detective volume iii.jpg"
+data-screenshot="../screenshots/ms-dos/sherlock holmes consulting detective volume iii.jpg"
+data-logo="../logos/ms-dos/sherlock holmes consulting detective volume iii.png"
+data-fanart="../fanart/ms-dos/sherlock holmes consulting detective volume iii.jpg">
+Sherlock Holmes: Consulting Detective: Volume III
+</a>
+</td>
+
+<td>1993</td>
+<td>Adventure</td>
+<td>ICOM Simulations</td>
+<td>ICOM Simulations</td>
+
+</tr>
+
+<tr id="simcity"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/simcity.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="SimCity"
+data-year="1989"
+data-genre="Construction and Management Simulation •  Strategy"
+data-publisher="Br\u00f8derbund Software"
+data-developer="Maxis Software"
+data-ra=""
+data-notes="SimCity sets you as the mayor of a new municipality, with the responsibility of building and maintaining a place where citizens can move to and work and be happy. The first task is to place essentials such as housing, transport links, schools, factories and shops. There are 50 types of these, allowing for homes of all standards and different types of businesses. Make sure to consider which sites are effective for which tasks. Some power sources pollute, others don't but are more expensive. Taxes must be raised to ensure an income, and then portions allocated to public services such as policing and roads. Earthquakes, floods and fires are all emergency situations that must be dealt to contain any damage.\n\nSuccessful mayoring will cause the small village to grow into a town, then a city and finally a metropolis. As the city's size grows so do it's needs. Commercial buildings may suddenly find that they need an airport to expand trade, or housing may find itself changing rapidly as vast amounts of people come and leave.\n\nThe game also includes 8 pre-defined time-limited scenarios, with specific challenges and targets. The environment varies in each game (especially if you have the Terrain Editor add on), and this should affect your choices."
+data-thumb="../thumbs/ms-dos/simcity.jpg"
+data-media="../media/ms-dos/simcity.jpg"
+data-screenshot="../screenshots/ms-dos/simcity.jpg"
+data-logo="../logos/ms-dos/simcity.png"
+data-fanart="../fanart/ms-dos/simcity.jpg">
+SimCity
+</a>
+</td>
+
+<td>1989</td>
+<td>Construction and Management Simulation •  Strategy</td>
+<td>Brøderbund Software</td>
+<td>Maxis Software</td>
+
+</tr>
+
+<tr id="simcity-2000"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/simcity 2000.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="SimCity 2000"
+data-year="1993"
+data-genre="Construction and Management Simulation •  Strategy"
+data-publisher="Mindscape"
+data-developer="Maxis Software"
+data-ra=""
+data-notes="SimCity 2000 is the successor to the city simulation game Sim City. You are once again the mayor, but this time you can fully customize the terrain before building your city. The graphics are isometric, whereas the original had graphics displayed in a top-down fashion.\n\nThis title adds numerous features over the original such as the ability of building \"light\" zones, subways, hospitals, colleges, zoos, and arcos which are actually cities in cities. You can now give names to places, and your city is surrounded by neighboring towns with which you can make trade. Finally, instead of the poll in the first game you now have the option of reading several newspapers to get an idea of your progress."
+data-thumb="../thumbs/ms-dos/simcity 2000.jpg"
+data-media="../media/ms-dos/simcity 2000.jpg"
+data-screenshot="../screenshots/ms-dos/simcity 2000.jpg"
+data-logo="../logos/ms-dos/simcity 2000.png"
+data-fanart="../fanart/ms-dos/simcity 2000.jpg">
+SimCity 2000
+</a>
+</td>
+
+<td>1993</td>
+<td>Construction and Management Simulation •  Strategy</td>
+<td>Mindscape</td>
+<td>Maxis Software</td>
+
+</tr>
+
+<tr id="simfarm"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/simfarm.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="SimFarm"
+data-year="1993"
+data-genre="Construction and Management Simulation"
+data-publisher="Maxis Software"
+data-developer="Leaping Lizard Software"
+data-ra=""
+data-notes="Take control and manage a virtual farm for a local town. Game-play includes planting and maintaining crops, of which there are 24 different varieties to choose from, each with their own requirements. The buying and selling of livestock, and land, whilst competing for space with the town. Additional simulation includes changing weather systems and realistic seasons, each affecting the running of your farm."
+data-thumb="../thumbs/ms-dos/simfarm.jpg"
+data-media="../media/ms-dos/simfarm.jpg"
+data-screenshot="../screenshots/ms-dos/simfarm.jpg"
+data-logo="../logos/ms-dos/simfarm.png"
+data-fanart="../fanart/ms-dos/simfarm.jpg">
+SimFarm
+</a>
+</td>
+
+<td>1993</td>
+<td>Construction and Management Simulation</td>
+<td>Maxis Software</td>
+<td>Leaping Lizard Software</td>
+
+</tr>
+
+<tr id="the-lost-files-of-sherlock-holmes-case-of-the-rose-tattoo"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/the lost files of sherlock holmes case of the rose tattoo.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Lost Files of Sherlock Holmes: Case of the Rose Tattoo"
+data-year="1996"
+data-genre="Adventure"
+data-publisher="Electronic Arts"
+data-developer="Mythos Software"
+data-ra=""
+data-notes="In October of 1889, the formula for a new and extraordinarily powerful explosive disappeared from the Ministry of Defense. Sherlock's brother Mycroft, an eccentric but influential government servant, launched an official though secret inquiry into the theft, but his effort was thwarted. Just before asking Sherlock to undertake an independent investigation of the theft, Mycroft was seriously injured in an explosion that leveled the Diogenes Club. Sherlock, believing his brother had been victimized by a random gas leak, retired disconsolate to 221B Baker St. Dr. Watson, with a little luck and much effort, managed to reanimate his friend by posing one critical question: \"What if the explosion that injured Mycroft had not been an accident?\" The answer to this query sent Holmes down a long and twisted road of discovery. Sherlock, for the first time in his career, acknowledged that his motivation was something other than a desire for justice. With single-minded ferocity he pursued, cajoled, questioned, and confronted suspects from smug Mayfair to the pitiful and dangerous East End. Gradually, through observation and deduction, he developed a picture of a huge criminal enterprise initiated by a masterful adversary. To penetrate this perilous conspiracy and frustrate its intent he solved several capital crimes. Holmes applied his customary courage, acumen, and intelligence to these daunting tasks. In so doing he quashed a potentially volatile international incident, defended the national security, protected the honor of the royal family, exonerated the innocent and delivered rough and swift punishment to the guilty. The shocking and surprising resolution of the case made it necessary to seal Watson's precious account for 100 years. That is how The Case of the Rose Tattoo became one of the Lost Files of Sherlock Holmes.\n\nThe Case of the Rose Tattoo is part of the Lost Files of Sherlock Holmes kept by Dr. John H. Watson and the sequel to The Case of the Serrated Scalpel. Accompany Holmes as he sets foot in 50 locations and interacts with 90 characters. All the characters are costume and speech specific to Victorian London."
+data-thumb="../thumbs/ms-dos/the lost files of sherlock holmes case of the rose tattoo.jpg"
+data-media="../media/ms-dos/the lost files of sherlock holmes case of the rose tattoo.jpg"
+data-screenshot="../screenshots/ms-dos/the lost files of sherlock holmes case of the rose tattoo.jpg"
+data-logo="../logos/ms-dos/the lost files of sherlock holmes case of the rose tattoo.png"
+data-fanart="../fanart/ms-dos/the lost files of sherlock holmes case of the rose tattoo.jpg">
+The Lost Files of Sherlock Holmes: Case of the Rose Tattoo
+</a>
+</td>
+
+<td>1996</td>
+<td>Adventure</td>
+<td>Electronic Arts</td>
+<td>Mythos Software</td>
+
+</tr>
+
+<tr id="the-oregon-trail"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/the oregon trail.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Oregon Trail"
+data-year="1990"
+data-genre="Construction and Management Simulation •  Education"
+data-publisher="MECC"
+data-developer="MECC"
+data-ra=""
+data-notes="As a covered wagon party of pioneers, you head out west from Independence, Missouri to the Willamette River and valley in Oregon. You first must stock up on provisions, and then, while traveling, make decisions such as when to rest, how much food to eat, etc. The Oregon Trail incorporates simulation elements and planning ahead, along with discovery and adventure, as well as mini-game-like activities (hunting and floating down the Dalles River)."
+data-thumb="../thumbs/ms-dos/the oregon trail.jpg"
+data-media="../media/ms-dos/the oregon trail.jpg"
+data-screenshot="../screenshots/ms-dos/the oregon trail.jpg"
+data-logo="../logos/ms-dos/the oregon trail.png"
+data-fanart="../fanart/ms-dos/the oregon trail.jpg">
+The Oregon Trail
+</a>
+</td>
+
+<td>1990</td>
+<td>Construction and Management Simulation •  Education</td>
+<td>MECC</td>
+<td>MECC</td>
+
+</tr>
+
+<tr id="the-secret-of-monkey-island"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/the secret of monkey island.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="The Secret of Monkey Island"
+data-year="1990"
+data-genre="Adventure"
+data-publisher="Lucasfilm Games"
+data-developer="Lucasfilm Games"
+data-ra=""
+data-notes="Deep in the Caribbean lies Melee Island, ruled by the governor Elaine Marley. The cruel pirate LeChuck is deeply in love with her - so deeply that he refuses to accept his own death. As a ghost, he dwells with his undead crew somewhere near the mysterious Monkey Island. Meanwhile, a young fellow named Guybrush Threepwood is determined to become a real pirate. At the Scumm Bar he meets three pirates who tell him he has to complete three difficult tasks in order to be worthy of this title. But as Guybrush is trying to complete these tasks, he encounters the lovely governor, and this meeting changes his life forever. Risking to incur the wrath of LeChuck, Guybrush has to prove his wit is as sharp as his sword, and figure out a way to foil the ghost pirate's plans.\n\nThe Secret of Monkey Island is an adventure game that utilizes the command verb-based SCUMM interface first introduced in Maniac Mansion: the player constructs commands for Guybrush by selecting an appropriate verb and then combining it with an object or an inventory item. Objects that can be interacted with are highlighted when the player places a cursor over them. The game is the first LucasArts adventure in which it is impossible to get irrevocably stuck; like in Loom, the player character also cannot die. The branching dialogue system, where the player chooses between several available responses during conversations, allows the player to talk to characters in different ways without fearing a wrong choice, and is often used as a humorous device.\n\nThe puzzles are predominantly inventory-based; most of the problems in the game are solved by picking up items and combining them with each other or with objects (or people) in the game world. Several tasks are dialogue-based; among those is the humorous \"insult swordfighting\", which involves Guybrush learning and choosing witty insults while dueling pirates. \n\nThe CD DOS and FM Towns versions of the game have slightly updated interface (with graphically represented inventory items instead of the text-only labels in the original version), as well as CD audio music tracks."
+data-thumb="../thumbs/ms-dos/the secret of monkey island.jpg"
+data-media="../media/ms-dos/the secret of monkey island.jpg"
+data-screenshot="../screenshots/ms-dos/the secret of monkey island.jpg"
+data-logo="../logos/ms-dos/the secret of monkey island.png"
+data-fanart="../fanart/ms-dos/the secret of monkey island.jpg">
+The Secret of Monkey Island
+</a>
+</td>
+
+<td>1990</td>
+<td>Adventure</td>
+<td>Lucasfilm Games</td>
+<td>Lucasfilm Games</td>
+
+</tr>
+
+<tr id="theme-hospital"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/theme hospital.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Theme Hospital"
+data-year="1997"
+data-genre="Construction and Management Simulation •  Strategy"
+data-publisher="Electronic Arts"
+data-developer="Bullfrog Productions"
+data-ra=""
+data-notes="Turn Cures into Cash! \n\nThe world of Theme Hospital is home to dozens of goofy, fictional diseases. Some humans are afflicted with Bloaty Head, causing their noggins to triple in size; others suffer from King Complex, a psychological disorder that infects its victims with the irresistible desire to impersonate Elvis Presley. All of these sick people need help \u2013 that\u2019s where you come in.\n\nTheme Hospital tasks you with designing, maintaining, and managing a hi-tech hospital as you service hundreds of ailing patients in an attempt to turn cures into cash. You\u2019ll need to be quick on your feet in order to keep your staff happy and patients healthy. Fail, and your business will collapse. It\u2019s time to find out if you've got what it takes to balance the books and the bedpans.\n\nDesign and build a hi-tech hospital. Every stage begins with an empty hospital, leaving it to you to plan out and create a facility to deal with the impending crisis. How many rooms should you dedicate to better your facilities? What about diagnosis and treatment operations? Your strategic decisions will mean the difference between success and failure.\n\nTreat patients suffering from humorous afflictions. In real life, disease isn't a laughing matter. In Theme Hosptial, it\u2019s hilarious. You\u2019ll have to cure sick patients afflicted by dozens of wacky problems, ranging from Hairyitis, a smell-enhancing condition caused by prolonged exposure to the moon, to Spare Ribs, an oddball illness that, as its name suggests, causes those infected to grow additional ribs.\n\nHire staff members and keep them happy. While a hospital\u2019s purpose is to heal the sick, you\u2019ll need a staff of doctors, nurses, receptionists, and handymen to keep it running in tip-top shape. But just like the sick patients they service, your staff has their own wants and needs (often in the form of better pay), so you\u2019ll have to do your best to keep them happy if you want to keep them on board."
+data-thumb="../thumbs/ms-dos/theme hospital.jpg"
+data-media="../media/ms-dos/theme hospital.jpg"
+data-screenshot="../screenshots/ms-dos/theme hospital.jpg"
+data-logo="../logos/ms-dos/theme hospital.png"
+data-fanart="../fanart/ms-dos/theme hospital.jpg">
+Theme Hospital
+</a>
+</td>
+
+<td>1997</td>
+<td>Construction and Management Simulation •  Strategy</td>
+<td>Electronic Arts</td>
+<td>Bullfrog Productions</td>
+
+</tr>
+
+<tr id="tom-clancys-the-cardinal-of-the-kremlin"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/tom clancy s the cardinal of the kremlin.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tom Clancy's The Cardinal of the Kremlin"
+data-year="1990"
+data-genre="Construction and Management Simulation •  Strategy"
+data-publisher="IntraCorp Inc."
+data-developer="Capstone Software"
+data-ra=""
+data-notes="The Cardinal of the Kremlin is a global management simulation.\n\nIt is the time of the Cold War. An American ground reconnaissance satellite discovers a strange structure near the northern border to Afghanistan. It is identified as project \"Bright Star\" - the Soviet laser ICBM defense system, capable of destroying satellites and airplanes with a beam of energy. At the same time, the USA is busy developing their own SDI project, code name \"Tea Clipper\". And as the race for the deployment of a space-based laser defense system begins, KGB and CIA agents swarm out to infiltrate the laboratories. Among them: The United States' top spy in Moscow, the Cardinal of the Kremlin.\n\nBased on the popular novel of the same name by US author Tom Clancy, The Cardinal of the Kremlin puts you in the position of US project leader. Your task is to build, test and deploy a network of laser defense satellites before the Russians manage to do so. In this time of crisis, however, all your actions are overshadowed by the threat of espionage and treachery. The scientists that you hire may be geniuses, but are they trustworthy? The more technology tests you schedule, the easier it is for Russian spies to steal your knowledge. If you tighten up security on the other hand, the overprotection will throttle research efficiency. As you race against time and an invisible enemy, the word \"paranoia\" gains a whole new quality.\n\nLuckily, the counter-intelligence department is at your command, too. CIA agents in Moscow not only supply you with information on the Soviet project's progress, but also on KGB operations in the USA. How accurate the reports are, however, is for you to judge. You must also supply the Afghan warlords Archer with weapons and equipment, as only he can launch a desperate attack on the Bright Star base that will hopefully throw back the Soviet project for months. You conduct battles in a simple top-down action sequence."
+data-thumb="../thumbs/ms-dos/tom clancy s the cardinal of the kremlin.jpg"
+data-media="../media/ms-dos/tom clancy s the cardinal of the kremlin.jpg"
+data-screenshot="../screenshots/ms-dos/tom clancy s the cardinal of the kremlin.jpg"
+data-logo="../logos/ms-dos/tom clancy s the cardinal of the kremlin.png"
+data-fanart="../fanart/ms-dos/tom clancy s the cardinal of the kremlin.jpg">
+Tom Clancy's The Cardinal of the Kremlin
+</a>
+</td>
+
+<td>1990</td>
+<td>Construction and Management Simulation •  Strategy</td>
+<td>IntraCorp Inc.</td>
+<td>Capstone Software</td>
+
+</tr>
+
+<tr id="tom-clancys-the-hunt-for-red-october-(book-version)"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/tom clancy s the hunt for red october book version.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tom Clancy's The Hunt for Red October (Book Version)"
+data-year="1988"
+data-genre="Vehicle Simulation"
+data-publisher="IntelliCreations"
+data-developer="Oxford Digital Enterprises"
+data-ra=""
+data-notes="In this adaptation of Tom Clancy's popular novel, you play the part of Captain Marko Ramius attempting to defect to the US. Once into the Atlantic, you must rendezvous with the US Navy and fake the destruction of the Red October. Your crew is not aware of the defection -- but the Soviet Navy is, and will try to stop you at any cost."
+data-thumb="../thumbs/ms-dos/tom clancy s the hunt for red october book version.jpg"
+data-media="../media/ms-dos/tom clancy s the hunt for red october book version.jpg"
+data-screenshot="../screenshots/ms-dos/tom clancy s the hunt for red october book version.jpg"
+data-logo="../logos/ms-dos/tom clancy s the hunt for red october book version.png"
+data-fanart="../fanart/ms-dos/tom clancy s the hunt for red october book version.jpg">
+Tom Clancy's The Hunt for Red October (Book Version)
+</a>
+</td>
+
+<td>1988</td>
+<td>Vehicle Simulation</td>
+<td>IntelliCreations</td>
+<td>Oxford Digital Enterprises</td>
+
+</tr>
+
+<tr id="tom-clancys-the-hunt-for-red-october-(movie-version)"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/tom clancy s the hunt for red october movie version.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Tom Clancy's The Hunt for Red October (Movie Version)"
+data-year="1990"
+data-genre="Action"
+data-publisher="Grandslam Interactive"
+data-developer="Audio Visual Magic"
+data-ra=""
+data-notes="Based on the movie of the same name which was adapted from the best-seller by Tom Clancy. As Jack Ryan (a CIA officer) you must find out if Red October's mission is to DEFECT and if that is the situation try to prevent a possible deadly war. Red October is Russia's top secret nuclear missile submarine which is heading West on her maiden voyage...\n\nThe game is divided into 5 different action sequences in which you must perform various abilities like jumping from a helicopter, navigating big and small submarines through deep and narrow channels while trying to avoid from many obstacles."
+data-thumb="../thumbs/ms-dos/tom clancy s the hunt for red october movie version.jpg"
+data-media="../media/ms-dos/tom clancy s the hunt for red october movie version.jpg"
+data-screenshot="../screenshots/ms-dos/tom clancy s the hunt for red october movie version.jpg"
+data-logo="../logos/ms-dos/tom clancy s the hunt for red october movie version.png"
+data-fanart="../fanart/ms-dos/tom clancy s the hunt for red october movie version.jpg">
+Tom Clancy's The Hunt for Red October (Movie Version)
+</a>
+</td>
+
+<td>1990</td>
+<td>Action</td>
+<td>Grandslam Interactive</td>
+<td>Audio Visual Magic</td>
+
+</tr>
+
+<tr id="wolfenstein-3d"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/wolfenstein 3d.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wolfenstein 3D"
+data-year="1992"
+data-genre="Horror •  Shooter"
+data-publisher="Bethesda Softworks"
+data-developer="id Software"
+data-ra=""
+data-notes="Wolfenstein 3D is an episodic first-person shooter and a follow-up to the top-down infiltration game Castle Wolfenstein. The game puts the player in the boots of B.J. Blazkowicz, an allied spy. There are six episodes: the first distributed complete as shareware; the second and the third available after registration; and the three final missions (which happen before the events of the first episode) available in the Nocturnal Missions pack. \n\nIn the first episode (Escape from Wolfenstein), B.J. is captured, but overpowers a guard with the help of a concealed knife and manages to get out of his cell. Throughout the next nine levels the player guides B.J. searching for an escape from Wolfenstein, guarded by Hans Grosse. After returning to Allied territory, B.J. is given the instructions to Operation: Eisenfaust, where he has to stop Dr. Schabbs and his army of mutant prototypes before they are released into the battlefields. The final mission (Die, F\u00fchrer, Die!) has a simple goal: infiltrate the bunker under the Reichstag, and terminate Hitler (in a robotic suit) himself.\n\nThe Nocturnal Missions are focused on the Nazi plans for chemical warfare, and start with Dark Secret, where B.J. hunts for lead researcher Dr. Otto Giftmacher. It's followed by Trail of the Madman, where the goal is capturing the war plans guarded by Gretel Grosse, and the final episode Confrontation, where B.J. meets General Fettgesicht, the planner for the chemical assault.\n\nEach episode has nine levels (eight regular and a final boss level), plus a secret level activated by an hidden switch somewhere in the eight first levels. Regular levels often feature a maze-like appearance or large areas with many enemies (the number of them on each area depends on the difficulty level), where the player must reach the exit elevator. To do so, he must kill the enemies (while it's possible to move behind the guards' backs and even there's a slight bonus in attacking them from behind, most enemies have to be dealt with by fire power), and depending on the level, activate \"push walls\" and/or get silver and golden keys to open certain doors.\n\nMany objects can be found in a level, from medikits, chicken meals, and even dog food (to restore health), ammo and treasures, which solely exist for points. There are four weapons (knife, pistol, machine gun and Gatling), all of them using the same bullets except the knife. The knife and the pistol are given at the start of the level, while the machine gun is either found (usually in secret areas) or picked up from SS troopers, and the Gatling is always dropped somewhere in the level. There are five kinds of enemies (excluding bosses) - Dogs (fast, but more a nuisance than life-threatening), Army Soldiers (dressed in regular brown outfit, not very powerful but usually found in large groups), Officers (dressed in white, armed with a very accurate pistol and tough to kill), SS Troopers (blue attire, armed with a machine gun and tough to kill), and Mutants (the rarest and toughest of regular enemies, pale-skinned troopers with green clothes and a machine gun stuck in their chest).\n\nThe player character has a number of lives; once he loses the last life, the game ends. To win extra lives, the player has to either find the 1-up item in the level or get 20,000 points (by killing enemies and capturing treasures or completing a level below the 'par' time while killing all enemies, finding all secrets by pushing walls, and collecting all treasure points)."
+data-thumb="../thumbs/ms-dos/wolfenstein 3d.jpg"
+data-media="../media/ms-dos/wolfenstein 3d.jpg"
+data-screenshot="../screenshots/ms-dos/wolfenstein 3d.jpg"
+data-logo="../logos/ms-dos/wolfenstein 3d.png"
+data-fanart="../fanart/ms-dos/wolfenstein 3d.jpg">
+Wolfenstein 3D
+</a>
+</td>
+
+<td>1992</td>
+<td>Horror •  Shooter</td>
+<td>Bethesda Softworks</td>
+<td>id Software</td>
+
+</tr>
+
+<tr id="wonderland"><td>
+<img
+class="thumb"
+src="../thumbs/ms-dos/wonderland.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Wonderland"
+data-year="1990"
+data-genre="Adventure"
+data-publisher="Virgin Games"
+data-developer="magnetic Scrolls"
+data-ra=""
+data-notes="Alice was sitting at the river bank with her sister and got drowsy. Suddenly, she sees a white rabbit who was hurrying somewhere, muttering something to himself. Curious, Alice follows the rabbit into a hole that leads into a bizarre world populated by strange and exotic creatures. Alice has to use her wits in order to understand Wonderland's twisted laws of logic, and figure out a way to return home.\n\nWonderland is a text adventure with graphics, based on Lewis Carroll's classic novel Alice in Wonderland. The game follows the book's general story, while adding many descriptions, locations and puzzles of its own. The interaction with the environment is done mostly by typing; however, commands may also appear in pop-up menus and can be selected by the player. Sometimes puzzles need to be solved in order to be able to advance. The game features windows with adjustable size, separating graphical display from inventory, command interface, text descriptions, and other options."
+data-thumb="../thumbs/ms-dos/wonderland.jpg"
+data-media="../media/ms-dos/wonderland.jpg"
+data-screenshot="../screenshots/ms-dos/wonderland.jpg"
+data-logo="../logos/ms-dos/wonderland.png"
+data-fanart="../fanart/ms-dos/wonderland.jpg">
+Wonderland
+</a>
+</td>
+
+<td>1990</td>
+<td>Adventure</td>
+<td>Virgin Games</td>
+<td>magnetic Scrolls</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>

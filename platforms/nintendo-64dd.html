@@ -1,0 +1,966 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Nintendo 64DD</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<style>
+
+th[data-sort] {
+    cursor: pointer;
+    user-select: none;
+}
+
+th[data-sort]:hover {
+    color: #7fb7ff;
+}
+.platform-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    min-height: 250px;
+}
+
+.platform-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    opacity: 0.35;
+}
+
+.platform-hero-content {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.platform-logo {
+    max-height: 90px;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+.game-link {
+    color: #7fb7ff;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 40px auto;
+    background: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+#modalBackground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(12px);
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+#modalInner {
+    position: relative;
+    z-index: 1;
+}
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-thumb {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-meta {
+    margin-bottom: 20px;
+}
+
+.modal-meta p {
+    margin: 8px 0;
+}
+
+.modal-notes {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html">← Home</a>
+
+<div class="platform-hero">
+
+<div
+class="platform-hero-bg"
+style="
+background-image:url('../platform-fanart/nintendo-64dd.jpg');
+">
+</div>
+
+<div class="platform-hero-content">
+
+<img
+class="platform-logo"
+src="../platform-logos/nintendo-64dd.png"
+onerror="this.style.display='none';">
+
+<h1>Nintendo 64DD</h1>
+
+
+<p class="platform-release">
+Released: 1999
+</p>
+
+
+<p>10 games</p>
+
+</div>
+
+</div>
+
+<div class="platform-notes">
+<p>The 64DD, colloquially referred to as the Nintendo 64DD, is a magnetic disk drive peripheral for the Nintendo 64 game console developed by Nintendo. It was originally announced in 1995, prior to the Nintendo 64's 1996 launch, and after numerous delays was finally released only in Japan on December 1, 1999. Only ten software titles were released until the unit was discontinued in February 2001. It was a commercial failure, with at least 15,000 total units sold and another 85,000 units unsold.</p>
+</div>
+
+
+<table class="games-table">
+
+<thead>
+<tr>
+<th>Cover</th>
+<th data-sort="title">Title</th>
+<th data-sort="year">Year</th>
+<th data-sort="genre">Genre</th>
+<th data-sort="publisher">Publisher</th>
+<th data-sort="developer">Developer</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr id="doshin-the-giant"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/doshin the giant.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Doshin the Giant"
+data-year="1999"
+data-genre="Strategy"
+data-publisher="Nintendo"
+data-developer="Nintendo"
+data-ra=""
+data-notes="As a god game, Doshin the Giant's gameplay revolves around typical god-like abilities and tasks, such as altering the geography, managing natural disasters or answering prayers from simulated worshipers. Its designer Kazutoshi Iida has described it as \"Populous meets Mario\". The player controls the Doshin as he tries to help, or hinder the islands inhabitants. Doing so causes the villagers to release love or hate, which Doshin absorbs. The two feelings cancel each other out, but if he gets enough of one type, he will grow in size. Doshin is the Love Giant, a yellow, featureless giant with a happy face and a few strands of hair. He is a benevolent, helpful being who, with his good actions, earns love from his people and increases in size (only for that day; by the next day, he is back to normal size). He can pick up people trees and other such things. Doshin can transform at will into his evil alter ego Jashin, the Hate Giant. In the GameCube version, he has wings and clawed feet and inspires Hate monuments that are slightly different from the Love monuments Doshin can earn. Jashin is known to be a destructive force to the natives, the exact opposite to Doshin's nature. With his bad actions, people show him their dislike, and he increases in size. The only thing the two giants have in common is that both have an outie belly button. Although he cannot pick up things, he can send streams of fire across the land, destroying structures in their way. Doshin and Jashin can both raise and lower terrain."
+data-thumb="../thumbs/nintendo-64dd/doshin the giant.jpg"
+data-media="../media/nintendo-64dd/doshin the giant.jpg"
+data-screenshot="../screenshots/nintendo-64dd/doshin the giant.jpg"
+data-logo="../logos/nintendo-64dd/doshin the giant.png"
+data-fanart="../fanart/nintendo-64dd/doshin the giant.jpg">
+Doshin the Giant
+</a>
+</td>
+
+<td>1999</td>
+<td>Strategy</td>
+<td>Nintendo</td>
+<td>Nintendo</td>
+
+</tr>
+
+<tr id="doshin-the-giant-tinkling-toddler-liberation-front!-assemble!"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/doshin the giant tinkling toddler liberation front assemble.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Doshin the Giant: Tinkling Toddler Liberation Front! Assemble!"
+data-year="2000"
+data-genre="Construction and Management Simulation •  Strategy"
+data-publisher="Nintendo"
+data-developer="Param"
+data-ra=""
+data-notes="Kyojin no Doshin Kaiho Sensen Chibikko Chikko Daishugo (Doshin the Giant: Tinkling Toddler Liberation Front! Assemble!) is an expansion to the original, released on June 30, 2000 for 64DD. It requires the original 64DD version of Doshin the Giant to operate."
+data-thumb="../thumbs/nintendo-64dd/doshin the giant tinkling toddler liberation front assemble.jpg"
+data-media="../media/nintendo-64dd/doshin the giant tinkling toddler liberation front assemble.jpg"
+data-screenshot="../screenshots/nintendo-64dd/doshin the giant tinkling toddler liberation front assemble.jpg"
+data-logo="../logos/nintendo-64dd/doshin the giant tinkling toddler liberation front assemble.png"
+data-fanart="../fanart/nintendo-64dd/doshin the giant tinkling toddler liberation front assemble.jpg">
+Doshin the Giant: Tinkling Toddler Liberation Front! Assemble!
+</a>
+</td>
+
+<td>2000</td>
+<td>Construction and Management Simulation •  Strategy</td>
+<td>Nintendo</td>
+<td>Param</td>
+
+</tr>
+
+<tr id="mario-artist-communication-kit"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/mario artist communication kit.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mario Artist: Communication Kit"
+data-year="2000"
+data-genre="Education •  Life Simulation"
+data-publisher="Nintendo"
+data-developer="Nintendo"
+data-ra=""
+data-notes="Mario Artist: Communication Kit serves as an add-on and accessory to the other Mario Artist games. It allowed players to connect to the Internet via RandNetDD and show off their creations to other players. While connected, players can use their characters to explore a virtual 3D community. There is also exclusive content on the disk that can be imported to the other Mario Artist titles. The Randnet network service was launched and discontinued alongside the 64DD, running from December 1999 to February 28, 2001."
+data-thumb="../thumbs/nintendo-64dd/mario artist communication kit.jpg"
+data-media="../media/nintendo-64dd/mario artist communication kit.jpg"
+data-screenshot="../screenshots/nintendo-64dd/mario artist communication kit.jpg"
+data-logo="../logos/nintendo-64dd/mario artist communication kit.png"
+data-fanart="../fanart/nintendo-64dd/mario artist communication kit.jpg">
+Mario Artist: Communication Kit
+</a>
+</td>
+
+<td>2000</td>
+<td>Education •  Life Simulation</td>
+<td>Nintendo</td>
+<td>Nintendo</td>
+
+</tr>
+
+<tr id="mario-artist-paint-studio"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/mario artist paint studio.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mario Artist: Paint Studio"
+data-year="1999"
+data-genre="Education"
+data-publisher="Nintendo"
+data-developer="Nintendo"
+data-ra=""
+data-notes="Mario Artist: Paint Studio is an art program for the Nintendo 64DD. It is somewhat similar to the earlier game Mario Paint. The player can paint on a canvas using a variety of colors and tools. Stamps can also be added in the form of official artwork from various Nintendo games. Images can also be imported from videotapes and the Game Boy Camera. Another feature is the exploration of three 3D worlds, and taking pictures of their sights with a virtual camera in the vein of Pok\u00e9mon Snap. Also included are mini-games, including Fly Swatting, based on Mario Paint's Gnat World."
+data-thumb="../thumbs/nintendo-64dd/mario artist paint studio.jpg"
+data-media="../media/nintendo-64dd/mario artist paint studio.jpg"
+data-screenshot="../screenshots/nintendo-64dd/mario artist paint studio.jpg"
+data-logo="../logos/nintendo-64dd/mario artist paint studio.png"
+data-fanart="../fanart/nintendo-64dd/mario artist paint studio.jpg">
+Mario Artist: Paint Studio
+</a>
+</td>
+
+<td>1999</td>
+<td>Education</td>
+<td>Nintendo</td>
+<td>Nintendo</td>
+
+</tr>
+
+<tr id="mario-artist-polygon-studio"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/mario artist polygon studio.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mario Artist: Polygon Studio"
+data-year="2000"
+data-genre="Education"
+data-publisher="Nintendo"
+data-developer="Nintendo"
+data-ra=""
+data-notes="Mario Artist: Polygon Studio is an art program allowing players to construct their own 3D models and add colors and textures to them. These objects can then be inserted into pre-made movies and animations. Another notable feature is a series of microgames, believed to be the inspiration for the WarioWare series, as it includes many almost identical games. Other games allow the player to use their 3D models."
+data-thumb="../thumbs/nintendo-64dd/mario artist polygon studio.jpg"
+data-media="../media/nintendo-64dd/mario artist polygon studio.jpg"
+data-screenshot="../screenshots/nintendo-64dd/mario artist polygon studio.jpg"
+data-logo="../logos/nintendo-64dd/mario artist polygon studio.png"
+data-fanart="../fanart/nintendo-64dd/mario artist polygon studio.jpg">
+Mario Artist: Polygon Studio
+</a>
+</td>
+
+<td>2000</td>
+<td>Education</td>
+<td>Nintendo</td>
+<td>Nintendo</td>
+
+</tr>
+
+<tr id="mario-artist-talent-studio"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/mario artist talent studio.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Mario Artist: Talent Studio"
+data-year="2000"
+data-genre="Education"
+data-publisher="Nintendo"
+data-developer="Nintendo"
+data-ra=""
+data-notes="In Mario Artist: Talent Studio, the player can create their own characters in 3D, customizing features such as hair, skin, and eye color, voice, clothes, facial features, and body size and type. The process is similar to Nintendo's later Miis, but much more detailed. The characters can then be inserted into movies and animations. Events during these movies can be controlled by pressing the Z-trigger. Images from external video can be imported using the Capture Cartridge."
+data-thumb="../thumbs/nintendo-64dd/mario artist talent studio.jpg"
+data-media="../media/nintendo-64dd/mario artist talent studio.jpg"
+data-screenshot="../screenshots/nintendo-64dd/mario artist talent studio.jpg"
+data-logo="../logos/nintendo-64dd/mario artist talent studio.png"
+data-fanart="../fanart/nintendo-64dd/mario artist talent studio.jpg">
+Mario Artist: Talent Studio
+</a>
+</td>
+
+<td>2000</td>
+<td>Education</td>
+<td>Nintendo</td>
+<td>Nintendo</td>
+
+</tr>
+
+<tr id="nihon-pro-golf-tour-64"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/nihon pro golf tour 64.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Nihon Pro Golf Tour 64"
+data-year="2000"
+data-genre="Sports"
+data-publisher="SETA"
+data-developer="Media Factory"
+data-ra=""
+data-notes="Japan Pro Golf Tour is an online-enabled golf simulation game developed for the short-lived Nintendo 64 disk drive add-on. This rare disk is best-known for being the only title for the system to offer a form of online play. The game features six gameplay modes, polygonal graphics, and a player editor. One or two players can compete in Match Play mode while up to four can compete for the best score in the 18-hole Stroke Player mode. The game also sports a Grand Opening Mode (compete with the world's best Japan Pro-Golfers,), a Career Mode, Qualifying Tournament (you create your own player and start with a handicap of 0) and Network Opening. The latter lets you connect to Randnet and compete in an All-Japan tournament."
+data-thumb="../thumbs/nintendo-64dd/nihon pro golf tour 64.jpg"
+data-media="../media/nintendo-64dd/nihon pro golf tour 64.jpg"
+data-screenshot="../screenshots/nintendo-64dd/nihon pro golf tour 64.jpg"
+data-logo="../logos/nintendo-64dd/nihon pro golf tour 64.png"
+data-fanart="../fanart/nintendo-64dd/nihon pro golf tour 64.jpg">
+Nihon Pro Golf Tour 64
+</a>
+</td>
+
+<td>2000</td>
+<td>Sports</td>
+<td>SETA</td>
+<td>Media Factory</td>
+
+</tr>
+
+<tr id="randonetto-disuku"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/randonetto disuku.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Randonetto Disuku"
+data-year="2000"
+data-genre=""
+data-publisher="RandnetDD"
+data-developer="Randnet"
+data-ra=""
+data-notes="The Randnet Disk is a piece of software for the 64DD that allowed users to access the internet through Randnet."
+data-thumb="../thumbs/nintendo-64dd/randonetto disuku.jpg"
+data-media="../media/nintendo-64dd/randonetto disuku.jpg"
+data-screenshot="../screenshots/nintendo-64dd/randonetto disuku.jpg"
+data-logo="../logos/nintendo-64dd/randonetto disuku.png"
+data-fanart="../fanart/nintendo-64dd/randonetto disuku.jpg">
+Randonetto Disuku
+</a>
+</td>
+
+<td>2000</td>
+<td></td>
+<td>RandnetDD</td>
+<td>Randnet</td>
+
+</tr>
+
+<tr id="sim-city-64"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/sim city 64.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Sim City 64"
+data-year="2000"
+data-genre="Construction and Management Simulation"
+data-publisher="Nintendo"
+data-developer="HAL Laboratory"
+data-ra="21718"
+data-notes="SimCity 64 may have been intended as a sequel to Nintendo's Super Nintendo Entertainment System (SNES) release of the original 1991 SimCity, given several elements from the SNES version are found in SimCity 64, including Dr. Wright, the city advisor. Although general gameplay in SimCity 64 is much like SimCity 2000, the game's graphical textures and building tilesets are considerably different. However, the game sports several advanced features that were not seen in SimCity 2000 or even SimCity 3000: The ability to view the city at night, pedestrian level free-roaming of a city, and individual road vehicles and pedestrians (which could only be seen while in the free-roaming mode). Cities in the game are also presented in 3D hybrid graphics. The 64DD incarnation of the game SimCopter, which was first planned as a stand-alone title, was later integrated into SimCity 64"
+data-thumb="../thumbs/nintendo-64dd/sim city 64.jpg"
+data-media="../media/nintendo-64dd/sim city 64.jpg"
+data-screenshot="../screenshots/nintendo-64dd/sim city 64.jpg"
+data-logo="../logos/nintendo-64dd/sim city 64.png"
+data-fanart="../fanart/nintendo-64dd/sim city 64.jpg">
+Sim City 64
+</a>
+</td>
+
+<td>2000</td>
+<td>Construction and Management Simulation</td>
+<td>Nintendo</td>
+<td>HAL Laboratory</td>
+
+</tr>
+
+<tr id="super-mario-64-disk-version"><td>
+<img
+class="thumb"
+src="../thumbs/nintendo-64dd/super mario 64 disk version.jpg"
+loading="lazy"
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+</td>
+
+<td>
+<a href="#"
+class="game-link"
+data-title="Super Mario 64 Disk Version"
+data-year="Unknown"
+data-genre="Platform"
+data-publisher="-"
+data-developer="Nintendo"
+data-ra=""
+data-notes="Super Mario 64 Disk Version is a prototype disk that was created for display at Nintendo\u2019s Shoshinkai show in 1996, to help promote the 64DD add-on, but never received a general release \u2013 by the time the 64DD was finally launched in December 1999, it would have been a rather pointless release. The game itself is only slightly different to the cartridge version that had been released in Japan some months prior, with an altered castle theme, the omission of the famous 3D Mario head and a couple of game-breaking bugs in Tiny Huge Land."
+data-thumb="../thumbs/nintendo-64dd/super mario 64 disk version.jpg"
+data-media="../media/nintendo-64dd/super mario 64 disk version.jpg"
+data-screenshot="../screenshots/nintendo-64dd/super mario 64 disk version.jpg"
+data-logo="../logos/nintendo-64dd/super mario 64 disk version.png"
+data-fanart="../fanart/nintendo-64dd/super mario 64 disk version.jpg">
+Super Mario 64 Disk Version
+</a>
+</td>
+
+<td>Unknown</td>
+<td>Platform</td>
+<td>-</td>
+<td>Nintendo</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+<div id="gameModal" class="modal-overlay">
+
+<div class="modal-content">
+<div id="modalBackground"></div>
+<div id="modalInner">
+<span class="modal-close" onclick="closeGame()">&times;</span>
+
+<div id="modalTitleContainer">
+
+<img
+id="modalLogo"
+style="
+display:none;
+max-height:100px;
+max-width:500px;
+object-fit:contain;
+margin-bottom:10px;
+">
+
+<h2 id="modalTitle"></h2>
+
+</div>
+<div
+id="modalImages"
+style="
+display:flex;
+gap:15px;
+align-items:flex-start;
+flex-wrap:wrap;
+margin-bottom:20px;
+">
+
+<img
+id="modalThumb"
+class="modal-thumb"
+src=""
+onerror="this.onerror=null;this.src='../assets/no-boxart.png';">
+
+<img
+id="modalMedia"
+class="modal-thumb"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+"
+src=""
+onerror="this.style.display='none';">
+
+<img
+id="modalScreenshot"
+style="
+width:250px;
+height:350px;
+object-fit:contain;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+display:none;
+border-radius:6px;
+"
+src=""
+onerror="this.style.display='none';">
+
+</div>
+<div class="modal-meta">
+
+<p><strong>Year:</strong> <span id="modalYear"></span></p>
+
+<p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+<p><strong>Publisher:</strong> <span id="modalPublisher"></span></p>
+
+<p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+
+</div>
+
+<div style="margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a
+id="raButton"
+href="#"
+target="_blank"
+style="
+display:none;
+background:#2f6fed;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+🏆 RetroAchievements
+</a>
+
+<a
+id="requestButton"
+href="#"
+style="
+background:#28a745;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+">
+📥 Request This Game
+</a>
+
+</div>
+<div class="modal-notes" id="modalNotes"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function showGame(link) {
+
+    document.getElementById("modalTitle").textContent =
+        link.dataset.title;
+
+    const title =
+        document.getElementById(
+            "modalTitle"
+        );
+
+    const logo =
+        document.getElementById(
+            "modalLogo"
+        );
+    const background =
+        document.getElementById(
+            "modalBackground"
+        );
+    title.textContent =
+        link.dataset.title;
+
+    logo.src =
+        link.dataset.logo;
+    background.style.backgroundImage =
+        "url('" +
+        link.dataset.fanart +
+        "')";
+    logo.style.display =
+        "block";
+
+    title.style.display =
+        "none";
+
+    logo.onerror = function(){
+
+        logo.style.display =
+            "none";
+
+        title.style.display =
+            "block";
+};
+
+    document.getElementById("modalYear").textContent =
+        link.dataset.year;
+
+    document.getElementById("modalGenre").textContent =
+        link.dataset.genre;
+
+    document.getElementById("modalPublisher").textContent =
+        link.dataset.publisher;
+
+    document.getElementById("modalDeveloper").textContent =
+        link.dataset.developer;
+
+    document.getElementById("modalNotes").textContent =
+        link.dataset.notes;
+const requestButton =
+    document.getElementById(
+        "requestButton"
+    );
+
+requestButton.onclick =
+    async function(event){
+
+    event.preventDefault();
+
+    let user =
+        localStorage.getItem(
+            "discord_name"
+        );
+
+    if(!user){
+
+        user = prompt(
+            "Enter your Discord username"
+        );
+
+        if(!user){
+            return;
+        }
+
+        localStorage.setItem(
+            "discord_name",
+            user
+        );
+    }
+
+    try{
+
+        await fetch(
+            "https://discord-requests.mydefposse.workers.dev",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":
+                        "application/json"
+                },
+                body:JSON.stringify({
+                    user:user,
+                    game:link.dataset.title,
+                    platform:
+                        document.querySelector("h1")
+                        .textContent,
+                    url:
+                        window.location.href
+                })
+            }
+        );
+
+        alert(
+            "Request sent successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Failed to send request."
+        );
+    }
+};
+const raButton =
+    document.getElementById(
+        "raButton"
+    );
+
+if(link.dataset.ra){
+
+    raButton.href =
+        "https://retroachievements.org/game/" +
+        link.dataset.ra;
+
+    raButton.style.display =
+        "inline-block";
+
+}else{
+
+    raButton.style.display =
+        "none";
+}
+
+const img =
+    document.getElementById(
+        "modalThumb"
+    );
+
+img.style.display =
+    "block";
+
+img.onerror = function() {
+    this.onerror = null;
+    this.src = "../assets/no-boxart.png";
+};
+
+img.src =
+    link.dataset.thumb;
+const media =
+    document.getElementById(
+        "modalMedia"
+    );
+
+if(link.dataset.media && link.dataset.media !== ""){
+
+    media.src =
+        link.dataset.media;
+
+    media.style.display =
+        "block";
+
+}else{
+
+    media.style.display =
+        "none";
+}
+
+const screenshot =
+    document.getElementById(
+        "modalScreenshot"
+    );
+
+if(link.dataset.screenshot && link.dataset.screenshot !== ""){
+
+    screenshot.src =
+        link.dataset.screenshot;
+
+    screenshot.style.display =
+        "block";
+
+}else{
+
+    screenshot.style.display =
+        "none";
+}
+    document.getElementById("gameModal").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+
+    const link = event.target.closest(".game-link");
+
+    if (!link) {
+        return;
+    }
+
+    event.preventDefault();
+    showGame(link);
+
+})
+
+function closeGame() {
+    document.getElementById("gameModal").style.display = "none";
+}
+
+let currentSort = "";
+let ascending = true;
+
+document
+.querySelectorAll("th[data-sort]")
+.forEach(header => {
+
+    header.addEventListener(
+        "click",
+        function(){
+
+            const key =
+                this.dataset.sort;
+
+            const tbody =
+                document.querySelector(
+                    ".games-table tbody"
+                );
+
+            const rows =
+                Array.from(
+                    tbody.querySelectorAll("tr")
+                );
+
+            if(currentSort === key){
+                ascending = !ascending;
+            }else{
+                ascending = true;
+                currentSort = key;
+            }
+
+            const columnMap = {
+                title: 1,
+                year: 2,
+                genre: 3,
+                publisher: 4,
+                developer: 5
+            };
+
+            const column =
+                columnMap[key];
+
+            rows.sort((a,b) => {
+
+                let aVal =
+                    a.children[column]
+                    .innerText
+                    .trim();
+
+                let bVal =
+                    b.children[column]
+                    .innerText
+                    .trim();
+
+                if(key === "year"){
+
+                    aVal =
+                        parseInt(aVal) || 0;
+
+                    bVal =
+                        parseInt(bVal) || 0;
+
+                    return ascending
+                        ? aVal - bVal
+                        : bVal - aVal;
+                }
+
+                return ascending
+                    ? aVal.localeCompare(bVal)
+                    : bVal.localeCompare(aVal);
+
+            });
+
+            rows.forEach(row =>
+                tbody.appendChild(row)
+            );
+
+        }
+    );
+
+});
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("gameModal");
+
+    if(event.target === modal) {
+        closeGame();
+    }
+}
+
+</script>
+
+</body>
+</html>
