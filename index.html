@@ -101,7 +101,21 @@ alt="Discord">
 </div>
 
 </a>
+<a
+class="profile-card"
+href="#"
+id="requestMissingGame">
 
+<img
+src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png"
+alt="Request Game">
+
+<div>
+<strong>Request a Game</strong>
+<span>Not in the collection?</span>
+</div>
+
+</a>
 </div>
 
 <div class="gamercard">
@@ -2335,6 +2349,98 @@ function closeGame(){
     ).style.display =
         "none";
 }
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const button =
+            document.getElementById(
+                "requestMissingGame"
+            );
+
+        if(!button){
+            return;
+        }
+
+        button.addEventListener(
+            "click",
+            async function(event){
+
+                event.preventDefault();
+
+                let user =
+                    localStorage.getItem(
+                        "discord_name"
+                    );
+
+                if(!user){
+
+                    user = prompt(
+                        "Enter your Discord username"
+                    );
+
+                    if(!user){
+                        return;
+                    }
+
+                    localStorage.setItem(
+                        "discord_name",
+                        user
+                    );
+                }
+
+                const game =
+                    prompt(
+                        "What game would you like to request?"
+                    );
+
+                if(!game){
+                    return;
+                }
+
+                const platform =
+                    prompt(
+                        "What platform is it for?"
+                    );
+
+                if(!platform){
+                    return;
+                }
+
+                try{
+
+                    await fetch(
+                        "https://discord-requests.mydefposse.workers.dev",
+                        {
+                            method:"POST",
+                            headers:{
+                                "Content-Type":
+                                    "application/json"
+                            },
+                            body:JSON.stringify({
+                                user:user,
+                                game:game,
+                                platform:platform,
+                                url:
+                                    window.location.href
+                            })
+                        }
+                    );
+
+                    alert(
+                        "Request sent successfully!"
+                    );
+
+                }catch(error){
+
+                    alert(
+                        "Failed to send request."
+                    );
+                }
+            }
+        );
+    }
+);
 
 window.addEventListener(
     "click",
